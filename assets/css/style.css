@@ -40,6 +40,16 @@
   src: local("Roboto"), local("Roboto");
   font-weight: normal;
   font-style: normal; }
+body {
+  font-family: "Montserrat", sans-serif !important;
+  color: #000000; }
+
+.container {
+  max-width: 1710px; }
+  @media screen and (max-width: 1720px) {
+    .container {
+      max-width: 95%; } }
+
 .header {
   background: #024C76;
   height: 155px;
@@ -594,6 +604,13 @@ body.touch .menu__list.active .menu__arrow {
     border-radius: 100%;
     background: #007bff; }
 
+.table_btn {
+  background: #D8EEFA;
+  border: 1px solid rgba(0, 0, 0, 0.38);
+  box-sizing: border-box;
+  border-radius: 50px;
+  padding: 10px 13px; }
+
 .home__video {
   pointer-events: none; }
 .home__planeta {
@@ -985,16 +1002,6 @@ body.touch .menu__list.active .menu__arrow {
   left: 50px;
   width: 30%;
   height: 102%; }
-  .pos-item:after {
-    position: absolute;
-    content: '';
-    width: 0;
-    height: 0;
-    border-left: 63px solid transparent;
-    border-right: 63px solid transparent;
-    border-top: 46px solid #2DA4E3;
-    bottom: -46px;
-    left: 0px; }
   .pos-item_red {
     background: #E02648; }
     .pos-item_red:after {
@@ -1042,6 +1049,13 @@ body.touch .menu__list.active .menu__arrow {
       background: #38CB20; }
     .pos-item .circle_yellow {
       background: #E4E825; }
+  .pos-item .triangle-bottom {
+    position: absolute;
+    bottom: -45px;
+    left: 0px;
+    width: 100%; }
+    .pos-item .triangle-bottom img {
+      width: 100%; }
   .pos-item__img {
     margin: auto; }
 
@@ -1073,14 +1087,113 @@ body.touch .menu__list.active .menu__arrow {
     top: 107px;
     left: 36px; }
 
-body {
-  font-family: "Montserrat", sans-serif !important;
-  color: #000000; }
-
-.container {
-  max-width: 1710px; }
-  @media screen and (max-width: 1720px) {
-    .container {
-      max-width: 95%; } }
+.header_table {
+  background: #024C76;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 27px 0 25px; }
+  .header_table-btns {
+    text-align: center;
+    width: 13%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 29px; }
+  .header_table-logo {
+    margin-bottom: 15px;
+    width: 100%; }
+  .header_table .table_btn:last-child {
+    margin-left: 15px; }
+  .header_table-block {
+    width: 86%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .header_table .times_block {
+    width: 93%;
+    display: flex;
+    justify-content: space-around;
+    background: #0878B7;
+    border-radius: 5px 5px 0px 0px;
+    color: #fff;
+    padding: 14px 15px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px; }
+    .header_table .times_block-locate {
+      margin-bottom: 5px; }
+  .header_table-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    color: #FFFFFF;
+    text-align: center;
+    width: calc(100% - 303px);
+    margin-top: 20px; }
+  .header_table .user_info {
+    display: flex;
+    margin-right: 10px; }
+    .header_table .user_info-name {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 26px;
+      color: #FFFFFF; }
+    .header_table .user_info-avatar {
+      margin-right: 10px; }
+  .header_table .header_info {
+    align-items: baseline;
+    display: flex;
+    position: relative;
+    margin: 30px 0 20px; }
+  .header_table .header_chat {
+    position: absolute;
+    right: 0;
+    bottom: -35px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF; }
+    .header_table .header_chat span:last-child {
+      position: absolute;
+      right: 13px;
+      top: 3px;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      color: #000000; }
+  .header_table .icon_home {
+    margin-right: 27px; }
+    .header_table .icon_home img {
+      margin-top: -1px; }
+  .header_table .header_info-mail {
+    margin-right: 25px;
+    position: relative; }
+    .header_table .header_info-mail span {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      text-align: center;
+      line-height: 18px;
+      border-radius: 50%;
+      background: #0ED33A;
+      position: absolute;
+      top: -15px;
+      right: -10px;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 10px;
+      color: #000000; }
 
 /*# sourceMappingURL=style.css.map */

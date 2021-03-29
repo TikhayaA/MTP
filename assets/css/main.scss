@@ -58,14 +58,6 @@ $bgservice: #F1FAFF;
     font-weight: $w;
     font-style: $s;
 }
-
-@import"header.scss";
-@import"footer.scss";
-@import"buttons.scss";
-@import"home.scss";
-@import"service.scss";
-@import"service-block.scss";
-@import"categories.scss";
 body{
     font-family: 'Montserrat', sans-serif!important;
     color: #000000;
@@ -77,3 +69,11 @@ body{
     max-width: 95%;
   }
 }
+@import"header.scss";
+@import"footer.scss";
+@import"buttons.scss";
+@import"home.scss";
+@import"service.scss";
+@import"service-block.scss";
+@import"categories.scss";
+@import"header_table.scss";

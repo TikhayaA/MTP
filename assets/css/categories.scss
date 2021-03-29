@@ -89,30 +89,17 @@
     left: 50px;
     width: 30%;
     height: 102%;
-    &:after{
-        position: absolute;
-        content: '';
-        width: 0;
-        height: 0;
-        border-left: 63px solid transparent;
-        border-right: 63px solid transparent;
-        border-top: 46px solid #2DA4E3;
-        bottom: -46px;
-        left: 0px;
-
-        // bottom: -36px;
-        // left: 14px;
-        // width: 0;
-        // height: 0;
-        // border: 2.4em solid;
-        // border-color: #2DA4E3 transparent transparent #2DA4E3;
-        // border-radius: 5px;
-        // transform: rotate(  -135deg     );
-        // -webkit-transform: rotate(  -135deg     );
-        // -moz-transform: rotate(  -135deg     );
-        // -ms-transform: rotate(  -135deg     );
-        // -o-transform: rotate(  -135deg     );
-    }  
+    // &:after{
+    //     position: absolute;
+    //     content: '';
+    //     width: 0;
+    //     height: 0;
+    //     border-left: 63px solid transparent;
+    //     border-right: 63px solid transparent;
+    //     border-top: 46px solid #2DA4E3;
+    //     bottom: -46px;
+    //     left: 0px;
+    // }   
     &_red{
         background: #E02648;
         &:after{
@@ -174,62 +161,72 @@
             background: #E4E825;
         }
     }
+    .triangle-bottom {
+        position: absolute;
+        bottom: -45px;
+        left: 0px;
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
      &__img{
         margin: auto;
      }
-}
-.cargo-market{
-    .categories__wrap{
-        // display: flex;
-        // flex-direction: row;
-        // justify-content: space-between;
-        // @media screen and (max-width: 1700px){
-        //     flex-direction: column;
-        //     align-items: center;
-        // }
-        >:nth-child(1){
-            width: 60%;
+    }
+    .cargo-market{
+        .categories__wrap{
+            // display: flex;
+            // flex-direction: row;
+            // justify-content: space-between;
             // @media screen and (max-width: 1700px){
-            //     width: 50%;
-            //     margin-bottom: 20px;
+            //     flex-direction: column;
+            //     align-items: center;
             // }
-            // img{
-            //     width: 100%;
-            // }
+            >:nth-child(1){
+                width: 60%;
+                // @media screen and (max-width: 1700px){
+                //     width: 50%;
+                //     margin-bottom: 20px;
+                // }
+                // img{
+                //     width: 100%;
+                // }
+            }
+            >:nth-child(2){
+                width: 40%;
+            }
         }
-        >:nth-child(2){
-            width: 40%;
+        &__block-wrap{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .categories__wrap-btn{
+            .btn-how-work, .btn-open-dashboard{
+                margin: auto;
+                display: block;
+            }
+            >:nth-child(1){
+                width: 60%;
+            }
+            >:nth-child(2){
+                width: 40%;
+            }
         }
     }
-    &__block-wrap{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .categories__wrap-btn{
-        .btn-how-work, .btn-open-dashboard{
-            margin: auto;
-            display: block;
-        }
-        >:nth-child(1){
-            width: 60%;
-        }
-        >:nth-child(2){
-            width: 40%;
-        }
-    }
-}
-.cargo-block-item{
-    position: relative;
-     p{
-        position: absolute;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 140%;
-        letter-spacing: 0.01em;
-        width: 70%;
-        top: 107px;
-        left: 36px;
-     }
-      
+    .cargo-block-item{
+        position: relative;
+         p{
+            position: absolute;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 140%;
+            letter-spacing: 0.01em;
+            width: 70%;
+            top: 107px;
+            left: 36px;
+         }
+       
 }
