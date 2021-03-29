@@ -1,0 +1,131 @@
+.header_table {
+    background: #024C76;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 27px 0 25px;
+
+    &-btns {
+        text-align: center;
+        width: 13%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 29px;
+    }
+    &-logo {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .table_btn:last-child {
+        margin-left: 15px;
+    }
+    &-block {
+        width: 86%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .times_block {
+        width: 93%;
+        display: flex;
+        justify-content: space-around;
+        background: #0878B7;
+        border-radius: 5px 5px 0px 0px;
+        color: #fff;
+        padding: 14px 15px;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        &-locate {
+            margin-bottom: 5px;
+        }
+    }
+    &-title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 37px;
+        color: #FFFFFF;
+        text-align: center;
+        width: calc(100% - 303px);
+        margin-top: 20px;
+    }
+    .user_info {
+        display: flex;
+        margin-right: 10px;
+        &-name{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 26px;
+            color: #FFFFFF;
+        }
+        &-avatar {
+            margin-right: 10px;
+        }
+    }
+    .header_info {
+        align-items: baseline;
+        display: flex;
+        position: relative;
+        margin: 30px 0 20px;
+    }
+    .header_chat {
+        position: absolute;
+        right: 0;
+        bottom: -35px;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+        color: #FFFFFF;
+
+        span:last-child {
+            position: absolute;
+            right: 13px;
+            top: 3px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: #000000;
+        }
+    }
+    .icon_home {
+        margin-right: 27px;
+        
+        img {
+            margin-top: -1px;
+        }
+    }
+    .header_info-mail {
+        margin-right: 25px;
+        position: relative;
+
+        span {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            text-align: center;
+            line-height: 18px;
+            border-radius: 50%;
+            background: #0ED33A;
+            position: absolute;
+            top: -15px;
+            right: -10px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 10px;
+            color: #000000;
+        }
+    }
+}
