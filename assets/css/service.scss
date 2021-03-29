@@ -1,0 +1,55 @@
+.service{
+    background: $bgservice;
+    padding-bottom: 104px;
+    @media screen and (max-width: 420px) {
+        padding-bottom: 20px;
+    }
+    &__title{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        letter-spacing: 0.01em;
+        color: #0544BB;
+        position: relative;
+        text-align: center;
+        padding: 95px 0;
+        @media screen and (max-width: 760px) {
+            font-size: 32px;
+            padding: 45px 0;
+        }
+        @media screen and (max-width: 500px) {
+            font-size: 24px;
+            padding: 35px 0;
+        }
+        &::after, &::before{
+            content: "";
+            position: absolute;
+            width: 37%;
+            height: 1px;
+            background: #000000;
+            top: 50%;
+            @media screen and (max-width: 1200px) {
+                width: 33%;
+            }
+            @media screen and (max-width: 770px) {
+                width: 29%;
+            }
+            @media screen and (max-width: 724px) {
+                width: 25%;
+            }
+            @media screen and (max-width: 520px) {
+                width: 14%;
+            }
+            @media screen and (max-width: 319px) {
+                width: 12%;
+            }
+        }
+        &::after{
+            right: 0;
+        }
+        &::before{
+            left: 0;
+        }
+    }
+    
+}

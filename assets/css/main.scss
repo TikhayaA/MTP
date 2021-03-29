@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-BoldItalic.ttf');
+    src: local('Montserrat'), local('Montserrat');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Thin.ttf');
+    src: local('Montserrat'), local('Montserrat');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf');
+    src: local('Montserrat'), local('Montserrat');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-SemiBold.ttf');
+    src: local('Montserrat'), local('Montserrat');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-BoldItalic.ttf');
+    src: local('Montserrat'), local('Montserrat');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Bold.ttf');
+    src: local('Montserrat-Black'), local('Montserrat-Black');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf');
+    src: local('Roboto'), local('Roboto');
+    font-weight: normal;
+    font-style: normal;
+}
+$color_light-text:#FFFFFF;
+$color_main-title: #0544BB;
+$color_main-description:#65676C;
+$bg-header: #024C76;
+$color_btn-find-more:#33C1EF;
+$bgservice: #F1FAFF;
+@mixin fontz ($fs,$w, $s){
+    font-size: $fs;
+    font-weight: $w;
+    font-style: $s;
+}
+
+@import"header.scss";
+@import"footer.scss";
+@import"buttons.scss";
+@import"home.scss";
+@import"service.scss";
+@import"service-block.scss";
+@import"categories.scss";
+body{
+    font-family: 'Montserrat', sans-serif!important;
+    color: #000000;
+}
+
+.container{
+   max-width: 1710px;
+   @media screen and (max-width: 1720px) {
+    max-width: 95%;
+  }
+}

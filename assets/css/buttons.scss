@@ -1,0 +1,83 @@
+
+.btn-find-more{
+    background: $color_btn-find-more;
+    @include fontz (16px, normal, normal);
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    padding: 14px 66px;
+    border: none;
+    transition: 0.5s all;
+    @media screen and (max-width: 420px) {
+        padding: 10px 40px;
+    }
+    &:hover{
+        background: #269ABF;
+    }
+    &:focus{
+        background: green;
+        // opacity: 0.8;
+    }
+}
+.btn-open-dashboard{
+    background: #005672;
+    @include fontz (20px, normal, normal);
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    padding: 14px 64px;
+    border: none;
+    transition: 0.5s all;
+    @media screen and (max-width: 420px) {
+        padding: 10px 40px;
+    }
+    &:hover{
+        background: #00779E;
+      }
+}
+.btn-how-work{
+    background: #88DDA0;
+    @include fontz (20px, normal, normal);
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    padding: 14px 64px;
+    border: none;
+    transition: 0.5s all;
+    &:focus{
+        background: #004E72;
+        opacity: 0.8;
+    }
+    &:hover{
+        background: #4FC28C;
+    }
+
+}
+
+.triangle {
+    position:relative;
+    height:10px;
+    width:10px;
+  
+    &:before {
+      content: '';
+      display:block;
+      width: 10px;
+      height: 10px;
+      border-style: solid;
+      border-width: 0 100px 100px 100px;
+      border-color: transparent transparent #007bff transparent;
+    }
+  
+    &:after {
+      content: '';
+      display:block;
+      width: 12px;
+      height: 12px;
+      position:absolute;
+      top:8px;
+      left:99px;
+      border-radius: 100%;
+      background:#007bff;
+    }
+  }
