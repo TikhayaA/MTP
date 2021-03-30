@@ -1,7 +1,10 @@
 .categories{
     &__text{
-        padding: 49px 0 18px;
+        padding: 49px 0;
         background: #E2E9F8;
+        @media screen and (max-width: 500px){
+            padding: 20px 0;
+        }
         p{
             @include fontz (18px, 500, normal);
             font-style: normal;
@@ -14,15 +17,39 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        // @media screen and (max-width: 1500px){
+        //     max-width: 1200px;
+        // }
+        // @media screen and (max-width: 1200px){
+        //     max-width: 768px;
+        // }
+        // @media screen and (max-width: 767px){
+        //     max-width: 500px;
+        // }
+        // @media screen and (max-width: 550px){
+        //     max-width: 400px;
+        // }
+        // @media screen and (max-width: 320px){
+        //     max-width: 300px;
+        // }
+
         @media screen and (max-width: 1700px){
-            flex-direction: column;
             align-items: center;
+        }
+        @media screen and (max-width: 1360px){
+            flex-direction: column;
         }
         >:nth-child(1){
             width: 40%;
-            @media screen and (max-width: 1700px){
-                width: 50%;
-                margin-bottom: 20px;
+            @media screen and (min-width: 1501px) and (max-width: 1700px){
+                width: 42%;
+                margin-bottom: 40px;
+            }
+            @media screen and (max-width: 700px){
+                width: 70%;
+            }
+            @media screen and (max-width: 400px){
+                width: 100%;
             }
             img{
                 width: 100%;
@@ -30,8 +57,22 @@
         }
         >:nth-child(2){
             width: 55%;
-            @media screen and (max-width: 1700px) {
-                min-width: 867px;
+            @media screen and (min-width: 900px) and (max-width: 1700px) {
+                min-width: 740px;
+                
+            }
+            @media screen and (max-width: 1360px) {
+                margin-top: 30px;
+            }
+            @media screen and (max-width: 900px) {
+                width: 100%;
+                
+            }
+            >div{
+                justify-content: space-between;
+                @media screen and (max-width: 900px) {
+                    justify-content: center;
+                }
             }
         }
     }
@@ -40,19 +81,38 @@
         padding-bottom: 77px;
         position: relative;
         z-index: 0;
+        @media screen and (max-width: 500px){
+            padding-bottom: 30px;
+        }
     }
     &__wrap-btn{
         justify-content: space-between;
         margin-top: 115px;
+        @media screen and (max-width: 1699px){
+            justify-content: space-around;
+        }
+        @media screen and (max-width: 700px){
+            flex-direction: column;
+            margin-top: 20px!important;
+        }
         .btn-how-work, .btn-open-dashboard{
             margin: auto;
             display: block;
+            @media screen and (max-width: 700px){
+                margin-bottom: 20px;
+            }
         }
         >:nth-child(1){
             width: 40%;
+            @media screen and (max-width: 1699px){
+                width: auto;
+            }
         }
         >:nth-child(2){
-            width: 60%;
+            width: 55%;
+            @media screen and (max-width: 1699px){
+                width: auto;
+            }
         }
     }
 
@@ -74,11 +134,46 @@
         @media screen and (max-width: 1700px) {
             margin-bottom: 80px;
         }
+        @media screen and (min-width: 900px) and (max-width: 1700px) {
+            // width: 62%;
+            padding: 15px 15px 20px;
+        }
+        @media screen and (max-width: 900px) {
+            width: 59%;
+        }
+        @media screen and (max-width: 680px) {
+            width: 64%;
+        }
+        @media screen and (max-width: 620px) {
+            width: 79%;
+        }
+        @media screen and (max-width: 510px) {
+            width: 94%;
+        }
+        @media screen and (max-width: 440px) {
+            width: 100%;
+            padding: 30px 15px 30px;
+            
+        }
+        @media screen and (max-width: 420px){
+            margin-bottom: 15px;
+        }
         p{
             @include fontz (12px, 500, normal);
             line-height: 140%;
             letter-spacing: 0.01em;
             width:  55%;
+            @media screen and (min-width: 900px) and (max-width: 1700px) {
+                width: 62%;
+            }
+            @media screen and (max-width: 660px) {
+                width: 52%;
+                font-size: 11px;
+            }
+            @media screen and (max-width: 420px) {
+                width: 100%;
+                font-size: 13px;
+            }
         }
     }
 }
@@ -89,17 +184,15 @@
     left: 50px;
     width: 30%;
     height: 102%;
-    // &:after{
-    //     position: absolute;
-    //     content: '';
-    //     width: 0;
-    //     height: 0;
-    //     border-left: 63px solid transparent;
-    //     border-right: 63px solid transparent;
-    //     border-top: 46px solid #2DA4E3;
-    //     bottom: -46px;
-    //     left: 0px;
-    // }   
+    @media screen and (min-width: 900px) and (max-width: 1700px) {
+        left: 22px;
+    }
+    @media screen and (max-width: 680px) {
+        left: 40px;
+    } 
+    @media screen and (max-width: 420px) {
+        display: none!important;
+    } 
     &_red{
         background: #E02648;
         &:after{
@@ -166,36 +259,77 @@
         bottom: -45px;
         left: 0px;
         width: 100%;
-
+        @media screen and (min-width: 900px) and (max-width: 1700px) {
+            bottom: -38px;
+        }
         img {
             width: 100%;
         }
     }
      &__img{
         margin: auto;
+        @media screen and (min-width: 900px) and (max-width: 1700px) {
+            width: 80%;
+        }
+        img{
+            @media screen and (min-width: 900px) and (max-width: 1700px) {
+                width: 100%;
+            }
+        }
      }
-    }
-    .cargo-market{
+ }
+.cargo-market{
         .categories__wrap{
-            // display: flex;
-            // flex-direction: row;
-            // justify-content: space-between;
-            // @media screen and (max-width: 1700px){
-            //     flex-direction: column;
-            //     align-items: center;
-            // }
+            margin: auto;
+            @media screen and (max-width: 1500px){
+                max-width: 1200px;
+            }
+            @media screen and (max-width: 1200px){
+                max-width: 768px;
+            }
+            @media screen and (max-width: 767px){
+                max-width: 500px;
+            }
+            @media screen and (max-width: 550px){
+                max-width: 400px;
+            }
+            @media screen and (max-width: 320px){
+                max-width: 300px;
+            }
             >:nth-child(1){
                 width: 60%;
-                // @media screen and (max-width: 1700px){
-                //     width: 50%;
-                //     margin-bottom: 20px;
-                // }
-                // img{
-                //     width: 100%;
-                // }
+                @media screen and (max-width: 1700px){
+                    width: 100%;
+                }
+                @media screen and (max-width: 1300px){
+                    margin-bottom: 30px;
+                }
+                @media screen and (max-width: 767px){
+                    width: 90%;
+                }
+                @media screen and (max-width: 320px){
+                    width: 100%;
+                }
             }
             >:nth-child(2){
                 width: 40%;
+                @media screen and (max-width: 1699px) {
+                    width: 65%;
+                    text-align: center;
+                    min-width: auto;
+                } 
+                @media screen and (max-width: 1200px){
+                    width: 80%;
+                }
+                @media screen and (max-width: 767px) {
+                    width: 100%;
+                } 
+                img{
+                    width: 100%;
+                    @media screen and (max-width: 800px){
+                        width: 100%;
+                    }
+                }
             }
         }
         &__block-wrap{
@@ -203,20 +337,45 @@
             justify-content: center;
         }
         .categories__wrap-btn{
+            @media screen and (max-width: 1500px){
+                max-width: 1200px;
+                margin: 115px auto 0;
+            }
             .btn-how-work, .btn-open-dashboard{
                 margin: auto;
                 display: block;
+                @media screen and (max-width: 700px){
+                    margin-bottom: 20px;
+                }
             }
             >:nth-child(1){
                 width: 60%;
+                @media screen and (max-width: 1300px){
+                    width: auto;
+                }
             }
             >:nth-child(2){
                 width: 40%;
+                @media screen and (max-width: 1300px){
+                    width: auto;
+                }
             }
         }
-    }
-    .cargo-block-item{
+}
+.cargo-block-item{
         position: relative;
+        width: 33%;
+        @media screen and (max-width: 1300px){
+            width: 29%;
+        }
+        @media screen and (max-width: 767px){
+            width: 45%;
+        }
+        @media screen and (max-width: 550px){
+            // max-width: 400px;
+             width: 100%;
+        }
+        
          p{
             position: absolute;
             font-style: normal;
@@ -225,8 +384,88 @@
             line-height: 140%;
             letter-spacing: 0.01em;
             width: 70%;
-            top: 107px;
-            left: 36px;
-         }
+            top: 140px;
+            left: 65px;
+            @media screen and (max-width: 1650px){
+                top: 118px;
+                left: 56px;
+            }
+            @media screen and (max-width: 1500px){
+                top: 89px;
+                left: 50px;
+                width: 67%;
+            }
+            @media screen and (max-width: 1360px){
+                top: 139px;
+                left: 56px;
+                width: 70%;
+            }
+            @media screen and (max-width: 1340px){
+                top: 136px;
+            }
+            @media screen and (max-width: 1300px){
+                top: 124px;
+            }
+            @media screen and (max-width: 1200px){
+                top: 75px;
+                left: 42px;
+                width: 58%;
+            }
+            @media screen and (max-width: 800px){
+                top: 63px;
+            }
+            @media screen and (max-width: 767px){
+                top: 63px;
+                width: 58%;
+            }
+            @media screen and (max-width: 550px){
+                top: 122px;
+                left: 63px;
+                width: 65%;
+                font-size: 16px;
+            }
+            @media screen and (max-width: 450px){
+                top: 122px;
+                font-size: 12px;
+            }
+            @media screen and (max-width: 380px){
+                top: 106px;
+            }
+            @media screen and (max-width: 360px){
+                left: 56px;
+            }
+            @media screen and (max-width: 340px){
+                top: 94px;
+            }
+        }
        
+}
+.companies{
+    .categories__wrap{
+        justify-content: center;
+        max-width: 1100px;
+        margin: auto;
+        >div{
+            width: 60%;
+            @media screen and (max-width: 1370px){
+                width: 80%;
+            }
+        }
+    }
+    .categories__wrap-btn{
+        width: 60%;
+        margin: 115px auto 0;
+        @media screen and (max-width: 1370px){
+            width: 80%;
+        }
+        @media screen and (max-width: 900px){
+            width: 100%;
+        }
+        >:nth-child(1){
+            width: auto;
+        }
+        >:nth-child(2){
+            width: auto;
+        }
+    }
 }
