@@ -334,7 +334,7 @@
         }
     }
 }
-body .menu__list:hover .menu__sub{
+body.dc .menu__list:hover .menu__sub{
     opacity: 1;
     visibility: visible;
     transform: translate(0px, 0px);
@@ -344,10 +344,10 @@ body .menu__list:hover .menu__sub{
     -ms-transform: translate(0px, 0px);
     -o-transform: translate(0px, 0px);
 }
-body .menu__list:hover >a{
+body.dc .menu__list:hover >a{
     color: #72EDF2;
 }
-body .menu__sub-list:hover{
+body.dc .menu__sub-list:hover{
     &:hover{
         box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25), 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
     }
