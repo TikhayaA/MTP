@@ -90,10 +90,18 @@
                     padding: 5px 0 5px;
                     text-align: center;
                     position: relative;
-
+                    @media screen and (max-width: 1350px){
+                        font-size: 12px;
+                    }
+                    @media screen and (max-width: 1200px){
+                        font-size: 10px;
+                    }
                     img {
                         position: absolute;
                         right: 5px;
+                        @media screen and (max-width: 1350px){
+                            width: 10px;
+                        }
                     }
                 }
             }
@@ -110,6 +118,9 @@
                 padding: 7px 0;
                 line-height: 20px;
                 min-height: 35px;
+                @media screen and (max-width: 1350px){
+                    font-size: 12px;
+                }
                 &:last-child {
                     display: flex;
                     span {

@@ -39,6 +39,12 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 17px;
+        @media screen and (max-width: 1350px){
+            font-size: 12px;
+        }
+        @media screen and (max-width: 1200px){
+            font-size: 10px;
+        }
         &-locate {
             margin-bottom: 5px;
         }

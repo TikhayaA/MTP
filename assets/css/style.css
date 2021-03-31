@@ -1412,6 +1412,12 @@ body.touch .menu__list.active .menu__arrow {
     font-weight: 500;
     font-size: 14px;
     line-height: 17px; }
+    @media screen and (max-width: 1350px) {
+      .header_table .times_block {
+        font-size: 12px; } }
+    @media screen and (max-width: 1200px) {
+      .header_table .times_block {
+        font-size: 10px; } }
     .header_table .times_block-locate {
       margin-bottom: 5px; }
   .header_table-title {
@@ -1554,9 +1560,18 @@ body.touch .menu__list.active .menu__arrow {
         padding: 5px 0 5px;
         text-align: center;
         position: relative; }
+        @media screen and (max-width: 1350px) {
+          .table_data-header ul li {
+            font-size: 12px; } }
+        @media screen and (max-width: 1200px) {
+          .table_data-header ul li {
+            font-size: 10px; } }
         .table_data-header ul li img {
           position: absolute;
           right: 5px; }
+          @media screen and (max-width: 1350px) {
+            .table_data-header ul li img {
+              width: 10px; } }
   .table_data-item {
     display: grid;
     grid-template-columns: 30px 140px 1fr 1fr 1fr 1fr 1fr 1fr 66px 64px 113px 129px; }
@@ -1568,6 +1583,9 @@ body.touch .menu__list.active .menu__arrow {
       padding: 7px 0;
       line-height: 20px;
       min-height: 35px; }
+      @media screen and (max-width: 1350px) {
+        .table_data-item div {
+          font-size: 12px; } }
       .table_data-item div:last-child {
         display: flex; }
         .table_data-item div:last-child span {
