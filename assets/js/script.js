@@ -48,14 +48,16 @@ let mobileBg = document.getElementsByClassName('menu-mobile__bg');
 let mobileOpen = document.getElementsByClassName('menu-mobile__open');
 let mobileClose = document.getElementsByClassName('menu-mobile__close');
 
-    // mobileOpen[0].addEventListener('click', () => {
-    // //     menuMobile[0].classList.add('menu_active');
-    // //     mobileBg[0].classList.add('menu-mobile__bg_active');
-    // // });
-    // mobileClose[0].addEventListener('click', () => {
-    //     menuMobile[0].classList.remove('menu_active');
-    //     mobileBg[0].classList.remove('menu-mobile__bg_active');
-    // });
+if (mobileOpen.length > 0) {
+    mobileOpen[0].addEventListener('click', () => {
+        menuMobile[0].classList.add('menu_active');
+        mobileBg[0].classList.add('menu-mobile__bg_active');
+    });
+    mobileClose[0].addEventListener('click', () => {
+        menuMobile[0].classList.remove('menu_active');
+        mobileBg[0].classList.remove('menu-mobile__bg_active');
+    });
+}
 
 const openSidebar = document.getElementsByClassName("open_sidebar");
 const tableFilter = document.getElementsByClassName("table_filter");
