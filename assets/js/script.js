@@ -34,6 +34,11 @@ if (isMobile.any()){
         for (let i = 0; i < menuArrows.length; i++) {
             let menuArrow = menuArrows[i];
             menuArrow.addEventListener("click", function (e) {
+                menuArrows.forEach((item, index) => {
+                    if(i !== index) {
+                        item.parentElement.classList.remove('active');
+                    }
+                });
                 menuArrow.parentElement.classList.toggle('active');
             });
         }
@@ -79,7 +84,12 @@ selectSingle.forEach((el, index) => {
 
     // Toggle menu 
     selectSingle_title.addEventListener('click', () => {
-
+        selectSingle.forEach((element, i) => {
+            console.log(element, index, i);
+            if(index !== i) {
+                element.setAttribute('data-state', '');
+            }
+        });
         if (el.getAttribute('data-state') === 'active') {
             el.setAttribute('data-state', '');
         } else {
@@ -103,3 +113,22 @@ selectSingle.forEach((el, index) => {
     }
 });
 
+
+const openOrder = document.getElementById('order-popup');
+const popupOrder = document.getElementsByClassName('create-order');
+const openOrderList = document.getElementById('open_order_list');
+const popupOrderId = document.getElementsByClassName('order-id');
+const popuoClose = document.getElementById('popup-close');
+
+if(popupOrder.length > 0) {
+    openOrder.addEventListener('click', () => {
+        popupOrder[0].classList.toggle('create-order_active');
+    });
+    openOrderList.addEventListener('click', () => {
+        popupOrder[0].classList.remove('create-order_active');
+        popupOrderId[0].classList.add('order-id_active');
+    });
+    popuoClose.addEventListener('click', () => {
+        popupOrderId[0].classList.remove('order-id_active');
+    });
+}

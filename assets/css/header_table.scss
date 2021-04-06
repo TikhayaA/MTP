@@ -11,13 +11,40 @@
         flex-wrap: wrap;
         justify-content: space-around;
         margin-bottom: 29px;
+        min-height: 129px;
+        @media all and (max-width: 1120px) {
+            min-width: 190px;
+        }
+    }
+    &-btn {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 244px;
+        &.mt {
+            margin-top: 27px;
+        }
+        button {
+            width: 48%;
+            font-size: 12px;
+            @media all and (max-width: 1600px) {
+                width: auto;
+                &:first-child{
+                   margin-bottom: 10px; 
+                }
+            }
+        }
+        @media all and (max-width: 1600px) {
+            flex-direction: column;
+        }
+        @media all and (max-width: 1120px) {
+            flex-direction: row;
+            align-items: baseline;
+        }
     }
     &-logo {
         margin-bottom: 15px;
         width: 100%;
-    }
-    .table_btn:last-child {
-        margin-left: 15px;
     }
     &-block {
         width: 86%;
@@ -26,24 +53,35 @@
         justify-content: space-between;
     }
     .times_block {
-        width: 93%;
-        display: flex;
-        justify-content: space-around;
+        width: calc(100% - 100px);
         background: #0878B7;
         border-radius: 5px 5px 0px 0px;
-        color: #fff;
         padding: 14px 15px;
-        text-align: center;
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 17px;
-        @media screen and (max-width: 1350px){
-            font-size: 12px;
+        @media all and (max-width: 1100px) {
+        display: none;
         }
-        @media screen and (max-width: 1200px){
-            font-size: 10px;
+        &-content {
+            display: flex;
+            justify-content: space-around;
+            color: #fff;
+            text-align: center;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            @media screen and (max-width: 1350px){
+                font-size: 12px;
+            }
+            @media screen and (max-width: 1200px){
+                font-size: 10px;
+            }
+            @media all and (max-width: 1120px) {
+                width: 1120px;
+            }
+        }
+        @media all and (max-width: 1120px) {
+            overflow: auto;
         }
         &-locate {
             margin-bottom: 5px;
@@ -53,85 +91,76 @@
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 500;
-        font-size: 30px;
+        @include adaptive-fonts(30, 24);
         line-height: 37px;
         color: #FFFFFF;
         text-align: center;
         width: calc(100% - 303px);
         margin-top: 20px;
     }
-    .user_info {
-        display: flex;
-        margin-right: 10px;
-        &-name{
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 22px;
-            line-height: 26px;
-            color: #FFFFFF;
-        }
-        &-avatar {
-            margin-right: 10px;
-        }
-    }
-    .header_info {
-        align-items: baseline;
-        display: flex;
-        position: relative;
-        margin: 30px 0 20px;
-    }
-    .header_chat {
+    .header-authorized{
+        right: 21px;
+        top: -35px;
         position: absolute;
-        right: 0;
-        bottom: -35px;
-
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 22px;
-        line-height: 26px;
-        color: #FFFFFF;
-
-        span:last-child {
-            position: absolute;
-            right: 13px;
-            top: 3px;
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 16px;
-            color: #000000;
-        }
     }
-    .icon_home {
-        margin-right: 27px;
+    
+    .header_info {
+        top: 30px;
+    }
+    // .header_chat {
+    //     position: absolute;
+    //     right: 0;
+    //     bottom: -35px;
+    //     cursor: pointer;
+    //     font-family: 'Roboto';
+    //     font-style: normal;
+    //     font-weight: 500;
+    //     @include adaptive-fonts(22, 14);
+    //     line-height: 26px;
+    //     color: #FFFFFF;
+    //         @media all and (max-width: 1120px) {
+    //             top: 35px;
+    //         }
+
+    //     span:last-child {
+    //         position: absolute;
+    //         right: 18px;
+    //         top: 3px;
+    //         font-family: 'Roboto';
+    //         font-style: normal;
+    //         font-weight: 500;
+    //         font-size: 14px;
+    //         line-height: 16px;
+    //         color: #000000;
+    //     }
+    // }
+    // .icon_home {
+    //     margin-right: 27px;
         
-        img {
-            margin-top: -1px;
-        }
-    }
-    .header_info-mail {
-        margin-right: 25px;
-        position: relative;
+    //     img {
+    //         margin-top: -1px;
+    //     }
+    // }
+    // .header_info-mail {
+    //     margin-right: 25px;
+    //     position: relative;
 
-        span {
-            display: inline-block;
-            width: 18px;
-            height: 18px;
-            text-align: center;
-            line-height: 18px;
-            border-radius: 50%;
-            background: #0ED33A;
-            position: absolute;
-            top: -15px;
-            right: -10px;
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 10px;
-            color: #000000;
-        }
-    }
+    //     span {
+    //         display: inline-block;
+    //         width: 18px;
+    //         height: 18px;
+    //         text-align: center;
+    //         line-height: 18px;
+    //         border-radius: 50%;
+    //         background: #0ED33A;
+    //         position: absolute;
+    //         top: -15px;
+    //         right: -10px;
+    //         font-family: 'Roboto';
+    //         font-style: normal;
+    //         font-weight: 500;
+    //         font-size: 10px;
+    //         color: #000000;
+    //     }
+    // }
 }

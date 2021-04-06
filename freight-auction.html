@@ -3,14 +3,14 @@
    <head>
       <meta charset="utf-8">
       <meta content="width=device-width, initial-scale=1.0" name="viewport">
-      <title>Home page</title>
+      <title>Freight Auction</title>
       <meta content="" name="description">
       <meta content="" name="keywords">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
       <link href="assets/css/style.css" rel="stylesheet">
       <link href="assets/css/reset.css" rel="stylesheet"> 
    </head>
-   <body class="container-fluid p-0">
+   <body class="container-fluid p-0 categories">
       <header class="header d-flex">
          <a href="index.html" class="logo"><img src="assets/img/Logo.svg" alt="Logo"></a>
          <div class="menu-mobile">
@@ -25,7 +25,7 @@
             </button>
             <ul class="menu__main d-flex">
                <li class="menu__list">
-                  <a href="cargo-market.html">Cargo Market</a>
+                  <a href="cargo-market.html" class="active">Cargo Market</a>
                   <span class="menu__arrow"></span>
                   <ul class="menu__sub">
                      <li class="menu__sub-list"><a href="#">Orders dashboard</a></li>
@@ -39,7 +39,7 @@
                      <li class="menu__sub-list"><a href="#">How it works</a></li>
                   </ul>
                </li>
-               <li class="menu__list"><a href="freight-auction.html">Freight Auction</a>
+               <li class="menu__list"><a href="#">Freight Auction</a>
                   <span class="menu__arrow"></span>
                   <ul class="menu__sub">
                      <li class="menu__sub-list"><a href="#">Orders dashboard</a></li>
@@ -98,124 +98,65 @@
          </nav>
          
       </header>
-      <main class="home">
+      <main class="freight-auction">
          <section class="home__video ">
-            <video src="assets/video/video-home.mp4" style="width: 100%;" class="d-block" autoplay loop muted></video>
+            <video src="assets/video/video-cargo-market.mp4" style="width: 100%;" class="d-block" autoplay loop muted></video>
          </section>
-         <section class="home__planeta planeta m-0 d-flex">
-            <div class="container align-self-center">
-               <div class="planeta__content">
-                  <h2 class="">About us</h2>
-                  <p class="">
-                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur distinctio corporis repudiandae, expedita quia iste, optio commodi dolore minus fugiat ipsa quod quasi velit amet excepturi nobis officia nam sit.
-                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur distinctio corporis repudiandae, expedita quia iste, optio commodi dolore minus fugiat ipsa quod quasi velit amet excepturi nobis officia nam sit.
-                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur distinctio corporis repudiandae, expedita quia iste, optio commodi dolore minus fugiat ipsa quod quasi velit amet excepturi nobis officia nam sit.
-                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur distinctio corporis repudiandae, expedita quia iste, optio commodi dolore minus fugiat ipsa quod quasi velit amet excepturi nobis officia nam sit.
-                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur distinctio corporis repudiandae, expedita quia iste, optio commodi dolore minus fugiat ipsa quod quasi velit amet excepturi nobis officia nam sit.
-                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur distinctio corporis repudiandae, expedita quia iste, optio commodi dolore minus fugiat ipsa quod quasi velit amet excepturi nobis officia nam sit.
-                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur distinctio corporis repudiandae, expedita quia iste, optio commodi dolore minus fugiat ipsa quod quasi velit amet excepturi nobis officia nam sit.
-                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur distinctio corporis repudiandae, expedita quia iste, optio commodi dolore minus fugiat ipsa quod quasi velit amet excepturi nobis officia nam sit.
-                  
-                  </p>
-               </div>
-            </div>
-         </section>
-         <section class="gradient d-flex">
-            <div class="gradient__circle d-flex align-items-center justify-content-center">MTP
-               <span>Buyers</span>
-               <span>Sellers</span>
-            </div>
-         </section>
-         <section class="home__description">
-            <h3>Onkjdghkkjhdgkjhg;kha gagh aklgha lafghaklgha alkg</h3>
-         </section>
-         <section class="service">
+         <section class="categories__text">
             <div class="container">
-               <h4 class="service__title">Cargo Service</h4>
-               <div class="row justify-content-center">
-                  <div class="service-block col-xl-4 ccol-lg-6 col-md-6 col-sm-12">
-                     <div class="service-block__img"><img src="assets/img/service-cargo-common.png" alt="service-cargo-common"></div>
-                     <div class="service-block__description">
-                        <p>Common Cargo</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. orem ipsum, dolor sit amet consectetur adipisicing elit.   orem ipsum, dolor sit amet consectetur adipisicing elit.  orem ipsum, dolor sit amet consectetur adipisicing elit.  orem ipsum, dolor sit amet consectetur adipisicing elit.  At sequi delectus ullam expedita eveniet nihil, At sequi delectus ullam expedita eveniet nihil, At sequi delectus ullam expedita eveniet nihil,At sequi delectus ullam expedita eveniet nihil, sed officiis distinctio incidunt accusamus quidem reprehenderit neque error optio quisquam ab amet. Excepturi, libero.
-                        </p>
-                     </div>
-                     <div class="service-block__btn-wrap">
-                        <button class="btn-find-more">Find out more</button>   
-                     </div>
-                  </div>
-                  <div class="service-block col-xl-4 ccol-lg-6 col-md-6 col-sm-12">
-                     <div class="service-block__img"><img src="assets/img/service-cargo-market.png" alt="service-cargo-common"></div>
-                     <div class="service-block__description">
-                        <p>Cargo Market</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At sequi delectus ullam expedita eveniet nihil, sed officiis distinctio incidunt accusamus quidem reprehenderit neque error optio quisquam ab amet. Excepturi, libero.
-                        </p>
-                     </div>
-                     <div class="service-block__btn-wrap">
-                        <button class="btn-find-more">Find out more</button>   
-                     </div>
-                  </div>
-                  <div class="service-block col-xl-4 ccol-lg-6 col-md-6 col-sm-12">
-                     <div class="service-block__img"><img src="assets/img/service-freight-auction.png" alt="service-cargo-common"></div>
-                     <div class="service-block__description">
-                        <p>Freight Auction</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At sequi delectus ullam expedita eveniet nihil, sed officiis distinctio incidunt accusamus quidem reprehenderit neque error optio quisquam ab amet. Excepturi, libero.
-                        </p>
-                     </div>
-                     <div class="service-block__btn-wrap">
-                        <button class="btn-find-more">Find out more</button>   
-                     </div>
-                  </div>
-               </div>
+               <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eveniet, tenetur, dicta, cumque enim veritatis atque velit fuga sit expedita dolorem iste adipisci eaque aperiam dolore odio id! Error, corrupti.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eveniet, tenetur, dicta, cumque enim veritatis atque velit fuga sit expedita dolorem iste adipisci eaque aperiam dolore odio id! Error, corrupti.
+               </p>
             </div>
          </section>
-         <section class="home__description home__line-bg">
-         </section>
-         <section class="service">
+         <section class="categories__description">
             <div class="container">
-               <h4 class="service__title">Vessels Service</h4>
-               <div class="row justify-content-around">
-                  <div class="service-block col-xl-4 col-lg-6 col-md-6 col-sm-12">
-                     <div class="service-block__img"><img src="assets/img/service-world-fleet.png" alt="service-cargo-common"></div>
-                     <div class="service-block__description">
-                        <p>World Fleet</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. orem ipsum, dolor sit amet consectetur adipisicing elit.   orem ipsum, dolor sit amet consectetur adipisicing elit.  orem ipsum, dolor sit amet consectetur adipisicing elit.  orem ipsum, dolor sit amet consectetur adipisicing elit.  At sequi delectus ullam expedita eveniet nihil, At sequi delectus ullam expedita eveniet nihil, At sequi delectus ullam expedita eveniet nihil,At sequi delectus ullam expedita eveniet nihil, sed officiis distinctio incidunt accusamus quidem reprehenderit neque error optio quisquam ab amet. Excepturi, libero.
-                        </p>
+               <h4 class="service__title">Freight Auction</h4>
+               <div class="categories__wrap d-flex flex-column justify-content-center">
+                  <div class="freight-auction__icon d-flex justify-content-center"><img src="assets/img/freight-auction1.svg" alt=""></div>
+                  <div class="freight-auction__wrap d-flex">
+                     <div class="freight-auction__wrap-item d-flex">
+                        <div class="freight-auction__item d-flex flex-column"><img src="assets/img/freight-auction2.png" alt="">
+                           <div class="freight-auction__item-content">
+                              <span class="d-flex">Lorem ipsum dolor sit</span>
+                              <span class="d-flex">Lorem ipsum dolor sit</span>
+                              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio tempora quaerat reiciendis incidunt rerum similique nesciunt provident culpa recusandae fugit eaque error vitae mollitia, dolor veritatis delectus natus nemo cum.</p>
+                           </div>
+                        </div>
+                        <div class="freight-auction__item"><img src="assets/img/freight-auction3.png" alt="">
+                           <div class="freight-auction__item-content">
+                              <span class="d-flex">Lorem ipsum dolor sit</span>
+                              <span class="d-flex">Lorem ipsum dolor sit</span>
+                              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio tempora quaerat reiciendis incidunt rerum similique nesciunt provident culpa recusandae fugit eaque error vitae mollitia, dolor veritatis delectus natus nemo cum.</p>
+                           </div>
+                        </div>
                      </div>
-                     <div class="service-block__btn-wrap">
-                        <button class="btn-find-more">Find out more</button>   
+                     <div class="freight-auction__monitor"><img src="assets/img/freight-monitor.svg" alt="">
+                     </div>
+                     <div class="freight-auction__wrap-item d-flex">
+                        <div class="freight-auction__item"><img src="assets/img/freight-auction4.png" alt="">
+                           <div class="freight-auction__item-content">
+                              <span class="d-flex">Lorem ipsum dolor sit</span>
+                              <span class="d-flex">Lorem ipsum dolor sit</span>
+                              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio tempora quaerat reiciendis incidunt rerum similique nesciunt provident culpa recusandae fugit eaque error vitae mollitia, dolor veritatis delectus natus nemo cum.</p>
+                           </div>
+                        </div>
+                        <div class="freight-auction__item"><img src="assets/img/freight-auction5.png" alt="">
+                           <div class="freight-auction__item-content">
+                              <span class="d-flex">Lorem ipsum dolor sit</span>
+                              <span class="d-flex">Lorem ipsum dolor sit</span>
+                              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio tempora quaerat reiciendis incidunt rerum similique nesciunt provident culpa recusandae fugit eaque error vitae mollitia, dolor veritatis delectus natus nemo cum.</p>
+                           </div>
+                        </div>
                      </div>
                   </div>
-                  <div class="service-block col-xl-4 ccol-lg-6 col-md-6 col-sm-12">
-                     <div class="service-block__img"><img src="assets/img/service-vessels-market.png" alt="service-cargo-common"></div>
-                     <div class="service-block__description">
-                        <p>Vessels Market</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At sequi delectus ullam expedita eveniet nihil, sed officiis distinctio incidunt accusamus quidem reprehenderit neque error optio quisquam ab amet. Excepturi, libero.
-                        </p>
-                     </div>
-                     <div class="service-block__btn-wrap">
-                        <button class="btn-find-more">Find out more</button>   
-                     </div>
-                  </div>
+
                </div>
-            </div>
-         </section>
-         <section class="home__description home__line-bg">
-         </section>
-         <section class="service">
-            <div class="container">
-               <h4 class="service__title">Companies</h4>
-               <div class="row justify-content-center">
-                  <div class="service-block col-xl-4 ccol-lg-6 col-md-6 col-sm-12">
-                     <div class="service-block__img"><img src="assets/img/service-companies.png" alt="service-cargo-common"></div>
-                     <div class="service-block__description">
-                        <p>Companies</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. orem ipsum, dolor sit amet consectetur adipisicing elit.   orem ipsum, dolor sit amet consectetur adipisicing elit.  orem ipsum, dolor sit amet consectetur adipisicing elit.  orem ipsum, dolor sit amet consectetur adipisicing elit.  At sequi delectus ullam expedita eveniet nihil, At sequi delectus ullam expedita eveniet nihil, At sequi delectus ullam expedita eveniet nihil,At sequi delectus ullam expedita eveniet nihil, sed officiis distinctio incidunt accusamus quidem reprehenderit neque error optio quisquam ab amet. Excepturi, libero.
-                        </p>
-                     </div>
-                     <div class="service-block__btn-wrap">
-                        <button class="btn-find-more">Find out more</button>   
-                     </div>
+               <div class="d-flex categories__wrap-btn">
+                  <div><button class="btn-open-dashboard">Open dashboard</button>
+                  </div>
+                  <div><button class="btn-how-work">How it Works</button>
                   </div>
                </div>
             </div>

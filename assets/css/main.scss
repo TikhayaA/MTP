@@ -58,6 +58,18 @@ $bgservice: #F1FAFF;
     font-weight: $w;
     font-style: $s;
 }
+$maxWidth: 1440;
+@mixin adaptive-fonts($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $addMobSize: $addSize + $addSize * 0.7;
+    @media (max-width: 767px) {
+        font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((110vw - 320px) / #{$maxWidth}));
+    }
+    @media (min-width: 767px) {
+        font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw) / #{$maxWidth}));
+    }
+}
+
 body{
     font-family: 'Montserrat', sans-serif!important;
     color: #000000;
@@ -80,3 +92,5 @@ body{
 @import"table.scss";
 @import"select.scss";
 @import"ui.scss";
+@import"header-table-popup.scss";
+@import"header-authorized.scss";

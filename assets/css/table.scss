@@ -7,19 +7,27 @@
         box-sizing: border-box;
         position: absolute;
         height: fit-content;
-        left: -267px;
+        left: -290px;
         z-index: 1;
         padding: 37px 53px 37px 32px;
         transition: all 2s;
+        height: calc(100% - 158px);
+        overflow: hidden;
+        @media all and (max-width: 1600px) {
+            height: calc(100% - 205px);
+        }
         img {
             position: absolute;
             top: 35%;
             right: 0;
             transform: translate(-50%, 0%) rotate(0deg);
             transition: all 2s;
+            width: 15px;
+            cursor: pointer;
         }
         &.active {
             left: 0;
+            overflow: auto;
             // img {
             //     // transform: rotate(180deg);
             //     // -webkit-transform: rotate(180deg);
@@ -31,6 +39,9 @@
         &-content {
             & > * {
                 margin-bottom: 50px;
+                @media screen and (max-width: 1500px){
+                    margin-bottom: 20px;
+                }
             }
         }
         .sidebar_btn {
@@ -40,9 +51,21 @@
         }
     }
     &_content {
-        width: calc(100% - 53px);
-        margin-left: 53px;
+        width: calc(100% - 30px);
+        margin-left: 30px;
         background: #D8EEFA;
+        overflow: auto;
+
+        & > .table_content-data {
+            height: calc(100vh - 240px - 190px);
+            overflow: auto;
+            @media all and (max-width: 1600px) {
+                height: calc(100vh - 240px - 233px);
+            }
+            @media all and (max-width: 1120px) {
+                width: 1120px;
+            }
+        }
 
         &-header{
             background: #87F47D;
@@ -50,12 +73,15 @@
             align-items: center;
             padding: 5px;
             position: relative;
+            @media all and (max-width: 1120px) {
+                width: 1120px;
+            }
 
             h2 {
                 font-family: 'Montserrat';
                 font-style: normal;
                 font-weight: 500;
-                font-size: 20px;
+                @include adaptive-fonts(20, 14);
                 line-height: 24px;
                 color: #60626A;
                 flex: 2;
@@ -71,10 +97,27 @@
                     font-family: 'Montserrat';
                     font-style: normal;
                     font-weight: normal;
-                    font-size: 16px;
+                    @include adaptive-fonts(16, 12);
                     line-height: 20px;
                     color: #60626A;
                 }
+            }
+        }
+        &-fixed {
+            position: fixed;
+            width: calc(100% - 30px);
+            bottom: 0;
+            background: #D8EEFA;
+
+            @media all and (max-width: 1120px) {
+                width: 1120px;
+                overflow: auto;
+                position: relative;
+            }
+
+            .table_content-data {
+                height: 210px;
+                overflow: auto;
             }
         }
     }
@@ -126,9 +169,33 @@
                     span {
                         color: #28E10A;
                         width: 65%;
+                        &.default {
+                            color: #000000;
+                        }
                     }
                 }
+            }
+            :nth-child(1){
+                cursor: pointer;
+            }
+        }
+    }
+    &_fixed {
+        height: 100vh;
+        overflow: hidden;
+    }
+
+
+    &__content {
+        &_header {
+            &-sell {
+                background: #FF8080;
+            }
+            &-buy {
+                background: #78C6FE;
             }
         }
     }
 }
+
+ 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
       <meta content="width=device-width, initial-scale=1.0" name="viewport">
-      <title>Common Cargo</title>
+      <title>Cargo Market</title>
       <meta content="" name="description">
       <meta content="" name="keywords">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -13,16 +13,17 @@
 <body class="table_fixed">
     <header class="header_table">
         <div class="header_table-btns">
-            <div class="header_table-logo">
-                <img src="assets/img/CommonCargo.svg" alt="Common Cargo">
-            </div>
-            <div class="header_table-btn">
+            <div class="header_table-btn mt">
                 <button class="table_btn">Find cargo</button>
                 <button class="table_btn" id="order-popup">Greate order</button>
             </div>
+            <div class="header_table-btn mt">
+                <button class="table_btn table_btn-buy">Buy cargo</button>
+                <button class="table_btn table_btn-sell">Sell cargo</button>
+            </div>
         </div>
         <div class="header_table-block">
-            <h1 class="header_table-title">Common Cargo</h1>
+            <h1 class="header_table-title">Cargo Market</h1>
             <div class="header-authorized header_info">
                 <a href="#" class="header-authorized__icon-home"><img src="assets/img/home-btn.svg" alt=""></a>
                 <div class="header-authorized__mail">
@@ -169,23 +170,17 @@
                     <span>to</span>
                     <input type="text" class="input-block-ui" id="priceto">
                 </div>
-                <div class="input-block input-double">
-                    <label for="discountfrom">Discount, %</label>
-                    <input type="text" class="input-block-ui" id="discountfrom">
-                    <span>to</span>
-                    <input type="text" class="input-block-ui" id="discountto">
-                </div>
                 <button class="sidebar_btn">Show</button>
             </div>
             <img src="assets/img/sidebar-arrow.svg" alt="" class="open_sidebar">
         </aside>
         <div class="table_content">
-            <div class="table_content-header">
+            <div class="table_content-header table__content_header-sell">
                 <button class="table_data-btn">orders: 1278</button>
                 <button class="table_data-btn">month: +83</button>
                 <button class="table_data-btn">week: +29</button>
                 <button class="table_data-btn">day: +4</button>
-                <h2>orders dashboard</h2>
+                <h2>sell orders dashboard</h2>
             </div>
             <div class="table_content-data">
                 <div class="table_data-header">
@@ -201,7 +196,7 @@
                         <li>Type</li>
                         <li>Q <img src="assets/img/updown.svg" alt=""></li>
                         <li>Price <img src="assets/img/updown.svg" alt=""></li>
-                        <li>Discount <img src="assets/img/updown.svg" alt=""></li>
+                        <li>Exp.data <img src="assets/img/updown.svg" alt=""></li>
                     </ul>
                 </div>
                 <div class="table_data-content">
@@ -220,7 +215,7 @@
                         <div></div>
                         <div></div>
                         <div>885 $/t</div>
-                        <div><span>35%</span><button class="table-row-btn">view</button></div>
+                        <div><span class="default">01.07.21</span><button class="table-row-btn">view</button></div>
                     </div>
                     <div class="table_data-item">
                         <div class="checkbox-block">
@@ -237,58 +232,49 @@
                         <div></div>
                         <div></div>
                         <div>885 $/t</div>
-                        <div><span>35%</span><button class="table-row-btn">view</button></div>
+                        <div><span class="default">01.07.21</span><button class="table-row-btn">view</button></div>
                     </div>
                     <div class="table_data-item">
-                        <div class="checkbox-block">                  
-                            <input type="checkbox" id="checkbox_3">
-                            <label for="checkbox_3"></label>
-                        </div>
-                        <div>562345557846</div>
-                        <div>25.02.2021</div>
-                        <div>USA</div>
-                        <div>Portsmuth</div>
-                        <div>Carnegi Ltd</div>
-                        <div>Steel</div>
-                        <div>350000 t</div>
                         <div></div>
                         <div></div>
-                        <div>885 $/t</div>
-                        <div><span>35%</span><button class="table-row-btn">view</button></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
                     </div>
                     <div class="table_data-item">
-                        <div class="checkbox-block">
-                            <input type="checkbox" id="checkbox_4">
-                            <label for="checkbox_4"></label>
-                        </div>
-                        <div>562345557846</div>
-                        <div>25.02.2021</div>
-                        <div>USA</div>
-                        <div>Portsmuth</div>
-                        <div>Carnegi Ltd</div>
-                        <div>Steel</div>
-                        <div>350000 t</div>
                         <div></div>
                         <div></div>
-                        <div>885 $/t</div>
-                        <div><span>35%</span><button class="table-row-btn">view</button></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
                     </div>
                     <div class="table_data-item">
-                        <div class="checkbox-block">
-                            <input type="checkbox" id="checkbox_5">
-                            <label for="checkbox_5"></label>
-                        </div>
-                        <div>562345557846</div>
-                        <div>25.02.2021</div>
-                        <div>USA</div>
-                        <div>Portsmuth</div>
-                        <div>Carnegi Ltd</div>
-                        <div>Steel</div>
-                        <div>350000 t</div>
                         <div></div>
                         <div></div>
-                        <div>885 $/t</div>
-                        <div><span>35%</span><button class="table-row-btn">view</button></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
                     </div>
                     <div class="table_data-item">
                         <div></div>
@@ -481,21 +467,21 @@
                             <div></div>
                             <div></div>
                             <div>885 $/t</div>
-                            <div><span>35%</span><button class="table-row-btn">view</button></div>
+                            <div><span class="default">01.07.21</span><button class="table-row-btn">view</button></div>
                         </div>
                         <div class="table_data-item">
-                            <div><img src="assets/img/remove.svg" alt=""></div>
-                            <div>562345557846</div>
-                            <div>25.02.2021</div>
-                            <div>USA</div>
-                            <div>Portsmuth</div>
-                            <div>Carnegi Ltd</div>
-                            <div>Steel</div>
-                            <div>350000 t</div>
                             <div></div>
                             <div></div>
-                            <div>885 $/t</div>
-                            <div><span>35%</span><button class="table-row-btn">view</button></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
                         </div>
                         <div class="table_data-item">
                             <div></div>
@@ -570,7 +556,57 @@
                             <label for="create-order__cargo">Cargo name</label>
                             <input type="text" class="input-block-ui" id="create-order__cargo">
                         </div>
+                        <div class="input-block">
+                            <div class="select-block">
+                                <label for="company">Position</label>
+                                <div class="select" data-state="" id="company">
+                                    <div class="select__title" data-default=" "></div>
+                                    <div class="select__content">
+                                        <input id="singleSelect5" class="select__input" type="radio" name="singleSelect2" />
+                                        <label for="singleSelect5" class="select__label">2</label>
+                                        <input id="singleSelect6" class="select__input" type="radio" name="singleSelect2" />
+                                        <label for="singleSelect6" class="select__label">1</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="input-block input-select">
+                            <div class="input-block">
+                                <label for="pricefrom">Amount</label>
+                                <input type="text" class="input-block-ui" id="pricefrom">
+                            </div>
+                            <div class="select-block">
+                                <label for="company">t or m3</label>
+                                <div class="select" data-state="" id="company">
+                                    <div class="select__title" data-default=" "></div>
+                                    <div class="select__content">
+                                        <input id="singleSelect5" class="select__input" type="radio" name="singleSelect2" />
+                                        <label for="singleSelect5" class="select__label">2</label>
+                                        <input id="singleSelect6" class="select__input" type="radio" name="singleSelect2" />
+                                        <label for="singleSelect6" class="select__label">1</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-block input-select"">
+                            <div class="input-block">
+                                <label for="pricefrom">Quantity of container</label>
+                                <input type="text" class="input-block-ui" id="pricefrom">
+                            </div>
+                            <div class="select-block">
+                                <label for="company">type</label>
+                                <div class="select" data-state="" id="company">
+                                    <div class="select__title" data-default=" "></div>
+                                    <div class="select__content">
+                                        <input id="singleSelect5" class="select__input" type="radio" name="singleSelect2" />
+                                        <label for="singleSelect5" class="select__label">2</label>
+                                        <input id="singleSelect6" class="select__input" type="radio" name="singleSelect2" />
+                                        <label for="singleSelect6" class="select__label">1</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-block input-select"">
                             <div class="input-block">
                                 <label for="pricefrom">Price, $</label>
                                 <input type="text" class="input-block-ui" id="pricefrom">
@@ -596,45 +632,10 @@
                             <label for="create-order__mail">@mail</label>
                             <input type="text" class="input-block-ui" id="create-order__mail">
                         </div>
-                        <div class="input-block input-select"">
-                            <div class="input-block">
-                                <label for="pricefrom">Price, $</label>
-                                <input type="text" class="input-block-ui" id="pricefrom">
-                            </div>
-                            <div class="select-block">
-                                <label for="company">t or m3</label>
-                                <div class="select" data-state="" id="company">
-                                    <div class="select__title" data-default=" "></div>
-                                    <div class="select__content">
-                                        <input id="singleSelect5" class="select__input" type="radio" name="singleSelect2" />
-                                        <label for="singleSelect5" class="select__label">2</label>
-                                        <input id="singleSelect6" class="select__input" type="radio" name="singleSelect2" />
-                                        <label for="singleSelect6" class="select__label">1</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="input-block input-select"">
-                            <div class="input-block">
-                                <label for="pricefrom">Price, $</label>
-                                <input type="text" class="input-block-ui" id="pricefrom">
-                            </div>
-                            <div class="select-block">
-                                <label for="company">t or m3</label>
-                                <div class="select" data-state="" id="company">
-                                    <div class="select__title" data-default=" "></div>
-                                    <div class="select__content">
-                                        <input id="singleSelect5" class="select__input" type="radio" name="singleSelect2" />
-                                        <label for="singleSelect5" class="select__label">2</label>
-                                        <input id="singleSelect6" class="select__input" type="radio" name="singleSelect2" />
-                                        <label for="singleSelect6" class="select__label">1</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="input-block">
-                            <label for="create-order__discount">Discount, %</label>
-                            <input type="text" class="input-block-ui" id="create-order__discount">
+                            <label for="create-order__discount">Expiration data</label>
+                            <input type="text" class="input-block-ui" id="create-order__discount" placeholder="00.00.00">
+                            <span>dd.mm.year  <span>Not necessary</span></span>    
                         </div>
                         <div class="textarea-block">
                             <label for="">Comments, description</label>
@@ -707,15 +708,15 @@
                             <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__amount" readonly placeholder="USA">
                         </div>
                         <div class="input-block">
-                            <label for="order-id__contract">Contract Price, $</label>
+                            <label for="order-id__contract">Price, $</label>
                             <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__contract" readonly placeholder="USA">
                         </div>
                         <div class="input-block">
-                            <label for="order-id__current">Current Price, $</label>
+                            <label for="order-id__current">Position</label>
                             <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__current" readonly placeholder="USA">
                         </div>
                         <div class="input-block">
-                            <label for="order-id__discount">Discount, %</label>
+                            <label for="order-id__discount">Expiration data</label>
                             <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__discount" readonly placeholder="USA">
                         </div>
                         <div class="input-block">

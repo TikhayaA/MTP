@@ -5,7 +5,7 @@
     justify-content: space-between;
     position: relative;
     @media screen and (max-width: 1500px){
-        height: 100px;
+        height: 120px;
         padding: 0 10px;
     }
     @media screen and (max-width: 1050px){
@@ -14,9 +14,12 @@
     .logo{
         line-height: 155px;  
         width: 12%; 
+        // @media screen and (max-width: 1500px){
+        //     width: 116px; 
+        // }
         @media screen and (max-width: 1500px){
-            line-height: 100px;
-            width: 116px; 
+            line-height: 120px;
+            // width: 130px; 
         }
         @media screen and (max-width: 1050px){
             line-height: 65px;
@@ -67,12 +70,12 @@
     }
     .menu{
         flex-direction: row;
-        align-self: center;
+        align-items: center;
         justify-content: space-between;
         width: 80%;
         display: flex;
         @media screen and (max-width: 1800px){
-            width: 88%;
+            width: 85%;
         }
         @media screen and (max-width: 1050px){
             width: 70%;
@@ -91,12 +94,14 @@
             flex-direction: row;
             justify-content: space-between;
             width: 80%;
-            @media screen and (max-width: 1500px){
-                width: 78%;
+            @media screen and (max-width: 1600px){
+                width: 73%;
+                margin-left: 15px;
             }
             @media screen and (max-width: 1050px){
                 display: block!important;
                 width: 100%;
+                margin-left: 0px;
             }
             li{
                 color: $color_light-text;
@@ -159,12 +164,15 @@
             -moz-transition: opacity 0.3s ease 0s;
             -ms-transition: opacity 0.3s ease 0s;
             -o-transition: opacity 0.3s ease 0s;
+                @media screen and (min-width: 1700px){
+                    min-width: 207px;
+                }
             }
         &__sub-list{
-            @include fontz (18px, normal, normal);
+            @include fontz (16, normal, normal);
             padding: 12px 5px;
             transition: 0.3s all;
-            @media screen and (max-width: 1300px){
+            @media screen and (max-width: 1500px){
                 font-size: 13px;
             }
             @media screen and (max-width: 1050px){
@@ -177,6 +185,7 @@
             display: none;
         }
         &__wrap-btn{
+            display: none!important;
             width: 20%;
             align-items: center;
             justify-content: flex-end;
@@ -334,7 +343,7 @@
         }
     }
 }
-body.dc .menu__list:hover .menu__sub{
+body.pc .menu__list:hover .menu__sub{
     opacity: 1;
     visibility: visible;
     transform: translate(0px, 0px);
@@ -344,10 +353,10 @@ body.dc .menu__list:hover .menu__sub{
     -ms-transform: translate(0px, 0px);
     -o-transform: translate(0px, 0px);
 }
-body.dc .menu__list:hover >a{
+body.pc .menu__list:hover >a{   
     color: #72EDF2;
 }
-body.dc .menu__sub-list:hover{
+body.pc .menu__sub-list:hover{
     &:hover{
         box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25), 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
     }
@@ -373,6 +382,8 @@ body.touch .menu__list {
 }
 body.touch .menu_active{
     display: flex;
+    align-items: flex-start;
+    padding: 15px 0;
 }
 body.touch .menu__list.active .menu__sub{
     opacity: 1;

@@ -17,63 +17,11 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        // @media screen and (max-width: 1500px){
-        //     max-width: 1200px;
-        // }
-        // @media screen and (max-width: 1200px){
-        //     max-width: 768px;
-        // }
-        // @media screen and (max-width: 767px){
-        //     max-width: 500px;
-        // }
-        // @media screen and (max-width: 550px){
-        //     max-width: 400px;
-        // }
-        // @media screen and (max-width: 320px){
-        //     max-width: 300px;
-        // }
-
         @media screen and (max-width: 1700px){
             align-items: center;
         }
         @media screen and (max-width: 1360px){
             flex-direction: column;
-        }
-        >:nth-child(1){
-            width: 40%;
-            @media screen and (min-width: 1501px) and (max-width: 1700px){
-                width: 42%;
-                margin-bottom: 40px;
-            }
-            @media screen and (max-width: 700px){
-                width: 70%;
-            }
-            @media screen and (max-width: 400px){
-                width: 100%;
-            }
-            img{
-                width: 100%;
-            }
-        }
-        >:nth-child(2){
-            width: 55%;
-            @media screen and (min-width: 900px) and (max-width: 1700px) {
-                min-width: 740px;
-                
-            }
-            @media screen and (max-width: 1360px) {
-                margin-top: 30px;
-            }
-            @media screen and (max-width: 900px) {
-                width: 100%;
-                
-            }
-            >div{
-                justify-content: space-between;
-                @media screen and (max-width: 900px) {
-                    justify-content: center;
-                }
-            }
         }
     }
     &__description{
@@ -278,6 +226,44 @@
         }
      }
  }
+ .common-cargo{
+    .categories__monitor{
+        width: 40%;
+        @media screen and (min-width: 1501px) and (max-width: 1700px){
+            width: 42%;
+            margin-bottom: 40px;
+        }
+        @media screen and (max-width: 700px){
+            width: 70%;
+        }
+        @media screen and (max-width: 400px){
+            width: 100%;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    .categories__wrap-description{
+        width: 55%;
+        @media screen and (min-width: 900px) and (max-width: 1700px) {
+            min-width: 740px;
+            
+        }
+        @media screen and (max-width: 1360px) {
+            margin-top: 30px;
+        }
+        @media screen and (max-width: 900px) {
+            width: 100%;
+            
+        }
+        >div{
+            justify-content: space-between;
+            @media screen and (max-width: 900px) {
+                justify-content: center;
+            }
+        }
+    }
+ }
 .cargo-market{
         .categories__wrap{
             margin: auto;
@@ -296,7 +282,7 @@
             @media screen and (max-width: 320px){
                 max-width: 300px;
             }
-            >:nth-child(1){
+            .cargo-market__block-wrap{
                 width: 60%;
                 @media screen and (max-width: 1700px){
                     width: 100%;
@@ -310,8 +296,11 @@
                 @media screen and (max-width: 320px){
                     width: 100%;
                 }
+                img{
+                    width: 100%;
+                }
             }
-            >:nth-child(2){
+            .cargo-market__monitor{
                 width: 40%;
                 @media screen and (max-width: 1699px) {
                     width: 65%;
@@ -353,6 +342,7 @@
                 @media screen and (max-width: 1300px){
                     width: auto;
                 }
+
             }
             >:nth-child(2){
                 width: 40%;
@@ -466,6 +456,151 @@
         }
         >:nth-child(2){
             width: auto;
+        }
+    }
+}
+.freight-auction{
+    .container{
+        @media screen and (min-width: 1351px) and (max-width: 1600px){
+            max-width: 1400px;
+        }
+        @media screen and (min-width: 1000px) and (max-width: 1350px){
+            max-width: 1000px;
+        }
+        @media screen and (min-width: 767px) and (max-width: 999px){
+            max-width: 760px;
+        }
+        // @media screen and (min-width: 425px) and (max-width: 766px){
+        //     max-width: 400px;
+        // }
+        
+    }
+    &__wrap{
+        width: auto;
+        @media screen and (max-width: 1350px){
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    &__icon{
+        width: auto;
+        margin-bottom: 20px;
+        @media screen and (max-width: 500px){
+            display: none!important;
+        }
+    }
+    &__wrap-item{
+        @media screen and(max-width: 1350px){
+            width: 45%;
+        }
+        @media screen and (max-width: 999px){
+            width: 60%;
+            margin-bottom: 30px;
+        }
+        @media screen and (min-width: 700px) and (max-width: 766px){
+            width: 65%;
+        }
+        @media screen and (min-width: 622px) and (max-width: 699px){
+            width: 72%;
+        }
+        @media screen and (min-width: 509px) and (max-width: 621px){
+            width: 90%;
+        }
+        @media screen and (max-width: 508px){
+            width: 100%;
+        }
+        @media screen and (min-width: 300px) and (max-width: 460px){
+            flex-direction: column;
+            margin-bottom: 0px;
+        }
+    }
+    &__item{
+        letter-spacing: 0.01em;
+        width: 100%;
+        position: relative;
+        margin-right: 15px;
+        img{
+            width: 100%;
+        } 
+        @media screen and (min-width: 300px) and (max-width: 460px){
+            margin-bottom: 30px;
+        }
+    }
+    &__item-content{
+        position: absolute;
+        left: 10px;
+        bottom: 20px;
+        left: 33px;
+        top: 145px;
+        width: 73%;
+        span{
+            margin-bottom: 10px;
+            @include fontz (12px, 500, normal);
+            @media screen and (min-width: 300px) and (max-width: 460px){
+                font-size: 19px;
+            }
+        }
+        p{
+            @include fontz (10px, 500, normal);  
+            @media screen and (min-width: 300px) and (max-width: 460px){
+                font-size: 15px;
+                line-height: 23px;
+            }          
+            @media screen and (min-width: 310px) and (max-width: 365px){
+                font-size: 12px;
+                line-height: 18px;
+            }
+            @media screen and (min-width: 300px) and (max-width: 330px){
+                font-size: 11px;
+                line-height: 15px;
+            }
+        }
+        @media screen and (max-width: 1600px){
+            left: 22px;
+            top: 115px;
+            width: 78%;
+        }
+        @media screen and (min-width: 700px) and (max-width: 766px){  
+            top: 129px;
+        }
+        @media screen and (max-width: 621px){
+            left: 28px;
+            top: 134px;
+            width: 80%;
+        }
+        @media screen and (min-width: 410px) and (max-width: 460px){
+            left: 57px;
+            top: 238px;
+            width: 75%;
+        }
+        @media screen and (min-width: 310px) and (max-width: 409px){
+            left: 36px;
+            top: 218px;
+            width: 86%;
+        }
+        @media screen and (min-width: 310px) and (max-width: 376px){
+            left: 30px;
+            top: 195px;
+            width: 83%;
+        }
+        @media screen and (min-width: 310px) and (max-width: 340px){
+            top: 176px;
+        }
+        @media screen and (min-width: 300px) and (max-width: 330px){
+            top: 167px;
+        }
+    }
+    &__monitor{
+        img{
+            width: 100%;
+        } 
+        @media screen and (max-width: 1350px){
+            order: -1;      
+            margin-bottom: 40px; 
+            width: 80%;
+        }
+        @media screen and (min-width: 300px) and (max-width: 449px){
+            width: 100%;
         }
     }
 }

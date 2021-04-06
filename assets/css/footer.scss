@@ -29,119 +29,114 @@
             width: 100%;
             text-align: center;
         }
+        @media screen and (max-width: 767px){
+            margin-top: 10px;
+        }
         >:nth-child(1){
-            @include fontz (12px, 500, normal);
+            font-weight: 500;
+            font-style: normal;
+            @include adaptive-fonts(18, 11);
             line-height: 22px;
-            @media screen and (max-width: 850px){
-                @include fontz (11px, 500, normal);
-            }
         }
         >:nth-child(2){
             display: flex;
             justify-content: space-between;
             @include fontz (14px, 500, normal);
-            @media screen and (max-width: 850px){
-                @include fontz (10px, 500, normal);
+            @media screen and (max-width: 1500px){
+                font-size: 12px;     
             }
             @media screen and (max-width: 500px){
-                flex-direction: column;
+                font-size: 11px;    
+                flex-direction: column; 
             }
         }
     }
     &__link-wrap{
-        width: 420px;
-        @media screen and (max-width: 1600px){
-            
-        }
-        @media screen and (max-width: 420px){
-            width: 310px;
-        }
-        // @media screen and (max-width: 1160px){
-        //   width: 50%;
-        // }
-        // @media screen and (max-width: 850px){
-        //     width: 60%;
-        // }
-        // @media screen and (max-width: 650px){
-        //     width: 100%;
-        // }
-    }
-    &__menu-wrap{
-        display: flex;
-        @media screen and (max-width: 850px){
-            justify-content: center;
-        }
-        >:nth-child(1){
-            width: 40%;
-            @include fontz (18px,600, normal);
-            @media screen and (max-width: 450px){
-                width: 44%;
+        a{
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%;
+            letter-spacing: 0.01em;
+            font-size: 25px;
+            @media screen and (max-width: 1200px){
+                font-size: 20px;
+            }
+            @media screen and (max-width: 767px){
                 font-size: 14px;
             }
         }
+        @media screen and (max-width: 500px){
+            padding-left: 40px;
+        }
+        @media screen and (max-width: 370px){
+            padding-left: 30px;
+        }
+        img{
+            position: absolute;
+            left: -50px;
+            @media screen and (max-width: 767px){
+                left: -37px;
+                width: 23px;
+            }
+        }
+        width: 420px;
+        justify-content: space-around;
+        @media screen and (max-width: 450px){
+            width: 90%;
+            padding-left: 30px;
+        }
     }
-    &__follow-icon, &__menu-link{
-        width: 200px;
-        // @media screen and (max-width: 1400px) {
-        //     width: 40%;
-        // }
-        @media screen and (max-width: 650px) {
-            width: 156px;
+    &__menu-wrap{
+        display: flex;
+        >div{
+            position: relative;
+            margin-bottom: 39px;
+            @media screen and (max-width: 1200px){
+                margin-bottom: 44px;
+            }
+            @media screen and (max-width: 767px){
+                margin-bottom: 39px;
+            }
         }
-        // @media screen and (max-width: 500px){
-        //     width: 40%;
-        // }
-        @media screen and (max-width: 400px){
-            width: 50%;
-        }
-        @media screen and (max-width: 420px){
-            width: 146px;
-        }
+    }
+    &__menu-title{
+        @include adaptive-fonts(28, 14);
+        margin-bottom: 30px;
     }
     &__follow-icon{
         display: flex;
+        :nth-child(2){
+            margin-top: -10px;
+        }
         a{
-            margin-right: 50px;
-            @media screen and (max-width: 800px){
-                margin-right: 28px;
+            background: #49689F;
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            margin-bottom: 18px;
+            @media screen and (max-width: 767px){
+                width: 40px;
+                height: 40px;            
             }
             svg{
-                path:hover{
-                    fill: #fff;
-                }
-                rect:hover{
-                    fill: #fff;
+                @media screen and (max-width: 767px){
+                    width: 19px;
                 }
             }
+            &:hover{
+                background: #0C4FC4;
+            }
         }
-    }
-    &__fb{
-        @media screen and (max-width: 500px) {
-            width: 18px;
-        }
-    }
-    &__tw{
-        @media screen and (max-width: 500px) {
-            width: 28px;
-        }
-    }
-    &__ln{
-        @media screen and (max-width: 500px) {
-            width: 35px;
-        }
-    }
-    &__menu-link{
-        @include fontz (16px,600, normal);
-        @media screen and (max-width: 850px){
-            @include fontz (14px, 600, normal);
-            justify-content: space-around!important;
-        }
-        @media screen and (max-width: 450px){
-           text-align: center;
-        }
-        a{
-            display: block;
-            margin-left: 5px;
+        .fb{
+            svg{
+                @media screen and (max-width: 767px){
+                    width: 12px;
+                }
+            }
         }
     }
 }

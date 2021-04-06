@@ -1,0 +1,198 @@
+.popup{
+    position: absolute;
+    width: 100%;
+    background: #F0F8FE;
+    z-index: 10;
+    height: calc(100vh - 160px);
+    overflow: auto;
+    display: none;
+
+    @media all and (max-width: 1600px) {
+        height: calc(100vh - 200px);
+    }
+
+    .table_btn {
+        background: #C4C4C4;
+        display: block;
+        margin: auto;
+
+        &.send {
+            background: #6AFF8B;
+        }
+    }
+}
+.create-order {
+    padding: 22px 40px 40px;
+    &_active {
+        display: block;
+    }
+    &__header {
+        &:after {
+            content: '';
+            display: inline-block;
+            width: 100%;
+            height: 1px;
+            background:#C4C4C4;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
+    &__title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 32px;
+        color: #000000;
+        text-align: center;
+    }
+    &__content {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 48%;
+
+        .item-row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            & > .input-block {
+                width: 30%;
+                margin-right: 5%;
+                margin-bottom: 40px;
+
+                &:nth-child(3n) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    &__star {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+        margin-top: 20px;
+    }
+    &__documents {
+        margin-top: 57px;
+
+        .order-photos__slide {
+            img {
+                width: 18%;
+            }
+        }
+    }
+}
+.order-photos {
+    &__slide {
+        background: rgba(196, 196, 196, 0.3);
+        border-radius: 10px;
+        padding: 14px 17px;
+        max-width: 955px;
+        overflow: auto;
+        display: flex;
+        
+        img {
+            margin-right: 10px;
+            width: 24%;
+            &:last-child {
+                padding-right: 17px;
+            }
+        }
+    }
+    &__title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #9FA4BB;
+        margin-bottom: 5px;
+    }
+    &__etc {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 0.01em;
+        color: #9FA4BB;
+        margin-top: 6px;
+    }
+}
+.order-id {
+    &_active {
+        display: block;
+    }
+    &__header {
+        background: #F0EDB0;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #60626A;
+    }
+    &__title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+        text-align: center;
+    }
+    &__content {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        padding: 19px 20px 23px;
+    }
+    &__description {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .input-block {
+            margin-bottom: 23px;
+
+            label {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                color: #9FA4BB;
+            }
+        }
+    }
+    &__chat {
+        width: 68%;
+    }
+    &__information {
+        width: 28%;
+    }
+    &__item {
+        width: 48%;
+    }
+    &__documents {
+        margin-top: 57px;
+
+        .order-photos__slide {
+            img {
+                width: 18%;
+            }
+        }
+    }
+    .textarea-block {
+        margin-top: 50px;
+    }
+    .btn-close {
+        display: block;
+        margin: 0 auto 23px;
+    }
+}
