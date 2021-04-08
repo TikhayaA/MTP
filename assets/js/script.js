@@ -23,11 +23,12 @@ const isMobile = {
             isMobile.BlackBerry() ||
             isMobile.iOS() ||
             isMobile.Opera() ||
-            isMobile.Windows()) ||
-            window.screen.width < 1050;
+            isMobile.Windows());
     }
 };
-console.log(window.screen.width);
+if (window.screen.width < 1050) {
+    document.body.classList.add('touch');
+}
 if (isMobile.any()){
     document.body.classList.add('touch');
     let menuArrows = document.querySelectorAll('.menu__arrow');
