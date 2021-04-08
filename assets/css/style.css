@@ -787,6 +787,9 @@ body.touch .menu__list.active .menu__arrow {
         font-size: 12px;
         line-height: 18px; } }
 
+.gradient img {
+  width: 100%;
+  height: auto; }
 .gradient__circle {
   width: 106px;
   height: 106px;

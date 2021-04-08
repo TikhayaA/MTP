@@ -95,6 +95,10 @@
     @media screen and (max-width: 500px){
         // height: 190px;
     }
+    img{
+        width: 100%;
+        height: auto;
+    }
     &__circle{
         width: 106px;
         height: 106px;
