@@ -787,139 +787,136 @@ body.touch .menu__list.active .menu__arrow {
         font-size: 12px;
         line-height: 18px; } }
 
-.gradient {
+.gradient img {
   width: 100%;
-  position: relative; }
-  .gradient img {
-    width: 100%;
-    height: fit-content; }
-  .gradient__circle {
-    width: 106px;
-    height: 106px;
-    border-radius: 50%;
-    background: #476BAB;
+  height: auto; }
+.gradient__circle {
+  width: 106px;
+  height: 106px;
+  border-radius: 50%;
+  background: #476BAB;
+  font-size: 40px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  color: #85FAFF;
+  margin: auto;
+  position: absolute; }
+  @media screen and (max-width: 767px) {
+    .gradient__circle {
+      width: 90px;
+      height: 90px;
+      font-size: 26px;
+      font-weight: 600;
+      font-style: normal; } }
+  @media screen and (max-width: 375px) {
+    .gradient__circle {
+      width: 70px;
+      height: 70px;
+      font-size: 22px;
+      font-weight: 600;
+      font-style: normal; } }
+  .gradient__circle::after, .gradient__circle::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 195px;
+    background: #4D7EDE;
+    transform: rotate(152deg); }
+    @media screen and (max-width: 650px) {
+      .gradient__circle::after, .gradient__circle::before {
+        width: 140px; } }
+    @media screen and (max-width: 500px) {
+      .gradient__circle::after, .gradient__circle::before {
+        width: 80px; } }
+    @media screen and (max-width: 375px) {
+      .gradient__circle::after, .gradient__circle::before {
+        width: 55px; } }
+  .gradient__circle::after {
+    left: -180px;
+    bottom: -12px; }
+    @media screen and (max-width: 650px) {
+      .gradient__circle::after {
+        left: -127px;
+        bottom: -12px; } }
+    @media screen and (max-width: 500px) {
+      .gradient__circle::after {
+        left: -68px;
+        bottom: -1px; } }
+    @media screen and (max-width: 375px) {
+      .gradient__circle::after {
+        left: -48px;
+        bottom: 6px; } }
+  .gradient__circle::before {
+    right: -178px;
+    top: -17px; }
+    @media screen and (max-width: 650px) {
+      .gradient__circle::before {
+        right: -129px;
+        top: -8px; } }
+    @media screen and (max-width: 500px) {
+      .gradient__circle::before {
+        right: -68px;
+        top: -1px; } }
+    @media screen and (max-width: 375px) {
+      .gradient__circle::before {
+        right: -48px;
+        top: 5px; } }
+  .gradient__circle span {
     font-size: 40px;
-    font-weight: 600;
-    font-style: normal;
-    line-height: 140%;
-    letter-spacing: 0.01em;
-    color: #85FAFF;
-    margin: auto;
+    font-weight: bold;
+    font-style: italic;
+    color: #FFFFFF;
     position: absolute; }
     @media screen and (max-width: 767px) {
-      .gradient__circle {
-        width: 90px;
-        height: 90px;
-        font-size: 26px;
+      .gradient__circle span {
+        font-size: 20px;
         font-weight: 600;
         font-style: normal; } }
     @media screen and (max-width: 375px) {
-      .gradient__circle {
-        width: 70px;
-        height: 70px;
-        font-size: 22px;
+      .gradient__circle span {
+        font-size: 16px;
         font-weight: 600;
         font-style: normal; } }
-    .gradient__circle::after, .gradient__circle::before {
-      position: absolute;
-      content: "";
-      height: 1px;
-      width: 195px;
-      background: #4D7EDE;
-      transform: rotate(152deg); }
-      @media screen and (max-width: 650px) {
-        .gradient__circle::after, .gradient__circle::before {
-          width: 140px; } }
-      @media screen and (max-width: 500px) {
-        .gradient__circle::after, .gradient__circle::before {
-          width: 80px; } }
-      @media screen and (max-width: 375px) {
-        .gradient__circle::after, .gradient__circle::before {
-          width: 55px; } }
-    .gradient__circle::after {
-      left: -180px;
-      bottom: -12px; }
-      @media screen and (max-width: 650px) {
-        .gradient__circle::after {
-          left: -127px;
-          bottom: -12px; } }
-      @media screen and (max-width: 500px) {
-        .gradient__circle::after {
-          left: -68px;
-          bottom: -1px; } }
-      @media screen and (max-width: 375px) {
-        .gradient__circle::after {
-          left: -48px;
-          bottom: 6px; } }
-    .gradient__circle::before {
-      right: -178px;
-      top: -17px; }
-      @media screen and (max-width: 650px) {
-        .gradient__circle::before {
-          right: -129px;
-          top: -8px; } }
-      @media screen and (max-width: 500px) {
-        .gradient__circle::before {
-          right: -68px;
-          top: -1px; } }
-      @media screen and (max-width: 375px) {
-        .gradient__circle::before {
-          right: -48px;
-          top: 5px; } }
-    .gradient__circle span {
-      font-size: 40px;
-      font-weight: bold;
-      font-style: italic;
-      color: #FFFFFF;
-      position: absolute; }
-      @media screen and (max-width: 767px) {
-        .gradient__circle span {
-          font-size: 20px;
-          font-weight: 600;
-          font-style: normal; } }
-      @media screen and (max-width: 375px) {
-        .gradient__circle span {
-          font-size: 16px;
-          font-weight: 600;
-          font-style: normal; } }
-    .gradient__circle > :nth-child(1) {
-      left: -317px;
-      bottom: -94px; }
-      @media screen and (max-width: 767px) {
-        .gradient__circle > :nth-child(1) {
-          left: -236px;
-          bottom: -79px; } }
-      @media screen and (max-width: 650px) {
-        .gradient__circle > :nth-child(1) {
-          left: -189px;
-          bottom: -69px; } }
-      @media screen and (max-width: 500px) {
-        .gradient__circle > :nth-child(1) {
-          left: -130px;
-          bottom: -43px; } }
-      @media screen and (max-width: 375px) {
-        .gradient__circle > :nth-child(1) {
-          left: -98px;
-          bottom: -29px; } }
-    .gradient__circle > :nth-child(2) {
-      right: -310px;
-      top: -105px; }
-      @media screen and (max-width: 767px) {
-        .gradient__circle > :nth-child(2) {
-          right: -231px;
-          top: -89px; } }
-      @media screen and (max-width: 650px) {
-        .gradient__circle > :nth-child(2) {
-          right: -185px;
-          top: -72px; } }
-      @media screen and (max-width: 500px) {
-        .gradient__circle > :nth-child(2) {
-          right: -127px;
-          top: -50px; } }
-      @media screen and (max-width: 375px) {
-        .gradient__circle > :nth-child(2) {
-          right: -96px;
-          top: -32px; } }
+  .gradient__circle > :nth-child(1) {
+    left: -317px;
+    bottom: -94px; }
+    @media screen and (max-width: 767px) {
+      .gradient__circle > :nth-child(1) {
+        left: -236px;
+        bottom: -79px; } }
+    @media screen and (max-width: 650px) {
+      .gradient__circle > :nth-child(1) {
+        left: -189px;
+        bottom: -69px; } }
+    @media screen and (max-width: 500px) {
+      .gradient__circle > :nth-child(1) {
+        left: -130px;
+        bottom: -43px; } }
+    @media screen and (max-width: 375px) {
+      .gradient__circle > :nth-child(1) {
+        left: -98px;
+        bottom: -29px; } }
+  .gradient__circle > :nth-child(2) {
+    right: -310px;
+    top: -105px; }
+    @media screen and (max-width: 767px) {
+      .gradient__circle > :nth-child(2) {
+        right: -231px;
+        top: -89px; } }
+    @media screen and (max-width: 650px) {
+      .gradient__circle > :nth-child(2) {
+        right: -185px;
+        top: -72px; } }
+    @media screen and (max-width: 500px) {
+      .gradient__circle > :nth-child(2) {
+        right: -127px;
+        top: -50px; } }
+    @media screen and (max-width: 375px) {
+      .gradient__circle > :nth-child(2) {
+        right: -96px;
+        top: -32px; } }
 
 .service {
   background: #F1FAFF;
