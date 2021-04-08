@@ -52,11 +52,15 @@ let menuMobile = document.getElementsByClassName('menu');
 let mobileBg = document.getElementsByClassName('menu-mobile__bg');
 let mobileOpen = document.getElementsByClassName('menu-mobile__open');
 let mobileClose = document.getElementsByClassName('menu-mobile__close');
+// const order = document.getElementsByClassName('account-orders__wrap');
+
 
 if (mobileOpen.length > 0) {
     mobileOpen[0].addEventListener('click', () => {
         menuMobile[0].classList.add('menu_active');
         mobileBg[0].classList.add('menu-mobile__bg_active');
+        // order[0].classList.add('account-orders__wrap_z-index');
+
     });
     mobileClose[0].addEventListener('click', () => {
         menuMobile[0].classList.remove('menu_active');
@@ -132,3 +136,24 @@ if(popupOrder.length > 0) {
         popupOrderId[0].classList.remove('order-id_active');
     });
 }
+
+const btnDelete = document.querySelectorAll('.btn-delete');
+const popUpDelete = document.getElementsByClassName('pop-up-delete');
+const popUpDeleteBtnNo = document.getElementsByClassName('pop-up-delete__btn_no');
+
+    
+        btnDelete.forEach((element, i) => {
+            element.addEventListener('click', () => {
+                popUpDelete[0].classList.add('pop-up-delete_active');
+                mobileBg[0].classList.add('menu-mobile__bg_active');
+            });
+            console.log(popUpDelete);
+        }) ;
+        popUpDeleteBtnNo[0].addEventListener('click', () => {
+            popUpDelete[0].classList.remove('pop-up-delete_active');
+            mobileBg[0].classList.remove('menu-mobile__bg_active');
+
+        })
+
+        
+        

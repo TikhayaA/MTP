@@ -1,0 +1,192 @@
+.account-orders{
+    background: $bgservice;
+
+    h1{
+        @include adaptive-fonts(30, 20);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 35px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 40px;
+    }
+    hr{
+        background: #979797;
+    }
+    &__wrap{
+        margin: 120px 0 60px;
+        position: relative;
+        @media screen and (max-width: 1500px){
+            margin: 60px 0 60px;
+        }
+        &_z-index{
+            z-index: -1;
+       }
+    }
+    .btn-close{
+        margin: auto;
+        margin-bottom: 23px;
+        @media screen and (max-width: 470px){
+            margin: 60px auto 23px;
+        }
+    }
+    &__item-wrap{
+        margin-right: 20px;
+        padding-bottom: 40px;
+        position: relative;
+        
+    }
+    .container{
+        max-width: 1850px;
+        position: relative;
+        overflow: auto;
+    }
+}
+.order{
+    &__title{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        @include adaptive-fonts(16, 12);
+        letter-spacing: 0.01em;
+    }
+    &__title-btn{
+        margin-left: 5px;
+        border: none;
+        background: none;
+    }
+    &__string{
+        margin-bottom: 5px;
+        button{
+            background: none;
+            border: none;
+        }
+        span{
+            font-style: normal;
+            font-weight: 500;
+            @include adaptive-fonts(14, 12);
+        }
+        >:nth-child(1){
+            width: 9%;
+            text-align: center;
+        }
+        >:nth-child(2){
+            width: 31%;
+            text-align: center;
+        }
+        >:nth-child(3){
+            width: 46%;
+            text-align: center;
+        }
+        >:nth-child(4){
+            width: 10%;
+            text-align: center;
+        }
+        >:nth-child(5){
+            width: 10%;
+            text-align: center;
+        }
+    }
+    &__string-title{
+        font-style: normal;
+        font-weight: 500;
+        @include adaptive-fonts(14, 12);
+        line-height: 17px;
+        color: #9FA4BB;
+        position: absolute;
+        display: flex;
+        top: 0;
+        left: 45px;
+        :nth-child(1){
+            margin-right: 60px;
+        }
+    }
+    &__item{
+        background: #CEEEFF;
+        border: 0.5px solid #000000;
+        box-sizing: border-box;
+        box-shadow: 4px 5px 4px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        padding: 17px 0;
+        width: 280px;
+        height: 390px;
+        margin: 13px 0 40px;
+        position: relative;
+        @media screen and (max-width: 500px){
+        width: 243px;
+        }
+    }
+    &__lines {
+        & div:nth-child(1) {
+            left: 8.5%;
+        }
+        & div:nth-child(2) {
+            left: 38%;
+        }
+        & div:nth-child(3) {
+            left: 80%;
+        }
+        & div:nth-child(4) {
+            left: 90.2%;
+        }
+    }
+    &__line {
+        position: absolute;
+        width: 1px;
+        height: calc(100% - 40px);
+        background: #979797;
+        top: 20px;
+    }
+    &__info{
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        @include adaptive-fonts(16, 12);
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 5px;
+        position: relative;
+        width: 75px;
+        padding: 4px 0;
+        text-align: center;
+        span{
+            font-style: normal;
+            font-weight: 600;
+            line-height: 140%;
+            letter-spacing: 0.01em;
+            color: #979797;
+            @include adaptive-fonts(14, 10);
+            position: absolute;
+            top: -24px;
+            left: 50%;
+            width: 100%;
+            text-transform: none;
+            transform: translate(-50%, 0);
+            -webkit-transform: translate(-50%, 0);
+            -moz-transform: translate(-50%, 0);
+            -ms-transform: translate(-50%, 0);
+            -o-transform: translate(-50%, 0);
+        
+        }
+    }
+}
+.prompt-orders{
+    position: absolute;
+    bottom: 10px;
+    @media screen and (max-width: 470px){
+        bottom: 90px;
+   }
+    &__string{
+        font-style: normal;
+        font-weight: normal;
+        @include adaptive-fonts(12, 10);
+        line-height: 15px;
+        color: #6C7077;
+        margin-bottom: 25px;
+        img{
+            margin-right: 18px;
+        }
+    }
+}

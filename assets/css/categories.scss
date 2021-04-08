@@ -440,6 +440,9 @@
             @media screen and (max-width: 1370px){
                 width: 80%;
             }
+            img{
+                width: 100%;
+            }
         }
     }
     .categories__wrap-btn{
@@ -470,9 +473,6 @@
         @media screen and (min-width: 767px) and (max-width: 999px){
             max-width: 760px;
         }
-        // @media screen and (min-width: 425px) and (max-width: 766px){
-        //     max-width: 400px;
-        // }
         
     }
     &__wrap{
@@ -604,3 +604,53 @@
         }
     }
 }
+.world-fleet{
+    .cargo-market__block-wrap{
+        flex-wrap: wrap;
+    }
+    .container{
+        @media screen and (min-width: 1351px) and (max-width: 1600px){
+            max-width: 1400px;
+        }
+        @media screen and (min-width: 1000px) and (max-width: 1350px){
+            max-width: 1000px;
+        }
+        @media screen and (min-width: 767px) and (max-width: 999px){
+            max-width: 760px;
+        }
+        
+    }
+    &__item-wrap{
+        width: 50%;
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        } 
+    }
+    &__item{
+        width: 94%;
+        position: relative;
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        } 
+        &_central{
+            margin-left: 55px;
+            @media screen and (max-width: 767px) {
+                margin: 0;
+            } 
+        }
+        p{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 140%;
+            letter-spacing: 0.01em;
+            position: absolute;
+            top: 50%;
+            left: 44%;
+            transform: translate(0, -50%);
+            width: 50%;
+        }
+    }
+
+}
+

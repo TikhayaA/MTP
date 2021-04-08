@@ -128,6 +128,10 @@
             ul {
                 display: grid;
                 grid-template-columns: 30px 140px 1fr 1fr 1fr 1fr 1fr 1fr 66px 64px 113px 129px;
+
+                &.auction{
+                    grid-template-columns: 30px 150px 0.7fr 1.3fr 1.2fr 1fr 1fr 0.6fr 0.4fr 1fr 1fr 129px;
+                }
                 li {
                     border-right: 1px solid #979797;
                     padding: 5px 0 5px;
@@ -184,8 +188,6 @@
         height: 100vh;
         overflow: hidden;
     }
-
-
     &__content {
         &_header {
             &-sell {
@@ -196,6 +198,55 @@
             }
         }
     }
+
+    &-data {
+        &__item {
+            &-price {
+                background: #B8FFD4;
+            }
+            &-bid {
+                background: #FF8080;
+                padding: 0  5px 0 10px!important;
+                justify-content: space-between;
+                align-items: center;
+                img {
+                    width: 33px;
+                }
+            }
+        }
+    }
+    &__header {
+        &_item{
+            &-price {
+                color: #0DA80A;
+                font-weight: 600;
+            }
+            &-bid {
+                color: #E40000;
+                font-weight: 600;
+            }
+        }
+        &_sub {
+            background: rgba(244, 236, 61, 0.7);
+            border: 0.5px solid #000000;
+            box-sizing: border-box;
+            width: 20%;
+            height: 100%;  
+            position: absolute;
+            right: 0;
+            text-align: center;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px;
+            color: #60626A;
+            line-height: 32px;
+        }
+    }
 }
 
- 
+.auction {
+    .table_data-item {
+        grid-template-columns: 30px 150px 0.7fr 1.3fr 1.2fr 1fr 1fr 0.6fr 0.4fr 1fr 1fr 129px;
+    }
+}
