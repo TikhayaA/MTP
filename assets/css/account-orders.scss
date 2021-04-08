@@ -16,6 +16,8 @@
     &__wrap{
         margin: 120px 0 60px;
         position: relative;
+        max-width: 1850px;
+        overflow: auto;
         @media screen and (max-width: 1500px){
             margin: 60px 0 60px;
         }
@@ -37,9 +39,7 @@
         
     }
     .container{
-        max-width: 1850px;
         position: relative;
-        overflow: auto;
     }
 }
 .order{

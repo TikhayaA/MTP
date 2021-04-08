@@ -52,3 +52,100 @@
         text-align: center;
     }
 }
+.pop-up-message{
+    background: #FFFFFF;
+    border-radius: 15px;
+    width: 80%;
+    min-height: 70%;
+    padding: 14px 15px 15px;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    display: none;
+    @media (max-width: 767px) {
+        width: 90%;
+    }
+    &_open{
+        display: block;
+    }
+    &__title{
+        font-style: normal;
+        font-weight: 500;
+        @include adaptive-fonts(30, 18);
+        line-height: 37px;
+        color: #000000;
+        text-align: center;
+    }
+    hr{
+        background: #C4C4C4;
+        margin: 0;
+    }
+    &__wrap{
+        margin-bottom: 30px;
+        height: 400px;
+        overflow: auto;
+    }
+    &__string{
+        border-bottom: 1px solid #979797;
+        padding: 13px 0;
+        cursor: pointer;
+        @media (max-width: 767px) {
+            flex-wrap: wrap;
+            padding: 10px 0;
+        }
+        &_unread{
+            background: rgba(218, 218, 218, 0.3);
+        }
+    }
+    &__sender{
+        width: 25%;
+        font-style: normal;
+        font-weight: 600;
+        @include adaptive-fonts(20, 12);
+        line-height: 24px;
+        padding-left: 18px;
+        @media (max-width: 767px) {
+            padding-left: 10px;
+            width: 38%;
+        }
+        &_unread{
+            font-weight: bold;
+        }
+    }
+    &__subject{
+        width: 50%;
+        font-style: normal;
+        font-weight: 500;
+        @include adaptive-fonts(20, 12);
+        line-height: 24px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        &_unread{
+            font-weight: 600;
+        }
+    }
+    &__date{
+        width: 35%;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        @include adaptive-fonts(20, 12);
+        text-align: end;
+        padding-right: 18px;
+        @media (max-width: 767px) {
+            padding: 10px 0 0 10px;
+            width: 50%;
+            text-align: left;
+        }
+    }
+    .btn-close{
+        margin: auto;
+    }
+}

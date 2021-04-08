@@ -141,19 +141,32 @@ const btnDelete = document.querySelectorAll('.btn-delete');
 const popUpDelete = document.getElementsByClassName('pop-up-delete');
 const popUpDeleteBtnNo = document.getElementsByClassName('pop-up-delete__btn_no');
 
-    
-        btnDelete.forEach((element, i) => {
-            element.addEventListener('click', () => {
-                popUpDelete[0].classList.add('pop-up-delete_active');
-                mobileBg[0].classList.add('menu-mobile__bg_active');
-            });
-            console.log(popUpDelete);
-        }) ;
-        popUpDeleteBtnNo[0].addEventListener('click', () => {
-            popUpDelete[0].classList.remove('pop-up-delete_active');
-            mobileBg[0].classList.remove('menu-mobile__bg_active');
+if (btnDelete.length > 0) {   
+    btnDelete.forEach((element, i) => {
+        element.addEventListener('click', () => {
+            popUpDelete[0].classList.add('pop-up-delete_active');
+            mobileBg[0].classList.add('menu-mobile__bg_active');
+        });
+        console.log(popUpDelete);
+    }) ;
+    popUpDeleteBtnNo[0].addEventListener('click', () => {
+        popUpDelete[0].classList.remove('pop-up-delete_active');
+        mobileBg[0].classList.remove('menu-mobile__bg_active');
 
-        })
+    });
+}
 
+const popUpMessage = document.getElementsByClassName('pop-up-message'),
+      mailOpen = document.querySelector('.header-authorized__mail');
+      popupMailClose = document.querySelector('#popup-mail-close');
         
+      mailOpen.addEventListener('click', () => {
+        popUpMessage[0].classList.add('pop-up-message_open');
+         mobileBg[0].classList.add('menu-mobile__bg_active');
+
+    });
+    popupMailClose.addEventListener('click', () => {
+        popUpMessage[0].classList.remove('pop-up-message_open');
+        mobileBg[0].classList.remove('menu-mobile__bg_active');
+    });
         

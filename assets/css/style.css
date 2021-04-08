@@ -791,7 +791,8 @@ body.touch .menu__list.active .menu__arrow {
   width: 100%;
   position: relative; }
   .gradient img {
-    width: 100%; }
+    width: 100%;
+    height: fit-content; }
   .gradient__circle {
     width: 106px;
     height: 106px;
@@ -2328,7 +2329,9 @@ body.touch .menu__list.active .menu__arrow {
     background: #979797; }
   .account-orders__wrap {
     margin: 120px 0 60px;
-    position: relative; }
+    position: relative;
+    max-width: 1850px;
+    overflow: auto; }
     @media screen and (max-width: 1500px) {
       .account-orders__wrap {
         margin: 60px 0 60px; } }
@@ -2345,9 +2348,7 @@ body.touch .menu__list.active .menu__arrow {
     padding-bottom: 40px;
     position: relative; }
   .account-orders .container {
-    max-width: 1850px;
-    position: relative;
-    overflow: auto; }
+    position: relative; }
 
 .order__title {
   font-style: normal;
@@ -2549,5 +2550,110 @@ body.touch .menu__list.active .menu__arrow {
     letter-spacing: 0.01em;
     font-family: 'Roboto', sans-serif;
     text-align: center; }
+
+.pop-up-message {
+  background: #FFFFFF;
+  border-radius: 15px;
+  width: 80%;
+  min-height: 70%;
+  padding: 14px 15px 15px;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  display: none; }
+  @media (max-width: 767px) {
+    .pop-up-message {
+      width: 90%; } }
+  .pop-up-message_open {
+    display: block; }
+  .pop-up-message__title {
+    font-style: normal;
+    font-weight: 500;
+    line-height: 37px;
+    color: #000000;
+    text-align: center; }
+    @media (max-width: 767px) {
+      .pop-up-message__title {
+        font-size: calc(18px + 20.4 * ((110vw - 320px) / 1440)); } }
+    @media (min-width: 767px) {
+      .pop-up-message__title {
+        font-size: calc(18px + 12 * ((100vw) / 1440)); } }
+  .pop-up-message hr {
+    background: #C4C4C4;
+    margin: 0; }
+  .pop-up-message__wrap {
+    margin-bottom: 30px;
+    height: 400px;
+    overflow: auto; }
+  .pop-up-message__string {
+    border-bottom: 1px solid #979797;
+    padding: 13px 0;
+    cursor: pointer; }
+    @media (max-width: 767px) {
+      .pop-up-message__string {
+        flex-wrap: wrap;
+        padding: 10px 0; } }
+    .pop-up-message__string_unread {
+      background: rgba(218, 218, 218, 0.3); }
+  .pop-up-message__sender {
+    width: 25%;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    padding-left: 18px; }
+    @media (max-width: 767px) {
+      .pop-up-message__sender {
+        font-size: calc(12px + 13.6 * ((110vw - 320px) / 1440)); } }
+    @media (min-width: 767px) {
+      .pop-up-message__sender {
+        font-size: calc(12px + 8 * ((100vw) / 1440)); } }
+    @media (max-width: 767px) {
+      .pop-up-message__sender {
+        padding-left: 10px;
+        width: 38%; } }
+    .pop-up-message__sender_unread {
+      font-weight: bold; }
+  .pop-up-message__subject {
+    width: 50%;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
+    @media (max-width: 767px) {
+      .pop-up-message__subject {
+        font-size: calc(12px + 13.6 * ((110vw - 320px) / 1440)); } }
+    @media (min-width: 767px) {
+      .pop-up-message__subject {
+        font-size: calc(12px + 8 * ((100vw) / 1440)); } }
+    .pop-up-message__subject_unread {
+      font-weight: 600; }
+  .pop-up-message__date {
+    width: 35%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: end;
+    padding-right: 18px; }
+    @media (max-width: 767px) {
+      .pop-up-message__date {
+        font-size: calc(12px + 13.6 * ((110vw - 320px) / 1440)); } }
+    @media (min-width: 767px) {
+      .pop-up-message__date {
+        font-size: calc(12px + 8 * ((100vw) / 1440)); } }
+    @media (max-width: 767px) {
+      .pop-up-message__date {
+        padding: 10px 0 0 10px;
+        width: 50%;
+        text-align: left; } }
+  .pop-up-message .btn-close {
+    margin: auto; }
 
 /*# sourceMappingURL=style.css.map */
