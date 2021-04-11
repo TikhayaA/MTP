@@ -41,14 +41,15 @@
         >:nth-child(2){
             display: flex;
             justify-content: space-between;
-            @include fontz (14px, 500, normal);
-            @media screen and (max-width: 1500px){
-                font-size: 12px;     
-            }
+            font-style: normal;
+            font-weight: 500;
+            @include adaptive-fonts(14, 11);
             @media screen and (max-width: 500px){
-                font-size: 11px;    
                 flex-direction: column; 
             }
+        }
+        a{
+            margin: 0 9px;
         }
     }
     &__link-wrap{
@@ -57,13 +58,7 @@
             font-weight: 500;
             line-height: 140%;
             letter-spacing: 0.01em;
-            font-size: 25px;
-            @media screen and (max-width: 1200px){
-                font-size: 20px;
-            }
-            @media screen and (max-width: 767px){
-                font-size: 14px;
-            }
+            @include adaptive-fonts(25, 14);
         }
         @media screen and (max-width: 500px){
             padding-left: 40px;
@@ -79,7 +74,7 @@
                 width: 23px;
             }
         }
-        width: 420px;
+        width: fit-content;
         justify-content: space-around;
         @media screen and (max-width: 450px){
             width: 90%;

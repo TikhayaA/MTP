@@ -70,7 +70,7 @@
     width: 182px;
     height: 49px;
     line-height: 49px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -101,6 +101,24 @@
       left:99px;
       border-radius: 100%;
       background:#007bff;
+    }
+}
+
+.table__btn_owner {
+    height: 55px;
+    border: none;
+    background: #72EDF2;
+    border-radius: 5px;
+    padding: 17px 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    &-default {
+        background: rgba(151, 151, 151, 0.4);
+        border-radius: 5px;
     }
 }
 

@@ -54,14 +54,12 @@ let menuMobile = document.getElementsByClassName('menu');
 let mobileBg = document.getElementsByClassName('menu-mobile__bg');
 let mobileOpen = document.getElementsByClassName('menu-mobile__open');
 let mobileClose = document.getElementsByClassName('menu-mobile__close');
-// const order = document.getElementsByClassName('account-orders__wrap');
 
 
 if (mobileOpen.length > 0) {
     mobileOpen[0].addEventListener('click', () => {
         menuMobile[0].classList.add('menu_active');
         mobileBg[0].classList.add('menu-mobile__bg_active');
-        // order[0].classList.add('account-orders__wrap_z-index');
 
     });
     mobileClose[0].addEventListener('click', () => {
@@ -159,16 +157,64 @@ if (btnDelete.length > 0) {
 }
 
 const popUpMessage = document.getElementsByClassName('pop-up-message'),
-      mailOpen = document.querySelector('.header-authorized__mail');
-      popupMailClose = document.querySelector('#popup-mail-close');
-        
+      mailOpen = document.querySelector('.header-authorized__mail'),
+      popupMailClose = document.querySelector('#popup-mail-close'),
+      popUpOpenSringWrap = document.querySelector('.pop-up-message__wrap-string'),
+      openMessage = document.getElementsByClassName('message-wrap');
+      popUpOpenSring = document.getElementsByClassName('pop-up-message__string');
+if(popUpMessage.length > 0) {
       mailOpen.addEventListener('click', () => {
         popUpMessage[0].classList.add('pop-up-message_open');
-         mobileBg[0].classList.add('menu-mobile__bg_active');
-
+        mobileBg[0].classList.add('menu-mobile__bg_active');
+        menuMobile[0].classList.remove('menu_active');
     });
     popupMailClose.addEventListener('click', () => {
         popUpMessage[0].classList.remove('pop-up-message_open');
         mobileBg[0].classList.remove('menu-mobile__bg_active');
     });
+    popUpOpenSring[0].addEventListener('click', () => {
+        openMessage[0].classList.add('message-wrap_active');
+        popUpOpenSringWrap.classList.add('pop-up-message__wrap-string_disabled');
+    });
+}
         
+
+    // password-show 
+
+let passwordInput = document.getElementById('password');
+let showPass = document.getElementsByClassName('display-password');
+
+function togglePasswordInput(i) {
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+    } else {
+        passwordInput.type = "password";
+    }
+}
+
+let NewshowPass = Object.values(showPass);
+NewshowPass.forEach(function(element, i) {
+    element.addEventListener("click", () => {
+        togglePasswordInput(i);
+    });
+    console.log(passwordInput);
+    passwordInput.oninput = function () {
+        if (passwordInput.value) {
+            element.classList.add('display-password_active');
+        } else {
+            element.classList.remove('display-password_active');
+        }
+    };
+});
+
+const quantityMinus = document.getElementById("quantity-minus");
+const quantityValue = document.querySelector(".table-quantity__input_value");
+const quantityPlus = document.getElementById("quantity-plus");
+
+quantityMinus.addEventListener('click', () => {
+    quantityValue.value = +quantityValue.value - 1;
+});
+
+quantityPlus.addEventListener('click', () => {
+    quantityValue.value = +quantityValue.value + 1;
+});

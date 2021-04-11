@@ -592,56 +592,186 @@
             </div>
             <button class="table_btn" type="submit" id="open_order_list">Send order</button>
         </form>
-        <div class="popup order-id">
+        <div class="popup order-id order-id__freight">
             <div class="order-id__header">
                 <h2 class="order-id__title">order id [562345557846]</h2>
             </div>
             <div class="order-id__content">
                 <div class="order-id__item order-id__description">
                     <div class="order-id__information">
-                        <div class="input-block">
-                            <label for="order-id__country">Country</label>
-                            <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__country" readonly placeholder="USA">
+                        <div class="order-id__inputs">
+                            <div class="input-block">
+                                <label for="order-id__country">From Country/Port(city)</label>
+                                <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__country" readonly placeholder="USA">
+                            </div>
+                            <div class="input-block">
+                                <label for="order-id__port">To Country/Port(city)</label>
+                                <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__port" readonly placeholder="USA">
+                            </div>
+                            <div class="input-block">
+                                <label for="order-id__company">Company</label>
+                                <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__company" readonly placeholder="USA">
+                            </div>
+                            <div class="input-block">
+                                <label for="order-id__company">id Company</label>
+                                <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__company" readonly placeholder="USA">
+                            </div>
+                            <div class="input-block">
+                                <label for="order-id__cargo">Cargo name</label>
+                                <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__cargo" readonly placeholder="USA">
+                            </div>
+                            <div class="input-block">
+                                <label for="order-id__amount">Expiration data</label>
+                                <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__amount" readonly placeholder="USA">
+                            </div>
+                            <div class="input-block">
+                                <label for="order-id__contract">Amount, t or m3</label>
+                                <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__contract" readonly placeholder="USA">
+                            </div>
+                            <div class="input-block">
+                                <label for="order-id__current">Trader name</label>
+                                <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__current" readonly placeholder="USA">
+                            </div>
+                            <div class="input-block">
+                                <label for="order-id__discount">Container type</label>
+                                <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__discount" readonly placeholder="USA">
+                            </div>
+                            <div class="input-block">
+                                <label for="order-id__phone">Phone number</label>
+                                <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__phone" readonly placeholder="USA">
+                            </div>
+                            <div class="input-block">
+                                <label for="order-id__trader">Starting price, $</label>
+                                <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__trader" readonly placeholder="USA">
+                            </div>
+                            <div class="input-block">
+                                <label for="order-id__mail">@mail</label>
+                                <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__mail" readonly placeholder="USA">
+                            </div>
                         </div>
-                        <div class="input-block">
-                            <label for="order-id__port">Port or city</label>
-                            <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__port" readonly placeholder="USA">
+                        <div class="created-bids created-bids_active">
+                            <div class="table-bids">
+                                <div class="table-bids__block">
+                                    <div class="table-bids__block_title">Total Bids <span>8</span></div>
+                                    <div class="order__item">
+                                        <div class="order__lines">
+                                            <div class="order__line"></div>
+                                            <div class="order__line"></div>
+                                            <div class="order__line"></div>
+                                        </div>
+                                        <div class="order__string-title">
+                                            <span>data</span>
+                                            <span>time</span>
+                                            <span>price</span>
+                                        </div>
+                                        <div class="order__string d-flex align-items-center">
+                                            <span>1</span>
+                                            <span>01.03.2021</span>
+                                            <span>08:15</span>
+                                            <span>11800</span>
+                                        </div>
+                                        <div class="order__string d-flex align-items-center">
+                                            <span>1</span>
+                                            <span>01.03.2021</span>
+                                            <span>08:15</span>
+                                            <span>11800</span>
+                                        </div>
+                                        <div class="order__string d-flex align-items-center">
+                                            <span>1</span>
+                                            <span>01.03.2021</span>
+                                            <span>08:15</span>
+                                            <span>11800</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table-bids__block">
+                                    <div class="table-bids__block_title">Your Bids </div>
+                                    <div class="order__item">
+                                        <div class="order__lines">
+                                            <div class="order__line"></div>
+                                            <div class="order__line"></div>
+                                            <div class="order__line"></div>
+                                        </div>
+                                        <div class="order__string-title">
+                                            <span>data</span>
+                                            <span>time</span>
+                                            <span>price</span>
+                                        </div>
+                                        <div class="order__string d-flex align-items-center">
+                                            <span>1</span>
+                                            <span>01.03.2021</span>
+                                            <span>08:15</span>
+                                            <span>11800</span>
+                                        </div>
+                                        <div class="order__string d-flex align-items-center">
+                                            <span>1</span>
+                                            <span>01.03.2021</span>
+                                            <span>08:15</span>
+                                            <span>11800</span>
+                                        </div>
+                                        <div class="order__string d-flex align-items-center">
+                                            <span>1</span>
+                                            <span>01.03.2021</span>
+                                            <span>08:15</span>
+                                            <span>11800</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-quantity">
+                                <span class="table-quantity__title">price step not less than 0,1% </span>
+                                <div class="table-quantity__input">
+                                    <button class="table-quantity__action" id="quantity-minus">-</button>
+                                    <input type="text" class="table-quantity__input_value" value="1500">
+                                    <button class="table-quantity__action" id="quantity-plus">+</button>
+                                </div>
+                                <button class="table-quantity__btn">BID <img src="assets/img/bid.svg" alt=""></button>
+                            </div>
+                            <p class="table-attention">
+                                <b>Attention:</b> <br />
+                                Сargo Owner, can choose the carrier at his own discretion. 
+                                The last price is not a guaranty of the successful transaction.
+                            </p>
                         </div>
-                        <div class="input-block">
-                            <label for="order-id__company">Company</label>
-                            <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__company" readonly placeholder="USA">
-                        </div>
-                        <div class="input-block">
-                            <label for="order-id__cargo">Cargo name</label>
-                            <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__cargo" readonly placeholder="USA">
-                        </div>
-                        <div class="input-block">
-                            <label for="order-id__amount">Amount, t or m3</label>
-                            <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__amount" readonly placeholder="USA">
-                        </div>
-                        <div class="input-block">
-                            <label for="order-id__contract">Contract Price, $</label>
-                            <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__contract" readonly placeholder="USA">
-                        </div>
-                        <div class="input-block">
-                            <label for="order-id__current">Current Price, $</label>
-                            <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__current" readonly placeholder="USA">
-                        </div>
-                        <div class="input-block">
-                            <label for="order-id__discount">Discount, %</label>
-                            <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__discount" readonly placeholder="USA">
-                        </div>
-                        <div class="input-block">
-                            <label for="order-id__trader">Trader name</label>
-                            <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__trader" readonly placeholder="USA">
-                        </div>
-                        <div class="input-block">
-                            <label for="order-id__phone">Phone number</label>
-                            <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__phone" readonly placeholder="USA">
-                        </div>
-                        <div class="input-block">
-                            <label for="order-id__mail">@mail</label>
-                            <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__mail" readonly placeholder="USA">
+                        <div class="show-bids">
+                            <div class="table-bids__block table-bids__block_all">
+                                <div class="table-bids__block_title">Total Bids <span>8</span></div>
+                                <div class="order__item">
+                                    <div class="order__lines">
+                                        <div class="order__line"></div>
+                                        <div class="order__line"></div>
+                                        <div class="order__line"></div>
+                                        <div class="order__line"></div>
+                                    </div>
+                                    <div class="order__string-title">
+                                        <span>data</span>
+                                        <span>time</span>
+                                        <span>price</span>
+                                        <span>Trader Name / Company </span>
+                                    </div>
+                                    <div class="order__string d-flex align-items-center">
+                                        <span>1</span>
+                                        <span>01.03.2021</span>
+                                        <span>08:15</span>
+                                        <span>11800</span>
+                                        <span>Sarah Edisson / Paradigma</span>
+                                    </div>
+                                    <div class="order__string d-flex align-items-center">
+                                        <span>1</span>
+                                        <span>01.03.2021</span>
+                                        <span>08:15</span>
+                                        <span>11800</span>
+                                        <span>Sarah Edisson / Paradigma</span>
+                                    </div>
+                                    <div class="order__string d-flex align-items-center">
+                                        <span>1</span>
+                                        <span>01.03.2021</span>
+                                        <span>08:15</span>
+                                        <span>11800</span>
+                                        <span>Sarah Edisson / Paradigma</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="order-id__chat">

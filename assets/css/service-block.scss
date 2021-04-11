@@ -14,21 +14,22 @@
             min-height: 200px;
         }
         :nth-child(1){
-            @include fontz (25px,500, normal);
+            @include adaptive-fonts(25, 20);
+            font-style: normal;
+            font-weight: 500;
             line-height: 140%;
             letter-spacing: 0.01em;
             color: $color_main-title;
             text-align: center;
             margin-bottom: 26px;
             @media screen and (max-width: 420px) {
-                font-size: 20px;
                 margin-bottom: 10px;
             }
         }
         :nth-child(2){
             font-style: normal;
             font-weight: 500;
-            font-size: 16px;
+            @include adaptive-fonts(16, 12);
             line-height: 140%;
             letter-spacing: 0.01em;
             color: #56595F;
@@ -36,9 +37,6 @@
             -webkit-line-clamp: 7;
             -webkit-box-orient: vertical;
             overflow: hidden;
-            @media screen and (max-width: 420px) {
-                font-size: 12px;
-            }
         }
     }
     &__btn-wrap{
