@@ -210,11 +210,44 @@ NewshowPass.forEach(function(element, i) {
 const quantityMinus = document.getElementById("quantity-minus");
 const quantityValue = document.querySelector(".table-quantity__input_value");
 const quantityPlus = document.getElementById("quantity-plus");
+if (quantityValue) {
+    quantityMinus.addEventListener('click', () => {
+        quantityValue.value = +quantityValue.value - 1;
+    });
 
-quantityMinus.addEventListener('click', () => {
-    quantityValue.value = +quantityValue.value - 1;
-});
+    quantityPlus.addEventListener('click', () => {
+        quantityValue.value = +quantityValue.value + 1;
+    });
+}
 
-quantityPlus.addEventListener('click', () => {
-    quantityValue.value = +quantityValue.value + 1;
-});
+const orderString = document.querySelectorAll(".order__string"); 
+const popupUserInfo = document.querySelectorAll(".popup-user-info"); 
+const btnCloseUserInfo = document.getElementById('btn-close-user-info');
+
+if(orderString.length > 0) {
+    orderString.forEach((el) => {
+        el.addEventListener('contextmenu', (e) => {
+            e.preventDefault();
+            popupUserInfo[0].classList.add('popup-user-info__active');
+        });
+    });
+    btnCloseUserInfo.addEventListener('click', () => {
+        popupUserInfo[0].classList.remove('popup-user-info__active');
+    });
+}
+const popUpLogIn = document.querySelectorAll('.pop-up-log-in'),
+        openLogIn = document.querySelectorAll('.header__log-in'),
+        closeBtnLogin = document.querySelectorAll('.close-btn-log-in'),
+        logOut = document.querySelectorAll('.pop-up-log-out');
+
+        openLogIn[0].addEventListener('click', () => {
+        popUpLogIn[0].classList.add('pop-up-log-in_active');
+        menuMobile[0].classList.remove('menu_active');
+
+    });
+    closeBtnLogin.forEach((element, i) => {
+        element.addEventListener('click', () => {
+        popUpLogIn[0].classList.remove('pop-up-log-in_active');
+        logOut[0].classList.remove('pop-up-log-out_active');
+        });
+    });

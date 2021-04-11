@@ -42,9 +42,6 @@
             font-size: 13px;
         }
         @media screen and (max-width: 1050px){
-            font-size: 11px;
-        }
-        @media screen and (max-width: 500px){
             @include fontz (16px, normal, normal);
             margin-bottom: 15px;
         }
@@ -71,7 +68,7 @@
         justify-content: space-between;
         width: 80%;
         display: flex;
-        z-index: -1;
+        z-index: 0;
         @media screen and (max-width: 1800px){
             width: 85%;
         }
@@ -185,21 +182,19 @@
             display: none;
         }
         &__wrap-btn{
-            display: none!important;
             width: 22%;
             align-items: center;
             justify-content: flex-end;
+            &_disabled{
+                display: none!important;
+            }
             @media screen and (max-width: 1500px){
-                width: 21%;
+                width: 24%;
             }
             @media screen and (max-width: 1050px){
-                margin: 0 auto 30px;
-                width: 100%;
-                justify-content: center;
-            }
-            @media screen and (max-width: 500px){
                 flex-direction: column;
                 align-items: baseline;
+                width: 100%;
             }
         }
     }
@@ -219,12 +214,16 @@
             padding: 9px 3px;
             font-size: 13px;
         }
+        @media screen and (max-width: 1050px){
+            padding: 9px 10px;
+            font-size: 14px;
+        }
         &:hover{
             opacity: 0.7;
         }
     }
     .header-authorized{
-        // display: none;
+        display: none;
         &__mail {
             img{
                 @media screen and (max-width: 1300px){
@@ -235,6 +234,7 @@
                 @media screen and (max-width: 1300px){
                     width: 15px;
                     height: 15px;
+                    line-height: 15px;
                     top: -7px;
                     right: -6px;
                 }
@@ -278,6 +278,9 @@
                     font-size: 14px;
                 }
             }
+        }
+        &_active{
+            display: flex;
         }
     }
     

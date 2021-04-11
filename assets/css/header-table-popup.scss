@@ -223,9 +223,10 @@
     .table-bids {
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
+        overflow: auto;
         &__block {
             width: 48%;
+            min-width: 240px;
             &_title {
                 text-align: center;
                 font-family: 'Montserrat';
@@ -261,14 +262,28 @@
                 }
             }
             .order__string-title {
-                left: 60px;
+                flex-wrap: wrap;
+                width: 100%;
+                left: 0;
+                text-align: center;
+                & span:nth-child(1) {
+                    display: inline-block;
+                    width: 38%;
+                    margin-left: 10%;
+                    margin-right: 0%;
+                }
                 & span:nth-child(2) {
-                    margin-right: 35px;
+                    margin-right: 0%;
+                    width: 25%;
+                }
+                & span:nth-child(3) {
+                    width: 25%;
                 }
             }
             .order__item {
                 padding: 23px 0;
                 height: 280px;
+                // min-width: 240px;
                 width: 100%;
                 background: #fff;
                 margin: 0;
@@ -297,6 +312,7 @@
                     }
                     & > :nth-child(5) {
                         width: 47%;
+                        cursor: pointer;
                     }
                 }
                 .order__lines {

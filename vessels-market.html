@@ -3,7 +3,7 @@
    <head>
       <meta charset="utf-8">
       <meta content="width=device-width, initial-scale=1.0" name="viewport">
-      <title>World Fleet</title>
+      <title>Vessels-market</title>
       <meta content="" name="description">
       <meta content="" name="keywords">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -25,7 +25,7 @@
             </button>
             <ul class="menu__main d-flex">
                <li class="menu__list">
-                  <a href="cargo-market.html" class="active">Cargo Market</a>
+                  <a href="cargo-market.html">Cargo Market</a>
                   <span class="menu__arrow"></span>
                   <ul class="menu__sub">
                      <li class="menu__sub-list"><a href="#">Orders dashboard</a></li>
@@ -46,14 +46,14 @@
                      <li class="menu__sub-list"><a href="#">How it works</a></li>
                   </ul>
                </li>
-               <li class="menu__list"><a href="#">World Fleet</a>
+               <li class="menu__list"><a href="world-fleet.html">World Fleet</a>
                   <span class="menu__arrow"></span>
                   <ul class="menu__sub">
                      <li class="menu__sub-list"><a href="#">Orders dashboard</a></li>
                      <li class="menu__sub-list"><a href="#">How it works</a></li>
                   </ul>
                </li>
-               <li class="menu__list"><a href="#">Vessels Market</a>
+               <li class="menu__list"><a class="active" href="vessels-market.html">Vessels Market</a>
                   <span class="menu__arrow"></span>
                   <ul class="menu__sub">
                      <li class="menu__sub-list"><a href="#">Orders dashboard</a></li>
@@ -61,11 +61,6 @@
                   </ul>
                </li>
                <li class="menu__list"><a href="companies.html">Companies</a>
-                  <span class="menu__arrow"></span>
-                  <ul class="menu__sub">
-                     <li class="menu__sub-list"><a href="#">Orders dashboard</a></li>
-                     <li class="menu__sub-list"><a href="#">How it works</a></li>
-                  </ul>
                </li>
                <!-- <li class="menu__list"><a href="#">Price</a></li> -->
             </ul>
@@ -77,10 +72,28 @@
                   Log In</button>
                <button id="open-account">Open account</button>
             </div>
+            <div class="header-authorized">
+               <div class="header-authorized__mail">
+                   <a href="#">
+                       <img src="assets/img/mailto.svg" alt="">
+                       <span>1</span>
+                   </a>
+               </div>
+               <div class="header-authorized__info">
+                   <div class="user_info-avatar"><img src="assets/img/profile.svg" alt=""></div>
+                   <div class="user_info-name">Tomas Jefferson</div>
+               </div>
+               <a href="#" class="header-authorized__icon-setting"><img src="assets/img/setting.svg" alt=""></a>
+               <div class="header-authorized__chat">
+                   <span>Chat</span>
+                   <img src="assets/img/chat.svg" alt="">
+                   <span>1</span>
+               </div>
+           </div>
          </nav>
          
       </header>
-      <main class="cargo-market world-fleet">
+      <main class="cargo-market world-fleet vessels-market">
          <section class="home__video ">
             <video src="assets/video/video-cargo-market.mp4" style="width: 100%;" class="d-block" autoplay loop muted></video>
          </section>
@@ -95,40 +108,25 @@
             <div class="container">
                <h4 class="service__title">World Fleet</h4>
                <div class="categories__wrap align-items-center">
-                  <div class="d-flex cargo-market__block-wrap align-items-center">
-                     <div class="d-flex flex-column world-fleet__item-wrap">
-                        <div class="world-fleet__item"> <img src="assets/img/world-fleet-1.png" alt="">
-                           <p>dgsshs  shhrhrhrsh  hrjshnrjkhnjk
-                              sjkhnskjhkjhn hsjsrjkhnjkshn</p>
-                        </div>
-                        <div class="world-fleet__item world-fleet__item_central"> <img src="assets/img/world-fleet-2.png" alt="">
-                           <p>dgsshs  shhrhrhrsh  hrjshnrjkhnjk
-                              sjkhnskjhkjhn hsjsrjkhnjkshn</p>
-                        </div>
-                        <div class="world-fleet__item"> <img src="assets/img/world-fleet-3.png" alt="">
-                           <p>dgsshs  shhrhrhrsh  hrjshnrjkhnjk
-                              sjkhnskjhkjhn hsjsrjkhnjkshn</p>
-                        </div>
-                     </div>
-                     <div class="d-flex flex-column world-fleet__item-wrap">
-                        <div class="world-fleet__item"> <img src="assets/img/world-fleet-4.png" alt="">
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. ditate </p>
-                        </div>
-                        <div class="world-fleet__item"> <img src="assets/img/world-fleet-5.png" alt="">
-                           <p>dgsshs  shhrhrhrsh  hrjshnrjkhnjk
-                              sjkhnskjhkjhn hsjsrjkhnjkshn</p>
-                        </div>
-                     </div>
-                     
+                  <div class="cargo-market__monitor">
+                     <img src="assets/img/world-fleet-6.png" alt="">
                   </div>
-                  <div class="cargo-market__monitor"><img src="assets/img/world-fleet-6.png" alt=""></div>
-
+                     <div class="d-flex flex-column world-fleet__item-wrap">
+                     <div class="world-fleet__item"> <img src="assets/img/vessels-market1.svg" alt="">
+                        <p>lorem ipsum dolor sit amet consectetur  inventore ea velit  
+                        </p>
+                        <p>lorem ipsum dolor sit amet consectetur  inventore ea velit  
+                        </p>
+                        <p>lorem ipsum dolor sit amet consectetur  inventore ea velit  
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur  inventore ea velit  
+                        </p>
+                     </div>
+                  </div>
                </div>
                <div class="d-flex categories__wrap-btn">
-                  <div><button class="btn-how-work">How it Works</button>
-                  </div>
-                  <div><button class="btn-open-dashboard ">Open dashboard</button>
-                  </div>
+                  <div><button class="btn-open-dashboard ">Open dashboard</button></div>
+                  <div><button class="btn-how-work">How it Works</button> </div>
                </div>
             </div>
          </section>

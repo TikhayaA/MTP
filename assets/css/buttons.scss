@@ -14,10 +14,6 @@
     &:hover{
         background: #33C1EF;
     }
-    // &:focus{
-    //     background: green;
-    //     // opacity: 0.8;
-    // }
 }
 .btn-open-dashboard{
     background: #005672;
@@ -63,8 +59,8 @@
 
 }
 .btn-close {
-    background: #000000;
-    border: 1px solid #000000;
+    background: #0F0F11;
+    border: 1px solid #0F0F11;
     box-sizing: border-box;
     border-radius: 3px;
     width: 182px;
@@ -75,6 +71,10 @@
     font-weight: normal;
     font-size: 16px;
     color: #FFFFFF;
+    &:hover{
+        background: none;
+        color: #0F0F11;
+    }
 }
 .triangle {
     position:relative;

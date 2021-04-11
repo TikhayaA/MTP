@@ -73,10 +73,12 @@ $maxWidth: 1440;
 body{
     font-family: 'Montserrat', sans-serif!important;
     color: #000000;
+    scrollbar-width: thin;
 
     & > * {
         ::-webkit-scrollbar {
-            width: 4px;
+            width: 6px; /* ширина для вертикального скролла */
+            height: 4px; /* высота для горизонтального скролла */
         }
         ::-webkit-scrollbar-track {
             -webkit-box-shadow: inset 0 0 6px rgba(216, 216, 216, 0.47);

@@ -629,6 +629,7 @@
     &__item{
         width: 94%;
         position: relative;
+        text-align: right;
         @media screen and (max-width: 767px) {
             width: 100%;
         } 
@@ -650,7 +651,75 @@
             transform: translate(0, -50%);
             width: 50%;
         }
+        img {
+            width: 100%;
+            max-width: 630px;
+        }
     }
 
+}
+.vessels-market{
+    .world-fleet__item{
+        @media all and (max-width: 1360px) {
+            width: 100%;
+        }
+        &-wrap {
+            width: 100%;
+            max-width: 620px;
+            @media all and (max-width: 1360px) {
+                margin-top: 40px;
+            }
+        }
+        p{
+            width: 60%;
+            position: absolute;
+            text-align: left;
+            left: 20%;
+
+            @media all and (max-width: 1700px) {
+                left: 22%;
+            }
+            @media all and (max-width: 1360px) {
+                width: 62%;
+            }
+            @media all and (max-width: 375px) {
+                font-size: 11px;
+            }
+        }
+        :nth-child(2){
+            top: 12%;
+            @media all and (max-width: 375px) {
+                top: 13%;
+            }
+        }
+        :nth-child(3){
+            top: 36%;
+        }
+        :nth-child(4){
+            top: 58%;
+            @media all and (max-width: 375px) {
+                top: 59%;
+            }
+        }
+        :nth-child(5){
+            top: unset;
+            bottom: 14%;
+            @media all and (max-width: 1700px) {
+                bottom: 12%;
+            }
+            @media all and (max-width: 1360px) {
+                bottom: 16%;
+            }
+            @media all and (max-width: 768px) {
+                bottom: 13%;
+            }
+            @media all and (max-width: 550px) {
+                bottom: 11%;
+            }
+            @media all and (max-width: 380px) {
+                bottom: 9%;
+            }
+        }
+    }
 }
 
