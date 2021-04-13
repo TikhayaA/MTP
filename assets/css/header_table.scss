@@ -3,6 +3,13 @@
     display: flex;
     justify-content: space-between;
     padding: 0 27px 0 25px;
+    @media all and (max-width: 1300px) {
+        width: 1300px;
+        position: relative;
+    }
+    @media all and (max-width: 800px) {
+        overflow: auto;
+    }
 
     &-btns {
         text-align: center;
@@ -55,15 +62,19 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        @media all and (max-width: 800px) {
+            min-width: 600px;
+        }
     }
     .times_block {
         width: calc(100% - 100px);
         background: #0878B7;
         border-radius: 5px 5px 0px 0px;
         padding: 14px 15px;
-        @media all and (max-width: 1100px) {
-        display: none;
-        }
+        // @media all and (max-width: 1100px) {
+        // display: none;
+        // }
         &-content {
             display: flex;
             justify-content: space-around;
@@ -106,6 +117,10 @@
         right: 21px;
         top: -35px;
         position: absolute;
+
+        // @media all and (max-width: 800px) {
+        //     position: static;
+        // }
     }
     
     .header_info {

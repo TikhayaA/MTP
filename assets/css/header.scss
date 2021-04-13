@@ -260,11 +260,17 @@
                 position: static;
                 margin-left: 10px;
             }
-                img{
-                    @media all and (max-width: 1500px){
-                        width: 30px;
-                    }
+            img{
+                @media all and (max-width: 1500px){
+                    width: 30px;
                 }
+            }
+            span:last-child {
+                
+                @media (max-width: 1500px) {
+                    right: 14px;
+                }
+            }
         
         }
         &__icon-setting{

@@ -223,31 +223,54 @@ if (quantityValue) {
 const orderString = document.querySelectorAll(".order__string"); 
 const popupUserInfo = document.querySelectorAll(".popup-user-info"); 
 const btnCloseUserInfo = document.getElementById('btn-close-user-info');
+const viewInfo = document.querySelectorAll('.view-info');
+const subMenuBtn = document.querySelectorAll('.show-bids .sub-menu');
 
 if(orderString.length > 0) {
     orderString.forEach((el) => {
         el.addEventListener('contextmenu', (e) => {
             e.preventDefault();
-            popupUserInfo[0].classList.add('popup-user-info__active');
+            subMenuBtn[0].classList.add('sub-menu-active');
+            subMenuBtn[0].style.top = e.pageY + 'px';
+            subMenuBtn[0].style.left = e.pageX + 'px';
         });
+    });
+    viewInfo[0].addEventListener('click', () => {
+        popupUserInfo[0].classList.add('popup-user-info__active');
+        subMenuBtn[0].classList.remove('sub-menu-active');
     });
     btnCloseUserInfo.addEventListener('click', () => {
         popupUserInfo[0].classList.remove('popup-user-info__active');
     });
 }
+
 const popUpLogIn = document.querySelectorAll('.pop-up-log-in'),
         openLogIn = document.querySelectorAll('.header__log-in'),
         closeBtnLogin = document.querySelectorAll('.close-btn-log-in'),
         logOut = document.querySelectorAll('.pop-up-log-out');
-
+    if (openLogIn.length > 0) {
         openLogIn[0].addEventListener('click', () => {
-        popUpLogIn[0].classList.add('pop-up-log-in_active');
-        menuMobile[0].classList.remove('menu_active');
-
-    });
-    closeBtnLogin.forEach((element, i) => {
-        element.addEventListener('click', () => {
-        popUpLogIn[0].classList.remove('pop-up-log-in_active');
-        logOut[0].classList.remove('pop-up-log-out_active');
+            popUpLogIn[0].classList.add('pop-up-log-in_active');
+            menuMobile[0].classList.remove('menu_active');
         });
+    }
+    if (closeBtnLogin.length > 0) {
+        closeBtnLogin.forEach((element, i) => {
+            element.addEventListener('click', () => {
+            popUpLogIn[0].classList.remove('pop-up-log-in_active');
+            logOut[0].classList.remove('pop-up-log-out_active');
+            });
+        });
+    }
+
+
+const createdBidsBtn = document.querySelectorAll('.created-bids .table-quantity__btn');
+const createdBids = document.querySelectorAll('.created-bids');
+const showBids = document.querySelectorAll('.show-bids');
+
+if(createdBidsBtn.length > 0) {
+    createdBidsBtn[0].addEventListener('click', () => {
+        createdBids[0].classList.remove('created-bids_active');
+        showBids[0].classList.add('show-bids_active');
     });
+}

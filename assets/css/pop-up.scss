@@ -404,6 +404,10 @@
     -ms-transform: translate(-50%, 0);
     -o-transform: translate(-50%, 0);
 
+    @media all and (max-width: 1200px) {
+        width: 90%;
+    }
+
     .item-row {
         justify-content: space-between;
     }

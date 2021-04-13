@@ -1,5 +1,13 @@
+html {
+    overflow: auto;
+}
 .table {
     display: flex;
+    max-width: unset;
+    @media all and (max-width: 1300px) {
+        width: 1300px;
+        margin-bottom: 0;
+    }
     &_filter {
         width: 320px;
         background: #D8EEFA;
@@ -14,7 +22,7 @@
         height: calc(100% - 158px);
         overflow: hidden;
         @media all and (max-width: 1600px) {
-            height: calc(100% - 205px);
+            height: calc(100% - 168px);
         }
         img {
             position: absolute;
@@ -60,11 +68,11 @@
             height: calc(100vh - 240px - 190px);
             overflow: auto;
             @media all and (max-width: 1600px) {
-                height: calc(100vh - 240px - 233px);
+                height: calc(100vh - 250px - 190px);
             }
-            @media all and (max-width: 1120px) {
-                width: 1120px;
-            }
+            // @media all and (max-width: 1120px) {
+            //     width: 1120px;
+            // }
         }
 
         &-header{
@@ -73,9 +81,9 @@
             align-items: center;
             padding: 5px;
             position: relative;
-            @media all and (max-width: 1120px) {
-                width: 1120px;
-            }
+            // @media all and (max-width: 1120px) {
+            //     width: 1120px;
+            // }
 
             h2 {
                 font-family: 'Montserrat';
@@ -124,8 +132,8 @@
             bottom: 0;
             background: #D8EEFA;
 
-            @media all and (max-width: 1120px) {
-                width: 1120px;
+            @media all and (max-width: 1300px) {
+                width: calc(1300px - 30px);
                 overflow: auto;
                 position: relative;
             }
@@ -201,7 +209,8 @@
     }
     &_fixed {
         height: 100vh;
-        overflow: hidden;
+        overflow: auto;
+        width: 100vw;
     }
     &__content {
         &_header {
@@ -275,15 +284,19 @@
                 color: #6C7077;
                 width: 30%;
                 margin-right: 2%;
+                word-break: break-all;
+                padding-left: 5px;
             }
             &_value {
                 font-family: 'Montserrat';
+                padding-left: 20px;
                 font-style: normal;
                 font-weight: 500;
                 font-size: 14px;
                 line-height: 17px;
                 color: #000000;
                 width: 68%;
+                word-break: break-all;
             }
         }
     }
@@ -296,7 +309,7 @@
 }
 .fleet {
     .table_data-item {
-        grid-template-columns: 30px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 30px 200px 1fr 1fr 1fr 1fr 1fr 195px;
 
         & > div {
             border-right: none;
@@ -307,6 +320,13 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+            }
+
+            &:nth-child(2){
+                img {
+                    padding: 10px;
+                    width: 100%;
+                }
             }
         }
     }
@@ -329,6 +349,9 @@
        display: flex;
        flex-wrap: wrap;
        justify-content: space-between;
+       @media all and (max-width: 1700px) {
+           width: 1700px;
+       }
    }
    &__string {
        margin: 9px 0;
@@ -393,6 +416,11 @@
     }
     .order-photos__slide img {
         width: 32%;
+    }
+    @media all and (max-width: 1300px) {
+        .table__btn_owner {
+            font-size: 14px;
+        }
     }
 }
 .input-block.input-double span {

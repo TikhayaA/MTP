@@ -11,6 +11,10 @@
         height: calc(100vh - 200px);
     }
 
+    @media all and (max-width: 1300px) {
+        height: calc(100vh - 168px);
+    }
+
     .table_btn {
         background: #C4C4C4;
         display: block;
@@ -23,6 +27,9 @@
 }
 .create-order {
     padding: 22px 40px 40px;
+    @media all and (max-width: 1200px){
+        overflow: auto;
+    }
     &_active {
         display: block;
     }
@@ -34,6 +41,9 @@
             height: 1px;
             background:#C4C4C4;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        @media all and (max-width: 1200px){
+            width: 1200px;
         }
     }
     &__title {
@@ -49,6 +59,9 @@
         margin-top: 40px;
         display: flex;
         justify-content: space-between;
+        @media all and (max-width: 1200px){
+            width: 1200px;
+        }
     }
     &__item {
         width: 48%;
@@ -125,6 +138,9 @@
     }
 }
 .order-id {
+    @media all and (max-width: 1200px){
+        overflow: auto;
+    }
     &_active {
         display: block;
     }
@@ -136,6 +152,9 @@
         font-size: 20px;
         line-height: 24px;
         color: #60626A;
+        @media all and (max-width: 1200px){
+            width: 1200px;
+        }
     }
     &__title {
         font-family: 'Montserrat';
@@ -151,6 +170,9 @@
         display: flex;
         justify-content: space-between;
         padding: 19px 20px 23px;
+        @media all and (max-width: 1200px){
+            width: 1200px;
+        }
     }
     &__description {
         display: flex;
@@ -283,8 +305,8 @@
             .order__item {
                 padding: 23px 0;
                 height: 280px;
-                // min-width: 240px;
                 width: 100%;
+                // min-width: 240px;
                 background: #fff;
                 margin: 0;
                 overflow: auto;
@@ -292,6 +314,7 @@
             &_all {
                 width: 100%;
                 margin-top: 40px;
+                overflow: auto;
 
                 .table-bids__block_title {
                     text-align: left;
@@ -435,6 +458,45 @@
         display: none;
         &_active {
             display: block;
+        }
+        .order__item {
+            width: 540px;
+        }
+        .order__string-title span:nth-child(1) {
+            width: auto;
+        }
+        .order__string-title span:nth-child(2) {
+            margin-right: 0;
+        }
+        .order__string-title span:nth-child(3) {
+            width: auto;
+        }
+        .sub-menu {
+            display: none;
+            width: 84px;
+            background: #EFF7FD;
+            border: 0.3px solid #B6DAED;
+            box-sizing: border-box;
+            box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+            padding: 6px 10px;
+            position: fixed;
+            &-active {
+                display: block;
+            }
+
+            ul {
+                li {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 140%;
+                    letter-spacing: 0.01em;
+                    color: #000000;
+                    margin-bottom: 10px;
+                    cursor: pointer;
+                }
+            }
         }
     }
 }
