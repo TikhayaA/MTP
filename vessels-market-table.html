@@ -7,10 +7,12 @@
       <meta content="" name="description">
       <meta content="" name="keywords">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
       <link href="assets/css/style.css" rel="stylesheet">
-      <link href="assets/css/reset.css" rel="stylesheet"> 
+      <link href="assets/css/reset.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
 </head>
-<body class="table_fixed">
+<body class="table_fixed" data-simplebar>
     <header class="header_table">
         <div class="header_table-btns">
             <div class="header_table-logo">
@@ -21,21 +23,21 @@
                 <button class="table_btn" id="order-popup">Add Ship</button>
             </div>
         </div>
-        <div class="header_table-block">
+        <div class="header_table-block" data-simplebar>
             <h1 class="header_table-title">Vessels Market</h1>
             <div class="header-authorized header_info">
-                <a href="#" class="header-authorized__icon-home"><img src="assets/img/home-btn.svg" alt=""></a>
-                <div class="header-authorized__mail">
+                <a href="index.html" class="header-authorized__icon-home"><img src="assets/img/home-btn.svg" alt=""></a>
+                <div class="header-authorized__mail pop-up-open" data-popup="pop-up-message">
                     <a href="#">
                         <img src="assets/img/mailto.svg" alt="">
                         <span>1</span>
                     </a>
                 </div>
                 <div class="header-authorized__info">
-                    <div class="user_info-avatar"><img src="assets/img/profile.svg" alt=""></div>
-                    <div class="user_info-name">Tomas Jefferson</div>
+                    <div class="user_info-avatar pop-up-open" data-popup="pop-up-log-out"><img src="assets/img/profile.svg" alt=""></div>
+                    <div class="user_info-name pop-up-open" data-popup="account-orders">Tomas Jefferson</div>
                 </div>
-                <a href="#" class="header-authorized__icon-setting"><img src="assets/img/setting.svg" alt=""></a>
+                <a href="#" class="header-authorized__icon-setting pop-up-open" data-popup="pop-up-settings"><img src="assets/img/setting.svg" alt=""></a>
                 <div class="header-authorized__chat">
                     <span>Chat</span>
                     <img src="assets/img/chat.svg" alt="">
@@ -109,7 +111,7 @@
         </div>
     </header>
     <main class="table">
-        <aside class="table_filter world-fleet">
+        <aside class="table_filter world-fleet" data-simplebar>
             <div class="table_filter-content">
                 <div class="input-block">
                     <label for="id_ order">id order</label>
@@ -204,7 +206,7 @@
             <img src="assets/img/sidebar-arrow.svg" alt="" class="open_sidebar">
         </aside>
         <div class="table_content world-fleet">
-            <div class="table_content-data">
+            <div class="table_content-data" data-simplebar>
                 <div class="table_data-content fleet">
                     <div class="table_data-item">
                         <div class="checkbox-block">
@@ -216,8 +218,7 @@
                         </div>
                         <div>
                             <div class="table-data__row">
-                                <div class="table-data__row_title">id</div>
-                                <div class="table-data__row_value">871012557846</div>
+                                <div class="table-data__row_id">id <span>871012557846</span></div>
                             </div>
                             <div class="table-data__row">
                                 <div class="table-data__row_title">Type</div>
@@ -246,7 +247,7 @@
                                 <div class="table-data__row_value">BV</div>
                             </div>
                             <div class="table-data__row">
-                                <div class="table-data__row_title">Holds</div>
+                                <div class="table-data__row_title">Price, $</div>
                                 <div class="table-data__row_value">6</div>
                             </div>
                         </div>
@@ -316,8 +317,7 @@
                         </div>
                         <div>
                             <div class="table-data__row">
-                                <div class="table-data__row_title">id</div>
-                                <div class="table-data__row_value"></div>
+                                <div class="table-data__row_id">id <span></span></div>
                             </div>
                             <div class="table-data__row">
                                 <div class="table-data__row_title">Type</div>
@@ -346,7 +346,7 @@
                                 <div class="table-data__row_value"></div>
                             </div>
                             <div class="table-data__row">
-                                <div class="table-data__row_title">Holds</div>
+                                <div class="table-data__row_title">Price, $</div>
                                 <div class="table-data__row_value"></div>
                             </div>
                         </div>
@@ -414,7 +414,7 @@
                     <div class="header-vesseis__title">Selected Vessels</div>
                     <img src="assets/img/double_arrow_right.svg" alt="">
                 </div>
-                <div class="table_content-data">
+                <div class="table_content-data" data-simplebar>
                     <div class="table-data__content-card">
                         <div class="table-data__card">
                             <div class="table-data__column">
@@ -448,9 +448,13 @@
                                     <span class="table-data__string_title">DWT</span>
                                     <span class="table-data__string_value">75 000</span>
                                 </div>          
-                                <div class="table-data__string">
+                                <div class="table-data__string double-string">
                                     <span class="table-data__string_title">TEU</span>
                                     <span class="table-data__string_value"></span>
+                                    <div class="double-string__block">
+                                        <span class="table-data__string_title">Price, $</span>
+                                        <span class="table-data__string_value"></span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="table-data__column">
@@ -489,9 +493,13 @@
                                     <span class="table-data__string_title">DWT</span>
                                     <span class="table-data__string_value">75 000</span>
                                 </div>          
-                                <div class="table-data__string">
+                                <div class="table-data__string double-string">
                                     <span class="table-data__string_title">TEU</span>
                                     <span class="table-data__string_value"></span>
+                                    <div class="double-string__block">
+                                        <span class="table-data__string_title">Price, $</span>
+                                        <span class="table-data__string_value"></span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="table-data__column">
@@ -530,9 +538,13 @@
                                     <span class="table-data__string_title">DWT</span>
                                     <span class="table-data__string_value">75 000</span>
                                 </div>          
-                                <div class="table-data__string">
+                                <div class="table-data__string double-string">
                                     <span class="table-data__string_title">TEU</span>
                                     <span class="table-data__string_value"></span>
+                                    <div class="double-string__block">
+                                        <span class="table-data__string_title">Price, $</span>
+                                        <span class="table-data__string_value"></span>
+                                    </div>
                                 </div>
                             </div>
                             <div class="table-data__column">
@@ -543,7 +555,7 @@
                 </div>
             </div>
         </div>
-        <form action="#"  class="popup create-order popup-add-ship">
+        <form action="#"  class="popup create-order popup-add-ship" data-simplebar>
             <div class="create-order__header">
                 <h2 class="create-order__title">Add Ship</h2>
             </div>
@@ -552,75 +564,75 @@
                     <div class="item-row">
                         <div class="input-block">
                             <label for="add__ship-type">Type</label>
-                            <input type="text" class="input-block-ui" id="add__ship-type" value="Bulk Carrier">
+                            <input type="text" class="input-block-ui" id="add__ship-type" value="">
                         </div>
                         <div class="input-block">
                             <label for="add__ship-length">Length(LOA)</label>
-                            <input type="text" class="input-block-ui" id="add__ship-length" value="225">
+                            <input type="text" class="input-block-ui" id="add__ship-length" value="">
                         </div>
                         <div class="input-block">
                             <label for="add__ship-subtype">Sub type</label>
-                            <input type="text" class="input-block-ui" id="add__ship-subtype" value="Panamax">
+                            <input type="text" class="input-block-ui" id="add__ship-subtype" value="">
                         </div>
                         <div class="input-block">
                             <label for="add__ship-beadth">Breadth</label>
-                            <input type="text" class="input-block-ui" id="add__ship-beadth" value="32">
+                            <input type="text" class="input-block-ui" id="add__ship-beadth" value="">
                         </div>
                         <div class="input-block">
                             <label for="">Year of built</label>
-                            <input type="text" class="input-block-ui" id="" value="2016">
+                            <input type="text" class="input-block-ui" id="" value="">
                         </div>
                         <div class="input-block">
                             <label for="">Depth</label>
-                            <input type="text" class="input-block-ui" id="" value="2016">
+                            <input type="text" class="input-block-ui" id="" value="">
                         </div>
                         <div class="input-block">
                             <label for="">IMO</label>
-                            <input type="text" class="input-block-ui" id="" value="2023564789">
+                            <input type="text" class="input-block-ui" id="" value="">
                         </div>
                         <div class="input-block">
                             <label for="">Draft</label>
-                            <input type="text" class="input-block-ui" id="" value="12">
+                            <input type="text" class="input-block-ui" id="" value="">
                         </div>
                         <div class="input-block">
                             <label for="">Flag</label>
-                            <input type="text" class="input-block-ui" id="" value="Panama">
+                            <input type="text" class="input-block-ui" id="" value="">
                         </div>
                         <div class="input-block">
                             <label for="">Speed</label>
-                            <input type="text" class="input-block-ui" id="" value="14">
+                            <input type="text" class="input-block-ui" id="" value="">
                         </div>
                         <div class="input-block">
                             <label for="">Class</label>
-                            <input type="text" class="input-block-ui" id="" value="BV">
+                            <input type="text" class="input-block-ui" id="" value="">
                         </div>
                         <div class="input-block">
                             <label for="">Power BHP</label>
-                            <input type="text" class="input-block-ui" id="" value="11260">
+                            <input type="text" class="input-block-ui" id="" value="">
                         </div>
                         <div class="input-block">
                             <label for="">GRT</label>
-                            <input type="text" class="input-block-ui" id="" value="92350">
+                            <input type="text" class="input-block-ui" id="" value="">
                         </div>
                         <div class="input-block">
                             <label for="">M/E</label>
-                            <input type="text" class="input-block-ui" id="" value="B&W (8S50MC)">
+                            <input type="text" class="input-block-ui" id="" value="">
                         </div>
                         <div class="input-block">
                             <label for="">NRT</label>
-                            <input type="text" class="input-block-ui" id="" value="53600">
+                            <input type="text" class="input-block-ui" id="" value="">
                         </div>
                         <div class="input-block">
                             <label for="">D/G</label>
-                            <input type="text" class="input-block-ui" id="" value="3x400 kWt Yanmar">
+                            <input type="text" class="input-block-ui" id="" value="">
                         </div>
                         <div class="input-block">
                             <label for="">DWT</label>
-                            <input type="text" class="input-block-ui" id="" value="75000">
+                            <input type="text" class="input-block-ui" id="" value="">
                         </div>
                         <div class="input-block">
                             <label for="">Number of Holds</label>
-                            <input type="text" class="input-block-ui" id="" value="7">
+                            <input type="text" class="input-block-ui" id="" value="">
                         </div>
                         <div class="input-block">
                             <label for="">TEU</label>
@@ -632,11 +644,11 @@
                         </div>
                         <div class="input-block">
                             <label for="">Bow thruster</label>
-                            <input type="text" class="input-block-ui" id="" value="2x75 kWt ">
+                            <input type="text" class="input-block-ui" id="" value=" ">
                         </div>
                         <div class="input-block">
                             <label for="">Price, $</label>
-                            <input type="text" class="input-block-ui" id="" value="12 000 000">
+                            <input type="text" class="input-block-ui" id="" value="">
                         </div>
                     </div>
                 </div>
@@ -644,31 +656,31 @@
                     <div class="item-row">
                         <div class="input-block">
                             <label for="">Company</label>
-                            <input type="text" class="input-block-ui" id="" value="ASTREX">
+                            <input type="text" class="input-block-ui" id="" value="">
                         </div>
                         <div class="input-block">
                             <label for="">id Company</label>
-                            <input type="text" class="input-block-ui" id="" value="589365092294">
+                            <input type="text" class="input-block-ui" id="" value="">
                         </div>
                         <div class="input-block">
                             <label for="">Adress</label>
-                            <input type="text" class="input-block-ui" id="" value="Norway, Oslo, Nicolas Berge 145/2">
+                            <input type="text" class="input-block-ui" id="" value="">
                         </div>
                         <div class="input-block">
                             <label for="">Phone number</label>
-                            <input type="text" class="input-block-ui" id="" value="+25487874567">
+                            <input type="text" class="input-block-ui" id="" value="">
                         </div>
                         <div class="input-block">
                             <label for="">Web</label>
-                            <input type="text" class="input-block-ui" id="" value="www.ANTREX.com">
+                            <input type="text" class="input-block-ui" id="" value="">
                         </div>
                         <div class="input-block">
                             <label for="">@mail</label>
-                            <input type="text" class="input-block-ui" id="" value="Antrex@gmail.com">
+                            <input type="text" class="input-block-ui" id="" value="">
                         </div>
                         <div class="input-block">
                             <label for="">Next Dry Dock</label>
-                            <input type="text" class="input-block-ui" id="" value="25.10.2024">
+                            <input type="text" class="input-block-ui" id="" value="">
                         </div>
                     </div>
                     <div class="create-order__photos">
@@ -689,7 +701,7 @@
             </div>
             <button class="table_btn" type="submit" id="open_order_list">Send order</button>
         </form>
-        <div class="popup order-id world-fleet">
+        <div class="popup order-id world-fleet" data-simplebar>
             <div class="order-id__header">
                 <h2 class="order-id__title">order id [562345557846]</h2>
             </div>
@@ -786,7 +798,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="order-id__item">
+                <div class="order-id__item order-id__description">
                     <div class="order-id__inputs">
                         <div class="input-block">
                             <label for="">Company</label>
@@ -812,6 +824,10 @@
                             <label for="">@mail</label>
                             <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="Antrex@gmail.com">
                         </div>
+                        <div class="input-block">
+                            <label for="">Next Dry Dock</label>
+                            <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="25.10.2024">
+                        </div>
                     </div>
                     <div class="order-id__photos">
                         <div class="order-photos__title">Photos</div>
@@ -823,7 +839,7 @@
                             <img src="assets/img/image-holder.png" alt="">
                         </div>
                     </div>
-                    <div class="textarea-block">
+                    <div class="textarea-block readonly">
                         <label for="">Comments, description</label>
                         <textarea name=""></textarea>
                     </div>

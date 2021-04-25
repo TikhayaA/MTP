@@ -1,0 +1,111 @@
+.header-logo {
+    height: 146px;
+    background: #4DC0C7;
+    mix-blend-mode: normal;
+    border: 0.5px solid #000000;
+    box-sizing: border-box;
+    padding: 30px;
+    align-items: baseline;
+    display: flex;
+    @media all and (max-width: 1920px) {
+        width: 1920px;
+    }
+    &__form {
+        display: flex;
+        width: calc(100% - 320px);
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 215px;
+
+        .select-block {
+            width: 250px;
+        }
+    }
+
+    .header-authorized {
+        justify-content: flex-end;
+    }
+    .companies-logo-list__btn {
+        background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), rgba(104, 139, 227, 0.5);
+        border: 1px solid rgba(0, 0, 0, 0.38);
+        box-sizing: border-box;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+        width: 96px;
+        height: 52px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 52px;
+        color: #000000;
+        text-align: center;
+    }
+}
+.logo-list {
+    background: #E1F5FF;
+    height: calc(100% - 146px);
+    overflow: auto;
+
+    @media all and (max-width: 1920px) {
+        width: 1920px;
+    }
+
+    &__item {
+        height: 100px;
+    }
+    &__table {
+        display: grid;
+        grid-template-columns: 144px 1fr 0.5fr;
+    }
+    &__info {
+        display: flex;
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-right: 4px solid #fff !important;
+        & > * {
+            width: 23%;
+        }
+    }
+    &__row {
+        display: flex;
+        padding: 0 10px;
+        &_title {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            color: #6C7077;
+            margin-right: 15px;
+        }
+        &_value {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            color: #000000;
+        }
+    }
+    &__image {
+        height: 100px;
+        padding: 0 !important;
+        border-right: unset !important;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__description {
+        height: 100px;
+        overflow: auto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        color: #000000;
+        text-align: left !important;
+        padding: 5px 7px !important;
+    }
+}

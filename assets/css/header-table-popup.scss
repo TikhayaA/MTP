@@ -3,17 +3,9 @@
     width: 100%;
     background: #F0F8FE;
     z-index: 10;
-    height: calc(100vh - 160px);
+    height: calc(100vh - 150px);
     overflow: auto;
     display: none;
-
-    @media all and (max-width: 1600px) {
-        height: calc(100vh - 200px);
-    }
-
-    @media all and (max-width: 1300px) {
-        height: calc(100vh - 168px);
-    }
 
     .table_btn {
         background: #C4C4C4;
@@ -26,8 +18,8 @@
     }
 }
 .create-order {
-    padding: 22px 40px 40px;
-    @media all and (max-width: 1200px){
+    padding: 16px 40px 40px;
+    @media all and (max-width: 1710px){
         overflow: auto;
     }
     &_active {
@@ -42,25 +34,35 @@
             background:#C4C4C4;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
-        @media all and (max-width: 1200px){
-            width: 1200px;
+        @media all and (max-width: 1710px){
+            width: 1710px;
         }
     }
     &__title {
         font-family: 'Montserrat';
         font-style: normal;
-        font-weight: normal;
+        font-weight: 400;
         font-size: 26px;
         line-height: 32px;
         color: #000000;
         text-align: center;
     }
+    &__title_sub {
+        position: absolute;
+        margin-top: -17px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 140%;
+        letter-spacing: 0.01em;
+        color: #000000;
+    }
     &__content {
-        margin-top: 40px;
+        margin-top: 37px;
         display: flex;
         justify-content: space-between;
-        @media all and (max-width: 1200px){
-            width: 1200px;
+        @media all and (max-width: 1710px){
+            width: 1710px;
         }
     }
     &__item {
@@ -74,11 +76,21 @@
             & > .input-block {
                 width: 30%;
                 margin-right: 5%;
-                margin-bottom: 40px;
+                margin-bottom: 37px;
 
                 &:nth-child(3n) {
                     margin-right: 0;
                 }
+            }
+            .tooltip_underline {
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%, 5px);
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                letter-spacing: 0.01em;
+                color: #9FA4BB;
             }
         }
     }
@@ -86,13 +98,16 @@
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 500;
-        font-size: 20px;
-        line-height: 24px;
-        color: #000000;
+        font-size: 12px;
+        line-height: 14px;
+        color: #9FA4BB;
         margin-top: 20px;
+        span{
+            color: #000;
+        }
     }
     &__documents {
-        margin-top: 57px;
+        margin-top: 53px;
 
         .order-photos__slide {
             img {
@@ -105,7 +120,7 @@
     &__slide {
         background: rgba(196, 196, 196, 0.3);
         border-radius: 10px;
-        padding: 14px 17px;
+        padding: 15px 17px 14px;
         max-width: 955px;
         overflow: auto;
         display: flex;
@@ -138,7 +153,7 @@
     }
 }
 .order-id {
-    @media all and (max-width: 1200px){
+    @media all and (max-width: 1710px){
         overflow: auto;
     }
     &_active {
@@ -152,8 +167,8 @@
         font-size: 20px;
         line-height: 24px;
         color: #60626A;
-        @media all and (max-width: 1200px){
-            width: 1200px;
+        @media all and (max-width: 1710px){
+            width: 1710px;
         }
     }
     &__title {
@@ -170,8 +185,8 @@
         display: flex;
         justify-content: space-between;
         padding: 19px 20px 23px;
-        @media all and (max-width: 1200px){
-            width: 1200px;
+        @media all and (max-width: 1710px){
+            width: 1710px;
         }
     }
     &__description {
@@ -260,9 +275,7 @@
             }
             .order__string {
                 margin-bottom: 10px;
-                span {
-                    font-size: calc(16px + 2 * ((100vw) / 1440));
-                }
+                font-size: 16px;
 
                 & > :nth-child(1) {
                     width: 10%;
@@ -499,4 +512,17 @@
             }
         }
     }
+    .textarea-block {
+        label {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            color: #9FA4BB;
+        }
+    }
+}
+.show-last-attention {
+    display: none;
+    margin-top: 40px;
 }

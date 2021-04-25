@@ -1,6 +1,7 @@
 .service{
     background: $bgservice;
-    padding-bottom: 104px;
+    // padding-bottom: 104px;
+    padding-bottom: 70px;
     @media screen and (max-width: 420px) {
         padding-bottom: 20px;
     }
@@ -12,7 +13,8 @@
         color: #0544BB;
         position: relative;
         text-align: center;
-        padding: 95px 0;
+        // padding: 95px 0;
+        padding: 55px 0;
         @media screen and (max-width: 760px) {
             font-size: 32px;
             padding: 45px 0;

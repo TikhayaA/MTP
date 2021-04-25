@@ -1,5 +1,6 @@
 .pop-up{
     border-radius: 15px;
+    background: #FFFFFF;
     position: absolute;
     box-sizing: border-box;
     top: 50%;
@@ -11,6 +12,9 @@
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     display: none;
+    &_open{
+        display: block !important;
+    }
 }
 .pop-up-delete{
     background: #EAF8FF;
@@ -56,7 +60,6 @@
     }
 }
 .pop-up-message{
-    background: #FFFFFF;
     width: 80%;
     max-height: 790px;
     height: 80vh;
@@ -78,6 +81,7 @@
         line-height: 37px;
         color: #000000;
         text-align: center;
+        margin-bottom: 19px;
     }
     hr{
         background: #C4C4C4;
@@ -145,14 +149,12 @@
             text-align: left;
         }
     }
-    &__wrap-btn{
-    }
     .btn-close{
         margin: auto;
     }
 }
 .message-wrap{
-    max-height: calc(100% - 40px);
+    max-height: calc(100% - 65px);
     overflow: auto;
     display: none;
     &_active{
@@ -197,6 +199,7 @@
         @include adaptive-fonts(16, 12);
         line-height: 22px;
         letter-spacing: 0.01em;
+        min-height: 200px;
     }
     &__signature{
         p{
@@ -213,8 +216,6 @@
     }
 }
 .pop-up-log-in{
-    display: none;
-    background: #FFFFFF;
     border-radius:none;
     -moz-border-radius:none;
     -ms-border-radius:none;
@@ -227,6 +228,8 @@
     @media screen and (max-width: 800px){
         padding: 80px 40px 80px 40px;
         width: 70%;
+        width: 80%;
+        top: 45%;
     }
     @media screen and (max-width: 500px){
         padding: 40px 20px;
@@ -240,57 +243,28 @@
         @media screen and (max-width: 800px){
             margin-bottom: 20px;
         }
+        @media screen and (max-width: 500px){
+            margin-top: 12px;
+        }
         h1{
             line-height: 36px;
             letter-spacing: 0.01em;
             color: #0F0F11;
             @include adaptive-fonts(32, 20);
             margin-bottom: 8px;
-            font-weight: bold;
+            font-weight: 600;
         }
         p{
             @include adaptive-fonts(14, 12);
             line-height: 19px;
             letter-spacing: 0.01em;
             color: #556274;
+            font-weight: 500;
         }
     }
     .log-in-form{
         width: 100%;
-        .field{
-            margin-top: 16px;
-            width: 100%;
-            position: relative;
-            label{
-                display: block;
-                margin-bottom: 8px;
-                font-size: 14px;
-                line-height: 19px;
-                letter-spacing: 0.01em;
-                color: #9FA4BB;
-            }
-            input{
-                padding: 14px 16px;
-                background: #F3F6F8;
-                border: 1px solid #F3F6F8;
-                box-sizing: border-box;
-                border-radius: 4px;
-                width: 100%;
-                &:hover{
-                    border: 1px solid #9FA4BB;
-                }
-            }
-            .display-password{
-                position: absolute;
-                right: 18px;
-                bottom: 15px;
-                cursor: pointer;
-                display: none;
-                &_active{
-                    display: block;
-                }
-            }
-        }
+        
         
         &__btn{
             width: 100%;
@@ -306,6 +280,7 @@
             -ms-border-radius: 4px;
             -o-border-radius: 4px;
             font-style: normal;
+            font-weight: 600;
             &_google{
                 box-shadow: 0px 4px 16px rgba(10, 8, 58, 0.1);
                 background: #FFFFFF;
@@ -328,6 +303,7 @@
             justify-content: center;
             letter-spacing: 0.01em;
             color: #9FA4BB;
+            font-weight: 500;
             &::before, &:after{
                 position: absolute;
                 content:"";
@@ -348,7 +324,7 @@
                 left: 5px;
             }
         }
-        .reset{
+        .forgot{
             font-size: 14px;
             line-height: 140%;
             letter-spacing: 0.01em;
@@ -356,7 +332,21 @@
             margin: 6px 0 24px;
             background: none;
             border: none;
-            // width: 30%;
+            font-weight: 500;
+            position: relative;
+            padding: 0;
+            &:hover{
+                &:after{
+                    position: absolute;
+                    content: "";
+                    width: 100%;
+                    height: 1px;
+                    background: #9FA4BB;
+                    bottom: 0px;
+                    left: 0;
+                    
+                }
+            }
         }
        
 
@@ -375,6 +365,8 @@
             content: '';
             width: 20px;
             height: 2px;
+            top: 0;
+            left: 0;
             background: #9FA4BB;
         } 
         &::after{
@@ -434,6 +426,15 @@
     }
     .create-order__photos {
         margin: 40px 0;
+    }
+    .textarea-block {
+        label {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            color: #9FA4BB;
+        }
     }
 }
 .popup-user-info {
@@ -507,8 +508,6 @@
     }
 }
 .pop-up-log-out{
-    display: none;
-    background: #FFFFFF;
     max-width: 458px;
     padding: 53px 60px 50px;
     text-align: center;
@@ -532,10 +531,10 @@
         margin: 0 5px;
     }
 }
-.close-btn-log-in{
+.close-cross-popup{
     position: absolute;
     right: 21px;
-    top: 35px;
+    top: 30px;
     width: 30px;
     height: 30px;
     cursor: pointer;
@@ -546,6 +545,7 @@
         content: '';
         width: 20px;
         height: 2px;
+        left: 0;
         background: #9FA4BB;
     } 
     &::after{
@@ -562,4 +562,128 @@
         -ms-transform: rotate(-45deg);
         -o-transform: rotate(-45deg);
 }
+}
+.field{
+    margin-top: 16px;
+    width: 100%;
+    position: relative;
+    @media screen and (max-width: 500px){
+        margin-top: 12px;
+    }
+    label{
+        @include fontz (19px, 500, normal);
+        display: block;
+        margin-bottom: 8px;
+        font-size: 14px;
+        letter-spacing: 0.01em;
+        color: #9FA4BB;
+    }
+    input{
+        padding: 14px 16px;
+        background: #F3F6F8;
+        border: 1px solid #F3F6F8;
+        box-sizing: border-box;
+        border-radius: 4px;
+        width: 100%;
+        font-weight: 500;
+        &:hover{
+            border: 1px solid #9FA4BB;
+        }
+    }
+    .display-password{
+        position: absolute;
+        right: 18px;
+        bottom: 15px;
+        cursor: pointer;
+        display: none;
+        &_active{
+            display: block;
+        }
+    }
+}
+.field-default{
+    input{
+        border: 1px solid rgba(196, 196, 196, 0.7);
+        background: #fff;
+    }
+}
+.pop-up-forgot-password{
+    padding: 53px 60px 50px;
+    text-align: center;
+    @media screen and (max-width: 500px){
+        min-width: 90%;
+        padding: 20px 20px;
+    }
+    p{
+        margin: auto;
+        width: 80%;
+    }
+    form{
+        width: 100%;
+    }
+    .btn-close{
+        margin: 20px auto;
+    }
+}
+.pop-up-delete-account {
+    min-width: 470px;
+    padding: 35px 67px;
+    @media screen and (max-width: 1200px){
+        min-width: 370px;
+        padding: 30px 30px;
+    }
+    @media screen and (max-width: 500px){
+        min-width: 90%;
+        padding: 20px 20px;
+    }
+    h1{
+        font-weight: 500;
+        text-align: center;
+    }
+    .field{
+        margin-bottom: 30px;
+        @media screen and (max-width: 1200px){
+            margin-bottom: 15px; 
+        }
+    }
+    &__btn{
+        background: #FFFFFF;
+        border: 1px solid #C4C4C4;
+        box-sizing: border-box;
+        border-radius: 5px;
+        padding: 14px 29px;
+        margin: 52px auto 0;
+        font-weight: 500;
+        @media screen and (max-width: 1200px){
+            margin: 32px auto 0;
+        }
+        &:hover{
+            background: #BCB8B8;
+        }
+    }
+    .close-cross-popup{
+        top: 14px;
+        right: 14px;
+    }
+
+}
+.pop-up-deleted{
+    padding: 45px 32px;
+    text-align: center;
+    @media screen and (max-width: 500px){
+        padding: 20px 22px;
+    }
+    p{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.01em;
+    }
+    .btn-close{
+        margin-top: 49px;
+    }
+}
+.pop-up-registration_active {
+    opacity: 1 !important;
 }

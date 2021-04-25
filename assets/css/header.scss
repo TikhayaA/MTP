@@ -1,20 +1,27 @@
 .header{
     background: $bg-header;
-    height: 155px;
-    padding: 0 25px;
-    justify-content: space-between;
+    // height: 155px;
+    // padding: 0 25px;
     position: relative;
     z-index: 5;
-    @media screen and (max-width: 1500px){
-        height: 120px;
-        padding: 0 10px;
-    }
+    height: 120px;
+    padding: 0 10px;
+    // @media screen and (max-width: 1500px){
+    //     height: 120px;
+    //     padding: 0 10px;
+    // }
     @media screen and (max-width: 1050px){
         height: 65px;
     }
+    .container{
+        justify-content: space-between;
+    }
     .logo{
-        line-height: 155px;  
-        width: 12%; 
+        // line-height: 155px; 
+        width: 15%; 
+        // width: 12%; 
+        line-height: 120px;
+
         @media screen and (max-width: 1500px){
             line-height: 120px;
         }
@@ -37,9 +44,6 @@
         display: flex;
         @media screen and (max-width: 1800px){
             font-size: 18px;
-        }
-        @media screen and (max-width: 1500px){
-            font-size: 13px;
         }
         @media screen and (max-width: 1050px){
             @include fontz (16px, normal, normal);
@@ -69,9 +73,9 @@
         width: 80%;
         display: flex;
         z-index: 0;
-        @media screen and (max-width: 1800px){
-            width: 85%;
-        }
+        // @media screen and (max-width: 1800px){
+        //     width: 85%;
+        // }
         @media screen and (max-width: 1050px){
             width: 33%;
             height: 100%;
@@ -90,10 +94,12 @@
         &__main{
             flex-direction: row;
             justify-content: space-between;
-            width: 80%;
-            @media screen and (max-width: 1600px){
-                width: 73%;
+            width: 73%;
                 margin-left: 15px;
+            // width: 80%;
+            @media screen and (max-width: 1600px){
+                // width: 73%;
+                // margin-left: 15px;
             }
             @media screen and (max-width: 1050px){
                 display: block!important;
@@ -105,27 +111,27 @@
                 font-family: 'Roboto', sans-serif;
                 @media screen and (max-width: 1050px){
                     font-size: 14px;
-                }
-                @media screen and (max-width: 767px){
                     margin-top: 15px;
                 }
             }
         }
         &__list{
-            @include fontz (22px, normal, normal);
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
             letter-spacing: 0.05em;
             padding: 10px 0;
             position: relative;
 
-            @media screen and (max-width: 1800px){
-                font-size: 18px;
-            }
-            @media screen and (max-width: 1500px){
-                font-size: 16px;
-            }
-            @media screen and (max-width: 1300px){
-                font-size: 13px;
-            }
+            // @media screen and (max-width: 1800px){
+            //     font-size: 18px;
+            // }
+            // @media screen and (max-width: 1500px){
+            //     font-size: 16px;
+            // }
+            // @media screen and (max-width: 1300px){
+            //     font-size: 13px;
+            // }
             @media screen and (max-width: 1050px){
                 display: block!important;
                 overflow: hidden;
@@ -149,7 +155,8 @@
         }
         &__sub{
             background: #227CBC;
-            min-width: 173px;
+            // min-width: 173px;
+            min-width: 119px;
             transform: translate(0px, 10%);
             opacity: 0;
             visibility: hidden;
@@ -166,11 +173,13 @@
                 }
             }
         &__sub-list{
-            @include fontz (16, normal, normal);
+            font-size: 12px;  
+            font-weight: 400;
+            font-style: normal;
             padding: 12px 5px;
             transition: 0.3s all;
             @media screen and (max-width: 1500px){
-                font-size: 13px;
+                // font-size: 13px;
             }
             @media screen and (max-width: 1050px){
                 padding: 0 5px;
@@ -185,8 +194,9 @@
             width: 22%;
             align-items: center;
             justify-content: flex-end;
+            display: flex;
             &_disabled{
-                display: none!important;
+                display: none;
             }
             @media screen and (max-width: 1500px){
                 width: 24%;
@@ -226,17 +236,19 @@
         display: none;
         &__mail {
             img{
-                @media screen and (max-width: 1300px){
                 width: 20px;
+                @media screen and (max-width: 1300px){
+                
                 }
             }
             span {
+                width: 15px;
+                height: 15px;
+                line-height: 15px;
+                top: -7px;
+                right: -6px;
                 @media screen and (max-width: 1300px){
-                    width: 15px;
-                    height: 15px;
-                    line-height: 15px;
-                    top: -7px;
-                    right: -6px;
+                    
                 }
             }
         }
@@ -247,31 +259,33 @@
             }
         }
         &__chat {
-            @media all and (max-width: 1500px){
-                bottom: -39px;
-            }
-            @media screen and (max-width: 1500px){
-                font-size: 22px;
-            }
-            @media screen and (max-width: 1300px){
-                font-size: 14px;
-            }
+            font-size: 14px;
+            bottom: -39px;
+            // @media all and (max-width: 1500px){
+            //     bottom: -39px;
+            // }
+            // @media screen and (max-width: 1500px){
+            //     font-size: 22px;
+            // }
+            // @media screen and (max-width: 1300px){
+            //     font-size: 14px;
+            // }
             @media all and (max-width: 1050px){
                 position: static;
-                margin-left: 10px;
+                margin-left: 23px;
             }
             img{
+                width: 25px;
                 @media all and (max-width: 1500px){
-                    width: 30px;
+                    // width: 30px;
                 }
             }
             span:last-child {
-                
-                @media (max-width: 1500px) {
-                    right: 14px;
-                }
+                right: 11px;
+                // @media (max-width: 1500px) {
+                //     right: 11px;
+                // }
             }
-        
         }
         &__icon-setting{
             @media all and (max-width: 1050px){
@@ -280,9 +294,15 @@
         }
         .user_info {
             &-name{
+                font-size: 14px;
                 @media screen and (max-width: 1300px){
-                    font-size: 14px;
+                    
                 }
+            }
+        }
+        .user_info-avatar{
+            img{
+                width: 15px;
             }
         }
         &_active{

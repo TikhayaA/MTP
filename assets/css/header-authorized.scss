@@ -29,11 +29,12 @@
     &__info {
         display: flex;
         position: relative;
+        align-items: center;
     }
     &__chat {
         position: absolute;
         right: 0;
-        bottom: -42px;
+        bottom: -57px;
         cursor: pointer;
         font-family: 'Roboto';
         font-style: normal;
@@ -69,15 +70,17 @@
         display: flex;
         margin-right: 10px;
         &-name{
-            font-family: 'Roboto';
+            font-family: 'Roboto', sans-serif;
             font-style: normal;
             font-weight: 500;
             font-size: 22px;
-            line-height: 26px;
+            line-height: 21px;
             color: #FFFFFF;
+            cursor: pointer;
         }
         &-avatar {
             margin-right: 10px;
+            cursor: pointer;
         }
     }
 }

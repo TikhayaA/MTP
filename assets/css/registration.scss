@@ -1,0 +1,135 @@
+.pop-up-registration {
+    transform: translate(-50%, 0%);
+    width: 100%;
+    max-width: 1000px;
+    top: 150px;
+    overflow: auto;
+
+    &__block-content {
+        width: 940px;
+        padding: 10px 80px 20px;
+    }
+
+    h4 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        color: #000000;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    &__check{
+        margin-bottom: 33px;
+        position: relative;
+        align-items: center;
+
+        &:after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: #979797;
+            position: absolute;
+            bottom: -26px;
+        }
+    }
+    &__fields {
+        width: 45%;
+        .field {
+            width: 100%;
+        }
+        
+    }
+    .checkbox-block {
+        justify-content: start;
+    }
+    .btn-close {
+        width: 310px;
+        display: inline-block;
+        margin: 22px auto 30px;
+    }
+    &__left {
+        opacity: 0;
+    }
+    &__right {
+        opacity: 0;
+    }
+    .btn-next {
+        display: none;
+
+        &_active {
+            display: inline-block;
+        }
+    }
+
+    &_company {
+        max-width: 1300px;
+        padding: 10px 35px 20px;
+
+        .radio-block-right {
+            min-width: 350px;
+
+            label {
+                font-family: 'Roboto', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 25px;
+                line-height: 29px;
+                color: #000000;
+            }
+        }
+        .pop-up-registration__block-content {
+            width: 1240px;
+        }
+    }
+    &__header {
+        display: flex;
+        margin-left: 50px;
+        display: none;
+    }
+    .registration__header_item {
+
+        span:first-child {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            letter-spacing: 0.01em;
+            color: #979797;
+            margin-right: 15px;
+        }
+        span:last-child {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 140%;
+            letter-spacing: 0.01em;
+            color: #000000;
+            font-family: 'Roboto',sans-serif;
+        }
+    }
+    &__content {
+        width: 100%;
+        padding-top: 40px;
+        height: 489px;
+        overflow: auto;
+        display: none;
+    }
+    .registration__header_row {
+        margin-right: 33px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    .registration-content_col {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 23px;
+
+        .field-default {
+            width: 23%;
+        }
+    }
+
+}

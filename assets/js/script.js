@@ -5,16 +5,16 @@ const isMobile = {
     Android: function() {
         return navigator.userAgent.match(/Android/i);
     },
-    BlackBerry: function () {
-    return navigator.userAgent.match(/BlackBerry/i);
-    }, 
-    iOS: function () {
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
         return navigator.userAgent.match(/iPhone|iPad|iPod/i);
     },
-    Opera: function () {
+    Opera: function() {
         return navigator.userAgent.match(/Opera Mini/i);
     },
-    Windows: function () {
+    Windows: function() {
         return navigator.userAgent.match(/IEMobile/i);
     },
     any: function() {
@@ -29,15 +29,15 @@ const isMobile = {
 if (window.screen.width < 1050) {
     document.body.classList.add('touch');
 }
-if (isMobile.any()){
+if (isMobile.any()) {
     document.body.classList.add('touch');
     let menuArrows = document.querySelectorAll('.menu__arrow');
-    if (menuArrows.length > 0){
+    if (menuArrows.length > 0) {
         for (let i = 0; i < menuArrows.length; i++) {
             let menuArrow = menuArrows[i];
-            menuArrow.addEventListener("click", function (e) {
+            menuArrow.addEventListener("click", function(e) {
                 menuArrows.forEach((item, index) => {
-                    if(i !== index) {
+                    if (i !== index) {
                         item.parentElement.classList.remove('active');
                     }
                 });
@@ -46,7 +46,7 @@ if (isMobile.any()){
         }
     }
 
-}else{
+} else {
     document.body.classList.add('pc');
 }
 
@@ -90,7 +90,7 @@ selectSingle.forEach((el, index) => {
     selectSingle_title.addEventListener('click', () => {
         selectSingle.forEach((element, i) => {
             console.log(element, index, i);
-            if(index !== i) {
+            if (index !== i) {
                 element.setAttribute('data-state', '');
             }
         });
@@ -124,7 +124,7 @@ const openOrderList = document.getElementById('open_order_list');
 const popupOrderId = document.getElementsByClassName('order-id');
 const popuoClose = document.getElementById('popup-close');
 
-if(popupOrder.length > 0) {
+if (popupOrder.length > 0) {
     openOrder.addEventListener('click', () => {
         popupOrder[0].classList.toggle('create-order_active');
     });
@@ -141,54 +141,43 @@ const btnDelete = document.querySelectorAll('.btn-delete');
 const popUpDelete = document.getElementsByClassName('pop-up-delete');
 const popUpDeleteBtnNo = document.getElementsByClassName('pop-up-delete__btn_no');
 
-if (btnDelete.length > 0) {   
+if (btnDelete.length > 0) {
     btnDelete.forEach((element, i) => {
         element.addEventListener('click', () => {
             popUpDelete[0].classList.add('pop-up-delete_active');
-            mobileBg[0].classList.add('menu-mobile__bg_active');
         });
-        console.log(popUpDelete);
-    }) ;
+    });
     popUpDeleteBtnNo[0].addEventListener('click', () => {
         popUpDelete[0].classList.remove('pop-up-delete_active');
-        mobileBg[0].classList.remove('menu-mobile__bg_active');
 
     });
 }
 
 const popUpMessage = document.getElementsByClassName('pop-up-message'),
-      mailOpen = document.querySelector('.header-authorized__mail'),
-      popupMailClose = document.querySelector('#popup-mail-close'),
-      popUpOpenSringWrap = document.querySelector('.pop-up-message__wrap-string'),
-      openMessage = document.getElementsByClassName('message-wrap');
-      popUpOpenSring = document.getElementsByClassName('pop-up-message__string');
-if(popUpMessage.length > 0) {
-      mailOpen.addEventListener('click', () => {
-        popUpMessage[0].classList.add('pop-up-message_open');
-        mobileBg[0].classList.add('menu-mobile__bg_active');
-        menuMobile[0].classList.remove('menu_active');
-    });
-    popupMailClose.addEventListener('click', () => {
-        popUpMessage[0].classList.remove('pop-up-message_open');
-        mobileBg[0].classList.remove('menu-mobile__bg_active');
-    });
+    mailOpen = document.querySelector('.header-authorized__mail'),
+    popupBtnClose = document.querySelectorAll('.btn-close-popup'),
+    popUpOpenSringWrap = document.querySelector('.pop-up-message__wrap-string'),
+    openMessage = document.getElementsByClassName('message-wrap'),
+    popUpOpenSring = document.getElementsByClassName('pop-up-message__string');
+
+if (popUpMessage.length > 0) {
     popUpOpenSring[0].addEventListener('click', () => {
         openMessage[0].classList.add('message-wrap_active');
         popUpOpenSringWrap.classList.add('pop-up-message__wrap-string_disabled');
     });
 }
-        
 
-    // password-show 
 
-let passwordInput = document.getElementById('password');
+// password-show 
+
+let passwordInput = document.getElementsByClassName('password');
 let showPass = document.getElementsByClassName('display-password');
 
 function togglePasswordInput(i) {
-    if (passwordInput.type === "password") {
-        passwordInput.type = "text";
+    if (passwordInput[i].type === "password") {
+        passwordInput[i].type = "text";
     } else {
-        passwordInput.type = "password";
+        passwordInput[i].type = "password";
     }
 }
 
@@ -197,9 +186,8 @@ NewshowPass.forEach(function(element, i) {
     element.addEventListener("click", () => {
         togglePasswordInput(i);
     });
-    console.log(passwordInput);
-    passwordInput.oninput = function () {
-        if (passwordInput.value) {
+    passwordInput[i].oninput = function() {
+        if (passwordInput[i].value) {
             element.classList.add('display-password_active');
         } else {
             element.classList.remove('display-password_active');
@@ -220,13 +208,14 @@ if (quantityValue) {
     });
 }
 
-const orderString = document.querySelectorAll(".order__string"); 
-const popupUserInfo = document.querySelectorAll(".popup-user-info"); 
+const orderString = document.querySelectorAll(".order__string");
+const popupUserInfo = document.querySelectorAll(".popup-user-info");
 const btnCloseUserInfo = document.getElementById('btn-close-user-info');
 const viewInfo = document.querySelectorAll('.view-info');
 const subMenuBtn = document.querySelectorAll('.show-bids .sub-menu');
+const showLastAttention = document.querySelectorAll('.show-last-attention');
 
-if(orderString.length > 0) {
+if (orderString.length > 0) {
     orderString.forEach((el) => {
         el.addEventListener('contextmenu', (e) => {
             e.preventDefault();
@@ -235,42 +224,122 @@ if(orderString.length > 0) {
             subMenuBtn[0].style.left = e.pageX + 'px';
         });
     });
-    viewInfo[0].addEventListener('click', () => {
-        popupUserInfo[0].classList.add('popup-user-info__active');
-        subMenuBtn[0].classList.remove('sub-menu-active');
-    });
-    btnCloseUserInfo.addEventListener('click', () => {
-        popupUserInfo[0].classList.remove('popup-user-info__active');
-    });
+    if (viewInfo.length > 0) {
+        viewInfo[0].addEventListener('click', () => {
+            popupUserInfo[0].classList.add('popup-user-info__active');
+            subMenuBtn[0].classList.remove('sub-menu-active');
+        });
+        btnCloseUserInfo.addEventListener('click', () => {
+            popupUserInfo[0].classList.remove('popup-user-info__active');
+        });
+    }
 }
-
-const popUpLogIn = document.querySelectorAll('.pop-up-log-in'),
-        openLogIn = document.querySelectorAll('.header__log-in'),
-        closeBtnLogin = document.querySelectorAll('.close-btn-log-in'),
-        logOut = document.querySelectorAll('.pop-up-log-out');
-    if (openLogIn.length > 0) {
-        openLogIn[0].addEventListener('click', () => {
-            popUpLogIn[0].classList.add('pop-up-log-in_active');
-            menuMobile[0].classList.remove('menu_active');
-        });
-    }
-    if (closeBtnLogin.length > 0) {
-        closeBtnLogin.forEach((element, i) => {
-            element.addEventListener('click', () => {
-            popUpLogIn[0].classList.remove('pop-up-log-in_active');
-            logOut[0].classList.remove('pop-up-log-out_active');
-            });
-        });
-    }
-
 
 const createdBidsBtn = document.querySelectorAll('.created-bids .table-quantity__btn');
 const createdBids = document.querySelectorAll('.created-bids');
 const showBids = document.querySelectorAll('.show-bids');
 
-if(createdBidsBtn.length > 0) {
+if (createdBidsBtn.length > 0) {
     createdBidsBtn[0].addEventListener('click', () => {
         createdBids[0].classList.remove('created-bids_active');
         showBids[0].classList.add('show-bids_active');
+        showLastAttention[0].style.display = "block";
+    });
+}
+
+const tableBtnSell = document.querySelector(".table_btn-sell");
+const tableBtnBuy = document.querySelector(".table_btn-buy");
+const tableContentHeader = document.querySelector(".table_content-header");
+
+if (tableBtnSell) {
+    tableBtnSell.addEventListener('click', () => {
+        tableContentHeader.classList.add('table__content_header-sell');
+        tableContentHeader.classList.remove('table__content_header-buy');
+    });
+}
+if (tableBtnBuy) {
+    tableBtnBuy.addEventListener('click', () => {
+        tableContentHeader.classList.remove('table__content_header-sell');
+        tableContentHeader.classList.add('table__content_header-buy');
+    });
+}
+
+
+// popup open function
+
+const popUp = document.querySelectorAll('.pop-up'),
+    popUpOpen = document.querySelectorAll('.pop-up-open'),
+    closeCross = document.querySelectorAll('.close-cross-popup');
+
+
+popUpOpen.forEach((element, i) => {
+    element.addEventListener('click', () => {
+        popUp.forEach(el => {
+            el.classList.remove('pop-up_open');
+        });
+        let popUpElement = element.getAttribute('data-popup');
+        document.querySelector(`.${popUpElement}`).classList.add('pop-up_open');
+    });
+});
+closeCross.forEach((element, i) => {
+    element.addEventListener('click', () => {
+        popUp.forEach(el => {
+            el.classList.remove('pop-up_open');
+        });
+    });
+});
+popupBtnClose.forEach((element, i) => {
+    element.addEventListener('click', () => {
+        popUp.forEach(el => {
+            el.classList.remove('pop-up_open');
+        });
+    });
+});
+
+const radioBlockLeft = document.querySelector('.radio-block-left'),
+    radioBlockRight = document.querySelector('.radio-block-right'),
+    registrationLeft = document.querySelector('.pop-up-registration__left'),
+    registrationRight = document.querySelector('.pop-up-registration__right'),
+    popUpRegistration = document.querySelector('.pop-up-registration'),
+    popUpRegistrationHeader = document.querySelector('.pop-up-registration__header'),
+    popUpRegistrationContent = document.querySelector('.pop-up-registration__content'),
+    agreeBlock = document.querySelector('.agree-block'),
+    btnNext = document.querySelector('.btn-next');
+if (radioBlockLeft) {
+    radioBlockLeft.addEventListener('click', () => {
+        registrationRight.classList.remove('pop-up-registration_active');
+        registrationLeft.classList.add('pop-up-registration_active');
+        btnNext.classList.remove('btn-next_active');
+        btnNext.previousSibling.previousSibling.style.display = 'inline-block';
+    });
+    radioBlockRight.addEventListener('click', () => {
+        registrationRight.classList.add('pop-up-registration_active');
+        registrationLeft.classList.remove('pop-up-registration_active');
+        btnNext.classList.add('btn-next_active');
+        btnNext.previousSibling.previousSibling.style.display = 'none';
+        agreeBlock.style.opacity = '0';
+    });
+    btnNext.addEventListener('click', () => {
+        popUpRegistration.classList.add('pop-up-registration_company');
+        registrationRight.classList.remove('pop-up-registration_active');
+        radioBlockLeft.style.display = 'none';
+        btnNext.classList.remove('btn-next_active');
+        btnNext.previousSibling.previousSibling.style.display = 'inline-block';
+        popUpRegistrationHeader.style.display = 'flex';
+        popUpRegistrationContent.style.display = 'block';
+        registrationRight.style.display = 'none';
+        registrationLeft.style.display = 'none';
+        agreeBlock.style.opacity = '1';
+    });
+}
+const addCompany = document.getElementById('add-company');
+const hideSlider = document.querySelectorAll('.companies-logo__slider_left .logo-slider__item');
+const logoForm = document.querySelector('.logo-form');
+if (addCompany) {
+    addCompany.addEventListener('click', () => {
+        hideSlider.forEach(el => {
+            el.style.display = 'none';
+        });
+        logoForm.style.display = 'block';
     });
 }

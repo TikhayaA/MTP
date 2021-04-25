@@ -8,6 +8,10 @@
             line-height: 17px;
             color: #000000;
             margin-bottom: 7px;
+
+            &.has-sup {
+                margin-bottom: 5.7px;
+            }
         }
     }
     width: 100%;
@@ -99,5 +103,6 @@
     }
     .select-block {
         width: 60px;
+        text-align: center;
     }
 }

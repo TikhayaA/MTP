@@ -7,36 +7,38 @@
       <meta content="" name="description">
       <meta content="" name="keywords">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-      <link href="assets/css/style.css" rel="stylesheet">
-      <link href="assets/css/reset.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/reset.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
 </head>
-<body class="table_fixed">
+<body class="table_fixed" data-simplebar>
     <header class="header_table">
         <div class="header_table-btns">
             <div class="header_table-btn mt">
                 <button class="table_btn">Find cargo</button>
-                <button class="table_btn" id="order-popup">Greate order</button>
+                <button class="table_btn" id="order-popup">Create order</button>
             </div>
             <div class="header_table-btn mt">
                 <button class="table_btn table_btn-buy">Buy cargo</button>
                 <button class="table_btn table_btn-sell">Sell cargo</button>
             </div>
         </div>
-        <div class="header_table-block">
+        <div class="header_table-block" data-simplebar>
             <h1 class="header_table-title">Cargo Market</h1>
             <div class="header-authorized header_info">
-                <a href="#" class="header-authorized__icon-home"><img src="assets/img/home-btn.svg" alt=""></a>
-                <div class="header-authorized__mail">
+                <a href="index.html" class="header-authorized__icon-home"><img src="assets/img/home-btn.svg" alt=""></a>
+                <div class="header-authorized__mail pop-up-open" data-popup="pop-up-message">
                     <a href="#">
                         <img src="assets/img/mailto.svg" alt="">
                         <span>1</span>
                     </a>
                 </div>
                 <div class="header-authorized__info">
-                    <div class="user_info-avatar"><img src="assets/img/profile.svg" alt=""></div>
-                    <div class="user_info-name">Tomas Jefferson</div>
+                    <div class="user_info-avatar pop-up-open" data-popup="pop-up-log-out"><img src="assets/img/profile.svg" alt=""></div>
+                    <div class="user_info-name pop-up-open" data-popup="account-orders">Tomas Jefferson</div>
                 </div>
-                <a href="#" class="header-authorized__icon-setting"><img src="assets/img/setting.svg" alt=""></a>
+                <a href="#" class="header-authorized__icon-setting pop-up-open" data-popup="pop-up-settings"><img src="assets/img/setting.svg" alt=""></a>
                 <div class="header-authorized__chat">
                     <span>Chat</span>
                     <img src="assets/img/chat.svg" alt="">
@@ -110,65 +112,67 @@
         </div>
     </header>
     <main class="table">
-        <aside class="table_filter">
+        <aside class="table_filter" data-simplebar>
             <div class="table_filter-content">
-                <div class="input-block">
-                    <label for="id_ order">id order</label>
-                    <input type="text" class="input-block-ui" id="id_order">
-                </div>
-                <div class="select-block">
-                    <label for="country">Country</label>
-                    <div class="select" data-state="" id="country">
-                        <div class="select__title" data-default=" "></div>
-                        <div class="select__content">
-                            <input id="singleSelect1" class="select__input" type="radio" name="singleSelect" />
-                            <label for="singleSelect1" class="select__label">2</label>
-                            <input id="singleSelect2" class="select__input" type="radio" name="singleSelect" />
-                            <label for="singleSelect2" class="select__label">1</label>
+                <div class="inputs_block">
+                    <div class="input-block">
+                        <label for="id_ order">id order</label>
+                        <input type="text" class="input-block-ui" id="id_order">
+                    </div>
+                    <div class="select-block">
+                        <label for="country">Country</label>
+                        <div class="select" data-state="" id="country">
+                            <div class="select__title" data-default=" "></div>
+                            <div class="select__content">
+                                <input id="singleSelect1" class="select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect1" class="select__label">2</label>
+                                <input id="singleSelect2" class="select__input" type="radio" name="singleSelect" />
+                                <label for="singleSelect2" class="select__label">1</label>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="select-block">
-                    <label for="port_or_city">Port or City</label>
-                    <div class="select" data-state="" id="port_or_city">
-                        <div class="select__title" data-default=" "></div>
-                        <div class="select__content">
-                            <input id="singleSelect3" class="select__input" type="radio" name="singleSelect1" />
-                            <label for="singleSelect3" class="select__label">2</label>
-                            <input id="singleSelect4" class="select__input" type="radio" name="singleSelect1" />
-                            <label for="singleSelect4" class="select__label">1</label>
+                    <div class="select-block">
+                        <label for="port_or_city">Port or City</label>
+                        <div class="select" data-state="" id="port_or_city">
+                            <div class="select__title" data-default=" "></div>
+                            <div class="select__content">
+                                <input id="singleSelect3" class="select__input" type="radio" name="singleSelect1" />
+                                <label for="singleSelect3" class="select__label">2</label>
+                                <input id="singleSelect4" class="select__input" type="radio" name="singleSelect1" />
+                                <label for="singleSelect4" class="select__label">1</label>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="select-block">
-                    <label for="company">Company</label>
-                    <div class="select" data-state="" id="company">
-                        <div class="select__title" data-default=" "></div>
-                        <div class="select__content">
-                            <input id="singleSelect5" class="select__input" type="radio" name="singleSelect2" />
-                            <label for="singleSelect5" class="select__label">2</label>
-                            <input id="singleSelect6" class="select__input" type="radio" name="singleSelect2" />
-                            <label for="singleSelect6" class="select__label">1</label>
+                    <div class="select-block">
+                        <label for="company">Company</label>
+                        <div class="select" data-state="" id="company">
+                            <div class="select__title" data-default=" "></div>
+                            <div class="select__content">
+                                <input id="singleSelect5" class="select__input" type="radio" name="singleSelect2" />
+                                <label for="singleSelect5" class="select__label">2</label>
+                                <input id="singleSelect6" class="select__input" type="radio" name="singleSelect2" />
+                                <label for="singleSelect6" class="select__label">1</label>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="select-block">
-                    <label for="cargo_name">Cargo name</label>
-                    <div class="select" data-state="" id="cargo_name">
-                        <div class="select__title" data-default=" "></div>
-                        <div class="select__content">
-                            <input id="singleSelect6" class="select__input" type="radio" name="singleSelect3" />
-                            <label for="singleSelect6" class="select__label">2</label>
-                            <input id="singleSelect7" class="select__input" type="radio" name="singleSelect3" />
-                            <label for="singleSelect7" class="select__label">1</label>
+                    <div class="select-block">
+                        <label for="cargo_name">Cargo name</label>
+                        <div class="select" data-state="" id="cargo_name">
+                            <div class="select__title" data-default=" "></div>
+                            <div class="select__content">
+                                <input id="singleSelect6" class="select__input" type="radio" name="singleSelect3" />
+                                <label for="singleSelect6" class="select__label">2</label>
+                                <input id="singleSelect7" class="select__input" type="radio" name="singleSelect3" />
+                                <label for="singleSelect7" class="select__label">1</label>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="input-block input-double"">
-                    <label for="pricefrom">Price, $</label>
-                    <input type="text" class="input-block-ui" id="pricefrom">
-                    <span>to</span>
-                    <input type="text" class="input-block-ui" id="priceto">
+                    <div class="input-block input-double"">
+                        <label for="pricefrom">Price, $</label>
+                        <input type="text" class="input-block-ui" id="pricefrom">
+                        <span>to</span>
+                        <input type="text" class="input-block-ui" id="priceto">
+                    </div>
                 </div>
                 <button class="sidebar_btn">Show</button>
             </div>
@@ -182,7 +186,7 @@
                 <button class="table_data-btn">day: +4</button>
                 <h2>sell orders dashboard</h2>
             </div>
-            <div class="table_content-data">
+            <div class="table_content-data" data-simplebar>
                 <div class="table_data-header">
                     <ul>
                         <li>S</li>
@@ -437,7 +441,7 @@
                     <span>orders: 2</span>
                     <h2>selected orders</h2>
                 </div>
-                <div class="table_content-data">
+                <div class="table_content-data" data-simplebar>
                     <div class="table_data-header">
                         <ul>
                             <li>S</li>
@@ -529,7 +533,7 @@
                 </div>
             </div>
         </div>
-        <form action="#"  class="popup create-order">
+        <form action="#"  class="popup create-order" data-simplebar>
             <div class="create-order__header">
                 <h2 class="create-order__title">Create order</h2>
             </div>
@@ -568,6 +572,7 @@
                                         <label for="singleSelect6" class="select__label">1</label>
                                     </div>
                                 </div>
+                                <div class="tooltip_underline">Buy or Sell</div>
                             </div>
                         </div>
                         <div class="input-block input-select">
@@ -576,7 +581,7 @@
                                 <input type="text" class="input-block-ui" id="pricefrom">
                             </div>
                             <div class="select-block">
-                                <label for="company">t or m3</label>
+                                <label for="company" class="has-sup">t or m<sup>3</sup></label>
                                 <div class="select" data-state="" id="company">
                                     <div class="select__title" data-default=" "></div>
                                     <div class="select__content">
@@ -605,14 +610,15 @@
                                     </div>
                                 </div>
                             </div>
+                            <span class="star">*</span>
                         </div>
-                        <div class="input-block input-select"">
+                        <div class="input-block input-select">
                             <div class="input-block">
                                 <label for="pricefrom">Price, $</label>
                                 <input type="text" class="input-block-ui" id="pricefrom">
                             </div>
                             <div class="select-block">
-                                <label for="company">t or m3</label>
+                                <label for="company" class="has-sup">t or m<sup>3</sup></label>
                                 <div class="select" data-state="" id="company">
                                     <div class="select__title" data-default=" "></div>
                                     <div class="select__content">
@@ -635,14 +641,14 @@
                         <div class="input-block">
                             <label for="create-order__discount">Expiration data</label>
                             <input type="text" class="input-block-ui" id="create-order__discount" placeholder="00.00.00">
-                            <span>dd.mm.year  <span>Not necessary</span></span>    
+                            <span class="position">dd.mm.year  <span class="position">Not necessary</span></span>    
                         </div>
                         <div class="textarea-block">
                             <label for="">Comments, description</label>
                             <textarea name=""></textarea>
                         </div>
                         <div class="create-order__star">
-                            *20D, 40D  - Dry Container<br>    
+                            <span>*</span> 20D, 40D  - Dry Container<br>    
                             20HC, 40HC, 45HC - Hight Cube Dry<br> 
                             20R, 40R  - Reefer Container<br> 
                             45HR  - Hight Reefer<br> 
@@ -680,7 +686,7 @@
             </div>
             <button class="table_btn" type="submit" id="open_order_list">Send order</button>
         </form>
-        <div class="popup order-id">
+        <div class="popup order-id" data-simplebar>
             <div class="order-id__header">
                 <h2 class="order-id__title">order id [562345557846]</h2>
             </div>
@@ -704,7 +710,7 @@
                             <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__cargo" readonly placeholder="USA">
                         </div>
                         <div class="input-block">
-                            <label for="order-id__amount">Amount, t or m3</label>
+                            <label for="order-id__amount">Amount, t or m<sup>3</sup></label>
                             <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__amount" readonly placeholder="USA">
                         </div>
                         <div class="input-block">
@@ -746,7 +752,6 @@
                             <img src="assets/img/image-holder.png" alt="">
                             <img src="assets/img/image-holder.png" alt="">
                         </div>
-                        <div class="order-photos__etc">Please use only real photos.</div>
                     </div>
                     <div class="order-id__documents">
                         <div class="order-photos__title">Documents</div>
@@ -758,7 +763,6 @@
                             <img src="assets/img/image-holder.png" alt="">
                             <img src="assets/img/image-holder.png" alt="">
                         </div>
-                        <div class="order-photos__etc">Please use only real documents, if you want to show it. (jpg, png, bmp, gif)</div>
                     </div>
                     <div class="textarea-block">
                         <label for="">Comments, description</label>

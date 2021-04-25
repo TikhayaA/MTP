@@ -124,6 +124,10 @@
             }
         }
     }
+    a:hover{
+       color: #fff;
+       text-decoration: none;
+    }
 }
 .pos-item{
     position: absolute;
@@ -603,6 +607,10 @@
             width: 100%;
         }
     }
+    .categories__wrap-btn{
+        width: 50%;
+        margin: 115px auto;
+    }
 }
 .world-fleet{
     .cargo-market__block-wrap{
@@ -656,7 +664,11 @@
             max-width: 630px;
         }
     }
-
+    .order-id__item {
+        .textarea-block {
+            margin: 0;
+        }
+    }
 }
 .vessels-market{
     .world-fleet__item{
@@ -718,6 +730,23 @@
             }
             @media all and (max-width: 380px) {
                 bottom: 9%;
+            }
+        }
+    }
+    .categories__wrap-btn{
+        >:nth-child(1){
+            width: 40%;
+            @media all and (max-width: 700px) {
+                margin: auto;
+                width: 100%;
+            }
+            
+        }
+        >:nth-child(2){
+            width: 40%;
+            @media all and (max-width: 700px) {
+                margin: auto;
+                width: 100%;
             }
         }
     }

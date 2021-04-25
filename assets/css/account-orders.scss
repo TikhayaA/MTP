@@ -1,6 +1,18 @@
-.account-orders{
+.pop-up.account-orders{
     background: $bgservice;
-
+    top: 155px;
+    left: 0;
+    transform: translate(0px, 0px);
+    width: 100%;
+    overflow: auto;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    padding: 0 10px;
+}
+.account-orders{ 
     h1{
         @include adaptive-fonts(30, 20);
         font-style: normal;
@@ -16,8 +28,6 @@
     &__wrap{
         margin: 120px 0 60px;
         position: relative;
-        max-width: 1850px;
-        overflow: auto;
         @media screen and (max-width: 1500px){
             margin: 60px 0 60px;
         }
@@ -40,6 +50,8 @@
     }
     .container{
         position: relative;
+        max-width: 1850px;
+        overflow: auto;
     }
 }
 .order{
@@ -50,11 +62,13 @@
         line-height: 140%;
         @include adaptive-fonts(16, 12);
         letter-spacing: 0.01em;
+        position: relative;
     }
     &__title-btn{
         margin-left: 5px;
         border: none;
         background: none;
+        position: absolute;
     }
     &__string{
         margin-bottom: 5px;
@@ -65,7 +79,14 @@
         span{
             font-style: normal;
             font-weight: 500;
-            @include adaptive-fonts(14, 12);
+            font-size: 14px;
+            &.active {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 20px;
+                color: #E40000;
+            }
         }
         >:nth-child(1){
             width: 9%;
@@ -91,7 +112,7 @@
     &__string-title{
         font-style: normal;
         font-weight: 500;
-        @include adaptive-fonts(14, 12);
+        font-size: 14px;
         line-height: 17px;
         color: #9FA4BB;
         position: absolute;
@@ -113,6 +134,7 @@
         height: 390px;
         margin: 13px 0 40px;
         position: relative;
+        overflow: auto;
         @media screen and (max-width: 500px){
         width: 243px;
         }
@@ -157,7 +179,7 @@
             line-height: 140%;
             letter-spacing: 0.01em;
             color: #979797;
-            @include adaptive-fonts(14, 10);
+            font-size: 14px;
             position: absolute;
             top: -24px;
             left: 50%;
@@ -172,15 +194,15 @@
         }
     }
 }
-.prompt-orders{
-    position: absolute;
-    bottom: 10px;
+.prompt-orders-wrap {
     @media screen and (max-width: 470px){
-        bottom: 90px;
-   }
+    flex-direction: column;
+    }
+}
+.prompt-orders{
     &__string{
         font-style: normal;
-        font-weight: normal;
+        font-weight: 400;
         @include adaptive-fonts(12, 10);
         line-height: 15px;
         color: #6C7077;

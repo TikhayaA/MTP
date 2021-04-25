@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
-      <meta content="width=device-width, initial-scale=1.0" name="viewport">
-      <title>Common Cargo</title>
-      <meta content="" name="description">
-      <meta content="" name="keywords">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-      <link href="assets/css/style.css" rel="stylesheet">
-      <link href="assets/css/reset.css" rel="stylesheet"> 
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Common Cargo</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/reset.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
 </head>
-<body class="table_fixed">
+
+<body class="table_fixed common-cargo-page" data-simplebar>
     <header class="header_table">
         <div class="header_table-btns">
             <div class="header_table-logo">
@@ -18,24 +22,24 @@
             </div>
             <div class="header_table-btn">
                 <button class="table_btn">Find cargo</button>
-                <button class="table_btn" id="order-popup">Greate order</button>
+                <button class="table_btn" id="order-popup">Create order</button>
             </div>
         </div>
-        <div class="header_table-block">
+        <div class="header_table-block" data-simplebar>
             <h1 class="header_table-title">Common Cargo</h1>
             <div class="header-authorized header_info">
-                <a href="#" class="header-authorized__icon-home"><img src="assets/img/home-btn.svg" alt=""></a>
-                <div class="header-authorized__mail">
+                <a href="index.html" class="header-authorized__icon-home"><img src="assets/img/home-btn.svg" alt=""></a>
+                <div class="header-authorized__mail pop-up-open" data-popup="pop-up-message">
                     <a href="#">
                         <img src="assets/img/mailto.svg" alt="">
                         <span>1</span>
                     </a>
                 </div>
                 <div class="header-authorized__info">
-                    <div class="user_info-avatar"><img src="assets/img/profile.svg" alt=""></div>
-                    <div class="user_info-name">Tomas Jefferson</div>
+                    <div class="user_info-avatar pop-up-open" data-popup="pop-up-log-out"><img src="assets/img/profile.svg" alt=""></div>
+                    <div class="user_info-name pop-up-open" data-popup="account-orders">Tomas Jefferson</div>
                 </div>
-                <a href="#" class="header-authorized__icon-setting"><img src="assets/img/setting.svg" alt=""></a>
+                <a href="#" class="header-authorized__icon-setting pop-up-open" data-popup="pop-up-settings"><img src="assets/img/setting.svg" alt=""></a>
                 <div class="header-authorized__chat">
                     <span>Chat</span>
                     <img src="assets/img/chat.svg" alt="">
@@ -109,7 +113,7 @@
         </div>
     </header>
     <main class="table">
-        <aside class="table_filter">
+        <aside class="table_filter" data-simplebar>
             <div class="table_filter-content">
                 <div class="input-block">
                     <label for="id_ order">id order</label>
@@ -163,52 +167,52 @@
                         </div>
                     </div>
                 </div>
-                <div class="input-block input-double"">
-                    <label for="pricefrom">Price, $</label>
-                    <input type="text" class="input-block-ui" id="pricefrom">
+                <div class="input-block input-double" ">
+                    <label for="pricefrom ">Price, $</label>
+                    <input type="text " class="input-block-ui " id="pricefrom ">
                     <span>to</span>
-                    <input type="text" class="input-block-ui" id="priceto">
+                    <input type="text " class="input-block-ui " id="priceto ">
                 </div>
-                <div class="input-block input-double">
-                    <label for="discountfrom">Discount, %</label>
-                    <input type="text" class="input-block-ui" id="discountfrom">
+                <div class="input-block input-double ">
+                    <label for="discountfrom ">Discount, %</label>
+                    <input type="text " class="input-block-ui " id="discountfrom ">
                     <span>to</span>
-                    <input type="text" class="input-block-ui" id="discountto">
+                    <input type="text " class="input-block-ui " id="discountto ">
                 </div>
-                <button class="sidebar_btn">Show</button>
+                <button class="sidebar_btn ">Show</button>
             </div>
-            <img src="assets/img/sidebar-arrow.svg" alt="" class="open_sidebar">
+            <img src="assets/img/sidebar-arrow.svg " alt=" " class="open_sidebar ">
         </aside>
-        <div class="table_content">
-            <div class="table_content-header">
-                <button class="table_data-btn">orders: 1278</button>
-                <button class="table_data-btn">month: +83</button>
-                <button class="table_data-btn">week: +29</button>
-                <button class="table_data-btn">day: +4</button>
+        <div class="table_content ">
+            <div class="table_content-header ">
+                <button class="table_data-btn ">orders: 1278</button>
+                <button class="table_data-btn ">month: +83</button>
+                <button class="table_data-btn ">week: +29</button>
+                <button class="table_data-btn ">day: +4</button>
                 <h2>orders dashboard</h2>
             </div>
             <div class="table_content-data">
-                <div class="table_data-header">
+                <div class="table_data-header ">
                     <ul>
                         <li>S</li>
                         <li>id</li>
-                        <li>Data <img src="assets/img/updown.svg" alt=""></li>
-                        <li>Country <img src="assets/img/updown.svg" alt=""></li>
-                        <li>Port(сity) <img src="assets/img/updown.svg" alt=""></li>
-                        <li>Company <img src="assets/img/updown.svg" alt=""></li>
-                        <li>Cargo name <img src="assets/img/updown.svg" alt=""></li>
-                        <li>Amount <img src="assets/img/updown.svg" alt=""></li>
+                        <li>Data <img src="assets/img/updown.svg " alt=" "></li>
+                        <li>Country <img src="assets/img/updown.svg " alt=" "></li>
+                        <li>Port(сity) <img src="assets/img/updown.svg " alt=" "></li>
+                        <li>Company <img src="assets/img/updown.svg " alt=" "></li>
+                        <li>Cargo name <img src="assets/img/updown.svg " alt=" "></li>
+                        <li>Amount <img src="assets/img/updown.svg " alt=" "></li>
                         <li>Type</li>
-                        <li>Q <img src="assets/img/updown.svg" alt=""></li>
-                        <li>Price <img src="assets/img/updown.svg" alt=""></li>
-                        <li>Discount <img src="assets/img/updown.svg" alt=""></li>
+                        <li>Q <img src="assets/img/updown.svg " alt=" "></li>
+                        <li>Price <img src="assets/img/updown.svg " alt=" "></li>
+                        <li>Discount <img src="assets/img/updown.svg " alt=" "></li>
                     </ul>
                 </div>
-                <div class="table_data-content">
-                    <div class="table_data-item">
-                        <div class="checkbox-block">
-                            <input type="checkbox" id="checkbox_1">
-                            <label for="checkbox_1"></label>
+                <div class="table_data-content " data-simplebar>
+                    <div class="table_data-item ">
+                        <div class="checkbox-block ">
+                            <input type="checkbox " id="checkbox_1 ">
+                            <label for="checkbox_1 "></label>
                         </div>
                         <div>562345557846</div>
                         <div>25.02.2021</div>
@@ -220,12 +224,12 @@
                         <div></div>
                         <div></div>
                         <div>885 $/t</div>
-                        <div><span>35%</span><button class="table-row-btn">view</button></div>
+                        <div><span>35%</span><button class="table-row-btn ">view</button></div>
                     </div>
-                    <div class="table_data-item">
-                        <div class="checkbox-block">
-                            <input type="checkbox" id="checkbox_2">
-                            <label for="checkbox_2"></label>
+                    <div class="table_data-item ">
+                        <div class="checkbox-block ">
+                            <input type="checkbox " id="checkbox_2 ">
+                            <label for="checkbox_2 "></label>
                         </div>
                         <div>562345557846</div>
                         <div>25.02.2021</div>
@@ -237,12 +241,12 @@
                         <div></div>
                         <div></div>
                         <div>885 $/t</div>
-                        <div><span>35%</span><button class="table-row-btn">view</button></div>
+                        <div><span>35%</span><button class="table-row-btn ">view</button></div>
                     </div>
-                    <div class="table_data-item">
-                        <div class="checkbox-block">                  
-                            <input type="checkbox" id="checkbox_3">
-                            <label for="checkbox_3"></label>
+                    <div class="table_data-item ">
+                        <div class="checkbox-block ">                  
+                            <input type="checkbox " id="checkbox_3 ">
+                            <label for="checkbox_3 "></label>
                         </div>
                         <div>562345557846</div>
                         <div>25.02.2021</div>
@@ -254,12 +258,12 @@
                         <div></div>
                         <div></div>
                         <div>885 $/t</div>
-                        <div><span>35%</span><button class="table-row-btn">view</button></div>
+                        <div><span>35%</span><button class="table-row-btn ">view</button></div>
                     </div>
-                    <div class="table_data-item">
-                        <div class="checkbox-block">
-                            <input type="checkbox" id="checkbox_4">
-                            <label for="checkbox_4"></label>
+                    <div class="table_data-item ">
+                        <div class="checkbox-block ">
+                            <input type="checkbox " id="checkbox_4 ">
+                            <label for="checkbox_4 "></label>
                         </div>
                         <div>562345557846</div>
                         <div>25.02.2021</div>
@@ -271,12 +275,12 @@
                         <div></div>
                         <div></div>
                         <div>885 $/t</div>
-                        <div><span>35%</span><button class="table-row-btn">view</button></div>
+                        <div><span>35%</span><button class="table-row-btn ">view</button></div>
                     </div>
-                    <div class="table_data-item">
-                        <div class="checkbox-block">
-                            <input type="checkbox" id="checkbox_5">
-                            <label for="checkbox_5"></label>
+                    <div class="table_data-item ">
+                        <div class="checkbox-block ">
+                            <input type="checkbox " id="checkbox_5 ">
+                            <label for="checkbox_5 "></label>
                         </div>
                         <div>562345557846</div>
                         <div>25.02.2021</div>
@@ -288,23 +292,9 @@
                         <div></div>
                         <div></div>
                         <div>885 $/t</div>
-                        <div><span>35%</span><button class="table-row-btn">view</button></div>
+                        <div><span>35%</span><button class="table-row-btn ">view</button></div>
                     </div>
-                    <div class="table_data-item">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div class="table_data-item">
+                    <div class="table_data-item ">
                         <div></div>
                         <div></div>
                         <div></div>
@@ -318,7 +308,7 @@
                         <div></div>
                         <div></div>
                     </div>
-                    <div class="table_data-item">
+                    <div class="table_data-item ">
                         <div></div>
                         <div></div>
                         <div></div>
@@ -332,7 +322,7 @@
                         <div></div>
                         <div></div>
                     </div>
-                    <div class="table_data-item">
+                    <div class="table_data-item ">
                         <div></div>
                         <div></div>
                         <div></div>
@@ -346,7 +336,7 @@
                         <div></div>
                         <div></div>
                     </div>
-                    <div class="table_data-item">
+                    <div class="table_data-item ">
                         <div></div>
                         <div></div>
                         <div></div>
@@ -360,7 +350,7 @@
                         <div></div>
                         <div></div>
                     </div>
-                    <div class="table_data-item">
+                    <div class="table_data-item ">
                         <div></div>
                         <div></div>
                         <div></div>
@@ -374,7 +364,7 @@
                         <div></div>
                         <div></div>
                     </div>
-                    <div class="table_data-item">
+                    <div class="table_data-item ">
                         <div></div>
                         <div></div>
                         <div></div>
@@ -388,7 +378,7 @@
                         <div></div>
                         <div></div>
                     </div>
-                    <div class="table_data-item">
+                    <div class="table_data-item ">
                         <div></div>
                         <div></div>
                         <div></div>
@@ -402,7 +392,7 @@
                         <div></div>
                         <div></div>
                     </div>
-                    <div class="table_data-item">
+                    <div class="table_data-item ">
                         <div></div>
                         <div></div>
                         <div></div>
@@ -416,7 +406,7 @@
                         <div></div>
                         <div></div>
                     </div>
-                    <div class="table_data-item">
+                    <div class="table_data-item ">
                         <div></div>
                         <div></div>
                         <div></div>
@@ -430,7 +420,21 @@
                         <div></div>
                         <div></div>
                     </div>
-                    <div class="table_data-item">
+                    <div class="table_data-item ">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="table_data-item ">
                         <div></div>
                         <div></div>
                         <div></div>
@@ -446,31 +450,31 @@
                     </div>
                 </div>
             </div>
-            <div class="table_content-fixed">
-                <div class="table_content-header header-orders">
+            <div class="table_content-fixed" >
+                <div class="table_content-header header-orders ">
                     <span>orders: 2</span>
                     <h2>selected orders</h2>
                 </div>
                 <div class="table_content-data">
-                    <div class="table_data-header">
+                    <div class="table_data-header ">
                         <ul>
                             <li>S</li>
                             <li>id</li>
-                            <li>Data <img src="assets/img/updown.svg" alt=""></li>
-                            <li>Country <img src="assets/img/updown.svg" alt=""></li>
-                            <li>Port(сity) <img src="assets/img/updown.svg" alt=""></li>
-                            <li>Company <img src="assets/img/updown.svg" alt=""></li>
-                            <li>Cargo name <img src="assets/img/updown.svg" alt=""></li>
-                            <li>Amount <img src="assets/img/updown.svg" alt=""></li>
+                            <li>Data <img src="assets/img/updown.svg " alt=" "></li>
+                            <li>Country <img src="assets/img/updown.svg " alt=" "></li>
+                            <li>Port(сity) <img src="assets/img/updown.svg " alt=" "></li>
+                            <li>Company <img src="assets/img/updown.svg " alt=" "></li>
+                            <li>Cargo name <img src="assets/img/updown.svg " alt=" "></li>
+                            <li>Amount <img src="assets/img/updown.svg " alt=" "></li>
                             <li>Type</li>
-                            <li>Q <img src="assets/img/updown.svg" alt=""></li>
-                            <li>Price <img src="assets/img/updown.svg" alt=""></li>
-                            <li>Discount <img src="assets/img/updown.svg" alt=""></li>
+                            <li>Q <img src="assets/img/updown.svg " alt=" "></li>
+                            <li>Price <img src="assets/img/updown.svg " alt=" "></li>
+                            <li>Discount <img src="assets/img/updown.svg " alt=" "></li>
                         </ul>
                     </div>
-                    <div class="table_data-content">
-                        <div class="table_data-item">
-                            <div><img src="assets/img/remove.svg" alt=""></div>
+                    <div class="table_data-content " data-simplebar>
+                        <div class="table_data-item ">
+                            <div><img src="assets/img/remove.svg " alt=" "></div>
                             <div>562345557846</div>
                             <div>25.02.2021</div>
                             <div>USA</div>
@@ -481,10 +485,10 @@
                             <div></div>
                             <div></div>
                             <div>885 $/t</div>
-                            <div><span>35%</span><button class="table-row-btn">view</button></div>
+                            <div><span>35%</span><button class="table-row-btn ">view</button></div>
                         </div>
-                        <div class="table_data-item">
-                            <div><img src="assets/img/remove.svg" alt=""></div>
+                        <div class="table_data-item ">
+                            <div><img src="assets/img/remove.svg " alt=" "></div>
                             <div>562345557846</div>
                             <div>25.02.2021</div>
                             <div>USA</div>
@@ -495,23 +499,9 @@
                             <div></div>
                             <div></div>
                             <div>885 $/t</div>
-                            <div><span>35%</span><button class="table-row-btn">view</button></div>
+                            <div><span>35%</span><button class="table-row-btn ">view</button></div>
                         </div>
-                        <div class="table_data-item">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div class="table_data-item">
+                        <div class="table_data-item ">
                             <div></div>
                             <div></div>
                             <div></div>
@@ -525,7 +515,21 @@
                             <div></div>
                             <div></div>
                         </div>
-                        <div class="table_data-item">
+                        <div class="table_data-item ">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="table_data-item ">
                             <div></div>
                             <div></div>
                             <div></div>
@@ -543,231 +547,244 @@
                 </div>
             </div>
         </div>
-        <form action="#"  class="popup create-order">
-            <div class="create-order__header">
-                <h2 class="create-order__title">Create order</h2>
+        <form action="# "  class="popup create-order" data-simplebar>
+            <div class="create-order__header ">
+                <h2 class="create-order__title ">Create order</h2>
+                <div class="create-order__title_sub ">Attention: Only for discounted or abandoned cargo </div>
             </div>
-            <div class="create-order__content">
-                <div class="create-order__item">
-                    <div class="item-row">
-                        <div class="input-block">
-                            <label for="create-order__country">Country</label>
-                            <input type="text" class="input-block-ui" id="create-order__country">
+            <div class="create-order__content ">
+                <div class="create-order__item ">
+                    <div class="item-row ">
+                        <div class="input-block ">
+                            <label for="create-order__country ">Country</label>
+                            <input type="text " class="input-block-ui " id="create-order__country ">
                         </div>
-                        <div class="input-block">
-                            <label for="create-order__company">Company</label>
-                            <input type="text" class="input-block-ui" id="create-order__company">
+                        <div class="input-block ">
+                            <label for="create-order__company ">Company</label>
+                            <input type="text " class="input-block-ui " id="create-order__company ">
                         </div>
-                        <div class="input-block">
-                            <label for="create-order__trader">Trader name</label>
-                            <input type="text" class="input-block-ui" id="create-order__trader">
+                        <div class="input-block ">
+                            <label for="create-order__trader ">Trader name</label>
+                            <input type="text " class="input-block-ui " id="create-order__trader ">
                         </div>
-                        <div class="input-block">
-                            <label for="create-order__port">Port or city</label>
-                            <input type="text" class="input-block-ui" id="create-order__port">
+                        <div class="input-block ">
+                            <label for="create-order__port ">Port or city</label>
+                            <input type="text " class="input-block-ui " id="create-order__port ">
                         </div>
-                        <div class="input-block">
-                            <label for="create-order__cargo">Cargo name</label>
-                            <input type="text" class="input-block-ui" id="create-order__cargo">
+                        <div class="input-block ">
+                            <label for="create-order__cargo ">Cargo name</label>
+                            <input type="text " class="input-block-ui " id="create-order__cargo ">
                         </div>
-                        <div class="input-block input-select">
-                            <div class="input-block">
-                                <label for="pricefrom">Price, $</label>
-                                <input type="text" class="input-block-ui" id="pricefrom">
+                        <div class="input-block input-select ">
+                            <div class="input-block ">
+                                <label for="pricefrom ">Amount, $</label>
+                                <input type="text " class="input-block-ui " id="pricefrom ">
                             </div>
-                            <div class="select-block">
-                                <label for="company">t or m3</label>
-                                <div class="select" data-state="" id="company">
-                                    <div class="select__title" data-default=" "></div>
-                                    <div class="select__content">
-                                        <input id="singleSelect5" class="select__input" type="radio" name="singleSelect2" />
-                                        <label for="singleSelect5" class="select__label">2</label>
-                                        <input id="singleSelect6" class="select__input" type="radio" name="singleSelect2" />
-                                        <label for="singleSelect6" class="select__label">1</label>
+                            <div class="select-block ">
+                                <label for="company " class="has-sup">t or m<sup>3</sup></label>
+                                <div class="select " data-state=" " id="company ">
+                                    <div class="select__title " data-default=" "></div>
+                                    <div class="select__content ">
+                                        <input id="singleSelect5 " class="select__input " type="radio " name="singleSelect2 " />
+                                        <label for="singleSelect5 " class="select__label ">2</label>
+                                        <input id="singleSelect6 " class="select__input " type="radio " name="singleSelect2 " />
+                                        <label for="singleSelect6 " class="select__label ">1</label>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="input-block">
-                            <label for="create-order__phone">Phone number</label>
-                            <input type="text" class="input-block-ui" id="create-order__phone">
+                        <div class="input-block ">
+                            <label for="create-order__phone ">Phone number</label>
+                            <input type="text " class="input-block-ui " id="create-order__phone ">
                         </div>
-                        <div class="input-block">
-                            <label for="create-order__mail">@mail</label>
-                            <input type="text" class="input-block-ui" id="create-order__mail">
+                        <div class="input-block ">
+                            <label for="create-order__mail ">@mail</label>
+                            <input type="text " class="input-block-ui " id="create-order__mail ">
                         </div>
-                        <div class="input-block input-select"">
-                            <div class="input-block">
-                                <label for="pricefrom">Price, $</label>
-                                <input type="text" class="input-block-ui" id="pricefrom">
+                        <div class="input-block input-select "">
+                    <div class="input-block">
+                        <label for="pricefrom">Quantity of container</label>
+                        <input type="text" class="input-block-ui" id="pricefrom">
+                    </div>
+                    <div class="select-block">
+                        <label for="company">type</label>
+                        <div class="select" data-state="" id="company">
+                            <div class="select__title" data-default=" "></div>
+                            <div class="select__content">
+                                <input id="singleSelect5" class="select__input" type="radio" name="singleSelect2" />
+                                <label for="singleSelect5" class="select__label">2</label>
+                                <input id="singleSelect6" class="select__input" type="radio" name="singleSelect2" />
+                                <label for="singleSelect6" class="select__label">1</label>
                             </div>
-                            <div class="select-block">
-                                <label for="company">t or m3</label>
-                                <div class="select" data-state="" id="company">
-                                    <div class="select__title" data-default=" "></div>
-                                    <div class="select__content">
-                                        <input id="singleSelect5" class="select__input" type="radio" name="singleSelect2" />
-                                        <label for="singleSelect5" class="select__label">2</label>
-                                        <input id="singleSelect6" class="select__input" type="radio" name="singleSelect2" />
-                                        <label for="singleSelect6" class="select__label">1</label>
+                        </div>
+                    </div>
+                    <span class="star">*</span>
+                </div>
+                <div class="input-block input-select" ">
+                            <div class="input-block ">
+                                <label for="pricefrom ">Contract price,$</label>
+                                <input type="text " class="input-block-ui " id="pricefrom ">
+                            </div>
+                            <div class="select-block ">
+                                <label for="company ">$/t/m<sup>3</sup></label>
+                                <div class="select " data-state=" " id="company ">
+                                    <div class="select__title " data-default=" "></div>
+                                    <div class="select__content ">
+                                        <input id="singleSelect5 " class="select__input " type="radio " name="singleSelect2 " />
+                                        <label for="singleSelect5 " class="select__label ">2</label>
+                                        <input id="singleSelect6 " class="select__input " type="radio " name="singleSelect2 " />
+                                        <label for="singleSelect6 " class="select__label ">1</label>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="input-block input-select"">
-                            <div class="input-block">
-                                <label for="pricefrom">Price, $</label>
-                                <input type="text" class="input-block-ui" id="pricefrom">
-                            </div>
-                            <div class="select-block">
-                                <label for="company">t or m3</label>
-                                <div class="select" data-state="" id="company">
-                                    <div class="select__title" data-default=" "></div>
-                                    <div class="select__content">
-                                        <input id="singleSelect5" class="select__input" type="radio" name="singleSelect2" />
-                                        <label for="singleSelect5" class="select__label">2</label>
-                                        <input id="singleSelect6" class="select__input" type="radio" name="singleSelect2" />
-                                        <label for="singleSelect6" class="select__label">1</label>
-                                    </div>
-                                </div>
+                        <div class="input-block input-select "">
+                    <div class="input-block">
+                        <label for="pricefrom">Current price, $</label>
+                        <input type="text" class="input-block-ui" id="pricefrom">
+                    </div>
+                    <div class="select-block">
+                        <label for="company">$/t/m<sup>3</sup></label>
+                        <div class="select" data-state="" id="company">
+                            <div class="select__title" data-default=" "></div>
+                            <div class="select__content">
+                                <input id="singleSelect5" class="select__input" type="radio" name="singleSelect2" />
+                                <label for="singleSelect5" class="select__label">2</label>
+                                <input id="singleSelect6" class="select__input" type="radio" name="singleSelect2" />
+                                <label for="singleSelect6" class="select__label">1</label>
                             </div>
                         </div>
-                        <div class="input-block">
-                            <label for="create-order__discount">Discount, %</label>
-                            <input type="text" class="input-block-ui" id="create-order__discount">
+                    </div>
+                </div>
+                <div class="input-block">
+                    <label for="create-order__discount">Discount, %</label>
+                    <input type="text" class="input-block-ui" id="create-order__discount">
+                </div>
+                <div class="textarea-block">
+                    <label for="">Comments, description</label>
+                    <textarea name=""></textarea>
+                </div>
+                <div class="create-order__star">
+                    <span>*</span> 20D, 40D - Dry Container<br> 20HC, 40HC, 45HC - Hight Cube Dry<br> 20R, 40R - Reefer Container<br> 45HR - Hight Reefer<br> 20FR, 40FR - Flat Rack<br> 20OT, 40OT - Open Top<br> 20T - Tanker Container
+                </div>
+            </div>
+            </div>
+            <div class="create-order__item">
+                <div class="create-order__photos">
+                    <div class="order-photos__title">Photos</div>
+                    <div class="order-photos__slide">
+                        <img src="assets/img/stal.png" alt="">
+                        <img src="assets/img/stal-65kh13-4.png" alt="">
+                        <img src="assets/img/stal5533.png" alt="">
+                        <img src="assets/img/image-holder.png" alt="">
+                        <img src="assets/img/image-holder.png" alt="">
+                    </div>
+                    <div class="order-photos__etc">Please use only real photos.</div>
+                </div>
+                <div class="create-order__documents">
+                    <div class="order-photos__title">Documents</div>
+                    <div class="order-photos__slide">
+                        <img src="assets/img/unnamed 4.png" alt="">
+                        <img src="assets/img/akt_rashozhdenie4 4.png" alt="">
+                        <img src="assets/img/deklaracija-sootvetstvija-na-pshenicu 4.png" alt="">
+                        <img src="assets/img/image-holder.png" alt="">
+                        <img src="assets/img/image-holder.png" alt="">
+                        <img src="assets/img/image-holder.png" alt="">
+                    </div>
+                    <div class="order-photos__etc">Please use only real documents, if you want to show it. (jpg, png, bmp, gif)</div>
+                </div>
+            </div>
+            </div>
+            <button class="table_btn" type="submit" id="open_order_list">Send order</button>
+            </form>
+            <div class="popup order-id" data-simplebar>
+                <div class="order-id__header">
+                    <h2 class="order-id__title">order id [562345557846]</h2>
+                </div>
+                <div class="order-id__content">
+                    <div class="order-id__item order-id__description">
+                        <div class="order-id__information">
+                            <div class="input-block">
+                                <label for="order-id__country">Country</label>
+                                <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__country" readonly placeholder="USA">
+                            </div>
+                            <div class="input-block">
+                                <label for="order-id__port">Port or city</label>
+                                <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__port" readonly placeholder="USA">
+                            </div>
+                            <div class="input-block">
+                                <label for="order-id__company">Company</label>
+                                <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__company" readonly placeholder="USA">
+                            </div>
+                            <div class="input-block">
+                                <label for="order-id__cargo">Cargo name</label>
+                                <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__cargo" readonly placeholder="USA">
+                            </div>
+                            <div class="input-block">
+                                <label for="order-id__amount">Amount, t or m<sup>3</sup></label>
+                                <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__amount" readonly placeholder="USA">
+                            </div>
+                            <div class="input-block">
+                                <label for="order-id__contract">Contract Price, $</label>
+                                <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__contract" readonly placeholder="USA">
+                            </div>
+                            <div class="input-block">
+                                <label for="order-id__current">Current Price, $</label>
+                                <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__current" readonly placeholder="USA">
+                            </div>
+                            <div class="input-block">
+                                <label for="order-id__discount">Discount, %</label>
+                                <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__discount" readonly placeholder="USA">
+                            </div>
+                            <div class="input-block">
+                                <label for="order-id__trader">Trader name</label>
+                                <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__trader" readonly placeholder="USA">
+                            </div>
+                            <div class="input-block">
+                                <label for="order-id__phone">Phone number</label>
+                                <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__phone" readonly placeholder="USA">
+                            </div>
+                            <div class="input-block">
+                                <label for="order-id__mail">@mail</label>
+                                <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__mail" readonly placeholder="USA">
+                            </div>
+                        </div>
+                        <div class="order-id__chat">
+                            chat
+                        </div>
+                    </div>
+                    <div class="order-id__item">
+                        <div class="order-id__photos">
+                            <div class="order-photos__title">Photos</div>
+                            <div class="order-photos__slide">
+                                <img src="assets/img/stal.png" alt="">
+                                <img src="assets/img/stal-65kh13-4.png" alt="">
+                                <img src="assets/img/stal5533.png" alt="">
+                                <img src="assets/img/image-holder.png" alt="">
+                                <img src="assets/img/image-holder.png" alt="">
+                            </div>
+                        </div>
+                        <div class="order-id__documents">
+                            <div class="order-photos__title">Documents</div>
+                            <div class="order-photos__slide">
+                                <img src="assets/img/unnamed 4.png" alt="">
+                                <img src="assets/img/akt_rashozhdenie4 4.png" alt="">
+                                <img src="assets/img/deklaracija-sootvetstvija-na-pshenicu 4.png" alt="">
+                                <img src="assets/img/image-holder.png" alt="">
+                                <img src="assets/img/image-holder.png" alt="">
+                                <img src="assets/img/image-holder.png" alt="">
+                            </div>
                         </div>
                         <div class="textarea-block">
                             <label for="">Comments, description</label>
                             <textarea name=""></textarea>
                         </div>
-                        <div class="create-order__star">
-                            *20D, 40D  - Dry Container<br>    
-                            20HC, 40HC, 45HC - Hight Cube Dry<br> 
-                            20R, 40R  - Reefer Container<br> 
-                            45HR  - Hight Reefer<br> 
-                            20FR, 40FR  - Flat Rack<br> 
-                            20OT, 40OT  - Open Top<br> 
-                            20T  - Tanker Container
-                        </div>
                     </div>
                 </div>
-                <div class="create-order__item">
-                    <div class="create-order__photos">
-                        <div class="order-photos__title">Photos</div>
-                        <div class="order-photos__slide">
-                            <img src="assets/img/stal.png" alt="">
-                            <img src="assets/img/stal-65kh13-4.png" alt="">
-                            <img src="assets/img/stal5533.png" alt="">
-                            <img src="assets/img/image-holder.png" alt="">
-                            <img src="assets/img/image-holder.png" alt="">
-                        </div>
-                        <div class="order-photos__etc">Please use only real photos.</div>
-                    </div>
-                    <div class="create-order__documents">
-                        <div class="order-photos__title">Documents</div>
-                        <div class="order-photos__slide">
-                            <img src="assets/img/unnamed 4.png" alt="">
-                            <img src="assets/img/akt_rashozhdenie4 4.png" alt="">
-                            <img src="assets/img/deklaracija-sootvetstvija-na-pshenicu 4.png" alt="">
-                            <img src="assets/img/image-holder.png" alt="">
-                            <img src="assets/img/image-holder.png" alt="">
-                            <img src="assets/img/image-holder.png" alt="">
-                        </div>
-                        <div class="order-photos__etc">Please use only real documents, if you want to show it. (jpg, png, bmp, gif)</div>
-                    </div>
-                </div>
+                <button class="btn-close" id="popup-close">Close</button>
             </div>
-            <button class="table_btn" type="submit" id="open_order_list">Send order</button>
-        </form>
-        <div class="popup order-id">
-            <div class="order-id__header">
-                <h2 class="order-id__title">order id [562345557846]</h2>
-            </div>
-            <div class="order-id__content">
-                <div class="order-id__item order-id__description">
-                    <div class="order-id__information">
-                        <div class="input-block">
-                            <label for="order-id__country">Country</label>
-                            <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__country" readonly placeholder="USA">
-                        </div>
-                        <div class="input-block">
-                            <label for="order-id__port">Port or city</label>
-                            <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__port" readonly placeholder="USA">
-                        </div>
-                        <div class="input-block">
-                            <label for="order-id__company">Company</label>
-                            <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__company" readonly placeholder="USA">
-                        </div>
-                        <div class="input-block">
-                            <label for="order-id__cargo">Cargo name</label>
-                            <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__cargo" readonly placeholder="USA">
-                        </div>
-                        <div class="input-block">
-                            <label for="order-id__amount">Amount, t or m3</label>
-                            <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__amount" readonly placeholder="USA">
-                        </div>
-                        <div class="input-block">
-                            <label for="order-id__contract">Contract Price, $</label>
-                            <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__contract" readonly placeholder="USA">
-                        </div>
-                        <div class="input-block">
-                            <label for="order-id__current">Current Price, $</label>
-                            <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__current" readonly placeholder="USA">
-                        </div>
-                        <div class="input-block">
-                            <label for="order-id__discount">Discount, %</label>
-                            <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__discount" readonly placeholder="USA">
-                        </div>
-                        <div class="input-block">
-                            <label for="order-id__trader">Trader name</label>
-                            <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__trader" readonly placeholder="USA">
-                        </div>
-                        <div class="input-block">
-                            <label for="order-id__phone">Phone number</label>
-                            <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__phone" readonly placeholder="USA">
-                        </div>
-                        <div class="input-block">
-                            <label for="order-id__mail">@mail</label>
-                            <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__mail" readonly placeholder="USA">
-                        </div>
-                    </div>
-                    <div class="order-id__chat">
-                        chat
-                    </div>
-                </div>
-                <div class="order-id__item">
-                    <div class="order-id__photos">
-                        <div class="order-photos__title">Photos</div>
-                        <div class="order-photos__slide">
-                            <img src="assets/img/stal.png" alt="">
-                            <img src="assets/img/stal-65kh13-4.png" alt="">
-                            <img src="assets/img/stal5533.png" alt="">
-                            <img src="assets/img/image-holder.png" alt="">
-                            <img src="assets/img/image-holder.png" alt="">
-                        </div>
-                        <div class="order-photos__etc">Please use only real photos.</div>
-                    </div>
-                    <div class="order-id__documents">
-                        <div class="order-photos__title">Documents</div>
-                        <div class="order-photos__slide">
-                            <img src="assets/img/unnamed 4.png" alt="">
-                            <img src="assets/img/akt_rashozhdenie4 4.png" alt="">
-                            <img src="assets/img/deklaracija-sootvetstvija-na-pshenicu 4.png" alt="">
-                            <img src="assets/img/image-holder.png" alt="">
-                            <img src="assets/img/image-holder.png" alt="">
-                            <img src="assets/img/image-holder.png" alt="">
-                        </div>
-                        <div class="order-photos__etc">Please use only real documents, if you want to show it. (jpg, png, bmp, gif)</div>
-                    </div>
-                    <div class="textarea-block">
-                        <label for="">Comments, description</label>
-                        <textarea name=""></textarea>
-                    </div>
-                </div>
-            </div>
-            <button class="btn-close" id="popup-close">Close</button>
-        </div>
     </main>
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
