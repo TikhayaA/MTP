@@ -21,7 +21,7 @@
         width: 15%; 
         // width: 12%; 
         line-height: 120px;
-
+        position: relative;
         @media screen and (max-width: 1500px){
             line-height: 120px;
         }
@@ -32,6 +32,17 @@
         img{
             width: 100%;
         }  
+        span{
+            position: absolute;
+            left: 10%;
+            bottom: 10px;
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 10px;
+            line-height: 16px;
+            color: #FFFFFF;
+        }
     }   
     &__log-in{
         background: none;
@@ -73,6 +84,9 @@
         width: 80%;
         display: flex;
         z-index: 0;
+        @media screen and (max-width: 1150px){
+            width: 87%;
+        }
         // @media screen and (max-width: 1800px){
         //     width: 85%;
         // }

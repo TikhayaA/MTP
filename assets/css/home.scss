@@ -23,6 +23,12 @@
         background-size: cover;
         padding: 40px 0;
         background-position: center;
+        @media screen and (min-width: 2100px) {
+            min-height: 1000px
+        }
+        @media screen and (min-width: 1800px) {
+            min-height: 800px
+        }
         @media screen and (max-width: 1700px) {
             background-position: 87%;
         }
@@ -99,6 +105,7 @@
                 line-height: 30px;
                 font-weight: 500;
                 @include adaptive-fonts(16, 12);
+                margin-bottom: 20px;
                 @media screen and (max-width: 1050px) {
                     line-height: 30px;
                 }

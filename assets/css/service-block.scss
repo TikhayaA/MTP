@@ -17,20 +17,11 @@
             padding:16px 15px 16px 15px;
             min-height: 200px;
         }
-        :nth-child(1){
-            font-size: 20px;  
-            font-style: normal;
-            font-weight: 500;
-            line-height: 140%;
-            letter-spacing: 0.01em;
-            color: $color_main-title;
-            text-align: center;
-            margin-bottom: 26px;
-            @media screen and (max-width: 420px) {
-                margin-bottom: 10px;
-            }
+        >div{
+            min-height: 205px;
         }
-        :nth-child(2){
+        
+        p{
             font-size: 15px;  
             font-style: normal;
             font-weight:500;
@@ -41,11 +32,13 @@
             -webkit-line-clamp: 9;
             -webkit-box-orient: vertical;
             overflow: hidden;
+            margin-bottom: 20px;
             @media screen and (max-width: 800px) {
                 -webkit-line-clamp: 8;
             }
         }
     }
+    
     &__btn-wrap{
         background: #005672;
         // padding: 25px 0;
@@ -54,5 +47,18 @@
         @media screen and (max-width: 420px) {
             padding: 20px 0;
         }
+    }
+}
+.service-block__description .service-block__description-title{
+    font-size: 20px;  
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.01em;
+    color: $color_main-title;
+    text-align: center;
+    margin-bottom: 26px;
+    @media screen and (max-width: 420px) {
+        margin-bottom: 10px;
     }
 }
