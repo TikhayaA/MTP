@@ -28,8 +28,6 @@
     &__wrap{
         margin: 120px 0 60px;
         position: relative;
-        overflow: auto !important;
-        width: 100%;
         @media screen and (max-width: 1500px){
             margin: 30px 0 30px;
         }
@@ -161,7 +159,7 @@
     &__line {
         position: absolute;
         width: 1px;
-        height: 110%;
+        height: calc(100% - 40px);
         background: #979797;
         top: 20px;
     }
