@@ -589,6 +589,11 @@
         &:hover{
             border: 1px solid #9FA4BB;
         }
+        &::placeholder {
+            @media screen and (max-width: 400px){
+                font-size: 12px;
+            }
+        }
     }
     .display-password{
         position: absolute;
@@ -608,21 +613,41 @@
     }
 }
 .pop-up-forgot-password{
-    padding: 53px 60px 50px;
+    padding: 40px 30px 40px;
     text-align: center;
     @media screen and (max-width: 500px){
         min-width: 90%;
         padding: 20px 20px;
     }
-    p{
+    h1{
+        width: 90%;
         margin: auto;
+        @media screen and (max-width: 900px){
+            font-size: 22px;
+        }
+        @media screen and (max-width: 500px){
+            font-size: 16px;
+        }
+    }
+    p{
+        margin: 20px auto 0;
         width: 80%;
+        @media screen and (max-width: 500px){
+            width: 100%;
+        }
     }
     form{
-        width: 100%;
+        width: 90%;
+        margin: auto;
     }
     .btn-close{
         margin: 20px auto;
+    }
+    .close-cross-popup{
+        @media screen and (max-width: 900px){
+            top:15px;
+            right: 15px;
+        }
     }
 }
 .pop-up-delete-account {

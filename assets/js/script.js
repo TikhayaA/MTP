@@ -335,11 +335,13 @@ if (radioBlockLeft) {
 const addCompany = document.getElementById('add-company');
 const hideSlider = document.querySelectorAll('.companies-logo__slider_left .logo-slider__item');
 const logoForm = document.querySelector('.logo-form');
+const pageBody = document.querySelector('body');
 if (addCompany) {
     addCompany.addEventListener('click', () => {
         hideSlider.forEach(el => {
             el.style.display = 'none';
         });
         logoForm.style.display = 'block';
+        pageBody.style.overflow = 'auto';
     });
 }

@@ -21,24 +21,12 @@
             width: 250px;
         }
     }
-
     .header-authorized {
         justify-content: flex-end;
     }
-    .companies-logo-list__btn {
-        background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), rgba(104, 139, 227, 0.5);
-        border: 1px solid rgba(0, 0, 0, 0.38);
-        box-sizing: border-box;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 50px;
-        width: 96px;
-        height: 52px;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 52px;
-        color: #000000;
-        text-align: center;
+    .sidebar_btn {
+        position: relative;
+        top: 13px;
     }
 }
 .logo-list {

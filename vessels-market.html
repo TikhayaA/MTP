@@ -11,173 +11,184 @@
       <link href="assets/css/reset.css" rel="stylesheet"> 
    </head>
    <body class="container-fluid p-0 categories">
-      <header class="header d-flex">
-         <a href="index.html" class="logo"><img src="assets/img/Logo.svg" alt="Logo"></a>
-         <div class="menu-mobile">
-            <button class="menu-mobile__open">
-               <span></span>
-            </button>
-            <div class="menu-mobile__bg"></div>
+      <header class="header">
+         <div class="container d-flex p-0">
+             <a href="index.html" class="logo"><img src="assets/img/Logo.png" alt="Logo">
+             <span>Global Marine Trading Platform</span>
+             </a>
+             <div class="menu-mobile">
+                 <button class="menu-mobile__open">
+                    <span></span>
+                 </button>
+                 <div class="menu-mobile__bg"></div>
+             </div>
+             <nav class="menu">
+                 <button class="menu-mobile__close">
+                    <span></span>
+                 </button>
+                 <ul class="menu__main d-flex">
+                     <li class="menu__list">
+                         <a href="cargo-market.html">Cargo Market</a>
+                         <span class="menu__arrow"></span>
+                         <ul class="menu__sub">
+                             <li class="menu__sub-list"><a href="#">Orders dashboard</a></li>
+                             <li class="menu__sub-list"><a href="#">How it works</a></li>
+                         </ul>
+                     </li>
+                     <li class="menu__list"><a href="discount-cargo.html">Discount Cargo</a>
+                         <span class="menu__arrow"></span>
+                         <ul class="menu__sub">
+                             <li class="menu__sub-list"><a href="#">Orders dashboard</a></li>
+                             <li class="menu__sub-list"><a href="#">How it works</a></li>
+                         </ul>
+                     </li>
+                     <li class="menu__list"><a href="freight-auction.html">Freight Auction</a>
+                         <span class="menu__arrow"></span>
+                         <ul class="menu__sub">
+                             <li class="menu__sub-list"><a href="#">Orders dashboard</a></li>
+                             <li class="menu__sub-list"><a href="#">How it works</a></li>
+                         </ul>
+                     </li>
+                     <li class="menu__list"><a href=" world-fleet.html">World Fleet</a>
+                         <span class="menu__arrow"></span>
+                         <ul class="menu__sub">
+                             <li class="menu__sub-list"><a href="#">Orders dashboard</a></li>
+                             <li class="menu__sub-list"><a href="#">How it works</a></li>
+                         </ul>
+                     </li>
+                     <li class="menu__list"><a class="active" href="vessels-market.html">Vessels Market</a>
+                         <span class="menu__arrow"></span>
+                         <ul class="menu__sub">
+                             <li class="menu__sub-list"><a href="#">Orders dashboard</a></li>
+                             <li class="menu__sub-list"><a href="#">How it works</a></li>
+                         </ul>
+                     </li>
+                     <li class="menu__list"><a href="companies.html">Companies</a>
+                     </li>
+                 </ul>
+                 <div class="menu__wrap-btn menu__wrap-btn_disabled">
+                     <button class="header__log-in pop-up-open" data-popup="pop-up-log-in"> 
+                       <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4.5 4.5C4.5 6.981 6.519 9 9 9C11.481 9 13.5 6.981 13.5 4.5C13.5 2.019 11.481 0 9 0C6.519 0 4.5 2.019 4.5 4.5ZM17 19H18V18C18 14.141 14.859 11 11 11H7C3.14 11 0 14.141 0 18V19H1H2H16H17Z" fill="white"/>
+                          </svg>
+                       Log In</button>
+                     <button id="open-account" class="pop-up-open" data-popup="pop-up-registration">Open account</button>
+                 </div>
+                 <div class="header-authorized header-authorized_active">
+                     <div class="header-authorized__mail pop-up-open" data-popup="pop-up-message">
+                         <a href="#">
+                             <img src="assets/img/mailto.svg" alt="">
+                             <span>1</span>
+                         </a>
+                     </div>
+                     <div class="header-authorized__info">
+                         <div class="user_info-avatar pop-up-open" data-popup="pop-up-log-out"><img src="assets/img/profile.svg" alt=""></div>
+                         <div class="user_info-name pop-up-open" data-popup="account-orders">Tomas Jefferson</div>
+                     </div>
+                     <a href="#" class="header-authorized__icon-setting pop-up-open" data-popup="pop-up-settings"><img src="assets/img/setting.svg" alt=""></a>
+                     <div class="header-authorized__chat">
+                         <span>Chat</span>
+                         <img src="assets/img/chat.svg" alt="">
+                         <span>1</span>
+                     </div>
+                 </div>
+             </nav>
          </div>
-         <nav class="menu">
-            <button class="menu-mobile__close">
-               <span></span>
-            </button>
-            <ul class="menu__main d-flex">
-               <li class="menu__list">
-                  <a href="cargo-market.html">Cargo Market</a>
-                  <span class="menu__arrow"></span>
-                  <ul class="menu__sub">
-                     <li class="menu__sub-list"><a href="#">Orders dashboard</a></li>
-                     <li class="menu__sub-list"><a href="#">How it works</a></li>
-                  </ul>
-               </li>
-               <li class="menu__list"><a href="common-cargo.html">Common Cargo</a>
-                  <span class="menu__arrow"></span>
-                  <ul class="menu__sub">
-                     <li class="menu__sub-list"><a href="#">Orders dashboard</a></li>
-                     <li class="menu__sub-list"><a href="#">How it works</a></li>
-                  </ul>
-               </li>
-               <li class="menu__list"><a href="freight-auction.html">Freight Auction</a>
-                  <span class="menu__arrow"></span>
-                  <ul class="menu__sub">
-                     <li class="menu__sub-list"><a href="#">Orders dashboard</a></li>
-                     <li class="menu__sub-list"><a href="#">How it works</a></li>
-                  </ul>
-               </li>
-               <li class="menu__list"><a href="world-fleet.html">World Fleet</a>
-                  <span class="menu__arrow"></span>
-                  <ul class="menu__sub">
-                     <li class="menu__sub-list"><a href="#">Orders dashboard</a></li>
-                     <li class="menu__sub-list"><a href="#">How it works</a></li>
-                  </ul>
-               </li>
-               <li class="menu__list"><a class="active" href="vessels-market.html">Vessels Market</a>
-                  <span class="menu__arrow"></span>
-                  <ul class="menu__sub">
-                     <li class="menu__sub-list"><a href="#">Orders dashboard</a></li>
-                     <li class="menu__sub-list"><a href="#">How it works</a></li>
-                  </ul>
-               </li>
-               <li class="menu__list"><a href="companies.html">Companies</a>
-               </li>
-               <!-- <li class="menu__list"><a href="#">Price</a></li> -->
-            </ul>
-            <div class="menu__wrap-btn  d-flex">
-               <button class="header__log-in"> 
-                  <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                     <path d="M4.5 4.5C4.5 6.981 6.519 9 9 9C11.481 9 13.5 6.981 13.5 4.5C13.5 2.019 11.481 0 9 0C6.519 0 4.5 2.019 4.5 4.5ZM17 19H18V18C18 14.141 14.859 11 11 11H7C3.14 11 0 14.141 0 18V19H1H2H16H17Z" fill="white"/>
-                     </svg>
-                  Log In</button>
-               <button id="open-account">Open account</button>
-            </div>
-            <div class="header-authorized">
-               <div class="header-authorized__mail">
-                   <a href="#">
-                       <img src="assets/img/mailto.svg" alt="">
-                       <span>1</span>
-                   </a>
-               </div>
-               <div class="header-authorized__info">
-                   <div class="user_info-avatar"><img src="assets/img/profile.svg" alt=""></div>
-                   <div class="user_info-name">Tomas Jefferson</div>
-               </div>
-               <a href="#" class="header-authorized__icon-setting"><img src="assets/img/setting.svg" alt=""></a>
-               <div class="header-authorized__chat">
-                   <span>Chat</span>
-                   <img src="assets/img/chat.svg" alt="">
-                   <span>1</span>
-               </div>
-           </div>
-         </nav>
-         
-      </header>
+     </header>
       <main class="cargo-market world-fleet vessels-market">
          <section class="home__video ">
             <video src="assets/video/video-vessels-market.mp4" style="width: 100%;" class="d-block" autoplay loop muted></video>
          </section>
          <section class="categories__text">
             <div class="container">
-               <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eveniet, tenetur, dicta, cumque enim veritatis atque velit fuga sit expedita dolorem iste adipisci eaque aperiam dolore odio id! Error, corrupti.
-               </p>
+               <p>There are about 50 types of cargo ships in the world in the amount of 100 thousand. Sooner or later, every shipping company in the world is faced with the problem of selling or buying a vessel. 
+                  Our purpose is to help you with this. We have created a platform where you can quickly sell or buy ships, with direct access to the ship owner, without intermediary brokers.
+                  </p>
             </div>
          </section>
          <section class="categories__description">
-            <div class="container">
+            <div class="container p-0">
                <h4 class="service__title">Vessels Market</h4>
-               <div class="categories__wrap align-items-center">
-                  <div class="cargo-market__monitor">
-                     <img src="assets/img/world-fleet-6.png" alt="">
-                  </div>
-                     <div class="d-flex flex-column world-fleet__item-wrap">
-                     <div class="world-fleet__item"> <img src="assets/img/vessels-market1.svg" alt="">
-                        <p>lorem ipsum dolor sit amet consectetur  inventore ea velit  
-                        </p>
-                        <p>lorem ipsum dolor sit amet consectetur  inventore ea velit  
-                        </p>
-                        <p>lorem ipsum dolor sit amet consectetur  inventore ea velit  
-                        </p>
-                        <p>Lorem ipsum dolor sit amet consectetur  inventore ea velit  
-                        </p>
+               <div class="categories__container">
+                  <div class="categories__wrap align-items-center">
+                     <div class="cargo-market__monitor">
+                        <img src="assets/img/world-fleet-6.png" alt="">
+                     </div>
+                        <div class="d-flex flex-column world-fleet__item-wrap">
+                        <div class="world-fleet__item"> <img src="assets/img/vessels-market1.svg" alt="">
+                           <p>The place, for the purchase and sale of ships, enables shipowners quickly and directly, without intermediary brokers
+                              buy-sell sea vessels 
+                           </p>
+                           <p>An application for the sale of a vessel, has an unlimited period
+                              Liquidation of an order occurs after the transaction 
+                           </p>
+                           <p>The minimum required information about the vessel
+                              The ability to conversation  directly  
+                           </p>
+                           <p>The ability to quickly and easy find a vessel suitable for you
+                              according to your criteria 
+                           </p>
+                        </div>
                      </div>
                   </div>
-               </div>
-               <div class="d-flex categories__wrap-btn">
-                  <div><a href="#" class="btn-open-dashboard">Open dashboard</a></div>
-                  <div><button class="btn-how-work">How it Works</button> </div>
+                  <div class="d-flex categories__wrap-btn">
+                     <div><a href="#" class="btn-open-dashboard">Open dashboard</a></div>
+                     <div><button class="btn-how-work">How it Works</button> </div>
+                  </div>
                </div>
             </div>
          </section>
       </main>
       <footer class="footer">
-         <div class="container d-flex">
-            <div class="footer__text">
-               <div>If you have any wishes to improve the quality of our service, work and functions of the terminal,
-                  We will gladly take into account your wishes, for this, just write to Us  </div>
-               <div class="d-flex">
-                  <p>Copyright © MTP.  All Rights Reserved </p>
-                  <a href="#">Privacy Policy - Term of Use - Cookies Policy</a>
-               </div>
-            </div>
-            <div class="footer__link-wrap d-flex">
-               <div class="footer__menu-wrap d-flex flex-column">
-                  <p class="footer__menu-title">Contact Us</p>
-                  <div class="d-flex align-items-center">
-                     <img src="assets/img/Vector.svg" alt="">
-                     <a href="mailto:info@gmtp.com"> info@gmtp.com</a>
-                  </div>
-                  <div class="d-flex align-items-center">
-                     <img src="assets/img/Vector.svg" alt="">
-                     <a href="mailto:support@gmtp.com">support@gmtp.com</a>
-                  </div>
-                  <div class="d-flex align-items-center">
-                     <img src="assets/img/phone.svg" alt="">
-                     <a href="tel:+37047777550">+37047777550</a>
-                  </div>
-               </div>
-               <div class="footer__follow-icon d-flex flex-column align-items-center">
-                  <p class="footer__menu-title">Follow Us</p>
-                  <a href="#" class="d-flex align-items-center justify-content-center fb">
-                     <svg width="15" height="26" viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M14.0106 0.00538526L10.5186 0C6.59544 0 4.06013 2.50011 4.06013 6.36968V9.30653H0.549083C0.245687 9.30653 0 9.54295 0 9.83456V14.0897C0 14.3813 0.245967 14.6175 0.549083 14.6175H4.06013V25.3546C4.06013 25.6462 4.30582 25.8824 4.60921 25.8824H9.19013C9.49353 25.8824 9.73922 25.6459 9.73922 25.3546V14.6175H13.8445C14.1478 14.6175 14.3935 14.3813 14.3935 14.0897L14.3952 9.83456C14.3952 9.69454 14.3372 9.56045 14.2344 9.46136C14.1316 9.36227 13.9915 9.30653 13.8459 9.30653H9.73922V6.81693C9.73922 5.62032 10.0359 5.01287 11.6576 5.01287L14.01 5.01206C14.3131 5.01206 14.5588 4.77565 14.5588 4.4843V0.53314C14.5588 0.242067 14.3134 0.00592378 14.0106 0.00538526Z" fill="#F2F2F2"/>
-                     </svg>
-                  </a>
-                  <a href="#" class="d-flex align-items-center justify-content-center">
-                     <svg width="27" height="22" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M26.4473 3.28595C25.4953 3.708 24.4712 3.99346 23.3972 4.12095C24.4938 3.46411 25.3353 2.42482 25.7325 1.18439C24.7064 1.79292 23.5695 2.23438 22.3605 2.47233C21.3918 1.44095 20.0118 0.796387 18.4836 0.796387C15.5515 0.796387 13.1735 3.1739 13.1735 6.10531C13.1735 6.52142 13.2206 6.92645 13.3117 7.31525C8.89855 7.09393 4.98559 4.98049 2.36639 1.76758C1.90939 2.55151 1.64723 3.46411 1.64723 4.43689C1.64723 6.27833 2.58538 7.90398 4.00943 8.85578C3.1394 8.82846 2.32005 8.58972 1.60447 8.19103C1.60407 8.21359 1.60407 8.23616 1.60407 8.25833C1.60407 10.8306 3.43521 12.9761 5.86394 13.4635C5.41882 13.5855 4.94876 13.65 4.46523 13.65C4.12229 13.65 3.79004 13.6171 3.4661 13.5554C4.14169 15.6641 6.10234 17.1991 8.42651 17.2422C6.60883 18.6663 4.3195 19.5148 1.83098 19.5148C1.40329 19.5148 0.979563 19.4899 0.564941 19.4404C2.91367 20.9472 5.70553 21.8258 8.70411 21.8258C18.4713 21.8258 23.8126 13.7363 23.8126 6.72018C23.8126 6.49014 23.8075 6.26091 23.7972 6.03365C24.8355 5.28535 25.7357 4.35058 26.4473 3.28595Z" fill="#F2F2F2"/>
-                     </svg>                           
-                  </a>
-                  <a href="#" class="d-flex align-items-center justify-content-center">
-                     <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.10938 26H1.15332V7.50879H6.10938V26ZM0.862793 2.72363C0.862793 1.98307 1.10775 1.37354 1.59766 0.89502C2.09896 0.416504 2.77686 0.177246 3.63135 0.177246C4.47445 0.177246 5.14665 0.416504 5.64795 0.89502C6.14925 1.37354 6.3999 1.98307 6.3999 2.72363C6.3999 3.47559 6.14355 4.09082 5.63086 4.56934C5.12956 5.04785 4.46305 5.28711 3.63135 5.28711C2.79964 5.28711 2.12744 5.04785 1.61475 4.56934C1.11344 4.09082 0.862793 3.47559 0.862793 2.72363ZM14.7397 7.50879L14.8936 9.64502C16.2152 7.993 17.9868 7.16699 20.2085 7.16699C22.1681 7.16699 23.6265 7.74235 24.5835 8.89307C25.5405 10.0438 26.0304 11.7642 26.0532 14.0542V26H21.1143V14.1738C21.1143 13.1257 20.8864 12.368 20.4307 11.9009C19.9749 11.4224 19.2173 11.1831 18.1577 11.1831C16.7677 11.1831 15.7253 11.7756 15.0303 12.9604V26H10.0913V7.50879H14.7397Z" fill="white"/>
-                     </svg>
-                  </a>
-               </div>
-            </div>
+         <div class="container d-flex p-0">
+             <div class="footer__text">
+                 <div>If you have any wishes to improve the quality of our service, work and functions of the terminal, We will gladly take into account your wishes, for this, just write to Us </div>
+                 <div class="d-flex">
+                     <p>Copyright © MTP. All Rights Reserved </p>
+                     <div>
+                         <a href="#">Privacy Policy</a>-
+                         <a href="#">Term of Use</a>-
+                         <a href="#">Cookies Policy</a>
+                     </div>
+                 </div>
+             </div>
+             <div class="footer__link-wrap d-flex">
+                 <div class="footer__menu-wrap d-flex flex-column">
+                     <p class="footer__menu-title">Contact Us</p>
+                     <div class="d-flex align-items-center">
+                         <img src="assets/img/Vector.svg" alt="">
+                         <a href="mailto:info@gmtp.com"> info@gmtp.com</a>
+                     </div>
+                     <div class="d-flex align-items-center">
+                         <img src="assets/img/Vector.svg" alt="">
+                         <a href="mailto:support@gmtp.com">support@gmtp.com</a>
+                     </div>
+                     <div class="d-flex align-items-center">
+                         <img src="assets/img/phone.svg" alt="">
+                         <a href="tel:+37047777550">+37047777550</a>
+                     </div>
+                 </div>
+                 <div class="footer__follow-icon d-flex flex-column align-items-center">
+                     <p class="footer__menu-title">Follow Us</p>
+                     <a href="#" class="d-flex align-items-center justify-content-center fb">
+                         <svg width="15" height="26" viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M14.0106 0.00538526L10.5186 0C6.59544 0 4.06013 2.50011 4.06013 6.36968V9.30653H0.549083C0.245687 9.30653 0 9.54295 0 9.83456V14.0897C0 14.3813 0.245967 14.6175 0.549083 14.6175H4.06013V25.3546C4.06013 25.6462 4.30582 25.8824 4.60921 25.8824H9.19013C9.49353 25.8824 9.73922 25.6459 9.73922 25.3546V14.6175H13.8445C14.1478 14.6175 14.3935 14.3813 14.3935 14.0897L14.3952 9.83456C14.3952 9.69454 14.3372 9.56045 14.2344 9.46136C14.1316 9.36227 13.9915 9.30653 13.8459 9.30653H9.73922V6.81693C9.73922 5.62032 10.0359 5.01287 11.6576 5.01287L14.01 5.01206C14.3131 5.01206 14.5588 4.77565 14.5588 4.4843V0.53314C14.5588 0.242067 14.3134 0.00592378 14.0106 0.00538526Z" fill="#F2F2F2"/>
+                      </svg>
+                     </a>
+                     <a href="#" class="d-flex align-items-center justify-content-center">
+                         <svg width="27" height="22" viewBox="0 0 27 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M26.4473 3.28595C25.4953 3.708 24.4712 3.99346 23.3972 4.12095C24.4938 3.46411 25.3353 2.42482 25.7325 1.18439C24.7064 1.79292 23.5695 2.23438 22.3605 2.47233C21.3918 1.44095 20.0118 0.796387 18.4836 0.796387C15.5515 0.796387 13.1735 3.1739 13.1735 6.10531C13.1735 6.52142 13.2206 6.92645 13.3117 7.31525C8.89855 7.09393 4.98559 4.98049 2.36639 1.76758C1.90939 2.55151 1.64723 3.46411 1.64723 4.43689C1.64723 6.27833 2.58538 7.90398 4.00943 8.85578C3.1394 8.82846 2.32005 8.58972 1.60447 8.19103C1.60407 8.21359 1.60407 8.23616 1.60407 8.25833C1.60407 10.8306 3.43521 12.9761 5.86394 13.4635C5.41882 13.5855 4.94876 13.65 4.46523 13.65C4.12229 13.65 3.79004 13.6171 3.4661 13.5554C4.14169 15.6641 6.10234 17.1991 8.42651 17.2422C6.60883 18.6663 4.3195 19.5148 1.83098 19.5148C1.40329 19.5148 0.979563 19.4899 0.564941 19.4404C2.91367 20.9472 5.70553 21.8258 8.70411 21.8258C18.4713 21.8258 23.8126 13.7363 23.8126 6.72018C23.8126 6.49014 23.8075 6.26091 23.7972 6.03365C24.8355 5.28535 25.7357 4.35058 26.4473 3.28595Z" fill="#F2F2F2"/>
+                      </svg>
+                     </a>
+                     <a href="#" class="d-flex align-items-center justify-content-center">
+                         <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M6.10938 26H1.15332V7.50879H6.10938V26ZM0.862793 2.72363C0.862793 1.98307 1.10775 1.37354 1.59766 0.89502C2.09896 0.416504 2.77686 0.177246 3.63135 0.177246C4.47445 0.177246 5.14665 0.416504 5.64795 0.89502C6.14925 1.37354 6.3999 1.98307 6.3999 2.72363C6.3999 3.47559 6.14355 4.09082 5.63086 4.56934C5.12956 5.04785 4.46305 5.28711 3.63135 5.28711C2.79964 5.28711 2.12744 5.04785 1.61475 4.56934C1.11344 4.09082 0.862793 3.47559 0.862793 2.72363ZM14.7397 7.50879L14.8936 9.64502C16.2152 7.993 17.9868 7.16699 20.2085 7.16699C22.1681 7.16699 23.6265 7.74235 24.5835 8.89307C25.5405 10.0438 26.0304 11.7642 26.0532 14.0542V26H21.1143V14.1738C21.1143 13.1257 20.8864 12.368 20.4307 11.9009C19.9749 11.4224 19.2173 11.1831 18.1577 11.1831C16.7677 11.1831 15.7253 11.7756 15.0303 12.9604V26H10.0913V7.50879H14.7397Z" fill="white"/>
+                      </svg>
+                     </a>
+                 </div>
+             </div>
          </div>
-      </footer>
+     </footer>
       
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
       <script src="assets/js/script.js"></script>

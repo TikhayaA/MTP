@@ -18,7 +18,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
 </head>
-<body class="companies-logo-fixed" data-simplebar>
+<body class="companies-logo-fixed">
     <header class="companies-logo header_table">
         <div class="companies-logo__header-block">
             <div class="add-company__block">
@@ -48,8 +48,44 @@
             </div>
         </div>
     </header>
-    <main>
-        <img src="assets/img/companies-bg.jpeg" alt="logo-bg" class="companies-bg">
+    <main class="main-companies">
+        <div class="companies-container d-flex">
+            <div class="container-img-wrap">
+                <div class="container-img">
+                    <img src="assets/img/companies-planeta.png" alt="">
+
+                </div>
+                <!-- <img class="group-compaies" src="assets/img/companies-group.png" alt=""> -->
+                <div class="container-img-wrap__circle d-flex"><p>Logistic 
+                    Forwarding
+                    Stevedoring 
+                    Brokers
+                    Traders</p>
+                </div>
+                <div class="container-img-wrap__circle d-flex"><p>Logistic 
+                    Commodity producers 
+                    Warehouse facilities
+                    Factory </p>
+                </div>
+                <div class="container-img-wrap__circle d-flex"><p>Supply of ships 
+                    Bunkering
+                    Technical  Service
+                    Surveyor </p>
+                </div>
+                <div class="container-img-wrap__circle d-flex"><p>Marine Laws
+                    Insurance
+                    Marine service
+                    Agency </p>
+                </div>
+                <div class="container-img-wrap__circle d-flex"><p>Shipping company
+                    Shipbuilding
+                    Shiprepair
+                    Marine engineering
+                    Bureau</p>
+                </div>
+            </div>  
+        </div>
+        <!-- <img src="assets/img/companies-bg.png" alt="logo-bg" class="companies-bg"> -->
         <div class="companies-logo__slider companies-logo__slider_left">
             <div class="logo-slider__item logo-slider__item_right slick-vertical">
                 <div class="logo-block"><img src="assets/img/maritime-logo.png" alt=""></div>
@@ -382,192 +418,320 @@
             </form>
         </div>
     </section>
-    <section class="pop-up account-orders content">
+    <section class="pop-up account-orders">
         <h1>Account orders</h1>
         <hr>
-        <div class="account-orders__wrap d-flex">
-            <div class="account-orders__item-wrap orders d-flex align-items-center flex-column">
-                <div class="order__title">Cargo Market
-                    <button class="order__title-btn">
-                       <img src="assets/img/orders-add.svg" alt="">
-                   </button>
+        <div class="account-orders__wrap d-flex" data-simplebar>
+            <div class="account-orders__wrap-content">
+                <div class="account-orders__item-wrap orders d-flex align-items-center flex-column">
+                    <div class="order__title">Cargo Market
+                        <button class="order__title-btn">
+                        <img src="assets/img/orders-add.svg" alt="">
+                    </button>
+                    </div>
+                    <div class="order__item" data-simplebar>
+                        <div class="order__lines">
+                            <div class="order__line"></div>
+                            <div class="order__line"></div>
+                            <div class="order__line"></div>
+                            <div class="order__line"></div>
+                        </div>
+                        <div class="order__string-title">
+                            <span>data</span>
+                            <span>id orders</span>
+                        </div>
+                        <div class="order__string-wrap">
+                            <div class="order__string d-flex align-items-center">
+                                <span>1</span>
+                                <span>01.03.2021</span>
+                                <span>589365092294</span>
+                                <button class="d-flex"><img src="assets/img/orders-change.svg" alt=""></button>
+                                <button class="d-flex btn-delete"><img src="assets/img/orders-delete.svg" alt=""></button>
+                            </div>
+                            <div class="order__string d-flex align-items-center">
+                                <span>2</span>
+                                <span>01.03.2021</span>
+                                <span>589365092294</span>
+                                <button class="d-flex"><img src="assets/img/orders-change.svg" alt=""></button>
+                                <button class="d-flex btn-delete"><img src="assets/img/orders-delete.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order__info">335 <span>days left</span></div>
                 </div>
-                <div class="order__item">
-                    <div class="order__lines">
-                        <div class="order__line"></div>
-                        <div class="order__line"></div>
-                        <div class="order__line"></div>
-                        <div class="order__line"></div>
+                <div class="account-orders__item-wrap orders d-flex align-items-center flex-column">
+                    <div class="order__title">Discount Cargo
+                        <button class="order__title-btn">
+                        <img src="assets/img/orders-add.svg" alt="">
+                    </button>
                     </div>
-                    <div class="order__string-title">
-                        <span>data</span>
-                        <span>id orders</span>
+                    <div class="order__item" data-simplebar>
+                        <div class="order__lines">
+                            <div class="order__line"></div>
+                            <div class="order__line"></div>
+                            <div class="order__line"></div>
+                            <div class="order__line"></div>
+                        </div>
+                        <div class="order__string-title">
+                            <span>data</span>
+                            <span>id orders</span>
+                        </div>
+                        <div class="order__string-wrap">
+                            <div class="order__string d-flex align-items-center">
+                                <span>1</span>
+                                <span>01.03.2021</span>
+                                <span>589365092294</span>
+                                <button class="d-flex"><img src="assets/img/orders-change.svg" alt=""></button>
+                                <button class="d-flex btn-delete"><img src="assets/img/orders-delete.svg" alt=""></button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="order__string d-flex align-items-center">
-                        <span>1</span>
-                        <span>01.03.2021</span>
-                        <span>589365092294</span>
-                        <button class="d-flex"><img src="assets/img/orders-change.svg" alt=""></button>
-                        <button class="d-flex btn-delete"><img src="assets/img/orders-delete.svg" alt=""></button>
-                    </div>
-                    <div class="order__string d-flex align-items-center">
-                        <span>2</span>
-                        <span>01.03.2021</span>
-                        <span>589365092294</span>
-                        <button class="d-flex"><img src="assets/img/orders-change.svg" alt=""></button>
-                        <button class="d-flex btn-delete"><img src="assets/img/orders-delete.svg" alt=""></button>
-                    </div>
+                    <div class="order__info">321 <span>days left</span></div>
                 </div>
-                <div class="order__info">335 <span>days left</span></div>
-            </div>
-            <div class="account-orders__item-wrap orders d-flex align-items-center flex-column">
-                <div class="order__title">Common cargo
-                    <button class="order__title-btn">
-                       <img src="assets/img/orders-add.svg" alt="">
-                   </button>
+                <div class="account-orders__item-wrap orders d-flex align-items-center flex-column">
+                    <div class="order__title">Freight Auction
+                        <button class="order__title-btn">
+                        <img src="assets/img/orders-add.svg" alt="">
+                    </button>
+                    </div>
+                    <div class="order__item" data-simplebar>
+                        <div class="order__lines">
+                            <div class="order__line"></div>
+                            <div class="order__line"></div>
+                            <div class="order__line"></div>
+                            <div class="order__line"></div>
+                        </div>
+                        <div class="order__string-title">
+                            <span>data</span>
+                            <span>id orders</span>
+                        </div>
+                        <div class="order__string-wrap">
+                            <div class="order__string d-flex align-items-center">
+                                <span>1</span>
+                                <span>01.03.2021</span>
+                                <span>895465092293</span>
+                                <button class="d-flex"><img src="assets/img/orders-change.svg" alt=""></button>
+                                <button class="d-flex btn-delete"><img src="assets/img/orders-delete.svg" alt=""></button>
+                            </div>
+                            <div class="order__string d-flex align-items-center">
+                                <span>2</span>
+                                <span>01.03.2021</span>
+                                <span>895465092293</span>
+                                <button class="d-flex"><img src="assets/img/orders-change.svg" alt=""></button>
+                                <button class="d-flex btn-delete"><img src="assets/img/orders-delete.svg" alt=""></button>
+                            </div>
+                            <div class="order__string d-flex align-items-center">
+                                <span>3</span>
+                                <span>01.03.2021</span>
+                                <span>895465092293</span>
+                                <button class="d-flex"><img src="assets/img/orders-change.svg" alt=""></button>
+                                <button class="d-flex btn-delete"><img src="assets/img/orders-delete.svg" alt=""></button>
+                            </div>
+                            <div class="order__string d-flex align-items-center">
+                                <span>4</span>
+                                <span>01.03.2021</span>
+                                <span>895465092293</span>
+                                <button class="d-flex"><img src="assets/img/orders-change.svg" alt=""></button>
+                                <button class="d-flex btn-delete"><img src="assets/img/orders-delete.svg" alt=""></button>
+                            </div>
+                            <div class="order__string d-flex align-items-center">
+                                <span>4</span>
+                                <span>01.03.2021</span>
+                                <span>895465092293</span>
+                                <button class="d-flex"><img src="assets/img/orders-change.svg" alt=""></button>
+                                <button class="d-flex btn-delete"><img src="assets/img/orders-delete.svg" alt=""></button>
+                            </div>
+                            <div class="order__string d-flex align-items-center">
+                                <span>4</span>
+                                <span>01.03.2021</span>
+                                <span>895465092293</span>
+                                <button class="d-flex"><img src="assets/img/orders-change.svg" alt=""></button>
+                                <button class="d-flex btn-delete"><img src="assets/img/orders-delete.svg" alt=""></button>
+                            </div>
+                            <div class="order__string d-flex align-items-center">
+                                <span>4</span>
+                                <span>01.03.2021</span>
+                                <span>895465092293</span>
+                                <button class="d-flex"><img src="assets/img/orders-change.svg" alt=""></button>
+                                <button class="d-flex btn-delete"><img src="assets/img/orders-delete.svg" alt=""></button>
+                            </div>
+                            <div class="order__string d-flex align-items-center">
+                                <span>4</span>
+                                <span>01.03.2021</span>
+                                <span>895465092293</span>
+                                <button class="d-flex"><img src="assets/img/orders-change.svg" alt=""></button>
+                                <button class="d-flex btn-delete"><img src="assets/img/orders-delete.svg" alt=""></button>
+                            </div>
+                            <div class="order__string d-flex align-items-center">
+                                <span>4</span>
+                                <span>01.03.2021</span>
+                                <span>895465092293</span>
+                                <button class="d-flex"><img src="assets/img/orders-change.svg" alt=""></button>
+                                <button class="d-flex btn-delete"><img src="assets/img/orders-delete.svg" alt=""></button>
+                            </div>
+                            <div class="order__string d-flex align-items-center">
+                                <span>4</span>
+                                <span>01.03.2021</span>
+                                <span>895465092293</span>
+                                <button class="d-flex"><img src="assets/img/orders-change.svg" alt=""></button>
+                                <button class="d-flex btn-delete"><img src="assets/img/orders-delete.svg" alt=""></button>
+                            </div>
+                            <div class="order__string d-flex align-items-center">
+                                <span>4</span>
+                                <span>01.03.2021</span>
+                                <span>895465092293</span>
+                                <button class="d-flex"><img src="assets/img/orders-change.svg" alt=""></button>
+                                <button class="d-flex btn-delete"><img src="assets/img/orders-delete.svg" alt=""></button>
+                            </div>
+                            <div class="order__string d-flex align-items-center">
+                                <span>4</span>
+                                <span>01.03.2021</span>
+                                <span>895465092293</span>
+                                <button class="d-flex"><img src="assets/img/orders-change.svg" alt=""></button>
+                                <button class="d-flex btn-delete"><img src="assets/img/orders-delete.svg" alt=""></button>
+                            </div>
+                            <div class="order__string d-flex align-items-center">
+                                <span>4</span>
+                                <span>01.03.2021</span>
+                                <span>895465092293</span>
+                                <button class="d-flex"><img src="assets/img/orders-change.svg" alt=""></button>
+                                <button class="d-flex btn-delete"><img src="assets/img/orders-delete.svg" alt=""></button>
+                            </div>
+                            <div class="order__string d-flex align-items-center">
+                                <span>4</span>
+                                <span>01.03.2021</span>
+                                <span>895465092293</span>
+                                <button class="d-flex"><img src="assets/img/orders-change.svg" alt=""></button>
+                                <button class="d-flex btn-delete"><img src="assets/img/orders-delete.svg" alt=""></button>
+                            </div>
+                            <div class="order__string d-flex align-items-center">
+                                <span>4</span>
+                                <span>01.03.2021</span>
+                                <span>895465092293</span>
+                                <button class="d-flex"><img src="assets/img/orders-change.svg" alt=""></button>
+                                <button class="d-flex btn-delete"><img src="assets/img/orders-delete.svg" alt=""></button>
+                            </div>
+                            <div class="order__string d-flex align-items-center">
+                                <span>4</span>
+                                <span>01.03.2021</span>
+                                <span>895465092293</span>
+                                <button class="d-flex"><img src="assets/img/orders-change.svg" alt=""></button>
+                                <button class="d-flex btn-delete"><img src="assets/img/orders-delete.svg" alt=""></button>
+                            </div>
+                            <div class="order__string d-flex align-items-center">
+                                <span>4</span>
+                                <span>01.03.2021</span>
+                                <span>895465092293</span>
+                                <button class="d-flex"><img src="assets/img/orders-change.svg" alt=""></button>
+                                <button class="d-flex btn-delete"><img src="assets/img/orders-delete.svg" alt=""></button>
+                            </div>
+                            <div class="order__string d-flex align-items-center">
+                                <span>4</span>
+                                <span>01.03.2021</span>
+                                <span>895465092293</span>
+                                <button class="d-flex"><img src="assets/img/orders-change.svg" alt=""></button>
+                                <button class="d-flex btn-delete"><img src="assets/img/orders-delete.svg" alt=""></button>
+                            </div>
+                            <div class="order__string d-flex align-items-center">
+                                <span>4</span>
+                                <span>01.03.2021</span>
+                                <span>895465092293</span>
+                                <button class="d-flex"><img src="assets/img/orders-change.svg" alt=""></button>
+                                <button class="d-flex btn-delete"><img src="assets/img/orders-delete.svg" alt=""></button>
+                            </div>
+                            <div class="order__string d-flex align-items-center">
+                                <span>4</span>
+                                <span>01.03.2021</span>
+                                <span>895465092293</span>
+                                <button class="d-flex"><img src="assets/img/orders-change.svg" alt=""></button>
+                                <button class="d-flex btn-delete"><img src="assets/img/orders-delete.svg" alt=""></button>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="order__info">321 <span>days left</span></div>
                 </div>
-                <div class="order__item">
-                    <div class="order__lines">
-                        <div class="order__line"></div>
-                        <div class="order__line"></div>
-                        <div class="order__line"></div>
-                        <div class="order__line"></div>
+                <div class="account-orders__item-wrap orders d-flex align-items-center flex-column">
+                    <div class="order__title">World Fleet
+                        <button class="order__title-btn">
+                        <img src="assets/img/orderds-none.svg" alt="">
+                    </button>
                     </div>
-                    <div class="order__string-title">
-                        <span>data</span>
-                        <span>id orders</span>
+                    <div class="order__item" data-simplebar>
+                        <div class="order__lines">
+                            <div class="order__line"></div>
+                            <div class="order__line"></div>
+                            <div class="order__line"></div>
+                            <div class="order__line"></div>
+                        </div>
+                        <div class="order__string-title">
+                            <span>data</span>
+                            <span>id orders</span>
+                        </div>
+                        <div class="order__string-wrap">
+                        </div>
                     </div>
-                    <div class="order__string d-flex align-items-center">
-                        <span>1</span>
-                        <span>01.03.2021</span>
-                        <span>895465092293</span>
-                        <button class="d-flex"><img src="assets/img/orders-change.svg" alt=""></button>
-                        <button class="d-flex btn-delete"><img src="assets/img/orders-delete.svg" alt=""></button>
-                    </div>
+                    <div class="order__info">none <span>days left</span></div>
                 </div>
-                <div class="order__info">321 <span>days left</span></div>
-            </div>
-            <div class="account-orders__item-wrap orders d-flex align-items-center flex-column">
-                <div class="order__title">Freight Auction
-                    <button class="order__title-btn">
-                       <img src="assets/img/orders-add.svg" alt="">
-                   </button>
+                <div class="account-orders__item-wrap orders d-flex align-items-center flex-column">
+                    <div class="order__title">Vessels Market
+                        <button class="order__title-btn">
+                        <img src="assets/img/orders-add.svg" alt="">
+                    </button>
+                    </div>
+                    <div class="order__item" data-simplebar>
+                        <div class="order__lines">
+                            <div class="order__line"></div>
+                            <div class="order__line"></div>
+                            <div class="order__line"></div>
+                            <div class="order__line"></div>
+                        </div>
+                        <div class="order__string-title">
+                            <span>data</span>
+                            <span>id orders</span>
+                        </div>
+                        <div class="order__string-wrap">
+                            <div class="order__string d-flex align-items-center">
+                                <span>1</span>
+                                <span>01.03.2021</span>
+                                <span>589365092294</span>
+                                <button class="d-flex"><img src="assets/img/orders-change.svg" alt=""></button>
+                                <button class="d-flex btn-delete"><img src="assets/img/orders-delete.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order__info">1 <span>orders</span></div>
                 </div>
-                <div class="order__item">
-                    <div class="order__lines">
-                        <div class="order__line"></div>
-                        <div class="order__line"></div>
-                        <div class="order__line"></div>
-                        <div class="order__line"></div>
+                <div class="account-orders__item-wrap orders d-flex align-items-center flex-column">
+                    <div class="order__title">Companies
+                        <button class="order__title-btn">
+                        <img src="assets/img/orders-add.svg" alt="">
+                    </button>
                     </div>
-                    <div class="order__string-title">
-                        <span>data</span>
-                        <span>id orders</span>
+                    <div class="order__item" data-simplebar>
+                        <div class="order__lines">
+                            <div class="order__line"></div>
+                            <div class="order__line"></div>
+                            <div class="order__line"></div>
+                            <div class="order__line"></div>
+                        </div>
+                        <div class="order__string-title">
+                            <span>data</span>
+                            <span>id orders</span>
+                        </div>
+                        <div class="order__string-wrap">
+                            <div class="order__string d-flex align-items-center">
+                                <span>1</span>
+                                <span>01.03.2021</span>
+                                <span>589365092294</span>
+                                <button class="d-flex"><img src="assets/img/orders-change.svg" alt=""></button>
+                                <button class="d-flex btn-delete"><img src="assets/img/orders-delete.svg" alt=""></button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="order__string d-flex align-items-center">
-                        <span>1</span>
-                        <span>01.03.2021</span>
-                        <span>895465092293</span>
-                        <button class="d-flex"><img src="assets/img/orders-change.svg" alt=""></button>
-                        <button class="d-flex btn-delete"><img src="assets/img/orders-delete.svg" alt=""></button>
-                    </div>
-                    <div class="order__string d-flex align-items-center">
-                        <span>2</span>
-                        <span>01.03.2021</span>
-                        <span>895465092293</span>
-                        <button class="d-flex"><img src="assets/img/orders-change.svg" alt=""></button>
-                        <button class="d-flex btn-delete"><img src="assets/img/orders-delete.svg" alt=""></button>
-                    </div>
-                    <div class="order__string d-flex align-items-center">
-                        <span>3</span>
-                        <span>01.03.2021</span>
-                        <span>895465092293</span>
-                        <button class="d-flex"><img src="assets/img/orders-change.svg" alt=""></button>
-                        <button class="d-flex btn-delete"><img src="assets/img/orders-delete.svg" alt=""></button>
-                    </div>
-                    <div class="order__string d-flex align-items-center">
-                        <span>4</span>
-                        <span>01.03.2021</span>
-                        <span>895465092293</span>
-                        <button class="d-flex"><img src="assets/img/orders-change.svg" alt=""></button>
-                        <button class="d-flex btn-delete"><img src="assets/img/orders-delete.svg" alt=""></button>
-                    </div>
+                    <div class="order__info">FREE <span></span></div>
                 </div>
-                <div class="order__info">321 <span>days left</span></div>
-            </div>
-            <div class="account-orders__item-wrap orders d-flex align-items-center flex-column">
-                <div class="order__title">World Fleet
-                    <button class="order__title-btn">
-                       <img src="assets/img/orderds-none.svg" alt="">
-                   </button>
-                </div>
-                <div class="order__item">
-                    <div class="order__lines">
-                        <div class="order__line"></div>
-                        <div class="order__line"></div>
-                        <div class="order__line"></div>
-                        <div class="order__line"></div>
-                    </div>
-                    <div class="order__string-title">
-                        <span>data</span>
-                        <span>id orders</span>
-                    </div>
-                </div>
-                <div class="order__info">none <span>days left</span></div>
-            </div>
-            <div class="account-orders__item-wrap orders d-flex align-items-center flex-column">
-                <div class="order__title">Vessels Market
-                    <button class="order__title-btn">
-                       <img src="assets/img/orders-add.svg" alt="">
-                   </button>
-                </div>
-                <div class="order__item">
-                    <div class="order__lines">
-                        <div class="order__line"></div>
-                        <div class="order__line"></div>
-                        <div class="order__line"></div>
-                        <div class="order__line"></div>
-                    </div>
-                    <div class="order__string-title">
-                        <span>data</span>
-                        <span>id orders</span>
-                    </div>
-                    <div class="order__string d-flex align-items-center">
-                        <span>1</span>
-                        <span>01.03.2021</span>
-                        <span>895465092293</span>
-                        <button class="d-flex"><img src="assets/img/orders-change.svg" alt=""></button>
-                        <button class="d-flex btn-delete"><img src="assets/img/orders-delete.svg" alt=""></button>
-                    </div>
-                </div>
-                <div class="order__info">1 <span>orders</span></div>
-            </div>
-            <div class="account-orders__item-wrap orders d-flex align-items-center flex-column">
-                <div class="order__title">Companies
-                    <button class="order__title-btn">
-                       <img src="assets/img/orders-add.svg" alt="">
-                   </button>
-                </div>
-                <div class="order__item">
-                    <div class="order__lines">
-                        <div class="order__line"></div>
-                        <div class="order__line"></div>
-                        <div class="order__line"></div>
-                        <div class="order__line"></div>
-                    </div>
-                    <div class="order__string-title">
-                        <span>data</span>
-                        <span>id orders</span>
-                    </div>
-                    <div class="order__string d-flex align-items-center">
-                        <span>1</span>
-                        <span>01.03.2021</span>
-                        <span>895465092293</span>
-                        <button class="d-flex"><img src="assets/img/orders-change.svg" alt=""></button>
-                        <button class="d-flex btn-delete"><img src="assets/img/orders-delete.svg" alt=""></button>
-                    </div>
-                </div>
-                <div class="order__info">FREE <span></span></div>
             </div>
         </div>
         <div class="d-flex prompt-orders-wrap">

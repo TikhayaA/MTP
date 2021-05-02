@@ -26,18 +26,25 @@
         background: #979797;
     }
     &__wrap{
-        margin: 120px 0 60px;
+        margin: 40px 0 40px;
         position: relative;
+        padding-bottom: 10px;
         @media screen and (max-width: 1500px){
             margin: 30px 0 30px;
         }
         &_z-index{
             z-index: -1;
        }
+       &-content {
+           display: flex;
+           justify-content: flex-start;
+           @media screen and (min-width: 1900px){
+            justify-content: center;
+            }
+       }
     }
     .btn-close{
-        margin: auto;
-        margin-bottom: 23px;
+        margin: 50px auto 23px;
         @media screen and (max-width: 470px){
             margin: 60px auto 23px;
         }
@@ -109,6 +116,10 @@
             text-align: center;
         }
     }
+    &__string-wrap{
+        overflow: auto;
+        height: 300px;
+    }
     &__string-title{
         font-style: normal;
         font-weight: 500;
@@ -131,16 +142,9 @@
         border-radius: 10px;
         padding: 17px 0;
         width: 280px;
-        height: 390px;
+        height: 330px;
         margin: 13px 0 40px;
         position: relative;
-        overflow: auto;
-        @media screen and (max-width: 1500px){
-            height: 330px;
-        }
-        @media screen and (max-width: 500px){
-        width: 243px;
-        }
     }
     &__lines {
         & div:nth-child(1) {
@@ -159,9 +163,12 @@
     &__line {
         position: absolute;
         width: 1px;
-        height: calc(100% - 40px);
+        height: calc(100% - 37px);
         background: #979797;
         top: 20px;
+        @media screen and (max-width: 1500px){
+            height: calc(100% - 30px);
+        }
     }
     &__info{
         font-style: normal;
@@ -203,6 +210,7 @@
     }
 }
 .prompt-orders{
+    position: absolute;
     &__string{
         font-style: normal;
         font-weight: 400;

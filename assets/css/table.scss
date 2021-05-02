@@ -129,10 +129,7 @@ html {
             border-bottom: 2px solid #000000;
             ul {
                 display: grid;
-                grid-template-columns: 30px 140px 1fr 1fr 1fr 1fr 1fr 1fr 66px 64px 113px 129px;
-                &.auction {
-                    grid-template-columns: 30px 150px 0.7fr 260px 230px 1.2fr 1fr 0.6fr 0.5fr 1fr 135px 129px;
-                }
+                grid-template-columns: 30px 126px 105px 270px 270px 270px 270px 132px 1fr 1fr 113px 129px;
                 li {
                     font-family: 'Montserrat';
                     border-right: 1px solid #979797;
@@ -153,7 +150,7 @@ html {
         }
         &-item {
             display: grid;
-            grid-template-columns: 30px 140px 1fr 1fr 1fr 1fr 1fr 1fr 66px 64px 113px 129px;
+            grid-template-columns: 30px 126px 105px 270px 270px 270px 270px 132px 1fr 1fr 113px 129px;
             &>div {
                 text-align: center;
                 border-top: 2px solid #fff;
@@ -260,6 +257,7 @@ html {
             text-align: left;
             display: flex;
             margin-bottom: 20px;
+            align-items: baseline;
             &:last-child {
                 margin-bottom: 0;
             }
@@ -302,13 +300,16 @@ html {
     }
 }
 
-.auction {
+.freight-auction-page {
+    .table_data-header ul {
+        grid-template-columns: 30px 137px 105px 357px 357px 177px 132px 1.1fr 67px 125px 135px 129px;
+    }
     .table_data-item {
-        grid-template-columns: 30px 150px 0.7fr 260px 230px 1.2fr 1fr 0.6fr 0.5fr 1fr 135px 129px;
+        grid-template-columns: 30px 137px 105px 357px 357px 177px 132px 1.1fr 67px 125px 135px 125px;
     }
 }
 
-.fleet {
+.world-fleet-page {
     .table_data-item {
         grid-template-columns: 30px 200px 1fr 1fr 1fr 1fr 1fr 195px;
         &>div {
@@ -326,6 +327,9 @@ html {
                 }
             }
         }
+    }
+    .header_table-btn {
+        margin-top: 6px;
     }
 }
 
@@ -370,6 +374,7 @@ html {
             font-size: 12px;
             line-height: 15px;
             color: #6C7077;
+            margin-right: 10px;
         }
         &_value {
             font-family: 'Montserrat';
