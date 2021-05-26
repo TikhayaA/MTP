@@ -101,9 +101,12 @@ html {
                     font-family: 'Montserrat';
                     font-style: normal;
                     font-weight: 500;
-                    @include adaptive-fonts(16, 12);
+                    font-size: 16px;
                     line-height: 20px;
                     color: #60626A;
+                    @media all and (max-width: 1700px) {
+                        font-size: 12px;
+                    }
                 }
             }
             &.header-vesseis {
@@ -171,8 +174,6 @@ html {
             grid-template-columns: 30px 126px 105px 270px 270px 270px 270px 132px 1fr 1fr 113px 129px;
             &>div {
                 text-align: center;
-                // border-top: 2px solid #fff;
-                // border-bottom: 2px solid #fff;
                 border-right: 1px solid #979797;
                 padding: 5px 0;
                 line-height: 25px;
@@ -210,6 +211,11 @@ html {
             }
              :nth-child(1) {
                 cursor: pointer;
+                img{
+                    @media all and (max-width: 1700px) {
+                        width: 13px;
+                    }
+                }
             }
             &:last-child {
                 & > div:after {
@@ -232,6 +238,10 @@ html {
     &_fixed {
         height: 100vh;
         overflow: auto;
+        width: 100vw;
+    }
+    &_fixed-wrap{
+        height: 100vh;
         width: 100vw;
         @media all and (max-width: 1366px) {
             width: 1366px;

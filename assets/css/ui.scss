@@ -146,6 +146,10 @@
         box-sizing: border-box;
         width: 15px;
         height: 15px;
+        @media all and (max-width: 1700px) {
+            width: 10px;
+            height: 10px;
+        }
     }
     input[type="checkbox"] {
         display: none;

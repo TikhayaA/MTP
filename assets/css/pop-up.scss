@@ -1,7 +1,7 @@
 .pop-up{
     border-radius: 15px;
     background: #FFFFFF;
-    position: absolute;
+    position: fixed;
     box-sizing: border-box;
     top: 50%;
     z-index: 10;
@@ -61,12 +61,35 @@
 }
 .pop-up-message{
     width: 80%;
-    max-height: 790px;
     height: 80vh;
     padding: 14px 49px 15px;
-    @media (max-width: 767px) {
-        width: 90%;
-        padding: 14px 15px 15px;
+    @media screen and (max-width: 1700px) {
+        padding: 14px 40px 15px;
+        width: 91.3%;
+        top:0;
+        transform: translate(-50%, 120px);
+        -webkit-transform: translate(-50%, 120px);
+        -moz-transform: translate(-50%, 120px);
+        -ms-transform: translate(-50%, 120px);
+        -o-transform: translate(-50%, 120px);
+    }
+    @media screen and (max-width: 767px) {
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+        padding: 14px 18px 15px;
+        transform: translate(-50%, 0px);
+        -webkit-transform: translate(-50%, 0px);
+        -moz-transform: translate(-50%, 0px);
+        -ms-transform: translate(-50%, 0px);
+        -o-transform: translate(-50%, 0px);
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    }
+    .simplebar-content{
+        height: 100%;
     }
     .simplebar-vertical {
         right: -5px;
@@ -85,10 +108,22 @@
         color: #000000;
         text-align: center;
         margin-bottom: 19px;
+        @media (max-width: 1700px) {
+            font-size: 24px;
+            line-height: 29px;
+            margin-bottom: 15px;
+        }
+        @media (max-width: 700px) {
+            font-size: 16px;
+            line-height: 18px;
+            margin-bottom: 22px;
+        }
     }
    &__back-arrow{
         width: 38px;
         height: 38px;
+        align-items: center;
+        justify-content: center;
         border-radius: 50%;
         border: none;
         position: absolute;
@@ -98,9 +133,24 @@
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
         display: none;
-
+        @media (max-width: 1700px) {
+            width: 31px;
+            height: 31px;
+        }
+        @media (max-width: 767px) {
+            width: 19px;
+            height: 19px;
+        }
+        img{
+            @media (max-width: 1700px) {
+                width: 15px;
+            }
+            @media (max-width: 767px) {
+                width: 9px;
+            }
+        }
         &.active {
-            display: block;
+            display: flex;
         }
 
         &:hover{
@@ -122,9 +172,12 @@
         border-bottom: 1px solid #979797;
         padding: 13px 0;
         cursor: pointer;
-        @media (max-width: 767px) {
+        @media (max-width: 1700px) {
+            padding: 8px 0;
+        }
+        @media (max-width: 700px) {
             flex-wrap: wrap;
-            padding: 10px 0;
+            padding: 13px 0;
         }
         &_unread{
             background: rgba(218, 218, 218, 0.3);
@@ -137,9 +190,16 @@
         @include adaptive-fonts(20, 13);
         line-height: 24px;
         padding-left: 18px;
+        @media (max-width: 1700px) {
+            padding-left: 16px;
+            line-height: 20px;
+            padding-left: 15px;
+        }
         @media (max-width: 767px) {
+            font-size: 10px;
+            line-height: 12px;
+            width: 18%;
             padding-left: 10px;
-            width: 38%;
         }
         &_unread{
             font-weight: 700;
@@ -154,6 +214,15 @@
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
+        @media (max-width: 1700px) {
+            padding-left: 16px;
+            line-height: 20px;
+        }
+        @media (max-width: 767px) {
+            font-size: 10px;
+            line-height: 12px;
+            width: 40%;
+        }
         &_unread{
             font-weight: 600;
         }
@@ -166,10 +235,15 @@
         @include adaptive-fonts(20, 12);
         text-align: end;
         padding-right: 18px;
+        @media (max-width: 1700px) {
+            padding-left: 14px;
+            line-height: 17px;
+        }
         @media (max-width: 767px) {
-            padding: 10px 0 0 10px;
-            width: 50%;
-            text-align: left;
+            font-size: 10px;
+            line-height: 12px;
+            padding-right: 18px;
+            width: 42%;
         }
     }
     .btn-close{
@@ -180,6 +254,7 @@
 }
 .message-wrap{
     max-height: calc(100% - 65px);
+    height: 100%;
     display: none;
     &_active{
         display: block;
@@ -213,17 +288,16 @@
             margin: 10px 0 10px;
         }
     }
-    .pop-up-message__subject{
+    &__body-wrap{
+        height: calc(100% - 180px);
     }
     &__body{
         margin: 20px 0;
-        height: 45%;
         font-style: normal;
         font-weight: 500;
         @include adaptive-fonts(16, 12);
         line-height: 22px;
         letter-spacing: 0.01em;
-        min-height: 200px;
     }
     &__signature{
         p{
