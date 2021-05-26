@@ -3624,7 +3624,8 @@ hr {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    display: none; }
+    display: none;
+    flex-shrink: 1; }
     @media (max-width: 1700px) {
       .pop-up-message__back-arrow {
         width: 31px;

@@ -133,6 +133,7 @@
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
         display: none;
+        flex-shrink: 1;
         @media (max-width: 1700px) {
             width: 31px;
             height: 31px;
