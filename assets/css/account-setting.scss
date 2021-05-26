@@ -29,12 +29,19 @@
         -o-border-radius: 0;
     }
     &__content {
+<<<<<<< HEAD
         padding: 25px 80px 0px;
         width: 1000px;
+<<<<<<< HEAD
         @media all and (max-width: 700px){
             width: 100%;
             padding: 15px 33px 0px 30px;
         }
+=======
+=======
+        padding: 10px 80px 20px;
+>>>>>>> 44683c368c1fe3d8f6d0cf5672bad67a9e98ee9e
+>>>>>>> 43bae2ae741ad4bc2a364681d88fd8598d58690b
     }
     h4 {
         font-family: 'Roboto', sans-serif;
