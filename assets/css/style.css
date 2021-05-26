@@ -3634,7 +3634,7 @@ hr {
       .pop-up-message__back-arrow {
         width: 19px;
         height: 19px;
-        background: red; } }
+        background: green; } }
     .pop-up-message__back-arrow img {
       display: flex;
       align-self: center; }
@@ -3646,7 +3646,7 @@ hr {
           max-width: 9px;
           width: 100%; } }
     .pop-up-message__back-arrow.active {
-      display: flex; }
+      display: block; }
     .pop-up-message__back-arrow:hover {
       background: #D2D6E4; }
   .pop-up-message hr {
