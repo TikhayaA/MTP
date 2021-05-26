@@ -25,9 +25,7 @@
         font-family: 'Roboto', sans-serif;
         margin-top: 30px;
     }
-    hr{
-        background: #979797;
-    }
+    
     &__wrap{
         margin: 40px 0 40px;
         position: relative;
@@ -247,4 +245,7 @@
             margin-right: 18px;
         }
     }
+}
+hr{
+    background: #979797;
 }

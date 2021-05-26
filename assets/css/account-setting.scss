@@ -1,23 +1,28 @@
 .pop-up-settings {
-    width: 100%;
-    max-width: 1000px;
-    overflow: auto;
-    padding-bottom: 115px;
-    @media screen and (max-width: 1700px) {
-        padding: 14px 40px 15px;
-        width: 91.3%;
-        top:0;
-        transform: translate(-50%, 120px);
-        -webkit-transform: translate(-50%, 120px);
-        -moz-transform: translate(-50%, 120px);
-        -ms-transform: translate(-50%, 120px);
-        -o-transform: translate(-50%, 120px);
+    width: 65%;
+    padding: 19px 78px 70px 78px;
+    top: 0;
+    transform: translate(-50%, 120px);
+    @media screen and (min-width: 1700px) {
+        max-width: 1000px;
+        border-radius: 0;
+        padding: 22px 88px 87px;
     }
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1200px) {
+        width: 85%;
+    }
+    @media screen and (max-width: 1050px) {
+        transform: translate(-50%, 76px);
+    }
+    @media screen and (max-width: 900px) {
+        width: 95%;
+    }
+    @media screen and (max-width: 715px) {
+        overflow: auto;
         width: 100%;
         height: 100vh;
         border-radius: 0;
-        padding: 14px 18px 15px;
+        padding: 14px 33px 54px;
         transform: translate(-50%, 0px);
         -webkit-transform: translate(-50%, 0px);
         -moz-transform: translate(-50%, 0px);
@@ -28,13 +33,9 @@
         -ms-border-radius: 0;
         -o-border-radius: 0;
     }
-    &__content {
-        padding: 25px 80px 0px;
-        width: 1000px;
-
-        @media all and (max-width: 700px){
-            width: 100%;
-            padding: 15px 33px 0px 30px;
+    hr{
+        @media screen and (max-width: 715px) {
+            display: none;
         }
     }
     h4 {
@@ -45,9 +46,76 @@
         line-height: 35px;
         text-align: center;
         color: #000000;
-        @media all and (max-width: 700px){
+        @media all and (max-width: 1700px){
+            font-size: 24px;
+            line-height: 28px;
+        }
+        @media all and (max-width: 715px){
             font-size: 16px;
             line-height: 18px;
+            margin-bottom: 16px;
+        }
+    }
+    &__wrap-form{
+        display: grid;
+        grid-template-columns: repeat(2, 40.5%);
+        grid-gap: 19px 18.5%;
+        @media screen and (max-width: 830px) {
+            grid-template-columns: repeat(2, 48%);
+            grid-gap: 19px 4%;
+        }
+        @media screen and (max-width: 715px) {
+            grid-template-columns: 100%;
+            grid-gap: 15px;
+        }
+        :nth-child(1){
+            order: 1;
+        }
+        :nth-child(2){
+            order: 2;
+        }
+        :nth-child(3){
+            order: 3;
+        }
+        :nth-child(4){
+            order: 4;
+        }
+        :nth-child(5){
+            order: 5;
+        }
+        :nth-child(6){
+            order: 6;
+        }
+        :nth-child(7){
+            order: 7;
+        }
+        :nth-child(8){
+            order: 9;
+        }
+        :nth-child(9){
+            order: 8;
+        }
+        :nth-child(10){
+            order: 10;
+        }
+
+        .field{
+            width: inherit;
+        }
+    }
+    &__wrap-btn{
+        display: grid;
+        grid-column: span 2;
+        grid-template-columns: 41% 41%;
+        grid-gap: 0px 18%;
+        @media screen and (max-width: 830px) {
+            grid-template-columns: repeat(2, 48%);
+            grid-gap: 0px 4%;
+        }
+        @media screen and (max-width: 715px) {
+            grid-template-columns: repeat(2, 39%);
+            grid-gap: 0px 22%;
+            grid-column: span 1;
         }
     }
     .pop-up-registration__block {
@@ -66,56 +134,89 @@
         }
     }
     .field {
-        width: 100%;
-        input{
-            @media all and (max-width: 1500px){
-                padding: 5px 16px;
+        margin-top: 0;
+        label{
+            @media screen and (max-width: 1700px) {
+                font-size: 12px;
             }
         }
+        input{
+            padding: 11px 16px;
+            @media screen and (min-width: 1700px) {
+                padding: 14px 16px;
+            }
+            @media screen and (max-width: 1700px) {
+                font-size: 14px;
+            }
+            @media screen and (max-width: 715px) {
+                padding: 4px 16px;
+            }
+        }
+       .display-password{
+        @media screen and (max-width: 1700px) {
+            bottom: 14px;
+        }
+        @media screen and (max-width: 715px) {
+            bottom: 8px;
+        }
+       }
     }
     
     .btn-close {
         width: 100%;
         display: inline-block;
         margin: 0;
-        position: absolute;
-        bottom: -80px;
+        @media screen and (max-width: 1700px) {
+            font-size: 14px;
+            margin-top: 30px;
+        }
     }
     .btn-delete-account {
         background: #EAE7E7;
         border: 1px solid #C4C4C4;
         box-sizing: border-box;
         border-radius: 5px;
-        width: 169px;
         height: 49px; 
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
         line-height: 140%;
         letter-spacing: 0.01em;
-        color: #000000;   
-        margin-top: 40px; 
-        @media all and (max-width: 1500px){
-            margin-top: 20px;
+        color: #000000; 
+        @media screen and (max-width: 1700px) {
+            font-size: 14px;
+            height: 43px;
+        }
+        @media screen and (max-width: 715px) {
+            font-size: 12px;
+            height: 30px;
+            order: 3;
         }
         &:hover{
             background: #BCB8B8;
         }  
     }
     .avatar-block{
-        height: 147px;
-        @media all and (max-width: 1500px){
-            height: 128px;
+        grid-row: 1/3;
+        grid-column: 2/2;
+        @media screen and (max-width: 715px) {
+            grid-row: auto;
+            grid-column: auto;
+            margin-top: 10px;
+            order: 2;
         }
         img{
             height: 100%;
+            width: 100%;
         }
     }
-    .avatar-add-block {
-        input {
-            display: none;
-        }
         .avatar-upload {
+            @media screen and (max-width: 715px) {
+                order: 1;
+            }
+            input {
+                display: none;
+            }
             span {
                 font-style: normal;
                 font-weight: 500;
@@ -124,9 +225,11 @@
                 color: #000000;
                 margin-bottom: 5px;
                 display: inline-block;
+                @media screen and (max-width: 1700px) {
+                    font-size: 12px;
+                }
             }
             label {
-                width: 169px;
                 height: 27px;
                 background: #FFFFFF;
                 border: 1px solid #000000;
@@ -137,17 +240,26 @@
                 align-items: center;
                 justify-content: center;
                 img {
-                    margin-right: 5px;
+                    left: 19px;
+                    position: absolute;
                 }
             }
         }
-    }
+    
     .field-avatar {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 26px;
-        @media all and (max-width: 1500px){
-            margin-top: 13px;
+        display: grid;
+        grid-gap: 36px 12%;
+        grid-template-columns: 49% 38%;
+        grid-template-rows: 48px 48px;
+        grid-row: 4/6;
+        grid-column: 2/2;
+        margin-top: 14px;
+        @media screen and (max-width: 715px) {
+            grid-template-columns: 60%;
+            grid-template-rows: 1fr;
+            grid-row: auto;
+            grid-column: auto;
+            grid-gap: 34px;
         }
     }
     .pop-up-registration__fields{

@@ -117,7 +117,8 @@ body {
   position: relative;
   z-index: 5;
   height: 120px;
-  padding: 0 10px; }
+  padding: 0 10px;
+  position: relative; }
   @media screen and (max-width: 1050px) {
     .header {
       height: 76px; } }
@@ -344,6 +345,8 @@ body {
     @media all and (max-width: 1050px) {
       .header .header-authorized__icon-setting {
         margin: -5px 0 0 0px; } }
+    .header .header-authorized__icon-setting img {
+      width: auto; }
     .header .header-authorized .user_info-name {
       font-size: 14px;
       line-height: 11px; }
@@ -3296,8 +3299,6 @@ label sup {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   margin-top: 30px; }
-.account-orders hr {
-  background: #979797; }
 .account-orders__wrap {
   margin: 40px 0 40px;
   position: relative;
@@ -3496,6 +3497,9 @@ label sup {
         font-size: calc(10px+2 * ((100vw) / 1440)); } }
     .prompt-orders__string img {
       margin-right: 18px; }
+
+hr {
+  background: #979797; }
 
 .pop-up {
   border-radius: 15px;
@@ -4213,10 +4217,6 @@ label sup {
     .pop-up-forgot-password .close-cross-popup {
       top: 15px;
       right: 15px; } }
-  @media screen and (max-width: 900px) {
-    .pop-up-forgot-password .close-cross-popup {
-      top: 15px;
-      right: 15px; } }
 
 .pop-up-delete-account {
   min-width: 470px;
@@ -4772,17 +4772,6 @@ label sup {
     margin-bottom: 33px;
     position: relative;
     align-items: center; }
-    .pop-up-registration__check:after {
-      content: '';
-      display: block;
-      width: 100%;
-      height: 1px;
-      background: #979797;
-      position: absolute;
-      bottom: -26px; }
-      @media screen and (max-width: 700px) {
-        .pop-up-registration__check:after {
-          display: none; } }
   .pop-up-registration__fields {
     width: 47%; }
     .pop-up-registration__fields:first-child {
@@ -4871,26 +4860,31 @@ label sup {
     top: 10px; }
 
 .pop-up-settings {
-  width: 100%;
-  max-width: 1000px;
-  overflow: auto;
-  padding-bottom: 115px; }
-  @media screen and (max-width: 1700px) {
+  width: 65%;
+  padding: 19px 78px 70px 78px;
+  top: 0;
+  transform: translate(-50%, 120px); }
+  @media screen and (min-width: 1700px) {
     .pop-up-settings {
-      padding: 14px 40px 15px;
-      width: 91.3%;
-      top: 0;
-      transform: translate(-50%, 120px);
-      -webkit-transform: translate(-50%, 120px);
-      -moz-transform: translate(-50%, 120px);
-      -ms-transform: translate(-50%, 120px);
-      -o-transform: translate(-50%, 120px); } }
-  @media screen and (max-width: 767px) {
+      max-width: 1000px;
+      border-radius: 0;
+      padding: 22px 88px 87px; } }
+  @media screen and (max-width: 1200px) {
     .pop-up-settings {
+      width: 85%; } }
+  @media screen and (max-width: 1050px) {
+    .pop-up-settings {
+      transform: translate(-50%, 76px); } }
+  @media screen and (max-width: 900px) {
+    .pop-up-settings {
+      width: 95%; } }
+  @media screen and (max-width: 715px) {
+    .pop-up-settings {
+      overflow: auto;
       width: 100%;
       height: 100vh;
       border-radius: 0;
-      padding: 14px 18px 15px;
+      padding: 14px 33px 54px;
       transform: translate(-50%, 0px);
       -webkit-transform: translate(-50%, 0px);
       -moz-transform: translate(-50%, 0px);
@@ -4900,13 +4894,9 @@ label sup {
       -moz-border-radius: 0;
       -ms-border-radius: 0;
       -o-border-radius: 0; } }
-  .pop-up-settings__content {
-    padding: 25px 80px 0px;
-    width: 1000px; }
-    @media all and (max-width: 700px) {
-      .pop-up-settings__content {
-        width: 100%;
-        padding: 15px 33px 0px 30px; } }
+  @media screen and (max-width: 715px) {
+    .pop-up-settings hr {
+      display: none; } }
   .pop-up-settings h4 {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -4915,10 +4905,63 @@ label sup {
     line-height: 35px;
     text-align: center;
     color: #000000; }
-    @media all and (max-width: 700px) {
+    @media all and (max-width: 1700px) {
+      .pop-up-settings h4 {
+        font-size: 24px;
+        line-height: 28px; } }
+    @media all and (max-width: 715px) {
       .pop-up-settings h4 {
         font-size: 16px;
-        line-height: 18px; } }
+        line-height: 18px;
+        margin-bottom: 16px; } }
+  .pop-up-settings__wrap-form {
+    display: grid;
+    grid-template-columns: repeat(2, 40.5%);
+    grid-gap: 19px 18.5%; }
+    @media screen and (max-width: 830px) {
+      .pop-up-settings__wrap-form {
+        grid-template-columns: repeat(2, 48%);
+        grid-gap: 19px 4%; } }
+    @media screen and (max-width: 715px) {
+      .pop-up-settings__wrap-form {
+        grid-template-columns: 100%;
+        grid-gap: 15px; } }
+    .pop-up-settings__wrap-form :nth-child(1) {
+      order: 1; }
+    .pop-up-settings__wrap-form :nth-child(2) {
+      order: 2; }
+    .pop-up-settings__wrap-form :nth-child(3) {
+      order: 3; }
+    .pop-up-settings__wrap-form :nth-child(4) {
+      order: 4; }
+    .pop-up-settings__wrap-form :nth-child(5) {
+      order: 5; }
+    .pop-up-settings__wrap-form :nth-child(6) {
+      order: 6; }
+    .pop-up-settings__wrap-form :nth-child(7) {
+      order: 7; }
+    .pop-up-settings__wrap-form :nth-child(8) {
+      order: 9; }
+    .pop-up-settings__wrap-form :nth-child(9) {
+      order: 8; }
+    .pop-up-settings__wrap-form :nth-child(10) {
+      order: 10; }
+    .pop-up-settings__wrap-form .field {
+      width: inherit; }
+  .pop-up-settings__wrap-btn {
+    display: grid;
+    grid-column: span 2;
+    grid-template-columns: 41% 41%;
+    grid-gap: 0px 18%; }
+    @media screen and (max-width: 830px) {
+      .pop-up-settings__wrap-btn {
+        grid-template-columns: repeat(2, 48%);
+        grid-gap: 0px 4%; } }
+    @media screen and (max-width: 715px) {
+      .pop-up-settings__wrap-btn {
+        grid-template-columns: repeat(2, 39%);
+        grid-gap: 0px 22%;
+        grid-column: span 1; } }
   @media all and (max-width: 700px) {
     .pop-up-settings .pop-up-registration__block {
       flex-direction: column; } }
@@ -4929,45 +4972,76 @@ label sup {
     .pop-up-settings .pop-up-registration__fields {
       width: 100%; } }
   .pop-up-settings .field {
-    width: 100%; }
-    @media all and (max-width: 1500px) {
-      .pop-up-settings .field input {
-        padding: 5px 16px; } }
+    margin-top: 0; }
+    @media screen and (max-width: 1700px) {
+      .pop-up-settings .field label {
+        font-size: 12px; } }
+    .pop-up-settings .field input {
+      padding: 11px 16px; }
+      @media screen and (min-width: 1700px) {
+        .pop-up-settings .field input {
+          padding: 14px 16px; } }
+      @media screen and (max-width: 1700px) {
+        .pop-up-settings .field input {
+          font-size: 14px; } }
+      @media screen and (max-width: 715px) {
+        .pop-up-settings .field input {
+          padding: 4px 16px; } }
+    @media screen and (max-width: 1700px) {
+      .pop-up-settings .field .display-password {
+        bottom: 14px; } }
+    @media screen and (max-width: 715px) {
+      .pop-up-settings .field .display-password {
+        bottom: 8px; } }
   .pop-up-settings .btn-close {
     width: 100%;
     display: inline-block;
-    margin: 0;
-    position: absolute;
-    bottom: -80px; }
+    margin: 0; }
+    @media screen and (max-width: 1700px) {
+      .pop-up-settings .btn-close {
+        font-size: 14px;
+        margin-top: 30px; } }
   .pop-up-settings .btn-delete-account {
     background: #EAE7E7;
     border: 1px solid #C4C4C4;
     box-sizing: border-box;
     border-radius: 5px;
-    width: 169px;
     height: 49px;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 140%;
     letter-spacing: 0.01em;
-    color: #000000;
-    margin-top: 40px; }
-    @media all and (max-width: 1500px) {
+    color: #000000; }
+    @media screen and (max-width: 1700px) {
       .pop-up-settings .btn-delete-account {
-        margin-top: 20px; } }
+        font-size: 14px;
+        height: 43px; } }
+    @media screen and (max-width: 715px) {
+      .pop-up-settings .btn-delete-account {
+        font-size: 12px;
+        height: 30px;
+        order: 3; } }
     .pop-up-settings .btn-delete-account:hover {
       background: #BCB8B8; }
   .pop-up-settings .avatar-block {
-    height: 147px; }
-    @media all and (max-width: 1500px) {
+    grid-row: 1/3;
+    grid-column: 2/2; }
+    @media screen and (max-width: 715px) {
       .pop-up-settings .avatar-block {
-        height: 128px; } }
+        grid-row: auto;
+        grid-column: auto;
+        margin-top: 10px;
+        order: 2; } }
     .pop-up-settings .avatar-block img {
-      height: 100%; }
-  .pop-up-settings .avatar-add-block input {
+      height: 100%;
+      width: 100%; }
+  @media screen and (max-width: 715px) {
+    .pop-up-settings .avatar-upload {
+      order: 1; } }
+  .pop-up-settings .avatar-upload input {
     display: none; }
-  .pop-up-settings .avatar-add-block .avatar-upload span {
+  .pop-up-settings .avatar-upload span {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -4975,8 +5049,10 @@ label sup {
     color: #000000;
     margin-bottom: 5px;
     display: inline-block; }
-  .pop-up-settings .avatar-add-block .avatar-upload label {
-    width: 169px;
+    @media screen and (max-width: 1700px) {
+      .pop-up-settings .avatar-upload span {
+        font-size: 12px; } }
+  .pop-up-settings .avatar-upload label {
     height: 27px;
     background: #FFFFFF;
     border: 1px solid #000000;
@@ -4986,15 +5062,24 @@ label sup {
     display: flex;
     align-items: center;
     justify-content: center; }
-    .pop-up-settings .avatar-add-block .avatar-upload label img {
-      margin-right: 5px; }
+    .pop-up-settings .avatar-upload label img {
+      left: 19px;
+      position: absolute; }
   .pop-up-settings .field-avatar {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 26px; }
-    @media all and (max-width: 1500px) {
+    display: grid;
+    grid-gap: 36px 12%;
+    grid-template-columns: 49% 38%;
+    grid-template-rows: 48px 48px;
+    grid-row: 4/6;
+    grid-column: 2/2;
+    margin-top: 14px; }
+    @media screen and (max-width: 715px) {
       .pop-up-settings .field-avatar {
-        margin-top: 13px; } }
+        grid-template-columns: 60%;
+        grid-template-rows: 1fr;
+        grid-row: auto;
+        grid-column: auto;
+        grid-gap: 34px; } }
   .pop-up-settings .pop-up-registration__fields {
     position: relative; }
 
