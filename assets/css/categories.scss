@@ -380,6 +380,7 @@
                 top: 74px;
                 left: 99px;            
                 font-size: 12px;
+<<<<<<< HEAD
             }
         }
         &:nth-child(1) p, &:nth-child(4) p{
@@ -388,6 +389,8 @@
             @media screen and (max-width: 530px){
                 top: 101px;
                 left: 65px;
+=======
+>>>>>>> 44683c368c1fe3d8f6d0cf5672bad67a9e98ee9e
             }
         }
        
@@ -423,7 +426,22 @@
     }
 }
 .freight-auction{
+<<<<<<< HEAD
    
+=======
+    .container{
+        // @media screen and (min-width: 1351px) and (max-width: 1600px){
+        //     max-width: 1400px;
+        // }
+        // @media screen and (min-width: 1000px) and (max-width: 1350px){
+        //     max-width: 1000px;
+        // }
+        // @media screen and (min-width: 767px) and (max-width: 999px){
+        //     max-width: 760px;
+        // }
+        
+    }
+>>>>>>> 44683c368c1fe3d8f6d0cf5672bad67a9e98ee9e
     &__wrap{
         width: auto;
         @media screen and (max-width: 1200px){
@@ -473,6 +491,12 @@
         @media screen and (max-width: 1200px){
             width: 100%;
         } 
+<<<<<<< HEAD
+=======
+        @media screen and (max-width: 1200px){
+            width: 100%;
+        } 
+>>>>>>> 44683c368c1fe3d8f6d0cf5672bad67a9e98ee9e
         @media screen and (max-width: 70px){
             width: 100%;
         } 
@@ -483,7 +507,11 @@
     &__item-content{
         position: absolute;
         left: 21px;
+<<<<<<< HEAD
         top: 98px;
+=======
+        top: 93px;
+>>>>>>> 44683c368c1fe3d8f6d0cf5672bad67a9e98ee9e
         width: 82%;
         @media screen and (max-width: 1200px){
             top: 115px;
@@ -503,8 +531,13 @@
         }
         p{
             @include fontz (9px, 400, normal);  
+<<<<<<< HEAD
             line-height: 12px;
             margin-bottom: 10px;
+=======
+            line-height: 14px;
+            margin-bottom: 5px;
+>>>>>>> 44683c368c1fe3d8f6d0cf5672bad67a9e98ee9e
             @media screen and (min-width: 930px) and (max-width: 1200px){
                 font-size: 10px;
             } 
@@ -581,10 +614,16 @@
             top: 50%;
             left: 46%;
             transform: translate(0, -50%);
+<<<<<<< HEAD
             width: 46%;
                 @media screen and (min-width: 730px) and (max-width: 767px) {
                    left: 42%;
                    width: 40%;
+=======
+            width: 50%;
+                @media screen and (min-width: 730px) and (max-width: 767px) {
+                   left: 39%;
+>>>>>>> 44683c368c1fe3d8f6d0cf5672bad67a9e98ee9e
                 } 
                 @media screen and (max-width: 767px) {
                     font-size: 10px;

@@ -725,6 +725,12 @@
             right: 15px;
         }
     }
+    .close-cross-popup{
+        @media screen and (max-width: 900px){
+            top:15px;
+            right: 15px;
+        }
+    }
 }
 .pop-up-delete-account {
     min-width: 470px;
