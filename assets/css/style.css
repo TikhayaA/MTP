@@ -3633,7 +3633,8 @@ hr {
     @media (max-width: 767px) {
       .pop-up-message__back-arrow {
         width: 19px;
-        height: 19px; } }
+        height: 19px;
+        background: red; } }
     .pop-up-message__back-arrow img {
       display: flex;
       align-self: center; }
@@ -3642,7 +3643,8 @@ hr {
           width: 15px; } }
       @media (max-width: 767px) {
         .pop-up-message__back-arrow img {
-          width: 9px; } }
+          max-width: 9px;
+          width: 100%; } }
     .pop-up-message__back-arrow.active {
       display: flex; }
     .pop-up-message__back-arrow:hover {
