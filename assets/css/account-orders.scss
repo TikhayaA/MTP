@@ -11,10 +11,13 @@
     -ms-border-radius: 0;
     -o-border-radius: 0;
     padding: 0 10px;
+    @media screen and (max-width: 1200px){
+        top:0;
+    }
 }
 .account-orders{ 
     h1{
-        @include adaptive-fonts(30, 20);
+        font-size: 30px;
         font-style: normal;
         font-weight: 500;
         line-height: 35px;
@@ -26,20 +29,28 @@
         background: #979797;
     }
     &__wrap{
-        margin: 120px 0 60px;
+        margin: 40px 0 40px;
         position: relative;
+        padding-bottom: 10px;
         @media screen and (max-width: 1500px){
             margin: 30px 0 30px;
         }
         &_z-index{
             z-index: -1;
        }
+       &-content {
+           display: flex;
+           justify-content: flex-start;
+           @media screen and (min-width: 1900px){
+                justify-content: center;
+                margin: auto;
+            }
+       }
     }
     .btn-close{
-        margin: auto;
-        margin-bottom: 23px;
+        margin: 50px auto 23px;
         @media screen and (max-width: 470px){
-            margin: 60px auto 23px;
+            margin: 110px auto 23px;
         }
     }
     &__item-wrap{
@@ -80,6 +91,9 @@
             font-style: normal;
             font-weight: 500;
             font-size: 14px;
+            @media screen and (max-width: 1100px){
+                font-size: 12px;
+            }
             &.active {
                 font-style: normal;
                 font-weight: 600;
@@ -109,6 +123,13 @@
             text-align: center;
         }
     }
+    &__string-wrap{
+        overflow: auto;
+        height: 300px;
+        @media screen and (max-width: 1500px){
+            height: 235px;
+        }
+    }
     &__string-title{
         font-style: normal;
         font-weight: 500;
@@ -119,8 +140,14 @@
         display: flex;
         top: 0;
         left: 45px;
+        @media screen and (max-width: 1100px){
+            font-size: 12px;
+        }
         :nth-child(1){
             margin-right: 60px;
+            @media screen and (max-width: 1100px){
+                margin-right: 35px;
+            }
         }
     }
     &__item{
@@ -131,15 +158,14 @@
         border-radius: 10px;
         padding: 17px 0;
         width: 280px;
-        height: 390px;
+        height: 330px;
         margin: 13px 0 40px;
         position: relative;
-        overflow: auto;
         @media screen and (max-width: 1500px){
-            height: 330px;
+            height: 275px;
         }
-        @media screen and (max-width: 500px){
-        width: 243px;
+        @media screen and (max-width: 1100px){
+            width: 240px;
         }
     }
     &__lines {
@@ -159,9 +185,12 @@
     &__line {
         position: absolute;
         width: 1px;
-        height: calc(100% - 40px);
+        height: calc(100% - 31px);
         background: #979797;
         top: 20px;
+        @media screen and (max-width: 1500px){
+            height: calc(100% - 36px);
+        }
     }
     &__info{
         font-style: normal;
@@ -193,16 +222,20 @@
             -moz-transform: translate(-50%, 0);
             -ms-transform: translate(-50%, 0);
             -o-transform: translate(-50%, 0);
+            @media screen and (max-width: 1100px){
+                font-size: 12px;
+            }
         
         }
     }
 }
 .prompt-orders-wrap {
     @media screen and (max-width: 470px){
-    flex-direction: column;
+        flex-direction: column;
     }
 }
 .prompt-orders{
+    position: absolute;
     &__string{
         font-style: normal;
         font-weight: 400;

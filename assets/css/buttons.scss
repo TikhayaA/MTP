@@ -1,6 +1,7 @@
 
 .btn-find-more{
     background: #005672;
+    background-size: cover;
     @include fontz (18px, 500, normal);
     line-height: 140%;
     letter-spacing: 0.01em;
@@ -17,7 +18,7 @@
 }
 .btn-open-dashboard{
     background: #005672;
-    @include fontz (20px, 500, normal);
+    @include fontz (19px, 500, normal);
     line-height: 140%;
     letter-spacing: 0.01em;
     color: #FFFFFF;
@@ -26,6 +27,7 @@
     transition: 0.5s all;
     width: 300px;
     box-sizing: border-box;
+    cursor: pointer;
     @media screen and (max-width: 420px) {
         padding: 10px 40px;
         width: 260px;
@@ -36,15 +38,16 @@
 }
 .btn-how-work{
     background: #88DDA0;
-    @include fontz (20px, 500, normal);
+    @include fontz (19px, 500, normal);
     line-height: 140%;
     letter-spacing: 0.01em;
-    color: #FFFFFF;
+    color: #000000;
     padding: 14px 64px;
     border: none;
     transition: 0.5s all;
     width: 300px;
     box-sizing: border-box;
+    cursor: pointer;
     @media screen and (max-width: 420px) {
         padding: 10px 0px;
         width: 260px;
@@ -71,6 +74,12 @@
     font-weight: 400;
     font-size: 16px;
     color: #FFFFFF;
+    @media all and (max-width: 1700px) {
+        width: 129px;
+        font-size: 11px;
+        height: 35px;
+        line-height: 35px;
+    }
     &:hover{
         background: none;
         color: #0F0F11;
@@ -109,16 +118,20 @@
     border: none;
     background: #72EDF2;
     border-radius: 5px;
-    padding: 17px 20px;
+    padding: 17px 17px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 22px;
     color: #000000;
     &-default {
         background: rgba(151, 151, 151, 0.4);
         border-radius: 5px;
+    }
+    &.btn-owner_big {
+        font-size: 18px;
+        padding: 17px 30px;
     }
 }
 
@@ -130,6 +143,9 @@
     padding: 10px;
     font-size: 14px;
     font-weight: 400;
+    @media all and (max-width: 1700px) {
+        font-size: 10px;
+    }
     &-buy {
         background: #4CB2FC;
     }
@@ -147,9 +163,13 @@
     margin-right: 14px;
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 19px;
     color: #60626A;
+        @media all and (max-width: 1700px) {
+            font-size: 12px;
+            line-height: 14px;
+        }
 }
 .table-row-btn {
     background: #0878B7;
@@ -166,17 +186,21 @@
 }
 
 .sidebar_btn{
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), rgba(104, 139, 227, 0.5);
-    border: 1px solid rgba(0, 0, 0, 0.38);
+    background: #FFFFFF;
+    border: 1px solid #6C7077;
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     box-sizing: border-box;
     border-radius: 50px;
-    padding: 17px 28px;
+    padding: 16px 25px;
+    &.active{
+        background: #49FD2B;
+        border: 1px solid #6C7077;
+    }
 }
 
 .companies-logo__btn {
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), rgba(196, 196, 196, 0.5);
+    background: #F3F0F0;
     border: 1px solid rgba(0, 0, 0, 0.38);
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -185,4 +209,10 @@
     height: 60px;
     line-height: 60px;
     font-weight: 500;
+    margin-top: 40px;
+    font-size: 12px;
+    cursor: pointer;
+    @media all and (min-width: 1720px) {
+        margin-top: 0px;
+    }
 }

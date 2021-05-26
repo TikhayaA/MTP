@@ -21,24 +21,15 @@
             width: 250px;
         }
     }
-
     .header-authorized {
         justify-content: flex-end;
+        .header-authorized__mail{
+            margin-right: 18px;
+        }
     }
-    .companies-logo-list__btn {
-        background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), rgba(104, 139, 227, 0.5);
-        border: 1px solid rgba(0, 0, 0, 0.38);
-        box-sizing: border-box;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 50px;
-        width: 96px;
-        height: 52px;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 52px;
-        color: #000000;
-        text-align: center;
+    .sidebar_btn {
+        position: relative;
+        top: 13px;
     }
 }
 .logo-list {
@@ -49,13 +40,15 @@
     @media all and (max-width: 1920px) {
         width: 1920px;
     }
-
+    &__data {
+        height: 100vh;
+    }
     &__item {
         height: 100px;
     }
     &__table {
         display: grid;
-        grid-template-columns: 144px 1fr 0.5fr;
+        grid-template-columns: 144px 1fr 0.68fr;
     }
     &__info {
         display: flex;
@@ -64,13 +57,35 @@
         align-items: center;
         justify-content: space-between;
         border-right: 4px solid #fff !important;
-        & > * {
-            width: 23%;
+        & > :nth-child(1){
+            width: 26%;
+        }
+        & > :nth-child(2){
+            width: 27%;
+        }
+        & > :nth-child(3){
+            width: 22%;
+        }
+        & > :nth-child(4){
+            width: 19%;
+        }
+        & > :nth-child(5){
+            width: 26%;
+        }
+        & > :nth-child(6){
+            width: 27%;
+        }
+        & > :nth-child(7){
+            width: 22%;
+        }
+        & > :nth-child(8){
+            width: 19%;
         }
     }
     &__row {
         display: flex;
         padding: 0 10px;
+        align-items: center;
         &_title {
             font-style: normal;
             font-weight: 500;
@@ -107,5 +122,11 @@
         color: #000000;
         text-align: left !important;
         padding: 5px 7px !important;
+    }
+    .table_data-item > div:last-child{
+        align-items: baseline;
+    }
+    .table_data-item > div{
+        line-height: 14px;
     }
 }

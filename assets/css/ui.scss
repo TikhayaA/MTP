@@ -12,6 +12,10 @@
         display: inline-block;
         bottom: -18px;
         left: 0;
+        @media all and (max-width: 1700px) {
+            font-size: 10px;
+            line-height: 14px;
+        }
 
         span {
             display: inline-block;
@@ -34,6 +38,9 @@
         line-height: 24px;
         color: #000000;
         position: absolute;
+        @media screen and (max-width: 1700px){
+            font-size: 14px;
+        }
     }
     label {
         font-family: 'Montserrat';
@@ -43,12 +50,10 @@
         line-height: 17px;
         color: #000000;
         margin-bottom: 7px;
-        // @media screen and (max-width: 1750px) {
-        //     font-size: 13px;
-        // }
-        // @media screen and (max-width: 1650px) {
-        //     font-size: 12px;
-        // }
+        @media all and (max-width: 1700px) {
+            font-size: 10px;
+            line-height: 12px;
+        }
     }
     &-ui {
         background: #FFFFFF;
@@ -61,7 +66,11 @@
         padding-left: 7px;
         font-size: 14px;
         font-weight: 500;
-
+        @media all and (max-width: 1700px) {
+            font-size: 10px;
+            line-height: 12px;
+            height: 21px;
+        }
         &_readonly {
             background: rgba(0, 0, 0, 0.1);
             border: 1px solid #C4C4C4;
@@ -108,12 +117,10 @@
         line-height: 17px;
         color: #000000;
         margin-bottom: 10px;
-        // @media screen and (max-width: 1750px) {
-        //     font-size: 13px;
-        // }
-        // @media screen and (max-width: 1650px) {
-        //     font-size: 12px;
-        // }
+        @media screen and (max-width: 1700px){
+            font-size: 10px;
+            line-height: 12px;
+        }
     }
     textarea {
         width: 100%;
@@ -125,6 +132,9 @@
         height: 170px;
         resize: none;
         padding: 10px;
+        @media screen and (max-width: 1700px){
+            height: 123px;
+        }
     }
 }
 .checkbox-block {
@@ -249,6 +259,10 @@
     color: #9FA4BB;
     text-align: center;
     margin-top: 15px;
+    @media all and (max-width: 1700px) {
+        font-size: 12px;
+        line-height: 14px;
+    }
     span {
         color: #000000;
     }
@@ -256,6 +270,9 @@
 label {
     sup {
         font-size: 12px;
+        @media screen and (max-width: 1700px){
+            font-size: 8px;
+        }
     }
 }
 .input-double-field {
@@ -268,16 +285,97 @@ label {
     }
 }
 
-
-
- 
-
-
-
-
- 
-
-
-
-
-
+.cargo-market-page {
+    .input-select-amount {
+        .input-block {
+            width: calc(100% - 57px);
+        }
+        .select-block {
+            width: 50px;
+        }
+    }
+    .input-select-price {
+        .input-block {
+            width: calc(100% - 57px);
+        }
+        .select-block {
+            width: 50px;
+        }
+    }
+    .input-select-quantity {
+        .input-block {
+            width: calc(100% - 74px);
+        }
+        .select-block {
+            width: 67px;
+        }
+    }
+}
+.common-cargo-page {
+    .input-select-amount {
+        .input-block {
+            width: calc(100% - 72px);
+            @media screen and (max-width: 1700px){
+                width: calc(100% - 50px);
+            }
+        }
+        .select-block {
+            width: 60px;
+            @media all and (max-width: 1700px) {
+                width: 42px;
+            }
+        }
+    }
+    .input-select-price {
+        .input-block {
+            width: calc(100% - 57px);
+            @media screen and (max-width: 1700px){
+                width: calc(100% - 41px);
+            }
+        }
+        .select-block {
+            width: 50px;
+            @media all and (max-width: 1700px) {
+                width: 32px;
+            }
+        }
+    }
+    .input-select-quantity {
+        .input-block {
+            width: calc(100% - 72px);
+            @media screen and (max-width: 1700px){
+                width: calc(100% - 50px);
+            }
+        }
+        .select-block {
+            width: 60px;
+            @media all and (max-width: 1700px) {
+                width: 42px;
+            }
+        }
+    }
+}
+.freight-auction-page {
+    .input-select-amount {
+        .input-block {
+            width: calc(100% - 42px);
+        }
+        .select-block {
+            width: 50px;
+            @media all and (max-width: 1700px) {
+                width: 37px;
+            }
+        }
+    }
+    .input-select-quantity {
+        .input-block {
+            width: calc(100% - 51px);
+        }
+        .select-block {
+            width: 67px;
+            @media all and (max-width: 1700px) {
+                width: 47px;
+            }
+        }
+    }
+}

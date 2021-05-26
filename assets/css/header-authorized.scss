@@ -6,7 +6,13 @@
     &__mail {
         margin-right: 25px;
         position: relative;
+            @media all and (max-width: 1700px){
+                margin-right: 19px;
+            }
         img{
+            @media all and (max-width: 1700px){
+                width: 20px;
+            }
         }
         span {
             display: inline-block;
@@ -17,13 +23,20 @@
             border-radius: 50%;
             background: #0ED33A;
             position: absolute;
-            top: -15px;
-            right: -10px;
+            top: -11px;
+            right: -6px;
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 500;
             font-size: 10px;
             color: #000000;
+            @media all and (max-width: 1700px){
+                font-size: 7px;
+                line-height: 15px;
+                width: 13px;
+                height: 13px;
+                top: -4px;
+            }
         }
     }
     &__info {
@@ -42,7 +55,16 @@
         font-size: 22px;
         line-height: 26px;
         color: #FFFFFF;
-    
+        @media all and (max-width: 1700px) {
+            position: static;
+            font-size: 17px;
+            line-height: 19px;
+        }
+        img{
+            @media all and (max-width: 1700px){
+                width: 25px;
+            }
+        }
         span:last-child {
             position: absolute;
             right: 18px;
@@ -53,17 +75,35 @@
             font-size: 14px;
             line-height: 16px;
             color: #000000;
+            @media all and (max-width: 1700px){
+                font-size: 10px;
+                line-height: 12px;
+                right: 13px;
+            }
         }
     }
     &__icon-home {
         margin-right: 27px;
-        
+        @media all and (max-width: 1700px){
+            margin-right: 20px;
+        }
         img {
             margin-top: -1px;
+            @media all and (max-width: 1700px){
+                width: 17px;
+            }
         }
     }
     &__icon-setting{
         margin: -5px 0 0 10px;
+        @media all and (max-width: 1700px){
+            margin-right: 17px;
+        }
+        img{
+            @media all and (max-width: 1700px){
+                width: 14px;
+            }
+        }
        
     }
     .user_info {
@@ -77,10 +117,19 @@
             line-height: 21px;
             color: #FFFFFF;
             cursor: pointer;
+            @media all and (max-width: 1700px) {
+                font-size: 17px;
+                line-height: 19px;
+            }
         }
         &-avatar {
             margin-right: 10px;
             cursor: pointer;
+            img{
+                @media all and (max-width: 1700px){
+                    width: 13px;
+                }
+            }
         }
     }
 }

@@ -68,6 +68,9 @@
         width: 90%;
         padding: 14px 15px 15px;
     }
+    .simplebar-vertical {
+        right: -5px;
+    }
     &__block {
         height: calc(100% - 50px);
     }
@@ -77,11 +80,32 @@
     &__title{
         font-style: normal;
         font-weight: 500;
-        @include adaptive-fonts(30, 18);
+        font-size: 30px;
         line-height: 37px;
         color: #000000;
         text-align: center;
         margin-bottom: 19px;
+    }
+   &__back-arrow{
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        border: none;
+        position: absolute;
+        background: #FAF4F4;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        display: none;
+
+        &.active {
+            display: block;
+        }
+
+        &:hover{
+            background: #D2D6E4;
+        }
     }
     hr{
         background: #C4C4C4;
@@ -89,8 +113,7 @@
     }
     &__wrap-string{
         margin-bottom: 30px;
-        max-height: calc(100% - 50px);
-        overflow: auto;
+        max-height: calc(100% - 70px);
         &_disabled{
             display: none;
         }
@@ -111,7 +134,7 @@
         width: 25%;
         font-style: normal;
         font-weight: 600;
-        @include adaptive-fonts(20, 14);
+        @include adaptive-fonts(20, 13);
         line-height: 24px;
         padding-left: 18px;
         @media (max-width: 767px) {
@@ -126,7 +149,7 @@
         width: 50%;
         font-style: normal;
         font-weight: 500;
-        @include adaptive-fonts(20, 14);
+        @include adaptive-fonts(20, 13);
         line-height: 24px;
         overflow: hidden;
         white-space: nowrap;
@@ -140,7 +163,7 @@
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
-        @include adaptive-fonts(20, 14);
+        @include adaptive-fonts(20, 12);
         text-align: end;
         padding-right: 18px;
         @media (max-width: 767px) {
@@ -151,11 +174,12 @@
     }
     .btn-close{
         margin: auto;
+        position: relative;
+        z-index: 1;
     }
 }
 .message-wrap{
     max-height: calc(100% - 65px);
-    overflow: auto;
     display: none;
     &_active{
         display: block;
@@ -221,10 +245,7 @@
     -ms-border-radius:none;
     -o-border-radius:none;
     -webkit-border-radius:none;
-    padding: 150px 113px 130px 114px;
-    @media screen and (max-width: 1500px){
-        padding: 100px 80px 100px 80px;
-    }
+    padding: 70px 50px 70px 50px;
     @media screen and (max-width: 800px){
         padding: 80px 40px 80px 40px;
         width: 70%;
@@ -247,26 +268,44 @@
             margin-top: 12px;
         }
         h1{
+            font-family: 'Helvetica', sans-serif;
+            font-weight: bold;
             line-height: 36px;
             letter-spacing: 0.01em;
             color: #0F0F11;
-            @include adaptive-fonts(32, 20);
+            font-size: 32px;
             margin-bottom: 8px;
             font-weight: 600;
         }
         p{
-            @include adaptive-fonts(14, 12);
+            font-family: 'Helvetica', sans-serif;
+            font-weight: normal;
+            font-size: 14px;
             line-height: 19px;
             letter-spacing: 0.01em;
             color: #556274;
-            font-weight: 500;
         }
     }
     .log-in-form{
         width: 100%;
         
-        
+        .field{
+            label{
+                font-family: 'Helvetica', sans-serif;
+                font-weight: normal;
+            }
+            input{
+                font-family: 'Helvetica', sans-serif;
+                font-weight: normal;
+                ::placeholder{
+                    font-family: 'Helvetica', sans-serif;
+                    font-weight: normal;
+                }
+            }
+        }
         &__btn{
+            font-family: 'Helvetica', sans-serif;
+            font-weight: 500;
             width: 100%;
             font-weight: 500;
             font-size: 14px;
@@ -303,7 +342,8 @@
             justify-content: center;
             letter-spacing: 0.01em;
             color: #9FA4BB;
-            font-weight: 500;
+            font-family: 'Helvetica', sans-serif;
+            font-weight: bold;
             &::before, &:after{
                 position: absolute;
                 content:"";
@@ -446,8 +486,11 @@
     box-sizing: border-box;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-    padding: 13px 27px 22px ;
-
+    padding: 13px 27px 22px;
+    @media all and (max-width: 1700px) {
+        max-width: 540px;
+        padding: 11px 24px 0px;
+    }
     &__active {
         display: flex;
         position: fixed;
@@ -465,12 +508,19 @@
         letter-spacing: 0.01em;
         color: #000000;
         margin-bottom: 45px;
+        @media all and (max-width: 1700px) {
+            font-size: 16px;
+            line-height: 22px;
+        }
     }
     &__content {
         width: calc(100% - 150px);
         display: flex;
         flex-direction: column;
         margin-bottom: 75px;
+        @media all and (max-width: 1700px) {
+            margin-bottom: 68px;
+        }
     }
     &__name {
         font-style: normal;
@@ -479,6 +529,10 @@
         letter-spacing: 0.01em;
         color: #000000;
         margin-bottom: 30px;
+        @media all and (max-width: 1700px) {
+            font-size: 16px;
+            line-height: 22px;
+        }
     }
     &__avatar {
         margin-top: -15px;
@@ -497,6 +551,10 @@
             letter-spacing: 0.01em;
             color: #979797;
             width: 20%;
+            @media all and (max-width: 1700px) {
+                font-size: 10px;
+                line-height: 14px;
+            }
         }
         &__value {
             font-style: normal;
@@ -504,6 +562,10 @@
             font-size: 14px;
             letter-spacing: 0.01em;
             color: #000000;
+            @media all and (max-width: 1700px) {
+                font-size: 12px;
+                line-height: 16px;
+            }
         }
     }
 }
@@ -520,26 +582,35 @@
     }
     h1{
         margin: 32px 0 20px;
+        font-family: 'Helvetica', sans-serif;
+        font-weight: bold;
     }
     .btn-concel{
         border: 1px solid #0F0F11;
         color: #0F0F11;
         background: none;
+        font-family: 'Helvetica', sans-serif;
+        font-weight: 500;
     }
     .btn-close{
         width: 165px;
         margin: 0 5px;
+        font-family: 'Helvetica', sans-serif;
+        font-weight: 500;
     }
 }
 .close-cross-popup{
     position: absolute;
     right: 21px;
     top: 30px;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     cursor: pointer;
     border: none;
     background: none;
+    @media screen and (max-width: 500px){
+        top: 20px;
+    }
     &:after, &::before{
         position: absolute;
         content: '';
@@ -589,6 +660,11 @@
         &:hover{
             border: 1px solid #9FA4BB;
         }
+        &::placeholder {
+            @media screen and (max-width: 400px){
+                font-size: 12px;
+            }
+        }
     }
     .display-password{
         position: absolute;
@@ -608,21 +684,46 @@
     }
 }
 .pop-up-forgot-password{
-    padding: 53px 60px 50px;
+    padding: 40px 30px 40px;
     text-align: center;
     @media screen and (max-width: 500px){
         min-width: 90%;
         padding: 20px 20px;
     }
-    p{
+    h1{
+        width: 90%;
         margin: auto;
+        font-family: 'Helvetica', sans-serif;
+        font-weight: 500;
+        @media screen and (max-width: 900px){
+            font-size: 22px;
+        }
+        @media screen and (max-width: 500px){
+            font-size: 16px;
+        }
+    }
+    p{
+        margin: 20px auto 0;
         width: 80%;
+        @media screen and (max-width: 500px){
+            width: 100%;
+        }
     }
     form{
-        width: 100%;
+        width: 90%;
+        margin: auto;
+        .btn-close{
+            margin: 20px auto;
+            font-family: 'Helvetica', sans-serif;
+            font-weight: 500;
+        }
     }
-    .btn-close{
-        margin: 20px auto;
+    
+    .close-cross-popup{
+        @media screen and (max-width: 900px){
+            top:15px;
+            right: 15px;
+        }
     }
 }
 .pop-up-delete-account {
@@ -639,11 +740,26 @@
     h1{
         font-weight: 500;
         text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: normal;
     }
     .field{
         margin-bottom: 30px;
         @media screen and (max-width: 1200px){
             margin-bottom: 15px; 
+        }
+        label{
+            font-family: 'Roboto', sans-serif;
+            font-weight: normal;
+        }
+        input{
+            font-family: 'Roboto', sans-serif;
+            font-weight: normal;
+            ::placeholder{
+                font-family: 'Roboto', sans-serif;
+                font-weight: normal;
+            }
         }
     }
     &__btn{

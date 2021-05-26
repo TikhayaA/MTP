@@ -2,10 +2,13 @@
     background: #024C76;
     display: flex;
     justify-content: space-between;
-    padding: 0 27px 0 25px;
-    @media all and (max-width: 1920px) {
-        width: 1920px;
+    @media all and (min-width: 1920px) {
+        min-width: 1920px;
         position: relative;
+        padding: 0 27px 0 25px;
+    }
+    @media all and (max-width: 1360px) {
+        width: 1360px;
     }
     @media all and (max-width: 800px) {
         overflow: auto;
@@ -18,6 +21,12 @@
         flex-wrap: wrap;
         justify-content: space-between;
         margin: 25px 0 15px;
+        @media all and (max-width: 1700px) {
+           position: absolute;
+           width: 330px;
+           margin-left: 16px;
+           z-index: 3;
+        }
         @media all and (max-width: 1120px) {
             min-width: 190px;
         }
@@ -28,6 +37,9 @@
         width: 100%;
         max-width: 244px;
         justify-content: space-between;
+        @media all and (max-width: 1700px) {
+            max-width: 100%;
+        }
         &.mt {
             margin-top: 6px;
         }
@@ -48,8 +60,26 @@
         display: flex;
         align-items: center;
         justify-content: center;
+            @media all and (max-width: 1700px) {
+                width: 26.4%;
+                left: 50%;
+                top: -9px;
+                transform: translate(-50%, 0);
+                -webkit-transform: translate(-50%, 0);
+                -moz-transform: translate(-50%, 0);
+                -ms-transform: translate(-50%, 0);
+                -o-transform: translate(-50%, 0);
+            }
+            img{
+                @media all and (max-width: 1700px) {
+                    width: 100%;
+                }
+            }
         &.logo-auction {
             margin-bottom: 3px;
+            @media all and (max-width: 1700px) {
+                position: absolute;
+            }
         }
     }
     &-block {
@@ -57,7 +87,9 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-
+        @media all and (max-width: 1700px) {
+            width: 100%;
+        }
         @media all and (max-width: 800px) {
             min-width: 600px;
         }
@@ -67,8 +99,17 @@
         background: #0878B7;
         border-radius: 5px 5px 0px 0px;
         padding: 14px 15px;
-        max-height: 65px;
         margin-top: 30px;
+        @media all and (max-width: 1700px) {
+            width: 100%;
+            padding: 14px 0px;
+            margin-top: 33px;
+            border-radius: 0;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            -ms-border-radius: 0;
+            -o-border-radius: 0;
+        }
         &-content {
             display: flex;
             justify-content: space-around;
@@ -79,15 +120,10 @@
             font-weight: 500;
             font-size: 14px;
             line-height: 17px;
-            @media screen and (max-width: 1350px){
+            @media all and (max-width: 1700px) {
                 font-size: 12px;
+                line-height: 14px;
             }
-            @media screen and (max-width: 1200px){
-                font-size: 10px;
-            }
-            // @media all and (max-width: 1120px) {
-            //     width: 1120px;
-            // }
         }
         @media all and (max-width: 1120px) {
             overflow: auto;
@@ -106,6 +142,12 @@
         text-align: center;
         width: calc(100% - 303px);
         margin-top: 20px;
+        @media all and (max-width: 1700px) {
+            font-size: 26px;
+            line-height: 31px;
+            width: 100%;
+            margin-top: 27px;
+        }
     }
     .header-authorized{
         right: 21px;
@@ -121,5 +163,8 @@
 .common-cargo-page{
     .header_table-logo{
         margin-top: -15px;
+        @media all and (max-width: 1700px) {
+            position: absolute;
+        }
     }
 }

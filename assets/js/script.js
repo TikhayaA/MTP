@@ -159,11 +159,22 @@ const popUpMessage = document.getElementsByClassName('pop-up-message'),
     popUpOpenSringWrap = document.querySelector('.pop-up-message__wrap-string'),
     openMessage = document.getElementsByClassName('message-wrap'),
     popUpOpenSring = document.getElementsByClassName('pop-up-message__string');
+const messageBackArrow = document.querySelector('.pop-up-message__back-arrow');
 
 if (popUpMessage.length > 0) {
-    popUpOpenSring[0].addEventListener('click', () => {
-        openMessage[0].classList.add('message-wrap_active');
-        popUpOpenSringWrap.classList.add('pop-up-message__wrap-string_disabled');
+    popUpOpenSring.forEach((el, ind) => {
+        el.addEventListener('click', () => {
+            openMessage[ind].classList.add('message-wrap_active');
+            popUpOpenSringWrap.classList.add('pop-up-message__wrap-string_disabled');
+            messageBackArrow.classList.add('active');
+        });
+    });
+    messageBackArrow.addEventListener('click', () => {
+        messageBackArrow.classList.remove('active');
+        popUpOpenSringWrap.classList.remove('pop-up-message__wrap-string_disabled');
+        openMessage.forEach(el => {
+            el.classList.remove('message-wrap_active');
+        });
     });
 }
 
@@ -311,6 +322,7 @@ if (radioBlockLeft) {
         registrationLeft.classList.add('pop-up-registration_active');
         btnNext.classList.remove('btn-next_active');
         btnNext.previousSibling.previousSibling.style.display = 'inline-block';
+        agreeBlock.style.opacity = '1';
     });
     radioBlockRight.addEventListener('click', () => {
         registrationRight.classList.add('pop-up-registration_active');
@@ -335,11 +347,17 @@ if (radioBlockLeft) {
 const addCompany = document.getElementById('add-company');
 const hideSlider = document.querySelectorAll('.companies-logo__slider_left .logo-slider__item');
 const logoForm = document.querySelector('.logo-form');
+const pageBody = document.querySelector('body');
 if (addCompany) {
     addCompany.addEventListener('click', () => {
         hideSlider.forEach(el => {
             el.style.display = 'none';
         });
         logoForm.style.display = 'block';
+        pageBody.style.overflow = 'auto';
     });
 }
+
+document.querySelectorAll('.simplebar-child').forEach(el => {
+    new SimpleBar(el);
+});

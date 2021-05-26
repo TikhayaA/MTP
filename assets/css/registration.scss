@@ -6,7 +6,6 @@
     overflow: auto;
 
     &__block-content {
-        width: 940px;
         padding: 10px 80px 20px;
     }
 
@@ -34,11 +33,19 @@
         }
     }
     &__fields {
-        width: 45%;
-        .field {
-            width: 100%;
+        width: 47%; 
+        &:first-child {
+            width: 45%;
         }
-        
+    }
+    .field {
+        width: 100%;
+        input{
+            padding: 5px 16px;
+        }
+        label{
+            margin-bottom: 4px;
+        }
     }
     .checkbox-block {
         justify-content: start;
@@ -80,6 +87,7 @@
         }
         .pop-up-registration__block-content {
             width: 1240px;
+            padding: 0;
         }
     }
     &__header {
@@ -111,8 +119,11 @@
         width: 100%;
         padding-top: 40px;
         height: 489px;
-        overflow: auto;
         display: none;
+
+        .simplebar-track.simplebar-vertical {
+            right: -10px;
+        }
     }
     .registration__header_row {
         margin-right: 33px;
@@ -131,5 +142,16 @@
             width: 23%;
         }
     }
-
+    .radio-block label::after{
+        top: 50%;
+        transform: translate(0, -50%);
+        -webkit-transform: translate(0, -50%);
+        -moz-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        -o-transform: translate(0, -50%);
+    }
+    .close-cross-popup{
+        right: 12px;
+        top: 10px;
+    }
 }
