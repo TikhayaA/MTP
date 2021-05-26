@@ -141,9 +141,8 @@
         @media (max-width: 767px) {
             width: 19px;
             height: 19px;
-            
         }
-        img{display: none;
+        img{
             @media (max-width: 1700px) {
                 width: 15px;
             }
