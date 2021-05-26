@@ -9,8 +9,8 @@ html {
         min-width: 1920px;
         margin-bottom: 0;
     }
-    @media all and (max-width: 1360px) {
-        width: 1360px;
+    @media all and (max-width: 1366px) {
+        width: 1366px;
     }
     &_filter {
         width: 320px;
@@ -231,7 +231,7 @@ html {
             }
         }
         &-content {
-            height: calc(100vh - 240px - 190px);
+            height: calc(100vh - 228px - 190px);
             overflow: auto;
         }
     }
