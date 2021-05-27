@@ -338,10 +338,9 @@ body {
           margin-left: 23px; } }
       .header .header-authorized__chat img {
         width: 25px; }
-      .header .header-authorized__chat span:last-child {
-        right: 11px;
-        line-height: 14px;
-        font-size: 12px; }
+    @media all and (max-width: 1700px) {
+      .header .header-authorized__icon-setting {
+        margin-right: 0px; } }
     @media all and (max-width: 1050px) {
       .header .header-authorized__icon-setting {
         margin: -5px 0 0 0px; } }
@@ -3233,7 +3232,8 @@ label sup {
         .header-authorized__chat span:last-child {
           font-size: 10px;
           line-height: 12px;
-          right: 13px; } }
+          right: 13px;
+          top: 2px; } }
   .header-authorized__icon-home {
     margin-right: 27px; }
     @media all and (max-width: 1700px) {
@@ -4241,9 +4241,9 @@ hr {
     font-weight: normal; }
   .pop-up-delete-account .field {
     margin-bottom: 30px; }
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1700px) {
       .pop-up-delete-account .field {
-        margin-bottom: 15px; } }
+        margin-top: 0px; } }
     .pop-up-delete-account .field label {
       font-family: 'Roboto', sans-serif;
       font-weight: normal; }
@@ -4261,10 +4261,10 @@ hr {
     padding: 14px 29px;
     margin: 52px auto 0;
     font-weight: 500; }
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1700px) {
       .pop-up-delete-account__btn {
-        margin: 32px auto 0; } }
-    .pop-up-delete-account__btn:hover {
+        margin: 23px auto 0; } }
+    .pop-up-delete-account__btn.successfully {
       background: #BCB8B8; }
   .pop-up-delete-account .close-cross-popup {
     top: 14px;
@@ -4275,13 +4275,17 @@ hr {
   text-align: center; }
   @media screen and (max-width: 500px) {
     .pop-up-deleted {
-      padding: 20px 22px; } }
+      padding: 20px 22px;
+      width: 80%; } }
   .pop-up-deleted p {
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 25px;
     letter-spacing: 0.01em; }
+    @media screen and (max-width: 500px) {
+      .pop-up-deleted p {
+        font-size: 14px; } }
   .pop-up-deleted .btn-close {
     margin-top: 49px; }
 
