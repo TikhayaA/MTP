@@ -3899,8 +3899,12 @@ hr {
     margin: 0; }
   .pop-up-message__wrap-string {
     margin-bottom: 30px;
-    max-height: calc(100% - 70px); }
+    max-height: calc(100% - 70px);
+    overflow: auto; }
     .pop-up-message__wrap-string_disabled {
+      display: none; }
+    .pop-up-message__wrap-string::-webkit-scrollbar {
+      width: 0;
       display: none; }
   .pop-up-message__string {
     border-bottom: 1px solid #979797;
@@ -3996,7 +4000,11 @@ hr {
 .message-wrap {
   max-height: calc(100% - 65px);
   height: 100%;
-  display: none; }
+  display: none;
+  overflow: auto; }
+  .message-wrap::-webkit-scrollbar {
+    width: 0;
+    display: none; }
   .message-wrap_active {
     display: block; }
   .message-wrap__title {
@@ -4582,6 +4590,7 @@ hr {
   display: none;
   width: 100vw;
   height: 100vh;
+  max-height: 100%;
   position: fixed;
   top: 0;
   left: 0;
