@@ -7,7 +7,7 @@
     position: relative;
     background-position: center top;
     overflow: hidden;
-    @media all and (max-width: 1300px) {
+    @media all and (max-width: 1360px) {
         overflow-x: auto;
     }
     .logo-slider {
@@ -20,6 +20,10 @@
                 height: 50px;
                 background: #B6DAED;
                 margin-bottom: 5px;
+                @media all and (max-width: 1700px) {
+                    width: 88px;
+                    height: 35px;
+                }
             }
             &_right {
                 position: relative;
@@ -42,17 +46,6 @@
     } 
     .select-block > label, .textarea-block label, .input-block label{
         color: #FFFFFF;
-    }
-    .pop-up.account-orders{
-        @media all and (min-height: 500px) and (max-height: 800px){
-            top: 0;
-            transform: translate(0, 0);
-            -webkit-transform: translate(0, 0);
-            -moz-transform: translate(0, 0);
-            -ms-transform: translate(0, 0);
-            -o-transform: translate(0, 0);
-        }
-
     }
 }
 .companies-container{
@@ -310,7 +303,7 @@
         line-height: 43px;
         color: #FFFFFF;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-        width: 30%;
+        width: 23%;
         text-align: center;
     }
     &__header {
@@ -319,8 +312,17 @@
             justify-content: center;
             width: 100%;
             margin-top: 40px;
+            @media all and (max-width: 1700px) {
+                margin-top: 32px;
+            }
+            .header_info {
+                @media all and (max-width: 1700px) {
+                    top: 42px;
+                }
+            }
         }
     }
+   
     &__slider {
         position: absolute;
         top: 120px;
@@ -338,6 +340,9 @@
                 margin-left: 5px;
             }
         }
+        @media all and (max-width: 1700px) {
+            width: 205px;
+        }
     }
     
 }
@@ -353,10 +358,16 @@
         width: 180%;
         font-size: 12px;
         font-weight: 500;
+        @media all and (max-width: 1700px) {
+           height: 85px;
+        }
     }
     .textarea-block label {
         width: 104%;
         margin-bottom: 2px;
+        @media all and (max-width: 1700px) {
+            width: 115%;
+        }
     }
     .select-block > label {
         margin-bottom: 2px;
@@ -390,6 +401,10 @@
             color: #C4C4C4;
             position: relative;
             top: -5px;
+            @media all and (max-width: 1700px) {
+                font-size: 10px;
+                line-height: 12px;
+            }
         }
         .logo-add-text{
             top: 2px;
@@ -406,17 +421,29 @@
         box-sizing: border-box;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
+        @media all and (max-width: 1700px) {
+            height: 40px;
+        }
     }
     .select__title{
         font-size: 12px;
         height: 25px;
         font-weight: 500;
+        @media all and (max-width: 1700px) {
+            height: 18px;
+            line-height: 18px;
+            font-size: 9px;
+        }
     }
     .select__label{
         font-size: 12px;
         font-weight: 500;
         height: fit-content;
         height: -moz-fit-content;
+        @media all and (max-width: 1700px) {
+            padding: 6px 16px 8px 8px;
+            font-size: 9px;
+        }
         &:hover{
             background: rgba(196, 196, 196, 0.3);
         }
@@ -424,6 +451,11 @@
     .input-block-ui{
         height: 25px;
         font-size: 12px;
+        @media all and (max-width: 1700px) {
+            height: 18px;
+            line-height: 18px;
+            font-size: 10px;
+        }
     }
 }
 .add-company__block {
@@ -439,4 +471,8 @@
         bottom: -22px;
         left: 70px;
     }
+}
+.slick-slider img {
+    width: 100%;
+    height: 100%;
 }

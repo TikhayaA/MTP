@@ -89,7 +89,6 @@ selectSingle.forEach((el, index) => {
     // Toggle menu 
     selectSingle_title.addEventListener('click', () => {
         selectSingle.forEach((element, i) => {
-            console.log(element, index, i);
             if (index !== i) {
                 element.setAttribute('data-state', '');
             }
@@ -261,17 +260,20 @@ if (createdBidsBtn.length > 0) {
 const tableBtnSell = document.querySelector(".table_btn-sell");
 const tableBtnBuy = document.querySelector(".table_btn-buy");
 const tableContentHeader = document.querySelector(".table_content-header");
+const cargoOrderName = document.querySelector(".cargo-order-name");
 
 if (tableBtnSell) {
     tableBtnSell.addEventListener('click', () => {
         tableContentHeader.classList.add('table__content_header-sell');
         tableContentHeader.classList.remove('table__content_header-buy');
+        cargoOrderName.innerHTML = 'sell';
     });
 }
 if (tableBtnBuy) {
     tableBtnBuy.addEventListener('click', () => {
         tableContentHeader.classList.remove('table__content_header-sell');
         tableContentHeader.classList.add('table__content_header-buy');
+        cargoOrderName.innerHTML = 'buy';
     });
 }
 
@@ -315,33 +317,119 @@ const radioBlockLeft = document.querySelector('.radio-block-left'),
     popUpRegistrationHeader = document.querySelector('.pop-up-registration__header'),
     popUpRegistrationContent = document.querySelector('.pop-up-registration__content'),
     agreeBlock = document.querySelector('.agree-block'),
-    btnNext = document.querySelector('.btn-next');
+    btnNext = document.querySelector('.btn-next'),
+    btnCloseCompany = document.querySelector('.pop-up-registration__form .btn-close'),
+    registrationCheck = document.querySelector('.pop-up-registration__check'),
+    registrationField = document.querySelector('.pop-up-registration__fields'),
+    registrationSteps = document.querySelector('.registration-steps'),
+    registrationStepsItem = document.querySelectorAll('.registration-steps li'),
+    registrationContentCol = document.querySelectorAll('.registration-content_col');
 if (radioBlockLeft) {
     radioBlockLeft.addEventListener('click', () => {
+        registrationLeft.style.display = '';
+        popUpRegistrationContent.style.display = '';
         registrationRight.classList.remove('pop-up-registration_active');
         registrationLeft.classList.add('pop-up-registration_active');
         btnNext.classList.remove('btn-next_active');
         btnNext.previousSibling.previousSibling.style.display = 'inline-block';
         agreeBlock.style.opacity = '1';
+        agreeBlock.classList.add('active');
+        registrationField.classList.add('active');
+        registrationRight.classList.remove('active');
+        registrationSteps.classList.remove('active');
+        radioBlockLeft.classList.add('active');
+        radioBlockRight.classList.remove('active');
     });
     radioBlockRight.addEventListener('click', () => {
+        registrationRight.style.display = '';
+        popUpRegistrationContent.style.display = '';
         registrationRight.classList.add('pop-up-registration_active');
         registrationLeft.classList.remove('pop-up-registration_active');
         btnNext.classList.add('btn-next_active');
         btnNext.previousSibling.previousSibling.style.display = 'none';
         agreeBlock.style.opacity = '0';
+        agreeBlock.classList.remove('active');
+        registrationField.classList.remove('active');
+        registrationRight.classList.add('active');
+        registrationSteps.classList.add('active');
+        radioBlockLeft.classList.remove('active');
+        radioBlockRight.classList.add('active');
     });
     btnNext.addEventListener('click', () => {
         popUpRegistration.classList.add('pop-up-registration_company');
         registrationRight.classList.remove('pop-up-registration_active');
-        radioBlockLeft.style.display = 'none';
-        btnNext.classList.remove('btn-next_active');
-        btnNext.previousSibling.previousSibling.style.display = 'inline-block';
         popUpRegistrationHeader.style.display = 'flex';
-        popUpRegistrationContent.style.display = 'block';
+        popUpRegistrationContent.style.display = 'flex';
+        registrationRight.classList.remove('active');
+        registrationLeft.classList.remove('active');
         registrationRight.style.display = 'none';
         registrationLeft.style.display = 'none';
         agreeBlock.style.opacity = '1';
+        registrationCheck.classList.add('company');
+        btnCloseCompany.classList.add('company');
+        if ($(window).width() > 1050) {
+            radioBlockLeft.style.display = 'none';
+            btnNext.classList.remove('btn-next_active');
+            btnNext.previousSibling.previousSibling.style.display = 'inline-block';
+        } else {
+            let indexVal = 0;
+            registrationContentCol.forEach((el, ind) => {
+                if (el.classList[1] === 'active') {
+                    indexVal = ind + 1;
+                }
+            });
+            if(registrationContentCol.length >= indexVal + 1) {
+                registrationContentCol.forEach((elem) => {
+                    elem.classList.remove('active');
+                });
+                registrationContentCol[indexVal].classList.add('active');
+                registrationStepsItem[indexVal + 1].classList.add('active');
+                if (registrationContentCol.length === indexVal + 1) {
+                    btnNext.classList.remove('btn-next_active');
+                    btnNext.previousSibling.previousSibling.style.display = 'inline-block';
+                    agreeBlock.classList.add('active');
+                } else {
+                    btnNext.classList.add('btn-next_active');
+                    btnNext.previousSibling.previousSibling.style.display = 'none';
+                    agreeBlock.classList.remove('active');
+                }
+            }
+        }
+    });
+    registrationStepsItem.forEach((el, ind) => {
+        el.addEventListener('click', () => {
+            if (el.classList[0] === 'active') {
+                registrationContentCol.forEach((elem) => {
+                    elem.classList.remove('active');
+                });
+                if (ind === 0) {
+                    registrationRight.classList.add('pop-up-registration_active');
+                    popUpRegistration.classList.remove('pop-up-registration_company');
+                    registrationRight.classList.add('active');
+                    popUpRegistrationHeader.style.display = 'none';
+                    popUpRegistrationContent.style.display = 'none';
+                    registrationRight.style.display = '';
+                    registrationLeft.style.display = '';
+                } else {
+                    popUpRegistration.classList.add('pop-up-registration_company');
+                    registrationRight.classList.remove('active');
+                    registrationLeft.classList.remove('active');
+                    popUpRegistrationContent.style.display = 'flex';
+                    el.classList.add('active');
+                    registrationContentCol[ind - 1].classList.add('active');
+                }
+            }
+            if (registrationContentCol.length === ind && registrationContentCol[3].classList[1] === 'active') {
+                btnNext.classList.remove('btn-next_active');
+                btnNext.previousSibling.previousSibling.style.display = 'inline-block';
+                agreeBlock.classList.add('active');
+                agreeBlock.style.opacity = '1';
+            } else {
+                btnNext.classList.add('btn-next_active');
+                btnNext.previousSibling.previousSibling.style.display = 'none';
+                agreeBlock.classList.remove('active');
+            }
+        });
     });
 }
 const addCompany = document.getElementById('add-company');
@@ -360,4 +448,42 @@ if (addCompany) {
 
 document.querySelectorAll('.simplebar-child').forEach(el => {
     new SimpleBar(el);
+});
+
+function owlInitialize() {
+    if ($(window).width() < 1700) {
+        let arrowImage;
+        if ($(window).width() > 600) {
+            arrowImage = ['<img src="assets/img/sidebar-arrow.svg" alt="" class="">', '<img src="assets/img/sidebar-arrow.svg" alt="" class="">'];
+        } else {
+            arrowImage = ['<img src="assets/img/sidebar-arrow-mob.svg" alt="" class="">', '<img src="assets/img/sidebar-arrow-mob.svg" alt="" class="">'];
+        }
+        $('.account-orders__wrap-content').addClass("owl-carousel");
+        $('.owl-carousel').owlCarousel({
+            loop:false,
+            dots: false,
+            nav: true,
+            navText: arrowImage,
+            responsive:{
+                900:{
+                    items:3
+                },
+                600:{
+                    items:2
+                },
+                320:{
+                    items:1
+                }
+            }
+        });
+    }else{
+        $('.owl-carousel').owlCarousel('destroy');
+        $('.account-orders__wrap-content').removeClass("owl-carousel");
+    }
+}
+$(document).ready(function(e) {
+    owlInitialize();
+});
+$(window).resize(function() {
+    owlInitialize();
 });

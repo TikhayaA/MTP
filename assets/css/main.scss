@@ -100,9 +100,7 @@ $color_main-description:#65676C;
 $bg-header: #024C76;
 $color_btn-find-more:#33C1EF;
 $bgservice: #F1FAFF;
-@mixin fontz ($fs,
-$w,
-$s) {
+@mixin fontz ($fs,$w,$s) {
     font-size: $fs;
     font-weight: $w;
     font-style: $s;

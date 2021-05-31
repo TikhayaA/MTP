@@ -3,6 +3,7 @@
     padding: 19px 78px 70px 78px;
     top: 0;
     transform: translate(-50%, 120px);
+    height: 84vh;
     @media screen and (min-width: 1700px) {
         max-width: 1000px;
         border-radius: 0;
@@ -17,43 +18,29 @@
     @media screen and (max-width: 900px) {
         width: 95%;
     }
-    @media screen and (max-width: 715px) {
+    @media screen and (max-width: 767px) {
         overflow: auto;
         width: 100%;
-        height: 100vh;
-        border-radius: 0;
         padding: 14px 33px 54px;
         transform: translate(-50%, 0px);
         -webkit-transform: translate(-50%, 0px);
         -moz-transform: translate(-50%, 0px);
         -ms-transform: translate(-50%, 0px);
         -o-transform: translate(-50%, 0px);
-        -webkit-border-radius: 0;
-        -moz-border-radius: 0;
-        -ms-border-radius: 0;
-        -o-border-radius: 0;
     }
+    @media screen and (max-width: 715px) {
+        background: $bg-header;
+    }
+    
     hr{
         @media screen and (max-width: 715px) {
             display: none;
         }
     }
-    h4 {
-        font-family: 'Roboto', sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 30px;
-        line-height: 35px;
-        text-align: center;
-        color: #000000;
-        @media all and (max-width: 1700px){
-            font-size: 24px;
-            line-height: 28px;
-        }
+    h1 {
         @media all and (max-width: 715px){
-            font-size: 16px;
-            line-height: 18px;
             margin-bottom: 16px;
+            color: $color_light-text;
         }
     }
     &__wrap-form{
@@ -69,38 +56,63 @@
             grid-gap: 15px;
         }
         :nth-child(1){
-            order: 1;
+            @media screen and (max-width: 715px) {
+                order: 1;
+            }
         }
         :nth-child(2){
-            order: 2;
+            @media screen and (max-width: 715px) {
+                order: 2;
+            }
         }
         :nth-child(3){
-            order: 3;
+            @media screen and (max-width: 715px) {
+                order: 5;
+            }
         }
         :nth-child(4){
-            order: 4;
+            @media screen and (max-width: 715px) {
+                order: 4;
+            }
         }
         :nth-child(5){
-            order: 5;
+            @media screen and (max-width: 715px) {
+                order: 6;
+            }
         }
         :nth-child(6){
-            order: 6;
+            @media screen and (max-width: 715px) {
+                order: 3;
+            }
         }
         :nth-child(7){
-            order: 7;
+            @media screen and (max-width: 715px) {
+                order: 7;
+            }
         }
         :nth-child(8){
-            order: 9;
+            @media screen and (max-width: 715px) {
+                order: 9;
+            }
         }
         :nth-child(9){
-            order: 8;
+            @media screen and (max-width: 715px) {
+                order: 8;
+            }
         }
         :nth-child(10){
-            order: 10;
+            @media screen and (max-width: 715px) {
+                order: 10;
+            }
         }
-
         .field{
             width: inherit;
+            input{
+                @media screen and (max-width: 715px) {
+                    background: #D8EEFA;
+                    border: 0.886667px solid rgba(196, 196, 196, 0.7);
+                }
+            }
         }
     }
     &__wrap-btn{
@@ -136,8 +148,9 @@
     .field {
         margin-top: 0;
         label{
-            @media screen and (max-width: 1700px) {
+            @media screen and (max-width: 715px) {
                 font-size: 12px;
+                color: $color_light-text;
             }
         }
         input{
@@ -157,7 +170,7 @@
             bottom: 14px;
         }
         @media screen and (max-width: 715px) {
-            bottom: 8px;
+            bottom: 6px;
         }
        }
     }
@@ -204,6 +217,8 @@
             grid-column: auto;
             margin-top: 10px;
             order: 2;
+            color: $color_light-text;
+
         }
         img{
             height: 100%;
@@ -228,6 +243,10 @@
                 @media screen and (max-width: 1700px) {
                     font-size: 12px;
                 }
+                @media screen and (max-width: 715px) {
+                    color: $color_light-text;
+                }
+
             }
             label {
                 height: 27px;
@@ -239,9 +258,30 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                @media screen and (max-width: 715px) {
+                    background: #D8EEFA;
+                    border: 0.887px solid #D8EEFA;
+                    box-shadow: 0px 3.548px 3.548px rgba(0, 0, 0, 0.25);
+                    color: #9FA4BB;
+                }
                 img {
-                    left: 19px;
+                    left: 5%;
                     position: absolute;
+                    @media screen and (min-width: 1200px) and (max-width: 1300px) {
+                        left: 2%;
+                    }
+                    @media screen and (min-width: 800px) and (max-width: 1000px) {
+                        left: 3%;
+                    }
+                    @media screen and (min-width: 360px) and (max-width: 500px) {
+                        left: 12%;
+                    }
+                    @media screen and (min-width: 501px) and (max-width: 550px) {
+                        left: 17%;
+                    }
+                    @media screen and (min-width: 551px) and (max-width: 714px) {
+                        left: 19%;
+                    }
                 }
             }
         }

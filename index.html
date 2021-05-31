@@ -9,10 +9,17 @@
     <meta content="" name="keywords">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/reset.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+      <link href="assets/css/style.css" rel="stylesheet">
+      <link href="assets/css/reset.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-migrate-3.3.2.min.js" integrity="sha256-Ap4KLoCf1rXb52q+i3p0k2vjBsmownyBTE1EqlRiMwA=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </head>
 
 <body class="container-fluid p-0">
@@ -71,7 +78,7 @@
                     <li class="menu__list"><a href="companies.html">Companies</a>
                     </li>
                 </ul>
-                <div class="menu__wrap-btn menu__wrap-btn_disabled">
+                <div class="menu__wrap-btn menu__wrap-btn">
                     <button class="header__log-in pop-up-open" data-popup="pop-up-log-in"> 
                       <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                          <path d="M4.5 4.5C4.5 6.981 6.519 9 9 9C11.481 9 13.5 6.981 13.5 4.5C13.5 2.019 11.481 0 9 0C6.519 0 4.5 2.019 4.5 4.5ZM17 19H18V18C18 14.141 14.859 11 11 11H7C3.14 11 0 14.141 0 18V19H1H2H16H17Z" fill="white"/>
@@ -271,7 +278,7 @@
             </div>
         </div>
     </footer>
-    <section class="pop-up pop-up-message justify-content-between flex-column">
+    <section class="pop-up pop-up-message pop-up-mobile justify-content-between flex-column">
         <div class="pop-up-message__block">
             <a href="#" class="pop-up-message__back-arrow"><img src="assets/img/back-arrow.svg" alt=""></a>
             <h1 class="pop-up-message__title">Message</h1>
@@ -429,7 +436,9 @@
             <button type="submit" class="log-in-form__btn log-in-form__btn_log-in">Log In</button>
             <span>or</span>
             <button type="" class="log-in-form__btn log-in-form__btn_google"><img src="assets/img/pop-up-google.svg" alt="">Log In with Google</button>
-
+            <div class="pop-up-log-in__support">If you are having problems signing in, please email
+                <a href="mailto:support@gmtp.com">support@gmtp.com</a>
+            </div>
         </form>
     </section>
     <section class="pop-up pop-up-log-out">
@@ -481,13 +490,12 @@
     <section class="pop-up pop-up-deleted">
         <p>Your account has been successfully deleted </p>
         <button class="btn-close btn-close-popup">Close</button>
-
     </section>
-    <section class="pop-up pop-up-registration">
+    <section class="pop-up pop-up-registration pop-up-mobile">
         <button class="close-cross-popup"></button>
         <div class="pop-up-registration__block-content">
             <div class="pop-up-registration__title">
-                <h4>Registration</h4>
+                <h1>Registration</h1>
             </div>
             <form action="#" class="pop-up-registration__form d-flex flex-column">
                 <div class="pop-up-registration__check d-flex justify-content-between">
@@ -587,95 +595,153 @@
                             <input type="text" id="employees" placeholder="">
                         </div>
                     </div>
-                    <div class="pop-up-registration__content simplebar-child">
+                    <div class="pop-up-registration__content">
                         <div class="registration-content_col">
                             <div class="field field-default">
-                                <label for="Name">Name</label>
-                                <input type="text" id="Name" placeholder="">
+                                <div class="field-number">1</div>
+                                <div class="field-default-content">
+                                    <label for="Name">Name</label>
+                                    <input type="text" id="Name" placeholder="">
+                                </div>
                             </div>
                             <div class="field field-default">
-                                <label for="Surname">Surname</label>
-                                <input type="text" id="Surname" placeholder="">
+                                <div class="field-number">2</div>
+                                <div class="field-default-content">
+                                    <label for="Name">Name</label>
+                                    <input type="text" id="Name" placeholder="">
+                                </div>
                             </div>
                             <div class="field field-default">
-                                <label for="mail-registration">@mail</label>
-                                <input type="text" id="mail-registration" placeholder="">
+                                <div class="field-number">3</div>
+                                <div class="field-default-content">
+                                    <label for="Name">Name</label>
+                                    <input type="text" id="Name" placeholder="">
+                                </div>
                             </div>
                             <div class="field field-default">
-                                <label for="Phone">Phone</label>
-                                <input type="text" id="Phone" placeholder="">
+                                <div class="field-number">4</div>
+                                <div class="field-default-content">
+                                    <label for="Name">Name</label>
+                                    <input type="text" id="Name" placeholder="">
+                                </div>
+                            </div>
+                            <div class="field field-default">
+                                <div class="field-number">5</div>
+                                <div class="field-default-content">
+                                    <label for="Name">Name</label>
+                                    <input type="text" id="Name" placeholder="">
+                                </div>
                             </div>
                         </div>
                         <div class="registration-content_col">
                             <div class="field field-default">
-                                <label for="Name">Name</label>
-                                <input type="text" id="Name" placeholder="">
+                                <div class="field-number">1</div>
+                                <div class="field-default-content">
+                                    <label for="Name">Surname</label>
+                                    <input type="text" id="Name" placeholder="">
+                                </div>
                             </div>
                             <div class="field field-default">
-                                <label for="Surname">Surname</label>
-                                <input type="text" id="Surname" placeholder="">
+                                <div class="field-number">2</div>
+                                <div class="field-default-content">
+                                    <label for="Name">Surname</label>
+                                    <input type="text" id="Name" placeholder="">
+                                </div>
                             </div>
                             <div class="field field-default">
-                                <label for="mail-registration">@mail</label>
-                                <input type="text" id="mail-registration" placeholder="">
+                                <div class="field-number">3</div>
+                                <div class="field-default-content">
+                                    <label for="Name">Surname</label>
+                                    <input type="text" id="Name" placeholder="">
+                                </div>
                             </div>
                             <div class="field field-default">
-                                <label for="Phone">Phone</label>
-                                <input type="text" id="Phone" placeholder="">
-                            </div>
-                        </div>
-                        <div class="registration-content_col">
-                            <div class="field field-default">
-                                <label for="Name">Name</label>
-                                <input type="text" id="Name" placeholder="">
+                                <div class="field-number">4</div>
+                                <div class="field-default-content">
+                                    <label for="Name">Surname</label>
+                                    <input type="text" id="Name" placeholder="">
+                                </div>
                             </div>
                             <div class="field field-default">
-                                <label for="Surname">Surname</label>
-                                <input type="text" id="Surname" placeholder="">
-                            </div>
-                            <div class="field field-default">
-                                <label for="mail-registration">@mail</label>
-                                <input type="text" id="mail-registration" placeholder="">
-                            </div>
-                            <div class="field field-default">
-                                <label for="Phone">Phone</label>
-                                <input type="text" id="Phone" placeholder="">
-                            </div>
-                        </div>
-                        <div class="registration-content_col">
-                            <div class="field field-default">
-                                <label for="Name">Name</label>
-                                <input type="text" id="Name" placeholder="">
-                            </div>
-                            <div class="field field-default">
-                                <label for="Surname">Surname</label>
-                                <input type="text" id="Surname" placeholder="">
-                            </div>
-                            <div class="field field-default">
-                                <label for="mail-registration">@mail</label>
-                                <input type="text" id="mail-registration" placeholder="">
-                            </div>
-                            <div class="field field-default">
-                                <label for="Phone">Phone</label>
-                                <input type="text" id="Phone" placeholder="">
+                                <div class="field-number">5</div>
+                                <div class="field-default-content">
+                                    <label for="Name">Surname</label>
+                                    <input type="text" id="Name" placeholder="">
+                                </div>
                             </div>
                         </div>
                         <div class="registration-content_col">
                             <div class="field field-default">
-                                <label for="Name">Name</label>
-                                <input type="text" id="Name" placeholder="">
+                                <div class="field-number">1</div>
+                                <div class="field-default-content">
+                                    <label for="Name">@mail</label>
+                                    <input type="text" id="Name" placeholder="">
+                                </div>
                             </div>
                             <div class="field field-default">
-                                <label for="Surname">Surname</label>
-                                <input type="text" id="Surname" placeholder="">
+                                <div class="field-number">2</div>
+                                <div class="field-default-content">
+                                    <label for="Name">@mail</label>
+                                    <input type="text" id="Name" placeholder="">
+                                </div>
                             </div>
                             <div class="field field-default">
-                                <label for="mail-registration">@mail</label>
-                                <input type="text" id="mail-registration" placeholder="">
+                                <div class="field-number">3</div>
+                                <div class="field-default-content">
+                                    <label for="Name">@mail</label>
+                                    <input type="text" id="Name" placeholder="">
+                                </div>
                             </div>
                             <div class="field field-default">
-                                <label for="Phone">Phone</label>
-                                <input type="text" id="Phone" placeholder="">
+                                <div class="field-number">4</div>
+                                <div class="field-default-content">
+                                    <label for="Name">@mail</label>
+                                    <input type="text" id="Name" placeholder="">
+                                </div>
+                            </div>
+                            <div class="field field-default">
+                                <div class="field-number">5</div>
+                                <div class="field-default-content">
+                                    <label for="Name">@mail</label>
+                                    <input type="text" id="Name" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="registration-content_col">
+                            <div class="field field-default">
+                                <div class="field-number">1</div>
+                                <div class="field-default-content">
+                                    <label for="Name">Phone</label>
+                                    <input type="text" id="Name" placeholder="">
+                                </div>
+                            </div>
+                            <div class="field field-default">
+                                <div class="field-number">2</div>
+                                <div class="field-default-content">
+                                    <label for="Name">Phone</label>
+                                    <input type="text" id="Name" placeholder="">
+                                </div>
+                            </div>
+                            <div class="field field-default">
+                                <div class="field-number">3</div>
+                                <div class="field-default-content">
+                                    <label for="Name">Phone</label>
+                                    <input type="text" id="Name" placeholder="">
+                                </div>
+                            </div>
+                            <div class="field field-default">
+                                <div class="field-number">4</div>
+                                <div class="field-default-content">
+                                    <label for="Name">Phone</label>
+                                    <input type="text" id="Name" placeholder="">
+                                </div>
+                            </div>
+                            <div class="field field-default">
+                                <div class="field-number">5</div>
+                                <div class="field-default-content">
+                                    <label for="Name">Phone</label>
+                                    <input type="text" id="Name" placeholder="">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -690,14 +756,21 @@
                         <label for="checkbox_2">Agree to receive notification emails</label>
                     </div>
                 </div>
+                <ul class="registration-steps" data-step="1">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
                 <button class="btn-close">Register Account</button>
                 <button class="btn-close btn-next">Next</button>
             </form>
         </div>
     </section>
-    <section class="pop-up pop-up-settings">
+    <section class="pop-up pop-up-settings pop-up-mobile">
         <div class="pop-up-registration__title">
-            <h4>Account settings</h4>
+            <h1>Account settings</h1>
         </div>
         <hr>
         <form action="#" class="pop-up-settings__form">
@@ -759,10 +832,10 @@
             </div>
         </form>
     </section>
-    <section class="pop-up account-orders" >
+    <section class="pop-up account-orders">
         <h1>Account orders</h1>
         <hr>
-        <div class="account-orders__wrap d-flex" data-simplebar>
+        <div class="account-orders__wrap d-flex">
             <div class="account-orders__wrap-content">
                 <div class="account-orders__item-wrap orders d-flex align-items-center flex-column">
                     <div class="order__title">Cargo Market

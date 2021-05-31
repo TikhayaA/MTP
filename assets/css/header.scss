@@ -90,7 +90,7 @@
             width: 87%;
         }
         @media screen and (max-width: 1050px){
-            width: 33%;
+            width: 25%;
             height: 100%;
             background: #024C76;
             top: 0;
@@ -102,7 +102,7 @@
             display: none;
         }
         @media screen and (max-width: 600px){
-            width: 70%;
+            width: 55%;
         }
         &__main{
             flex-direction: row;
@@ -228,16 +228,6 @@
                 
                 }
             }
-            span {
-                width: 15px;
-                height: 15px;
-                line-height: 15px;
-                top: -7px;
-                right: -6px;
-                @media screen and (max-width: 1300px){
-                    
-                }
-            }
         }
         &__info {
             align-items: flex-end;
@@ -256,6 +246,14 @@
             }
             img{
                 width: 25px;
+            }
+            span:last-child {
+                right: 10px;
+                top: 1px;
+                @media all and (max-width: 1700px){
+                    right: 12px;
+                    top: 3px;
+                }
             }
         }
         &__icon-setting{
@@ -463,9 +461,8 @@ body.touch .menu__list.active .menu__arrow{
         -moz-transition: left 0.3s ease 0s ;
         -ms-transition: left 0.3s ease 0s ;
         -o-transition: left 0.3s ease 0s ;
-        &_active{
-            display: block;
-        }
-        }
-        
+            &_active{
+                display: block;
+            }
+    } 
 }

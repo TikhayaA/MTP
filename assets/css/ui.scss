@@ -1,6 +1,6 @@
 .input-block {
     position: relative;
-    span {
+    & > span {
         margin-top: 3px;
         font-family: 'Montserrat';
         font-style: normal;
@@ -10,11 +10,13 @@
         letter-spacing: 0.01em;
         color: #9FA4BB;
         display: inline-block;
-        bottom: -18px;
+        top: 57px;
         left: 0;
+        width: 100%;
         @media all and (max-width: 1700px) {
             font-size: 10px;
             line-height: 14px;
+            top: 42px;
         }
 
         span {
@@ -22,8 +24,11 @@
             width: max-content;
             display: inline-block;
             width: max-content;
-            left: 130%;
+            right: 0;
             bottom: 0;
+            &.position {
+                position: absolute;
+            }
         }
         &.position {
             position: absolute;
@@ -53,6 +58,7 @@
         @media all and (max-width: 1700px) {
             font-size: 10px;
             line-height: 12px;
+            margin-bottom: 3px;
         }
     }
     &-ui {
@@ -103,6 +109,9 @@
 }
 .textarea-block {
     width: 100%;
+    @media screen and (max-width: 1700px){
+        margin-top: -22px;
+     }
 
     &.readonly {
         label {
@@ -120,6 +129,7 @@
         @media screen and (max-width: 1700px){
             font-size: 10px;
             line-height: 12px;
+            margin-bottom: 5px;
         }
     }
     textarea {
@@ -151,7 +161,11 @@
             width: 11px;
             height: 11px;
             border-radius: 1px;
-        }
+            -webkit-border-radius: 1px;
+            -moz-border-radius: 1px;
+            -ms-border-radius: 1px;
+            -o-border-radius: 1px;
+}
     }
     input[type="checkbox"] {
         display: none;
@@ -192,7 +206,15 @@
         color: #556274;
         margin: 0px 10px;
         padding-left: 20px;
-
+        @media screen and (max-width: 1700px) {
+            font-size: 12px;
+        }
+        @media screen and (max-width: 1050px) {
+            color: #fff;
+        }
+        @media screen and (max-width: 768px) {
+            font-size: 11px;
+        }
         &::after {
             content: '';
             width: 20px;
@@ -202,12 +224,23 @@
             box-sizing: border-box;
             position: absolute;
             left: 0;
-            top: -2px;
+            top: 0px;
+            @media screen and (max-width: 1700px) {
+                width: 18px;
+                height: 18px;
+            }
+            @media screen and (max-width: 768px) {
+                width: 15px;
+                height: 15px;
+            }
         }
     }
 }
 .logo-form {
     padding-left: 25px;
+    @media all and (max-width: 1700px) {
+        margin-top: -50px;
+    }
 }
 
 .radio-block {
@@ -235,6 +268,19 @@
         font-size: 25px;
         line-height: 29px;
         color: #000000;
+        @media screen and (max-width: 1700px) {
+            font-size: 20px;
+            line-height: 23px;
+        }
+        @media screen and (max-width: 1050px) {
+            border: none;
+            color: $color_light-text;
+            background: none;
+        }
+        @media screen and (max-width: 425px) {
+            font-size: 14px;
+            line-height: 16px;
+        }
 
         &::after {
             content: '';
@@ -245,6 +291,10 @@
             box-sizing: border-box;
             position: absolute;
             right: -28px;
+            @media screen and (max-width: 1700px) {
+                width: 18px;
+                height: 18px;
+            }
         
         }
     }
@@ -260,6 +310,9 @@
     font-size: 12px;
     letter-spacing: 0.01em;
     color: #C4C4C4;
+    @media all and (max-width: 1700px) {
+        font-size: 10px;
+    }
 }
 .star-under-btn {
     font-style: normal;
@@ -299,25 +352,43 @@ label {
     .input-select-amount {
         .input-block {
             width: calc(100% - 57px);
+            @media screen and (max-width: 1700px){
+                width: calc(100% - 43px);
+            }
         }
         .select-block {
             width: 50px;
+            @media screen and (max-width: 1700px){
+                width: 36px;
+            }
         }
     }
     .input-select-price {
         .input-block {
             width: calc(100% - 57px);
+            @media screen and (max-width: 1700px){
+                width: calc(100% - 43px);
+            }
         }
         .select-block {
             width: 50px;
+            @media screen and (max-width: 1700px){
+                width: 36px;
+            }
         }
     }
     .input-select-quantity {
         .input-block {
             width: calc(100% - 74px);
+            @media screen and (max-width: 1700px){
+                width: calc(100% - 54px);
+            }
         }
         .select-block {
             width: 67px;
+            @media screen and (max-width: 1700px){
+                width: 47px;
+            }
         }
     }
 }
@@ -368,10 +439,15 @@ label {
 .freight-auction-page {
     .input-select-amount {
         .input-block {
-            width: calc(100% - 42px);
+            width: calc(100% - 56px);
+            @media all and (max-width: 1700px) {
+                width: calc(100% - 47px);
+            }
         }
         .select-block {
             width: 50px;
+            z-index: 6;
+            position: relative;
             @media all and (max-width: 1700px) {
                 width: 37px;
             }
@@ -379,7 +455,10 @@ label {
     }
     .input-select-quantity {
         .input-block {
-            width: calc(100% - 51px);
+            width: calc(100% - 74px);
+            @media all and (max-width: 1700px) {
+                width: calc(100% - 58px);
+            }
         }
         .select-block {
             width: 67px;
