@@ -123,12 +123,20 @@
         @include adaptive-fonts(16, 14);
         letter-spacing: 0.01em;
         display: flex;
+        display: -webkit-box; 
+        display: -moz-box;    
+        display: -ms-flexbox;  
+        display: -webkit-flex;
     }
     &__title-btn{
         margin-left: 5px;
         border: none;
         background: none;
         display: flex;
+        display: -webkit-box; 
+        display: -moz-box;    
+        display: -ms-flexbox;  
+        display: -webkit-flex;
     }
     &__string{
         margin-bottom: 5px;

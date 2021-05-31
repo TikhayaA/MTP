@@ -3552,7 +3552,11 @@ label sup {
   font-size: 16px;
   line-height: 140%;
   letter-spacing: 0.01em;
-  display: flex; }
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex; }
   @media (max-width: 767px) {
     .order__title {
       font-size: calc(14px + 3.4 * ((110vw - 320px) / 1440)); } }
@@ -3563,7 +3567,11 @@ label sup {
   margin-left: 5px;
   border: none;
   background: none;
-  display: flex; }
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex; }
 .order__string {
   margin-bottom: 5px; }
   .order__string button {
