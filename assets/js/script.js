@@ -282,6 +282,7 @@ if (tableBtnBuy) {
 
 const popUp = document.querySelectorAll('.pop-up'),
     popUpOpen = document.querySelectorAll('.pop-up-open'),
+    popUpWrapper = document.querySelectorAll('.popup-wrapper'),
     closeCross = document.querySelectorAll('.close-cross-popup');
 
 
@@ -299,11 +300,19 @@ closeCross.forEach((element, i) => {
         popUp.forEach(el => {
             el.classList.remove('pop-up_open');
         });
+        console.log(popUpWrapper);
+        popUpWrapper.forEach(el => {
+            el.classList.remove('pop-up_open');
+        });
     });
 });
 popupBtnClose.forEach((element, i) => {
     element.addEventListener('click', () => {
         popUp.forEach(el => {
+            el.classList.remove('pop-up_open');
+        });
+        console.log(popUpWrapper);
+        popUpWrapper.forEach(el => {
             el.classList.remove('pop-up_open');
         });
     });

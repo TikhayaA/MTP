@@ -1,25 +1,36 @@
-.pop-up.account-orders{
-    background: $bgservice;
-    top: 120px;
-    left: 0;
-    transform: translate(0px, 0px);
-    width: 100%;
-    border-radius: 0;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
-    padding: 0 10px;
-    // @media screen and (max-width: 1700px){
-    //     height: 85vh;
-    // }
-    @media screen and (max-width: 700px){
-        // height: 100vh;
-        top:0px;
-        padding: 0;
-    }
-}
 .account-orders{ 
+    .popup-wrap-block{
+        width: 100%;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        padding: 1px 10px;
+        background: $bgservice;
+        left: 0;
+        @media screen and (min-width: 1050px){
+            transform: translate(0, 120px);
+            -webkit-transform: translate(0, 120px);
+            -moz-transform: translate(0, 120px);
+            -ms-transform: translate(0, 120px);
+            -o-transform: translate(0, 120px);
+        }
+        @media screen and (max-width: 1050px){
+            transform: translate(0, 76px);
+            -webkit-transform: translate(0, 76px);
+            -moz-transform: translate(0, 76px);
+            -ms-transform: translate(0, 76px);
+            -o-transform: translate(0, 76px);
+        }
+        @media screen and (max-width: 425px){
+            transform: translate(0, 0px);
+            -webkit-transform: translate(0, 0px);
+            -moz-transform: translate(0, 0px);
+            -ms-transform: translate(0, 0px);
+            -o-transform: translate(0, 0px);
+        }
+    }
     h1{
         font-size: 30px;
         font-style: normal;
@@ -212,8 +223,12 @@
         height: 330px;
         margin: 13px 0 40px;
         position: relative;
+        margin-right: 20px;
         @media screen and (max-width: 1700px){
             height: 325px;
+        }
+        @media screen and (max-width: 425px){
+            margin-right: 0px;
         }
     }
     &__lines {

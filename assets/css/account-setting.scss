@@ -1,49 +1,28 @@
 .pop-up-settings {
-    width: 65%;
-    padding: 19px 78px 70px 78px;
-    top: 0;
-    transform: translate(-50%, 120px);
-    height: 84vh;
-    @media screen and (min-width: 1700px) {
-        max-width: 1000px;
-        border-radius: 0;
-        padding: 22px 88px 87px;
+    .popup-wrap-block{
+        width: 65%;
+        padding: 19px 78px 70px 78px;
+        @media screen and (min-width: 1700px) {
+            max-width: 1000px;
+            padding: 22px 88px 87px;
+        }
+        @media screen and (max-width: 1200px) {
+            width: 85%;
+        }
+        @media screen and (max-width: 900px) {
+            width: 95%;
+        }
+        @media screen and (max-width: 767px) {
+            width: 100%;
+            padding: 14px 33px 54px;
+        }
     }
-    @media screen and (max-width: 1200px) {
-        width: 85%;
-    }
-    @media screen and (max-width: 1050px) {
-        transform: translate(-50%, 76px);
-    }
-    @media screen and (max-width: 900px) {
-        width: 95%;
-    }
-    @media screen and (max-width: 767px) {
-        overflow: auto;
-        width: 100%;
-        padding: 14px 33px 54px;
-        transform: translate(-50%, 0px);
-        -webkit-transform: translate(-50%, 0px);
-        -moz-transform: translate(-50%, 0px);
-        -ms-transform: translate(-50%, 0px);
-        -o-transform: translate(-50%, 0px);
-    }
-    @media screen and (max-width: 715px) {
-        background: $bg-header;
-        height: 100vh;
-    }
-    
     hr{
         @media screen and (max-width: 715px) {
             display: none;
         }
     }
-    h1 {
-        @media all and (max-width: 715px){
-            margin-bottom: 16px;
-            color: $color_light-text;
-        }
-    }
+    
     &__wrap-form{
         display: grid;
         grid-template-columns: repeat(2, 40.5%);
