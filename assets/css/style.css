@@ -3480,13 +3480,9 @@ label sup {
   margin-top: 30px; }
   @media screen and (max-width: 1700px) {
     .account-orders h1 {
-      font-size: 24px;
-      line-height: 28px;
-      margin: 19px 0 14px; } }
+      margin: 19px 0 0px; } }
   @media screen and (max-width: 700px) {
     .account-orders h1 {
-      font-size: 18px;
-      line-height: 21px;
       margin: 18px 0 35px; } }
 @media screen and (max-width: 700px) {
   .account-orders hr {
@@ -3515,6 +3511,11 @@ label sup {
     height: 100%;
     width: 50px;
     background: #F1FAFF !important; }
+    @media all and (max-width: 767px) {
+      .account-orders__wrap .owl-prev, .account-orders__wrap .owl-next {
+        width: 30px;
+        top: 8px;
+        height: 30px; } }
   .account-orders__wrap .owl-next {
     right: 0;
     transform: translate(0, -50%);
@@ -3541,6 +3542,9 @@ label sup {
   margin-right: 20px;
   padding-bottom: 10px;
   position: relative; }
+  @media screen and (max-width: 76700px) {
+    .account-orders__item-wrap {
+      margin-right: 0px; } }
 .account-orders .container {
   position: relative;
   max-width: 1850px;
@@ -3694,15 +3698,17 @@ label sup {
   .prompt-orders__string {
     font-style: normal;
     font-weight: 400;
+    font-size: 16px;
     line-height: 15px;
     color: #6C7077;
     margin-bottom: 25px; }
-    @media (max-width: 767px) {
+    @media screen and (max-width: 1700px) {
       .prompt-orders__string {
-        font-size: calc(10px + 3.4 * ((110vw - 320px) / 1440)); } }
-    @media (min-width: 767px) {
+        font-size: 12px;
+        line-height: 14px; } }
+    @media screen and (max-width: 767px) {
       .prompt-orders__string {
-        font-size: calc(10px+2 * ((100vw) / 1440)); } }
+        margin-bottom: 15px; } }
     .prompt-orders__string img {
       margin-right: 18px; }
 
@@ -3729,10 +3735,10 @@ hr {
     display: block !important; }
   .pop-up h1 {
     font-family: 'Roboto', sans-serif;
-    line-height: 36px;
+    line-height: 35px;
     letter-spacing: 0.01em;
     color: #0F0F11;
-    font-size: 32px;
+    font-size: 30px;
     margin-bottom: 8px;
     font-weight: 600;
     text-align: center; }
@@ -3752,6 +3758,10 @@ hr {
   border-radius: 20px;
   width: 391px;
   padding: 31px 0 58px; }
+  @media all and (max-width: 767px) {
+    .pop-up-delete {
+      width: 80%;
+      padding: 20px 0 30px; } }
   .pop-up-delete_active {
     display: block; }
   .pop-up-delete__btn {
@@ -5118,6 +5128,7 @@ hr {
       width: 100%;
       max-width: 100%;
       height: 100vh;
+      max-height: 100%;
       top: 0;
       background: #024C76;
       transform: translate(-50%, 0px);
@@ -5394,6 +5405,9 @@ hr {
   .pop-up-registration .close-cross-popup {
     right: 12px;
     top: 10px; }
+    @media screen and (max-width: 1050px) {
+      .pop-up-registration .close-cross-popup:after, .pop-up-registration .close-cross-popup:before {
+        background: #FFFFFF; } }
   .pop-up-registration .registration-steps {
     display: none;
     justify-content: space-between;
@@ -5478,7 +5492,8 @@ hr {
       -o-transform: translate(-50%, 0px); } }
   @media screen and (max-width: 715px) {
     .pop-up-settings {
-      background: #024C76; } }
+      background: #024C76;
+      height: 100vh; } }
   @media screen and (max-width: 715px) {
     .pop-up-settings hr {
       display: none; } }

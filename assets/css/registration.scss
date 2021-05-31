@@ -13,6 +13,7 @@
         width: 100%;
         max-width: 100%;
         height: 100vh;
+        max-height: 100%;
         top:0;
         background: $bg-header;
         transform: translate(-50%, 0px);
@@ -356,6 +357,11 @@
     .close-cross-popup{
         right: 12px;
         top: 10px;
+        &:after, &:before{
+            @media screen and (max-width: 1050px) {
+                background: $color_light-text;
+            }
+        }
     }
     .registration-steps {
         display: none;
