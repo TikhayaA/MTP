@@ -453,7 +453,7 @@ document.querySelectorAll('.simplebar-child').forEach(el => {
 function owlInitialize() {
     if ($(window).width() < 1700) {
         let arrowImage;
-        if ($(window).width() > 600) {
+        if ($(window).width() > 767) {
             arrowImage = ['<img src="assets/img/sidebar-arrow.svg" alt="" class="">', '<img src="assets/img/sidebar-arrow.svg" alt="" class="">'];
         } else {
             arrowImage = ['<img src="assets/img/sidebar-arrow-mob.svg" alt="" class="">', '<img src="assets/img/sidebar-arrow-mob.svg" alt="" class="">'];

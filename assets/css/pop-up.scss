@@ -7,7 +7,7 @@
     z-index: 10;
     left: 50%;
     max-height: 780px;
-    overflow: auto;
+    // overflow: auto;
     transform: translate(-50%, -50%);    
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
@@ -973,5 +973,14 @@
         -moz-border-radius: 0;
         -ms-border-radius: 0;
         -o-border-radius: 0;
+    }
+}
+.pop-up-wrap{
+    height: 85vh;
+    overflow: auto;
+    max-height: 100%;
+    @media screen and (max-width: 767px){
+       height: 100vh;
+       padding: 0 10px;
     }
 }

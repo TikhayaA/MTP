@@ -3455,20 +3455,16 @@ label sup {
   left: 0;
   transform: translate(0px, 0px);
   width: 100%;
-  overflow: auto;
   border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   -o-border-radius: 0;
   padding: 0 10px; }
-  @media screen and (max-width: 1200px) {
-    .pop-up.account-orders {
-      top: 120px; } }
   @media screen and (max-width: 700px) {
     .pop-up.account-orders {
-      height: 100vh;
-      top: 0px; } }
+      top: 0px;
+      padding: 0; } }
 
 .account-orders h1 {
   font-size: 30px;
@@ -3537,7 +3533,7 @@ label sup {
       margin: 50px auto 35px; } }
   @media screen and (max-width: 767px) {
     .account-orders .btn-close {
-      margin: 104px auto 35px; } }
+      margin: 30px auto 25px; } }
 .account-orders__item-wrap {
   margin-right: 20px;
   padding-bottom: 10px;
@@ -3556,7 +3552,7 @@ label sup {
   font-size: 16px;
   line-height: 140%;
   letter-spacing: 0.01em;
-  position: relative; }
+  display: flex; }
   @media (max-width: 767px) {
     .order__title {
       font-size: calc(14px + 3.4 * ((110vw - 320px) / 1440)); } }
@@ -3567,7 +3563,7 @@ label sup {
   margin-left: 5px;
   border: none;
   background: none;
-  position: absolute; }
+  display: flex; }
 .order__string {
   margin-bottom: 5px; }
   .order__string button {
@@ -3594,10 +3590,10 @@ label sup {
     text-align: center; }
   .order__string > :nth-child(4) {
     width: 10%;
-    text-align: center; }
+    justify-content: center; }
   .order__string > :nth-child(5) {
     width: 10%;
-    text-align: center; }
+    justify-content: center; }
 .order__string-wrap {
   overflow: auto;
   height: 300px; }
@@ -3638,7 +3634,7 @@ label sup {
 .order__lines div:nth-child(2) {
   left: 38%; }
 .order__lines div:nth-child(3) {
-  left: 80%; }
+  left: 81%; }
 .order__lines div:nth-child(4) {
   left: 90.2%; }
 .order__line {
@@ -3695,6 +3691,9 @@ label sup {
 
 .prompt-orders {
   position: absolute; }
+  @media screen and (max-width: 767px) {
+    .prompt-orders {
+      position: relative; } }
   .prompt-orders__string {
     font-style: normal;
     font-weight: 400;
@@ -3724,7 +3723,6 @@ hr {
   z-index: 10;
   left: 50%;
   max-height: 780px;
-  overflow: auto;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -4591,6 +4589,15 @@ hr {
     -moz-border-radius: 0;
     -ms-border-radius: 0;
     -o-border-radius: 0; } }
+
+.pop-up-wrap {
+  height: 85vh;
+  overflow: auto;
+  max-height: 100%; }
+  @media screen and (max-width: 767px) {
+    .pop-up-wrap {
+      height: 100vh;
+      padding: 0 10px; } }
 
 .companies-logo-fixed {
   background: #217381 url("../img/companies-bg.png");
