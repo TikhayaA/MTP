@@ -63,11 +63,7 @@
 @font-face {
     font-family: 'Helvetica';
     src: url('HelveticaNeueCyr-Bold.eot');
-    src: local('../fonts/HelveticaNeueCyr-Bold'),
-        url('../fonts/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/HelveticaNeueCyr-Bold.woff2') format('woff2'),
-        url('../fonts/HelveticaNeueCyr-Bold.woff') format('woff'),
-        url('../fonts/HelveticaNeueCyr-Bold.ttf') format('truetype');
+    src: local('../fonts/HelveticaNeueCyr-Bold');
     font-weight: bold;
     font-style: normal;
 }
