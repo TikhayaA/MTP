@@ -47,21 +47,17 @@
   font-style: normal; }
 @font-face {
   font-family: 'Helvetica';
-  src: url("HelveticaNeueCyr-Bold.eot");
-  src: local("../fonts/HelveticaNeueCyr-Bold");
+  src: url("../fonts/HelveticaNeueCyr-Bold.eot");
   font-weight: bold;
   font-style: normal; }
 @font-face {
   font-family: 'Helvetica';
   src: url("../fonts/HelveticaNeueCyr-Medium.eot");
-  src: local("HelveticaNeueCyr-Medium"), url("../fonts/HelveticaNeueCyr-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Medium.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Medium.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal; }
 @font-face {
   font-family: 'Helvetica';
   src: url("../fonts/HelveticaNeueCyr-Roman.eot");
-  src: local("HelveticaNeueCyr-Roman"), url("../fonts/HelveticaNeueCyr-Roman.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Roman.ttf") format("truetype");
-  font-weight: normal;
   font-style: normal; }
 html {
   scrollbar-color: #9FA4BB rgba(216, 216, 216, 0.47);
@@ -3746,7 +3742,7 @@ hr {
   position: fixed;
   box-sizing: border-box;
   top: 50%;
-  z-index: 10;
+  z-index: 11;
   left: 50%;
   max-height: 780px;
   overflow: auto;
@@ -4189,7 +4185,8 @@ hr {
     border: none;
     font-weight: 500;
     position: relative;
-    padding: 0; }
+    padding: 0;
+    font-family: 'Roboto', sans-serif; }
     @media screen and (max-width: 767px) {
       .pop-up-log-in .log-in-form .forgot {
         color: #FFFFFF; } }
@@ -4500,7 +4497,8 @@ hr {
   .pop-up-forgot-password p {
     margin: 20px auto 0;
     width: 80%;
-    color: #556274; }
+    color: #556274;
+    font-family: 'Roboto', sans-serif; }
     @media screen and (max-width: 500px) {
       .pop-up-forgot-password p {
         width: 100%; } }
@@ -4649,6 +4647,7 @@ hr {
   .pop-up-mobile {
     width: 100%;
     height: fit-content;
+    overflow: auto;
     border-radius: 0;
     padding: 14px 18px 15px;
     left: 0;
@@ -4662,6 +4661,9 @@ hr {
     -ms-border-radius: 0;
     -o-border-radius: 0;
     background: #024C76; } }
+.pop-up-mobile::-webkit-scrollbar {
+  width: 0;
+  display: none; }
 @media all and (max-width: 715px) {
   .pop-up-mobile h1 {
     margin-bottom: 16px;

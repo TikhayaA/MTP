@@ -4,7 +4,7 @@
     position: fixed;
     box-sizing: border-box;
     top: 50%;
-    z-index: 10;
+    z-index: 11;
     left: 50%;
     max-height: 780px;
     overflow: auto;
@@ -480,6 +480,7 @@
             font-weight: 500;
             position: relative;
             padding: 0;
+            font-family: 'Roboto', sans-serif;
             @media screen and (max-width: 767px) {
                 color: $color_light-text;
             }
@@ -846,6 +847,7 @@
         margin: 20px auto 0;
         width: 80%;
         color: #556274;
+        font-family: 'Roboto', sans-serif;
         @media screen and (max-width: 500px){
             width: 100%;
         }
@@ -1015,6 +1017,7 @@
     @media screen and (max-width: 767px) {
         width: 100%;
         height: fit-content;
+        overflow: auto;
         border-radius: 0;
         padding: 14px 18px 15px;
         left: 0;
@@ -1028,6 +1031,10 @@
         -ms-border-radius: 0;
         -o-border-radius: 0;
         background: $bg-header;
+    }
+    &::-webkit-scrollbar { 
+        width: 0; 
+        display: none;
     }
     h1 {
         @media all and (max-width: 715px){
