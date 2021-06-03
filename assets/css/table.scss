@@ -138,9 +138,6 @@ html {
                 @media all and (max-width: 1700px) {
                     height: 21px;
                     line-height: 21px;
-                    // position: fixed;
-                    // width: calc(100% - 35px);
-                    // margin-top: -5px;
                 }
                 img{
                     @media all and (max-width: 1700px) {
@@ -169,12 +166,10 @@ html {
             background: #D8EEFA;
             @media all and (max-width: 1366px) {
                 width: calc(1366px - 30px);
-                overflow: auto;
                 position: relative;
             }
             .table_data-content {
                 height: 160px;
-                overflow: auto;
             }
         }
     }

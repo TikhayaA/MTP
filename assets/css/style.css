@@ -1952,11 +1952,9 @@ html {
       @media all and (max-width: 1366px) {
         .table_content-fixed {
           width: calc(1366px - 30px);
-          overflow: auto;
           position: relative; } }
       .table_content-fixed .table_data-content {
-        height: 160px;
-        overflow: auto; }
+        height: 160px; }
   .table_data-header {
     background: #B6DAED;
     border-bottom: 2px solid #000000; }
@@ -2991,7 +2989,7 @@ label sup {
         @media all and (max-width: 1700px) {
           .create-order__item .item-row > .input-block {
             width: calc(100% / 3 - 45px);
-            margin-bottom: 23px; } }
+            margin-bottom: 20px; } }
         .create-order__item .item-row > .input-block:nth-child(3n) {
           margin-right: 0; }
       .create-order__item .item-row .tooltip_underline {
@@ -3674,7 +3672,7 @@ label sup {
     position: absolute;
     top: 50%;
     height: 100%;
-    width: 50px;
+    width: 21px;
     background: #F1FAFF !important; }
     @media all and (max-width: 767px) {
       .account-orders__wrap .owl-prev, .account-orders__wrap .owl-next {
@@ -5303,7 +5301,7 @@ hr {
 
 .logo-list {
   background: #E1F5FF;
-  height: calc(100% - 146px);
+  height: calc(100% - 100px);
   overflow: auto; }
   .logo-list__data {
     height: 100vh; }
