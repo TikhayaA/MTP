@@ -2217,6 +2217,9 @@ html {
     .world-fleet-page .textarea-block textarea {
       height: 95px; } }
 @media all and (max-width: 1700px) {
+  .world-fleet-page .create-order .textarea-block textarea {
+    height: 105px; } }
+@media all and (max-width: 1700px) {
   .world-fleet-page .order-photos__title {
     font-size: 10px;
     line-height: 12px; } }

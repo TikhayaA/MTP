@@ -510,6 +510,11 @@ html {
             height: 95px;
         }
     }
+    .create-order .textarea-block textarea{
+        @media all and (max-width: 1700px) {
+            height: 105px;
+        }
+    }
     .order-photos__title{
         @media all and (max-width: 1700px) {
             font-size: 10px;
