@@ -413,6 +413,10 @@ body.touch .menu__list.active .menu__arrow{
             top: 75px;
             top: 20px;
             z-index: 6;
+            @media screen and (max-width: 767px) {
+                width: 15px;
+                height: 15px;
+            }
             &::after, span{
                 left: 0;
                 position: absolute;

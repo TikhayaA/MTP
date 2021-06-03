@@ -1,7 +1,6 @@
 html {
     overflow: auto;
 }
-
 .table {
     display: flex;
     width: 100%;
@@ -26,10 +25,11 @@ html {
         height: calc(100% - 154px);
         overflow: hidden;
         @media all and (max-width: 1700px) {
-            width: 270px;
-            padding: 30px 44px 37px 22px;
+            width: 234px;
+            padding: 11px 44px 37px 22px;
             left: -240px;
             height: calc(100% - 152px);
+            left: -202px;
         }
         img {
             position: absolute;
@@ -48,11 +48,31 @@ html {
             &>* {
                 margin-bottom: 40px;
                 @media all and (max-width: 1700px) {
-                    margin-bottom: 31px;
+                    margin-bottom: 13px;
                  }
+            }
+            .select{
+                @media all and (max-width: 1700px) {
+                    height: auto;
+                }
             }
             .inputs_block>* {
                 margin-bottom: 40px;
+            }
+        }
+        .input-block label{
+            @media all and (max-width: 1700px) {
+                margin-bottom: 0px;
+            }
+        }
+        .select-block > label{
+            @media all and (max-width: 1700px) {
+                line-height: 0px;
+            }
+        }
+        .select__title{
+            @media all and (max-width: 1700px) {
+                line-height: 19px;
             }
         }
         .sidebar_btn {
@@ -115,6 +135,18 @@ html {
                 height: 30px;
                 line-height: 30px;
                 justify-content: center;
+                @media all and (max-width: 1700px) {
+                    height: 21px;
+                    line-height: 21px;
+                    // position: fixed;
+                    // width: calc(100% - 35px);
+                    // margin-top: -5px;
+                }
+                img{
+                    @media all and (max-width: 1700px) {
+                        width: 16px;
+                    }
+                }
             }
             .header-vesseis__title {
                 font-family: 'Montserrat';
@@ -249,7 +281,6 @@ html {
         }
         &-content {
             height: calc(100vh - 228px - 190px);
-            // overflow: auto;
         }
     }
     &_fixed {
@@ -334,6 +365,9 @@ html {
             display: flex;
             margin-bottom: 20px;
             align-items: baseline;
+            @media all and (max-width: 1700px) {
+                margin-bottom: 11px;
+            }
             &:last-child {
                 margin-bottom: 0;
             }
@@ -346,6 +380,9 @@ html {
                 color: #6C7077;
                 font-size: 10px;
                 line-height: 12px;
+                @media all and (max-width: 1700px) {
+                    padding-left: 19px;
+                }
                 span {
                     display: inline-block;
                     margin-left: 15px;
@@ -365,6 +402,9 @@ html {
                 @media all and (max-width: 1700px) {
                     font-size: 10px;
                     line-height: 12px;
+                    padding-left: 19px;
+                    width: 52%;
+                    margin-right: 5px;
                 }
             }
             &_value {
@@ -380,12 +420,20 @@ html {
                 @media all and (max-width: 1700px) {
                     font-size: 10px;
                     line-height: 12px;
+                    padding-left: 5px;
+                    width: 55%;
                 }
             }
         }
     }
 }
-
+.common-cargo-page{
+    .textarea-block{
+        @media all and (max-width: 1700px) {
+            margin-top: -14px;
+        }
+    }
+}
 .freight-auction-page {
     .table_data-header ul {
         grid-template-columns: 30px 137px 105px 357px 357px 177px 132px 1.1fr 67px 125px 135px 125px;
@@ -399,11 +447,19 @@ html {
             grid-template-columns: 1.6% 7.25% 5.55% 18.9% 18.85% 9.4% 6.99% 7.57% 3.5% 6.65% 7.15% 6.6%;
         }
     }
+    .textarea-block{
+        @media all and (max-width: 1700px) {
+            margin-top: -9px;
+        }
+    }
 }
 
 .world-fleet-page {
     .table_data-item {
         grid-template-columns: 30px 200px 1fr 1fr 1fr 1fr 1fr 225px;
+        @media all and (max-width: 1700px) {
+            grid-template-columns: 22px 143px 1fr 0.9fr 0.9fr 0.9fr 1.1fr 220px;
+        }
         &>div {
             border-right: none;
             border-bottom: 5px solid #fff;
@@ -414,8 +470,13 @@ html {
                 justify-content: center;
             }
             &:nth-child(2) {
+                padding: 0px;
                 img {
-                    max-height: 128px;
+                    max-height: 140px;
+                    width: 100%;
+                    @media all and (max-width: 1700px) {
+                        max-height: 89px;
+                    }
                 }
             }
         }
@@ -425,21 +486,74 @@ html {
     }
     .table_data-content {
         height: calc(100vh - 210px - 152px);
+        @media all and (max-width: 1700px) {
+            height: calc(100vh - 240px - 63px);
+        }
     }
     .create-order__item {
         margin-right: 15px;
     }
+    .create-order__content {
+        @media all and (max-width: 1700px){
+            margin-top: 7px;
+        }
+    }
+    .create-order__title{
+        @media all and (max-width: 1700px){
+            line-height: 15px;
+        }
+    }
+    .popup-add-ship .create-order__photos{
+        margin: 23px 0 47px;
+        @media all and (max-width: 1700px) {
+            margin: 10px 0 47px;
+        }
+    }
+    .textarea-block textarea{
+        height: 158px;
+        @media all and (max-width: 1700px) {
+            height: 95px;
+        }
+    }
+    .order-photos__title{
+        @media all and (max-width: 1700px) {
+            font-size: 10px;
+            line-height: 12px;
+        }
+    }
+    .order-id__content{
+        @media all and (max-width: 1700px) {
+            margin-top: 10px;
+            line-height: 12px;
+        }
+        .textarea-block {
+            label{
+                @media all and (max-width: 1700px) {
+                    font-size: 10px;
+                    line-height: 12px;
+                }
+            }
+        }
+    }
+    
 }
 
 .header-vesseis {
     &+.table_content-data {
         height: 180px;
+        @media all and (max-width: 1700px) {
+            height: 127px;
+            overflow: auto;
+        }
+        @media all and (max-width: 1366px) {
+            width: calc(1366px - 30px);
+        }
     }
 }
 
 .table-data {
     &__card {
-        width: 33.33%;
+        min-width: 610px;
         display: flex;
         align-items: center;
         border: 5px solid #fff;
@@ -447,24 +561,48 @@ html {
         padding: 0 10px 0 5px;
         &> :nth-child(1) {
             margin: 0 5px;
+            @media all and (max-width: 1700px) {
+                margin: 0 3px 0 0;
+            }
+            >img{
+                @media all and (max-width: 1700px) {
+                    width: 13px;
+                }
+            }
+            
         }
         &> :nth-child(2) {
             margin-right: 10px;
+            @media all and (max-width: 1700px) {
+                width: 143px;
+                margin-right: 5px;
+            }
+            img{
+                width: 100%;
+            }
         }
         .table-data__column:last-child {
             margin-left: auto;
         }
+        @media all and (max-width: 1700px) {
+            min-width: 433px;
+        }
     }
     &__content-card {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: flex-start;
         @media all and (max-width: 1920px) {
             width: 1920px;
+        }
+        .simplebar-content {
+            display: flex;
         }
     }
     &__string {
         margin: 9px 0;
+        @media all and (max-width: 1700px) {
+            margin: 0px 0;
+        }
         &_title {
             font-family: 'Montserrat';
             font-style: normal;
@@ -512,13 +650,19 @@ html {
 
 .world-fleet {
     &>.table_content-data {
-        height: calc(100vh - 240px - 130px);
+        height: calc(100vh - 240px - 125px);
+        @media all and (max-width: 1700px) {
+            height: calc(100vh - 240px - 58px);
+        }
     }
     .inputs-block>* {
         margin-bottom: 20px;
     }
     .sidebar_btn {
         margin-top: 50px;
+        @media all and (max-width: 1700px) {
+            margin-top: 15px;
+        }
     }
     .order-id__header {
         background: #BFEBFF;
@@ -534,15 +678,34 @@ html {
         .input-block {
             width: 45%;
             margin-bottom: 23px;
+            @media all and (max-width: 1700px) {
+                margin-bottom: 14px;
+            }
+        }
+    }
+    .order-id__description{
+        @media all and (max-width: 1700px) {
+            justify-content: flex-start;
+            flex-direction: column;
         }
     }
     .order-id__photos {
-        margin: 40px 0;
+        margin: 23px 0 14px;
         width: 100%;
+        @media all and (max-width: 1700px) {
+            margin: 0px 0 14px;
+        }
     }
-    @media all and (max-width: 1300px) {
-        .table__btn_owner {
-            font-size: 14px;
+    &-page {
+        .table {
+            @media all and (max-width: 1366px) {
+                margin-bottom: 0;
+            }
+        }
+        .table_content-fixed {
+            @media all and (max-width: 1366px) {
+                height: 146px;
+            }
         }
     }
 }

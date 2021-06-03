@@ -471,7 +471,12 @@ body.touch .menu__list.active .menu__arrow {
       right: 20px;
       top: 75px;
       top: 20px;
-      z-index: 6; }
+      z-index: 6; } }
+  @media screen and (max-width: 1050px) and (max-width: 767px) {
+    .menu-mobile__close {
+      width: 15px;
+      height: 15px; } }
+  @media screen and (max-width: 1050px) {
       .menu-mobile__close::after, .menu-mobile__close span {
         left: 0;
         position: absolute;
@@ -755,12 +760,24 @@ body.touch .menu__list.active .menu__arrow {
   font-size: 12px;
   line-height: 22px;
   color: #000000; }
+  @media all and (max-width: 1700px) {
+    .table__btn_owner {
+      font-size: 8px;
+      line-height: 10px;
+      height: 28px;
+      padding: 0 14px; } }
   .table__btn_owner-default {
     background: rgba(151, 151, 151, 0.4);
     border-radius: 5px; }
   .table__btn_owner.btn-owner_big {
     font-size: 18px;
     padding: 17px 30px; }
+    @media all and (max-width: 1700px) {
+      .table__btn_owner.btn-owner_big {
+        font-size: 12px;
+        line-height: 15px;
+        padding: 0 29px;
+        height: 39px; } }
 
 .table_btn {
   background: #D8EEFA;
@@ -821,6 +838,9 @@ body.touch .menu__list.active .menu__arrow {
   box-sizing: border-box;
   border-radius: 50px;
   padding: 16px 25px; }
+  @media all and (max-width: 1700px) {
+    .sidebar_btn {
+      padding: 12px 25px; } }
   .sidebar_btn.active {
     background: #49FD2B;
     border: 1px solid #6C7077; }
@@ -1777,6 +1797,16 @@ body.touch .menu__list.active .menu__arrow {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px; } }
 
+@media all and (max-width: 1700px) {
+  .world-fleet-page .header_table-btns {
+    margin-left: 40px;
+    width: 273px; } }
+@media all and (max-width: 1700px) {
+  .world-fleet-page .header_table-btns .header_table-logo {
+    top: 9px;
+    width: 11%;
+    position: absolute; } }
+
 html {
   overflow: auto; }
 
@@ -1805,10 +1835,11 @@ html {
     overflow: hidden; }
     @media all and (max-width: 1700px) {
       .table_filter {
-        width: 270px;
-        padding: 30px 44px 37px 22px;
+        width: 234px;
+        padding: 11px 44px 37px 22px;
         left: -240px;
-        height: calc(100% - 152px); } }
+        height: calc(100% - 152px);
+        left: -202px; } }
     .table_filter img {
       position: absolute;
       top: 35%;
@@ -1824,9 +1855,21 @@ html {
       margin-bottom: 40px; }
       @media all and (max-width: 1700px) {
         .table_filter-content > * {
-          margin-bottom: 31px; } }
+          margin-bottom: 13px; } }
+    @media all and (max-width: 1700px) {
+      .table_filter-content .select {
+        height: auto; } }
     .table_filter-content .inputs_block > * {
       margin-bottom: 40px; }
+    @media all and (max-width: 1700px) {
+      .table_filter .input-block label {
+        margin-bottom: 0px; } }
+    @media all and (max-width: 1700px) {
+      .table_filter .select-block > label {
+        line-height: 0px; } }
+    @media all and (max-width: 1700px) {
+      .table_filter .select__title {
+        line-height: 19px; } }
     .table_filter .sidebar_btn {
       display: flex;
       margin-left: auto;
@@ -1880,6 +1923,13 @@ html {
         height: 30px;
         line-height: 30px;
         justify-content: center; }
+        @media all and (max-width: 1700px) {
+          .table_content-header.header-vesseis {
+            height: 21px;
+            line-height: 21px; } }
+        @media all and (max-width: 1700px) {
+          .table_content-header.header-vesseis img {
+            width: 16px; } }
       .table_content-header .header-vesseis__title {
         font-family: 'Montserrat';
         font-style: normal;
@@ -2047,6 +2097,9 @@ html {
     display: flex;
     margin-bottom: 20px;
     align-items: baseline; }
+    @media all and (max-width: 1700px) {
+      .table-data__row {
+        margin-bottom: 11px; } }
     .table-data__row:last-child {
       margin-bottom: 0; }
     .table-data__row_id {
@@ -2058,6 +2111,9 @@ html {
       color: #6C7077;
       font-size: 10px;
       line-height: 12px; }
+      @media all and (max-width: 1700px) {
+        .table-data__row_id {
+          padding-left: 19px; } }
       .table-data__row_id span {
         display: inline-block;
         margin-left: 15px; }
@@ -2075,7 +2131,10 @@ html {
       @media all and (max-width: 1700px) {
         .table-data__row_title {
           font-size: 10px;
-          line-height: 12px; } }
+          line-height: 12px;
+          padding-left: 19px;
+          width: 52%;
+          margin-right: 5px; } }
     .table-data__row_value {
       font-family: 'Montserrat';
       padding-left: 20px;
@@ -2089,7 +2148,13 @@ html {
       @media all and (max-width: 1700px) {
         .table-data__row_value {
           font-size: 10px;
-          line-height: 12px; } }
+          line-height: 12px;
+          padding-left: 5px;
+          width: 55%; } }
+
+@media all and (max-width: 1700px) {
+  .common-cargo-page .textarea-block {
+    margin-top: -14px; } }
 
 .freight-auction-page .table_data-header ul {
   grid-template-columns: 30px 137px 105px 357px 357px 177px 132px 1.1fr 67px 125px 135px 125px; }
@@ -2101,9 +2166,15 @@ html {
   @media all and (max-width: 1900px) {
     .freight-auction-page .table_data-item {
       grid-template-columns: 1.6% 7.25% 5.55% 18.9% 18.85% 9.4% 6.99% 7.57% 3.5% 6.65% 7.15% 6.6%; } }
+@media all and (max-width: 1700px) {
+  .freight-auction-page .textarea-block {
+    margin-top: -9px; } }
 
 .world-fleet-page .table_data-item {
   grid-template-columns: 30px 200px 1fr 1fr 1fr 1fr 1fr 225px; }
+  @media all and (max-width: 1700px) {
+    .world-fleet-page .table_data-item {
+      grid-template-columns: 22px 143px 1fr 0.9fr 0.9fr 0.9fr 1.1fr 220px; } }
   .world-fleet-page .table_data-item > div {
     border-right: none;
     border-bottom: 5px solid #fff;
@@ -2112,20 +2183,64 @@ html {
       display: flex;
       align-items: center;
       justify-content: center; }
-    .world-fleet-page .table_data-item > div:nth-child(2) img {
-      max-height: 128px; }
+    .world-fleet-page .table_data-item > div:nth-child(2) {
+      padding: 0px; }
+      .world-fleet-page .table_data-item > div:nth-child(2) img {
+        max-height: 140px;
+        width: 100%; }
+        @media all and (max-width: 1700px) {
+          .world-fleet-page .table_data-item > div:nth-child(2) img {
+            max-height: 89px; } }
 .world-fleet-page .header_table-btn {
   margin-top: 6px; }
 .world-fleet-page .table_data-content {
   height: calc(100vh - 210px - 152px); }
+  @media all and (max-width: 1700px) {
+    .world-fleet-page .table_data-content {
+      height: calc(100vh - 240px - 63px); } }
 .world-fleet-page .create-order__item {
   margin-right: 15px; }
+@media all and (max-width: 1700px) {
+  .world-fleet-page .create-order__content {
+    margin-top: 7px; } }
+@media all and (max-width: 1700px) {
+  .world-fleet-page .create-order__title {
+    line-height: 15px; } }
+.world-fleet-page .popup-add-ship .create-order__photos {
+  margin: 23px 0 47px; }
+  @media all and (max-width: 1700px) {
+    .world-fleet-page .popup-add-ship .create-order__photos {
+      margin: 10px 0 47px; } }
+.world-fleet-page .textarea-block textarea {
+  height: 158px; }
+  @media all and (max-width: 1700px) {
+    .world-fleet-page .textarea-block textarea {
+      height: 95px; } }
+@media all and (max-width: 1700px) {
+  .world-fleet-page .order-photos__title {
+    font-size: 10px;
+    line-height: 12px; } }
+@media all and (max-width: 1700px) {
+  .world-fleet-page .order-id__content {
+    margin-top: 10px;
+    line-height: 12px; } }
+@media all and (max-width: 1700px) {
+  .world-fleet-page .order-id__content .textarea-block label {
+    font-size: 10px;
+    line-height: 12px; } }
 
 .header-vesseis + .table_content-data {
   height: 180px; }
+  @media all and (max-width: 1700px) {
+    .header-vesseis + .table_content-data {
+      height: 127px;
+      overflow: auto; } }
+  @media all and (max-width: 1366px) {
+    .header-vesseis + .table_content-data {
+      width: calc(1366px - 30px); } }
 
 .table-data__card {
-  width: 33.33%;
+  min-width: 610px;
   display: flex;
   align-items: center;
   border: 5px solid #fff;
@@ -2133,19 +2248,38 @@ html {
   padding: 0 10px 0 5px; }
   .table-data__card > :nth-child(1) {
     margin: 0 5px; }
+    @media all and (max-width: 1700px) {
+      .table-data__card > :nth-child(1) {
+        margin: 0 3px 0 0; } }
+    @media all and (max-width: 1700px) {
+      .table-data__card > :nth-child(1) > img {
+        width: 13px; } }
   .table-data__card > :nth-child(2) {
     margin-right: 10px; }
+    @media all and (max-width: 1700px) {
+      .table-data__card > :nth-child(2) {
+        width: 143px;
+        margin-right: 5px; } }
+    .table-data__card > :nth-child(2) img {
+      width: 100%; }
   .table-data__card .table-data__column:last-child {
     margin-left: auto; }
+  @media all and (max-width: 1700px) {
+    .table-data__card {
+      min-width: 433px; } }
 .table-data__content-card {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; }
+  justify-content: flex-start; }
   @media all and (max-width: 1920px) {
     .table-data__content-card {
       width: 1920px; } }
+  .table-data__content-card .simplebar-content {
+    display: flex; }
 .table-data__string {
   margin: 9px 0; }
+  @media all and (max-width: 1700px) {
+    .table-data__string {
+      margin: 0px 0; } }
   .table-data__string_title {
     font-family: 'Montserrat';
     font-style: normal;
@@ -2184,11 +2318,17 @@ html {
         line-height: 12px; } }
 
 .world-fleet > .table_content-data {
-  height: calc(100vh - 240px - 130px); }
+  height: calc(100vh - 240px - 125px); }
+  @media all and (max-width: 1700px) {
+    .world-fleet > .table_content-data {
+      height: calc(100vh - 240px - 58px); } }
 .world-fleet .inputs-block > * {
   margin-bottom: 20px; }
 .world-fleet .sidebar_btn {
   margin-top: 50px; }
+  @media all and (max-width: 1700px) {
+    .world-fleet .sidebar_btn {
+      margin-top: 15px; } }
 .world-fleet .order-id__header {
   background: #BFEBFF; }
 .world-fleet .order-id__item,
@@ -2201,12 +2341,25 @@ html {
   .world-fleet .order-id__inputs .input-block {
     width: 45%;
     margin-bottom: 23px; }
+    @media all and (max-width: 1700px) {
+      .world-fleet .order-id__inputs .input-block {
+        margin-bottom: 14px; } }
+@media all and (max-width: 1700px) {
+  .world-fleet .order-id__description {
+    justify-content: flex-start;
+    flex-direction: column; } }
 .world-fleet .order-id__photos {
-  margin: 40px 0;
+  margin: 23px 0 14px;
   width: 100%; }
-@media all and (max-width: 1300px) {
-  .world-fleet .table__btn_owner {
-    font-size: 14px; } }
+  @media all and (max-width: 1700px) {
+    .world-fleet .order-id__photos {
+      margin: 0px 0 14px; } }
+@media all and (max-width: 1366px) {
+  .world-fleet-page .table {
+    margin-bottom: 0; } }
+@media all and (max-width: 1366px) {
+  .world-fleet-page .table_content-fixed {
+    height: 146px; } }
 
 .input-block.input-double span {
   font-size: 14px;
@@ -2241,8 +2394,7 @@ html {
   width: 100%;
   height: 30px;
   margin: 0 auto;
-  position: relative;
-  z-index: 5; }
+  position: relative; }
   .select-block > label {
     font-family: 'Montserrat';
     font-style: normal;
@@ -2377,8 +2529,7 @@ html {
     color: #9FA4BB;
     display: inline-block;
     top: 57px;
-    left: 0;
-    width: 100%; }
+    left: 0; }
     @media all and (max-width: 1700px) {
       .input-block > span {
         font-size: 10px;
@@ -2488,7 +2639,9 @@ html {
     padding: 10px; }
     @media screen and (max-width: 1700px) {
       .textarea-block textarea {
-        height: 123px; } }
+        height: 123px;
+        font-size: 10px;
+        line-height: 12px; } }
 
 .checkbox-block {
   justify-content: center;
@@ -2772,7 +2925,7 @@ label sup {
 
 .create-order {
   padding: 16px 40px 40px;
-  position: fixed; }
+  position: absolute; }
   @media all and (max-width: 1700px) {
     .create-order {
       overflow: auto; } }
@@ -2882,6 +3035,10 @@ label sup {
   @media all and (max-width: 1366px) {
     .create-order-block {
       width: 1366px; } }
+  .create-order .input-block {
+    position: relative; }
+    .create-order .input-block > span {
+      width: 100%; }
 
 .order-photos__slide {
   background: rgba(196, 196, 196, 0.3);
@@ -3300,8 +3457,8 @@ label sup {
     color: #9FA4BB; }
     @media all and (max-width: 1700px) {
       .order-id .textarea-block label {
-        font-size: 10px;
-        line-height: 12px; } }
+        font-size: 12px;
+        line-height: 14px; } }
 
 .show-last-attention {
   display: none;
@@ -3328,7 +3485,7 @@ label sup {
   height: auto; }
 @media all and (max-width: 1700px) {
   .cargo-market-page .textarea-block {
-    margin-top: -3px; } }
+    margin-top: 10px; } }
 
 .header-authorized {
   align-items: center;
@@ -3894,9 +4051,7 @@ hr {
     background: #C4C4C4;
     margin: 0; }
   .pop-up-message__wrap-string {
-    margin-bottom: 30px;
-    max-height: calc(100% - 70px);
-    overflow: auto; }
+    margin-bottom: 30px; }
     .pop-up-message__wrap-string_disabled {
       display: none; }
     .pop-up-message__wrap-string::-webkit-scrollbar {
@@ -3991,13 +4146,12 @@ hr {
   .pop-up-message .btn-close {
     margin: auto;
     position: relative;
-    z-index: 1; }
+    z-index: 1;
+    margin-top: 15px; }
 
 .message-wrap {
-  max-height: calc(100% - 65px);
   height: 100%;
-  display: none;
-  overflow: auto; }
+  display: none; }
   .message-wrap::-webkit-scrollbar {
     width: 0;
     display: none; }
@@ -4260,6 +4414,10 @@ hr {
   -moz-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
   -o-transform: translate(-50%, 0); }
+  @media all and (max-width: 1366px) {
+    .popup-add-ship {
+      left: calc(1366px / 2);
+      min-width: 1024px; } }
   @media all and (max-width: 1200px) {
     .popup-add-ship {
       width: 90%; } }
@@ -4269,26 +4427,46 @@ hr {
     width: 40%;
     margin-right: 10%;
     margin-bottom: 20px; }
+    @media all and (max-width: 1700px) {
+      .popup-add-ship .item-row > .input-block {
+        margin-bottom: 10px; } }
+  @media all and (max-width: 1700px) {
+    .popup-add-ship .input-block-ui {
+      height: 19px; } }
   .popup-add-ship .item-row > .input-block:nth-child(3n) {
     margin-right: 10%; }
   .popup-add-ship .item-row > .input-block:nth-child(2n) {
     margin-right: 0; }
   .popup-add-ship .table_btn {
     margin-top: 40px; }
+    @media all and (max-width: 1700px) {
+      .popup-add-ship .table_btn {
+        margin-top: 15px; } }
   .popup-add-ship .input-block label {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
     color: #9FA4BB; }
+    @media all and (max-width: 1700px) {
+      .popup-add-ship .input-block label {
+        font-size: 10px;
+        line-height: 12px; } }
   .popup-add-ship .create-order__photos {
     margin: 40px 0; }
+  @media all and (max-width: 1700px) {
+    .popup-add-ship .order-photos__title {
+      font-size: 10px; } }
   .popup-add-ship .textarea-block label {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
     color: #9FA4BB; }
+    @media all and (max-width: 1700px) {
+      .popup-add-ship .textarea-block label {
+        font-size: 10px;
+        line-height: 12px; } }
 
 .popup-user-info {
   flex-wrap: wrap;
@@ -4530,7 +4708,11 @@ hr {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
-    font-weight: normal; }
+    font-weight: normal;
+    margin-bottom: 30px; }
+    @media screen and (max-width: 500px) {
+      .pop-up-delete-account h1 {
+        margin-bottom: 15px; } }
   .pop-up-delete-account .field {
     margin-bottom: 30px; }
     @media screen and (max-width: 1700px) {
@@ -4556,6 +4738,9 @@ hr {
     @media screen and (max-width: 1700px) {
       .pop-up-delete-account__btn {
         margin: 23px auto 0; } }
+    @media screen and (max-width: 500px) {
+      .pop-up-delete-account__btn {
+        margin: 0px auto 0; } }
     .pop-up-delete-account__btn.successfully {
       background: #BCB8B8; }
   .pop-up-delete-account .close-cross-popup {
@@ -4721,11 +4906,12 @@ hr {
     margin: auto; }
     @media all and (min-height: 500px) and (max-height: 800px) {
       .companies-container .container-img-wrap {
-        transform: scale(0.8);
-        -webkit-transform: scale(0.8);
-        -moz-transform: scale(0.8);
-        -ms-transform: scale(0.8);
-        -o-transform: scale(0.8); } }
+        top: 30px;
+        transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -o-transform: scale(0.9); } }
     @media all and (min-height: 800px) and (max-height: 1200px) {
       .companies-container .container-img-wrap {
         transform: scale(1.2);
@@ -4965,6 +5151,9 @@ hr {
     @media all and (min-height: 1000px) {
       .logo-form > div {
         margin-bottom: 28px; } }
+    @media all and (max-width: 1700px) {
+      .logo-form > div {
+        margin-bottom: 15px; } }
   .logo-form .textarea-block textarea {
     width: 180%;
     font-size: 12px;
@@ -4972,6 +5161,9 @@ hr {
     @media all and (max-width: 1700px) {
       .logo-form .textarea-block textarea {
         height: 85px; } }
+  @media all and (max-width: 1700px) {
+    .logo-form .textarea-block {
+      margin-top: 0; } }
   .logo-form .textarea-block label {
     width: 104%;
     margin-bottom: 2px; }
@@ -5094,10 +5286,17 @@ hr {
       margin-right: 18px; }
   .header-logo .sidebar_btn {
     position: relative;
-    top: 13px;
-    font-size: 10px;
-    height: 37px;
+    top: 12px;
+    font-size: 14px;
+    height: 52px;
+    width: 96px;
     padding: 0; }
+    @media all and (max-width: 1700px) {
+      .header-logo .sidebar_btn {
+        top: 8px;
+        font-size: 10px;
+        height: 37px;
+        width: 68px; } }
 
 .logo-list {
   background: #E1F5FF;
@@ -5305,11 +5504,14 @@ hr {
     padding: 5px 16px; }
     @media screen and (max-width: 1700px) {
       .pop-up-registration .field input {
-        font-size: 12px; } }
+        font-size: 12px;
+        font-weight: 500; } }
     @media screen and (max-width: 1050px) {
       .pop-up-registration .field input {
         background: #D8EEFA;
-        border: 0.887px solid rgba(196, 196, 196, 0.7); } }
+        border: 0.887px solid rgba(196, 196, 196, 0.7);
+        font-size: 16px;
+        padding: 3px 10px; } }
   .pop-up-registration .field label {
     margin-bottom: 4px; }
     @media screen and (max-width: 1050px) {
@@ -5330,7 +5532,8 @@ hr {
       font-size: 14px;
       line-height: 41px;
       height: 43px;
-      margin-bottom: 0; } }
+      margin-bottom: 0;
+      font-weight: 600; } }
   @media all and (max-width: 1050px) {
     .pop-up-registration .btn-close {
       display: none; }
@@ -5339,7 +5542,7 @@ hr {
   @media screen and (max-width: 425px) {
     .pop-up-registration .btn-close {
       width: 138px;
-      font-size: 10px; } }
+      font-size: 12px; } }
 .pop-up-registration__left {
   opacity: 0; }
 .pop-up-registration__right {

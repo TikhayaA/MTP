@@ -12,7 +12,6 @@
         display: inline-block;
         top: 57px;
         left: 0;
-        width: 100%;
         @media all and (max-width: 1700px) {
             font-size: 10px;
             line-height: 14px;
@@ -144,6 +143,8 @@
         padding: 10px;
         @media screen and (max-width: 1700px){
             height: 123px;
+            font-size: 10px;
+            line-height: 12px;
         }
     }
 }

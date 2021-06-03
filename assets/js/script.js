@@ -300,7 +300,6 @@ closeCross.forEach((element, i) => {
         popUp.forEach(el => {
             el.classList.remove('pop-up_open');
         });
-        console.log(popUpWrapper);
         popUpWrapper.forEach(el => {
             el.classList.remove('pop-up_open');
         });
@@ -311,7 +310,6 @@ popupBtnClose.forEach((element, i) => {
         popUp.forEach(el => {
             el.classList.remove('pop-up_open');
         });
-        console.log(popUpWrapper);
         popUpWrapper.forEach(el => {
             el.classList.remove('pop-up_open');
         });
@@ -411,6 +409,11 @@ if (radioBlockLeft) {
                 registrationContentCol.forEach((elem) => {
                     elem.classList.remove('active');
                 });
+                for (let index = ind; index < registrationStepsItem.length; index++) {
+                    if(index !== 0) {
+                        registrationStepsItem[index].classList.remove('active');
+                    }
+                }
                 if (ind === 0) {
                     registrationRight.classList.add('pop-up-registration_active');
                     popUpRegistration.classList.remove('pop-up-registration_company');
@@ -453,6 +456,36 @@ if (addCompany) {
         logoForm.style.display = 'block';
         pageBody.style.overflow = 'auto';
     });
+}
+
+const deleteAccountBtn = document.querySelector('.pop-up-delete-account__btn');
+const deletePassword = document.getElementById('delete-password');
+const deletePasswordConfirm = document.getElementById('delete-password-confirm');
+
+if(deletePasswordConfirm) {
+deletePasswordConfirm.addEventListener('keyup', () => {
+    setTimeout(() => {
+        if (deletePassword.value === deletePasswordConfirm.value) {
+            if(deletePassword.value !== '' && deletePasswordConfirm.value !== '') {
+                deleteAccountBtn.classList.add('successfully');
+            }
+        } else {
+            deleteAccountBtn.classList.remove('successfully');
+        }
+    }, 100);
+});
+
+deletePassword.addEventListener('keyup', () => {
+    setTimeout(() => {
+        if (deletePassword.value === deletePasswordConfirm.value) {
+            if(deletePassword.value !== '' && deletePasswordConfirm.value !== '') {
+                deleteAccountBtn.classList.add('successfully');
+            }
+        } else {
+            deleteAccountBtn.classList.remove('successfully');
+        }
+    }, 100);
+});
 }
 
 document.querySelectorAll('.simplebar-child').forEach(el => {

@@ -22,7 +22,7 @@
 }
 .create-order {
     padding: 16px 40px 40px;
-    position: fixed;
+    position: absolute;
     @media all and (max-width: 1700px) {
         overflow: auto;
     }
@@ -153,6 +153,12 @@
             width: 1366px;
         }
     }
+    .input-block {
+        position: relative;
+        & > span {
+            width: 100%;
+            }
+        }
 }
 
 .order-photos {
@@ -671,8 +677,8 @@
             line-height: 17px;
             color: #9FA4BB;
             @media all and (max-width: 1700px) {
-                font-size: 10px;
-                line-height: 12px;
+                font-size: 12px;
+                line-height: 14px;
             }
         }
     }
@@ -719,7 +725,7 @@
     }
     .textarea-block{
         @media all and (max-width: 1700px){
-            margin-top: -3px;
+            margin-top: 10px;
         }
     }
 }

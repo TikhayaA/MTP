@@ -174,8 +174,23 @@
         @media all and (max-width: 1700px) {
             width: 448px;
             display: grid;
-             grid-template-columns: repeat(2, 1fr);
-             grid-gap: 10px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+        }
+    }
+}
+.world-fleet-page{
+    .header_table-btns{
+        @media all and (max-width: 1700px) {
+            margin-left: 40px;
+            width: 273px; 
+        }
+        .header_table-logo{
+            @media all and (max-width: 1700px) {
+                top: 9px;
+                width: 11%;
+                position: absolute;
+            }
         }
     }
 }
