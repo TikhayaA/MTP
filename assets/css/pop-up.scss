@@ -103,7 +103,7 @@
         right: -5px;
     }
     &__block {
-        height: calc(100% - 50px);
+        height: calc(100% - 70px);
     }
     &_open{
         display: flex;
@@ -271,10 +271,8 @@
     }
 }
 .message-wrap{
-    // max-height: calc(100% - 65px);
     height: 100%;
     display: none;
-    // overflow: auto;
     &::-webkit-scrollbar { 
         width: 0; 
         display: none;
@@ -338,12 +336,12 @@
 }
 .pop-up-log-in{
     .popup-wrap-block{
-        @media screen and(max-width: 1700px){
             padding: 35px 40px 35px 40px;
             width: 40%;
-        }
+            max-width: 565px;
         @media screen and (max-width: 767px) {
             width: 100%;
+            max-width: 100%;
         }
         .pop-up-log-in__title{
             margin-bottom: 40px;
@@ -377,7 +375,6 @@
     }
     .log-in-form{
         width: 100%;
-        
         .field{
             label{
                 font-family: 'Helvetica', sans-serif;
@@ -558,8 +555,8 @@
         }
     }
     .pop-up-mobile{
-        @media screen and (max-width: 767px){
-            height: 100%;
+        @media screen and (max-width: 768px){
+            height: 100vh;
         }
 
     }
