@@ -45,12 +45,10 @@ html {
             overflow-y: auto;
         }
         &-content {
-            &>* {
-                margin-bottom: 40px;
-                @media all and (max-width: 1700px) {
-                    margin-bottom: 13px;
-                 }
-            }
+            // &>* {
+            //     margin-bottom: 40px;
+                
+            // }
             .select{
                 @media all and (max-width: 1700px) {
                     height: auto;
@@ -58,6 +56,9 @@ html {
             }
             .inputs_block>* {
                 margin-bottom: 40px;
+                @media all and (max-width: 1700px) {
+                    margin-bottom: 32px;
+                }
             }
         }
         .input-block label{
@@ -659,7 +660,7 @@ html {
         margin-bottom: 20px;
     }
     .sidebar_btn {
-        margin-top: 50px;
+        margin-top: 3px;
         @media all and (max-width: 1700px) {
             margin-top: 15px;
         }
@@ -740,6 +741,16 @@ html {
         font-size: 14px;
         @media all and (max-width: 1700px) {
             font-size: 10px;
+        }
+    }
+}
+.world-fleet-page {
+    .table_filter-content > * {
+        margin-bottom: 21px;
+    }
+    @media all and (max-width: 1700px) {
+        .table_filter-content > * {
+            margin-bottom: 13px;
         }
     }
 }

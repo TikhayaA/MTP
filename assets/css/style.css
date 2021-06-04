@@ -1853,16 +1853,14 @@ html {
     .table_filter.active {
       left: 0;
       overflow-y: auto; }
-    .table_filter-content > * {
-      margin-bottom: 40px; }
-      @media all and (max-width: 1700px) {
-        .table_filter-content > * {
-          margin-bottom: 13px; } }
     @media all and (max-width: 1700px) {
       .table_filter-content .select {
         height: auto; } }
     .table_filter-content .inputs_block > * {
       margin-bottom: 40px; }
+      @media all and (max-width: 1700px) {
+        .table_filter-content .inputs_block > * {
+          margin-bottom: 32px; } }
     @media all and (max-width: 1700px) {
       .table_filter .input-block label {
         margin-bottom: 0px; } }
@@ -2328,7 +2326,7 @@ html {
 .world-fleet .inputs-block > * {
   margin-bottom: 20px; }
 .world-fleet .sidebar_btn {
-  margin-top: 50px; }
+  margin-top: 3px; }
   @media all and (max-width: 1700px) {
     .world-fleet .sidebar_btn {
       margin-top: 15px; } }
@@ -2392,6 +2390,12 @@ html {
     @media all and (max-width: 1700px) {
       .table_filter-content .sidebar_btn {
         font-size: 10px; } }
+
+.world-fleet-page .table_filter-content > * {
+  margin-bottom: 21px; }
+@media all and (max-width: 1700px) {
+  .world-fleet-page .table_filter-content > * {
+    margin-bottom: 13px; } }
 
 .select {
   width: 100%;
