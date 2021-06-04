@@ -44,11 +44,10 @@ html {
             left: 0;
             overflow-y: auto;
         }
+        .simplebar-content{
+            height: 100%;
+        }
         &-content {
-            // &>* {
-            //     margin-bottom: 40px;
-                
-            // }
             .select{
                 @media all and (max-width: 1700px) {
                     height: auto;
@@ -736,20 +735,21 @@ html {
     height: 100%;
     justify-content: space-between;
     .sidebar_btn {
-        margin-bottom: 0;
+        margin-bottom: 90px;
         font-weight: 500;
         font-size: 14px;
         @media all and (max-width: 1700px) {
             font-size: 10px;
+            margin-bottom:70px;
         }
     }
 }
 .world-fleet-page {
-    .table_filter-content > * {
-        margin-bottom: 21px;
+    .inputs_block > * {
+        margin-bottom: 19px;
     }
     @media all and (max-width: 1700px) {
-        .table_filter-content > * {
+        .inputs_block > * {
             margin-bottom: 13px;
         }
     }
