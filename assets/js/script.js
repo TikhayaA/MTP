@@ -461,6 +461,7 @@ if (addCompany) {
 const deleteAccountBtn = document.querySelector('.pop-up-delete-account__btn');
 const deletePassword = document.getElementById('delete-password');
 const deletePasswordConfirm = document.getElementById('delete-password-confirm');
+const popUpSettings = document.querySelector('.pop-up-settings');
 
 if(deletePasswordConfirm) {
 deletePasswordConfirm.addEventListener('keyup', () => {
@@ -485,6 +486,9 @@ deletePassword.addEventListener('keyup', () => {
             deleteAccountBtn.classList.remove('successfully');
         }
     }, 100);
+});
+deleteAccountBtn.addEventListener('click', () => {
+    popUpSettings.classList.remove('pop-up_open');
 });
 }
 
