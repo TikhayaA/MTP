@@ -215,6 +215,8 @@
     &-block {
         @media all and (max-width: 1366px) {
             width: 1366px;
+            padding-top: 15px;
+            position: relative;
         }
     }
     position: fixed;
@@ -232,9 +234,10 @@
         font-size: 20px;
         line-height: 24px;
         color: #60626A;
-        position: relative;
         z-index: 3;
         width: 100%;
+        position: fixed;
+        top: 152px;
     }
     &__title {
         font-family: 'Montserrat';

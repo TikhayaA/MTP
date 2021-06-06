@@ -187,3 +187,15 @@ body {
 @import"companies-logo-list.scss";
 @import"registration.scss";
 @import"account-setting.scss";
+
+@media all and (max-width: 1366px) {
+    .table_fixed .table_fixed-wrap {
+        height: 100vh;
+        overflow: hidden;
+    }
+    @-moz-document url-prefix() {
+        .table_content-fixed{
+            bottom: -20px;
+        }
+    }
+}

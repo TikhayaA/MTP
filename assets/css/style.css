@@ -1954,7 +1954,7 @@ html {
           width: calc(1366px - 30px);
           position: relative; } }
       .table_content-fixed .table_data-content {
-        height: 160px; }
+        height: 174px; }
   .table_data-header {
     background: #B6DAED;
     border-bottom: 2px solid #000000; }
@@ -1998,7 +1998,7 @@ html {
       border-right: 1px solid #979797;
       padding: 5px 0;
       line-height: 25px;
-      height: 35px;
+      min-height: 35px;
       font-weight: 500;
       font-size: 16px;
       position: relative; }
@@ -2006,7 +2006,9 @@ html {
         .table_data-item > div {
           font-size: 12px;
           line-height: 16px;
-          height: 25px; } }
+          min-height: 25px;
+          box-sizing: border-box;
+          padding: 4px 0; } }
       .table_data-item > div:before {
         content: '';
         display: inline-block;
@@ -2068,7 +2070,8 @@ html {
     justify-content: space-between;
     align-items: center; }
     .table-data__item-bid img {
-      width: 33px; }
+      width: 33px;
+      height: 100%; }
   .table__header_item-price {
     color: #0DA80A;
     font-weight: 600; }
@@ -3098,7 +3101,9 @@ label sup {
   position: fixed; }
   @media all and (max-width: 1366px) {
     .order-id-block {
-      width: 1366px; } }
+      width: 1366px;
+      padding-top: 15px;
+      position: relative; } }
   @media all and (max-width: 1710px) {
     .order-id {
       overflow: auto; } }
@@ -3112,9 +3117,10 @@ label sup {
     font-size: 20px;
     line-height: 24px;
     color: #60626A;
-    position: relative;
     z-index: 3;
-    width: 100%; }
+    width: 100%;
+    position: fixed;
+    top: 152px; }
   .order-id__title {
     font-family: 'Montserrat';
     font-style: normal;
@@ -6003,5 +6009,14 @@ hr {
       grid-gap: 34px; } }
 .pop-up-settings .pop-up-registration__fields {
   position: relative; }
+
+@media all and (max-width: 1366px) {
+  .table_fixed .table_fixed-wrap {
+    height: 100vh;
+    overflow: hidden; }
+
+  @-moz-document url-prefix() {
+    .table_content-fixed {
+      bottom: -20px; } } }
 
 /*# sourceMappingURL=style.css.map */
