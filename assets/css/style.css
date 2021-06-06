@@ -1952,7 +1952,7 @@ html {
           width: calc(1366px - 30px);
           position: relative; } }
       .table_content-fixed .table_data-content {
-        height: 156px; }
+        height: 161px; }
         @media all and (max-height: 500px) {
           .table_content-fixed .table_data-content {
             height: 56px; } }
