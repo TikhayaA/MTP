@@ -1946,7 +1946,6 @@ html {
     .table_content-fixed {
       position: fixed;
       width: calc(100% - 30px);
-      bottom: 0;
       background: #D8EEFA; }
       @media all and (max-width: 1366px) {
         .table_content-fixed {
@@ -6019,6 +6018,6 @@ hr {
 
   @-moz-document url-prefix() {
     .table_content-fixed {
-      bottom: -20px; } } }
+      bottom: 15px; } } }
 
 /*# sourceMappingURL=style.css.map */

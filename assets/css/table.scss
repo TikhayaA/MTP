@@ -161,7 +161,7 @@ html {
         &-fixed {
             position: fixed;
             width: calc(100% - 30px);
-            bottom: 0;
+            // bottom: 0;
             background: #D8EEFA;
             @media all and (max-width: 1366px) {
                 width: calc(1366px - 30px);
