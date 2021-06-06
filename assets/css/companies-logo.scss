@@ -21,7 +21,7 @@
                 background: #B6DAED;
                 margin-bottom: 5px;
                 @media all and (max-width: 1700px) {
-                    width: 88px;
+                    width: 88px !important;
                     height: 35px;
                 }
             }
@@ -336,9 +336,12 @@
             }
         }
         &_right{
-            right: 10px;
+            right: 15px;
+            @media all and (max-width: 1700px) {
+                right: -5px;
+            }
             .logo-block {
-                margin-left: 5px;
+                margin-left: 10px;
             }
         }
         @media all and (max-width: 1700px) {

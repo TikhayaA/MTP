@@ -4902,7 +4902,7 @@ hr {
       margin-bottom: 5px; }
       @media all and (max-width: 1700px) {
         .companies-logo-fixed .logo-slider__item .logo-block {
-          width: 88px;
+          width: 88px !important;
           height: 35px; } }
     .companies-logo-fixed .logo-slider__item_right {
       position: relative;
@@ -5162,9 +5162,12 @@ hr {
     .companies-logo__slider_left .logo-block {
       margin-right: 5px; }
     .companies-logo__slider_right {
-      right: 10px; }
+      right: 15px; }
+      @media all and (max-width: 1700px) {
+        .companies-logo__slider_right {
+          right: -5px; } }
       .companies-logo__slider_right .logo-block {
-        margin-left: 5px; }
+        margin-left: 10px; }
     @media all and (max-width: 1700px) {
       .companies-logo__slider {
         width: 205px; } }
