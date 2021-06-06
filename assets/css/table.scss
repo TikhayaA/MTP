@@ -21,9 +21,10 @@ html {
         left: -290px;
         z-index: 1;
         padding: 37px 53px 37px 32px;
-        transition: all 2s;
+        transition: all 1s;
         height: calc(100% - 154px);
         overflow: hidden;
+        
         @media all and (max-width: 1700px) {
             width: 234px;
             padding: 11px 44px 37px 22px;
@@ -168,7 +169,7 @@ html {
                 position: relative;
             }
             .table_data-content {
-                height: 174px;
+                height: 156px;
             }
         }
     }
