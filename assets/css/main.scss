@@ -193,9 +193,9 @@ body {
         height: 100vh;
         overflow: hidden;
     }
-    @-moz-document url-prefix() {
-        .table_content-fixed{
-            bottom: 15px;
-        }
-    }
+    // @-moz-document url-prefix() {
+    //     .table_content-fixed{
+    //         bottom: 15px;
+    //     }
+    // }
 }
