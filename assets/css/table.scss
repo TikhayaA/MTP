@@ -162,7 +162,6 @@ html {
         &-fixed {
             position: fixed;
             width: calc(100% - 30px);
-            // bottom: 0;
             background: #D8EEFA;
             @media all and (max-width: 1366px) {
                 width: calc(1366px - 30px);
@@ -170,6 +169,10 @@ html {
             }
             .table_data-content {
                 height: 156px;
+
+                @media all and (max-height: 500px) {
+                    height: 56px;
+                }
             }
         }
     }
@@ -280,6 +283,9 @@ html {
         }
         &-content {
             height: calc(100vh - 228px - 190px);
+            @media all and (max-height: 500px) {
+                height: calc(100vh - 228px - 93px);
+            }
         }
     }
     &_fixed {

@@ -1953,6 +1953,9 @@ html {
           position: relative; } }
       .table_content-fixed .table_data-content {
         height: 156px; }
+        @media all and (max-height: 500px) {
+          .table_content-fixed .table_data-content {
+            height: 56px; } }
   .table_data-header {
     background: #B6DAED;
     border-bottom: 2px solid #000000; }
@@ -2042,6 +2045,9 @@ html {
       bottom: 0; }
   .table_data-content {
     height: calc(100vh - 228px - 190px); }
+    @media all and (max-height: 500px) {
+      .table_data-content {
+        height: calc(100vh - 228px - 93px); } }
   .table_fixed {
     height: 100vh;
     overflow: auto;
