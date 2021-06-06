@@ -4504,6 +4504,7 @@ hr {
   @media all and (max-width: 1700px) {
     .popup-user-info {
       max-width: 540px;
+      max-height: 400px;
       padding: 11px 24px 0px; } }
   .popup-user-info__active {
     display: flex;
