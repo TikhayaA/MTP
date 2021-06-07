@@ -3292,11 +3292,21 @@ label sup {
         height: 280px;
         width: 100%;
         background: #fff;
-        margin: 0;
-        overflow: auto; }
+        margin: 0; }
         @media screen and (max-width: 1700px) {
           .order-id .table-bids__block .order__item {
             height: 163px; } }
+        .order-id .table-bids__block .order__item .order__string-wrap {
+          overflow: auto;
+          height: 237px; }
+          @media screen and (max-width: 1700px) {
+            .order-id .table-bids__block .order__item .order__string-wrap {
+              height: 127px; } }
+        .order-id .table-bids__block .order__item .order__line {
+          height: calc(100% - 39px); }
+          @media screen and (max-width: 1700px) {
+            .order-id .table-bids__block .order__item .order__line {
+              height: calc(100% - 30px); } }
       .order-id .table-bids__block_all {
         width: 100%;
         margin-top: 40px; }
@@ -3807,7 +3817,7 @@ label sup {
   height: 300px; }
   @media screen and (max-width: 1700px) {
     .order__string-wrap {
-      height: 284px; } }
+      height: 295px; } }
 .order__string-title {
   font-style: normal;
   font-weight: 500;
@@ -3852,12 +3862,12 @@ label sup {
 .order__line {
   position: absolute;
   width: 1px;
-  height: calc(100% - 31px);
+  height: calc(100% - 36px);
   background: #979797;
   top: 20px; }
   @media screen and (max-width: 1700px) {
     .order__line {
-      height: calc(100% - 43px); } }
+      height: calc(100% - 31px); } }
 .order__info {
   font-style: normal;
   font-weight: 600;
@@ -5408,6 +5418,9 @@ hr {
     height: 100px;
     padding: 0 !important;
     border-right: unset !important; }
+    @media all and (max-width: 1700px) {
+      .logo-list__image {
+        height: 71px; } }
   .logo-list .table_data-item > div:last-child {
     align-items: baseline; }
     @media all and (max-width: 1700px) {
@@ -5419,8 +5432,6 @@ hr {
     line-height: 18px; }
 
 .logo-list__data .logo-list__description {
-  height: 96px;
-  overflow: auto;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -5429,6 +5440,12 @@ hr {
   text-align: left;
   padding: 7px 7px;
   align-items: flex-start !important; }
+  .logo-list__data .logo-list__description p {
+    height: 96px;
+    overflow: auto; }
+    @media all and (max-width: 1700px) {
+      .logo-list__data .logo-list__description p {
+        height: 57px; } }
 
 .logo-list .logo-list__image img {
   width: 100%;

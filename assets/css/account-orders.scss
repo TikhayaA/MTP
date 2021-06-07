@@ -192,7 +192,7 @@
         overflow: auto;
         height: 300px;
         @media screen and (max-width: 1700px){
-            height: 284px;
+            height: 295px;
         }
     }
     &__string-title{
@@ -248,11 +248,11 @@
     &__line {
         position: absolute;
         width: 1px;
-        height: calc(100% - 31px);
+        height: calc(100% - 36px);
         background: #979797;
         top: 20px;
         @media screen and (max-width: 1700px){
-            height: calc(100% - 43px);
+            height: calc(100% - 31px);
         }
     }
     &__info{

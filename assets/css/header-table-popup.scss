@@ -434,9 +434,21 @@
                 width: 100%;
                 background: #fff;
                 margin: 0;
-                overflow: auto;
                 @media screen and (max-width: 1700px){
                     height: 163px;
+                }
+                .order__string-wrap{
+                    overflow: auto;
+                    height: 237px;
+                    @media screen and (max-width: 1700px){
+                        height: 127px;
+                    }
+                }
+                .order__line{
+                    height: calc(100% - 39px);
+                    @media screen and (max-width: 1700px){
+                        height: calc(100% - 30px);
+                    }
                 }
             }
             &_all {
