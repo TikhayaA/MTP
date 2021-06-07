@@ -2080,6 +2080,9 @@ html {
     .table-data__item-bid img {
       width: 33px;
       height: 100%; }
+      @media all and (max-width: 1700px) {
+        .table-data__item-bid img {
+          width: 25px; } }
   .table__header_item-price {
     color: #0DA80A;
     font-weight: 600; }

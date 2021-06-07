@@ -328,6 +328,9 @@ html {
                 img {
                     width: 33px;
                     height: 100%;
+                    @media all and (max-width: 1700px){
+                        width: 25px;
+                    }
                 }
             }
         }
