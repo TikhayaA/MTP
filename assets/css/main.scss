@@ -194,3 +194,9 @@ body {
         overflow: hidden;
     }
 }
+@-moz-document url-prefix()
+{
+    .world-fleet-page .popup-add-ship .create-order__photos { 
+        margin: 10px 0 50px;
+    }
+}

@@ -6056,5 +6056,8 @@ hr {
   .table_fixed .table_fixed-wrap {
     height: 100vh;
     overflow: hidden; } }
+@-moz-document url-prefix() {
+  .world-fleet-page .popup-add-ship .create-order__photos {
+    margin: 10px 0 50px; } }
 
 /*# sourceMappingURL=style.css.map */
