@@ -3085,8 +3085,7 @@ label sup {
       display: flex; }
       .order-photos__slide-content > div img {
         width: 177px;
-        height: 100%;
-        align-self: stretch; }
+        height: 100%; }
         @media screen and (max-width: 1700px) {
           .order-photos__slide-content > div img {
             width: 125px; } }
