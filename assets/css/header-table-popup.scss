@@ -356,7 +356,6 @@
     .table-bids {
         display: flex;
         justify-content: space-between;
-        overflow: auto;
         &__block {
             width: calc(50% - 30px);
             @media all and (max-width: 1700px) {
@@ -442,7 +441,6 @@
             &_all {
                 width: 100%;
                 margin-top: 40px;
-                overflow: auto;
                 .table-bids__block_title {
                     text-align: left;
                     margin-left: 60px;
