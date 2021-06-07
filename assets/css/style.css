@@ -3274,7 +3274,7 @@ label sup {
         width: 100%;
         left: 0;
         text-align: center;
-        padding-top: 2px; }
+        padding-top: 3px; }
         @media all and (max-width: 1700px) {
           .order-id .table-bids__block .order__string-title {
             font-size: 10px;
@@ -5443,11 +5443,12 @@ hr {
   text-align: left;
   padding: 7px 7px;
   align-items: flex-start !important; }
-  .logo-list__data .logo-list__description p {
+  .logo-list__data .logo-list__description > p {
     height: 96px;
+    width: 100%;
     overflow: auto; }
     @media all and (max-width: 1700px) {
-      .logo-list__data .logo-list__description p {
+      .logo-list__data .logo-list__description > p {
         height: 57px; } }
 
 .logo-list .logo-list__image img {

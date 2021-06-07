@@ -145,8 +145,9 @@
     text-align: left;
     padding: 7px 7px;
     align-items: flex-start!important;
-    p{
+    & > p {
         height: 96px;
+        width: 100%;
         overflow: auto;
         @media all and (max-width: 1700px){
             height: 57px;
