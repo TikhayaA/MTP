@@ -119,21 +119,8 @@
         height: 100px;
         padding: 0 !important;
         border-right: unset !important;
-        img {
-           
-        }
     }
-    &__description {
-        height: 100px;
-        overflow: auto;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 15px;
-        color: #000000;
-        text-align: left !important;
-        padding: 5px 7px !important;
-    }
+    
     .table_data-item > div:last-child{
         align-items: baseline;
         @media all and (max-width: 1700px) {
@@ -145,6 +132,18 @@
     .table_data-item > div{
         line-height: 18px;
     }
+}
+.logo-list__data .logo-list__description {
+    height: 96px;
+    overflow: auto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+    text-align: left;
+    padding: 7px 7px;
+    align-items: flex-start!important;
 }
 .logo-list .logo-list__image img{
     width: 100%;

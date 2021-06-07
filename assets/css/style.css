@@ -1786,10 +1786,10 @@ body.touch .menu__list.active .menu__arrow {
   .header_table .header_info {
     top: 30px; }
 
-.common-cargo-page .header_table-logo {
+.discount-cargo-page .header_table-logo {
   margin-top: -15px; }
   @media all and (max-width: 1700px) {
-    .common-cargo-page .header_table-logo {
+    .discount-cargo-page .header_table-logo {
       position: absolute; } }
 
 @media all and (max-width: 1700px) {
@@ -2162,7 +2162,7 @@ html {
           width: 55%; } }
 
 @media all and (max-width: 1700px) {
-  .common-cargo-page .textarea-block {
+  .discount-cargo-page .textarea-block {
     margin-top: -14px; } }
 
 .freight-auction-page .table_data-header ul {
@@ -2868,35 +2868,35 @@ label sup {
     .cargo-market-page .input-select-quantity .select-block {
       width: 47px; } }
 
-.common-cargo-page .input-select-amount .input-block {
+.discount-cargo-page .input-select-amount .input-block {
   width: calc(100% - 72px); }
   @media screen and (max-width: 1700px) {
-    .common-cargo-page .input-select-amount .input-block {
+    .discount-cargo-page .input-select-amount .input-block {
       width: calc(100% - 50px); } }
-.common-cargo-page .input-select-amount .select-block {
+.discount-cargo-page .input-select-amount .select-block {
   width: 60px; }
   @media all and (max-width: 1700px) {
-    .common-cargo-page .input-select-amount .select-block {
+    .discount-cargo-page .input-select-amount .select-block {
       width: 42px; } }
-.common-cargo-page .input-select-price .input-block {
+.discount-cargo-page .input-select-price .input-block {
   width: calc(100% - 57px); }
   @media screen and (max-width: 1700px) {
-    .common-cargo-page .input-select-price .input-block {
+    .discount-cargo-page .input-select-price .input-block {
       width: calc(100% - 41px); } }
-.common-cargo-page .input-select-price .select-block {
+.discount-cargo-page .input-select-price .select-block {
   width: 50px; }
   @media all and (max-width: 1700px) {
-    .common-cargo-page .input-select-price .select-block {
+    .discount-cargo-page .input-select-price .select-block {
       width: 32px; } }
-.common-cargo-page .input-select-quantity .input-block {
+.discount-cargo-page .input-select-quantity .input-block {
   width: calc(100% - 72px); }
   @media screen and (max-width: 1700px) {
-    .common-cargo-page .input-select-quantity .input-block {
+    .discount-cargo-page .input-select-quantity .input-block {
       width: calc(100% - 50px); } }
-.common-cargo-page .input-select-quantity .select-block {
+.discount-cargo-page .input-select-quantity .select-block {
   width: 60px; }
   @media all and (max-width: 1700px) {
-    .common-cargo-page .input-select-quantity .select-block {
+    .discount-cargo-page .input-select-quantity .select-block {
       width: 42px; } }
 
 .freight-auction-page .input-select-amount .input-block {
@@ -5395,16 +5395,6 @@ hr {
     height: 100px;
     padding: 0 !important;
     border-right: unset !important; }
-  .logo-list__description {
-    height: 100px;
-    overflow: auto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 15px;
-    color: #000000;
-    text-align: left !important;
-    padding: 5px 7px !important; }
   .logo-list .table_data-item > div:last-child {
     align-items: baseline; }
     @media all and (max-width: 1700px) {
@@ -5414,6 +5404,18 @@ hr {
         align-items: center; } }
   .logo-list .table_data-item > div {
     line-height: 18px; }
+
+.logo-list__data .logo-list__description {
+  height: 96px;
+  overflow: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+  text-align: left;
+  padding: 7px 7px;
+  align-items: flex-start !important; }
 
 .logo-list .logo-list__image img {
   width: 100%;
