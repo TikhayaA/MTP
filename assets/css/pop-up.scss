@@ -308,7 +308,7 @@
         }
     }
     &__body-wrap{
-        height: calc(100% - 180px);
+        height: calc(100% - 230px);
     }
     &__body{
         margin: 20px 0;
@@ -660,7 +660,6 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
     &__title {
         width: 100%;
         text-align: center;

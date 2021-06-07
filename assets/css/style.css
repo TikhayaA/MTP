@@ -4207,7 +4207,7 @@ hr {
       .message-wrap .pop-up-message__date {
         margin: 10px 0 10px; } }
   .message-wrap__body-wrap {
-    height: calc(100% - 180px); }
+    height: calc(100% - 230px); }
   .message-wrap__body {
     margin: 20px 0;
     font-style: normal;
