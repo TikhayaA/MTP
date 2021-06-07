@@ -22,7 +22,7 @@
                     <img src="assets/img/CommonCargo.svg" alt="Common Cargo">
                 </div>
                 <div class="header_table-btn">
-                    <button class="table_btn">Find cargo</button>
+                    <button class="table_btn" id="find-cargo">Find cargo</button>
                     <button class="table_btn" id="order-popup">Create order</button>
                 </div>
             </div>
@@ -790,47 +790,47 @@
                             <div class="order-id__information">
                                 <div class="input-block">
                                     <label for="order-id__country">Country</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__country" readonly placeholder="USA">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__country" readonly value="">
                                 </div>
                                 <div class="input-block">
                                     <label for="order-id__port">Port or city</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__port" readonly placeholder="USA">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__port" readonly value="">
                                 </div>
                                 <div class="input-block">
                                     <label for="order-id__company">Company</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__company" readonly placeholder="USA">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__company" readonly value="">
                                 </div>
                                 <div class="input-block">
                                     <label for="order-id__cargo">Cargo name</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__cargo" readonly placeholder="USA">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__cargo" readonly value="">
                                 </div>
                                 <div class="input-block">
                                     <label for="order-id__amount">Amount, t or m<sup>3</sup></label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__amount" readonly placeholder="USA">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__amount" readonly value="">
                                 </div>
                                 <div class="input-block">
                                     <label for="order-id__contract">Contract Price, $</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__contract" readonly placeholder="USA">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__contract" readonly value="">
                                 </div>
                                 <div class="input-block">
                                     <label for="order-id__current">Current Price, $</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__current" readonly placeholder="USA">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__current" readonly value="">
                                 </div>
                                 <div class="input-block">
                                     <label for="order-id__discount">Discount, %</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__discount" readonly placeholder="USA">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__discount" readonly value="">
                                 </div>
                                 <div class="input-block">
                                     <label for="order-id__trader">Trader name</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__trader" readonly placeholder="USA">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__trader" readonly value="">
                                 </div>
                                 <div class="input-block">
                                     <label for="order-id__phone">Phone number</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__phone" readonly placeholder="USA">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__phone" readonly value="">
                                 </div>
                                 <div class="input-block">
                                     <label for="order-id__mail">@mail</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__mail" readonly placeholder="USA">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__mail" readonly value="">
                                 </div>
                             </div>
                             <div class="order-id__chat">
@@ -902,7 +902,7 @@
                             </div>
                             <div class="textarea-block">
                                 <label for="">Comments, description</label>
-                                <textarea name=""></textarea>
+                                <textarea name="" class="textarea_readonly" readonly></textarea>
                             </div>
                         </div>
                     </div>

@@ -858,7 +858,11 @@ body.touch .menu__list.active .menu__arrow {
   line-height: 60px;
   font-weight: 500;
   font-size: 12px;
-  cursor: pointer; }
+  cursor: pointer;
+  color: #000; }
+  .companies-logo__btn:hover {
+    text-decoration: none;
+    color: #000; }
   @media all and (max-width: 1700px) {
     .companies-logo__btn {
       padding: 0 15px;
@@ -2234,7 +2238,6 @@ html {
     line-height: 12px; } }
 @media all and (max-width: 1700px) {
   .world-fleet-page .order-id__content {
-    margin-top: 10px;
     line-height: 12px; } }
 @media all and (max-width: 1700px) {
   .world-fleet-page .order-id__content .textarea-block label {
@@ -2482,7 +2485,8 @@ html {
         -webkit-transform: scale(0.7) translate(0, -66%);
         -moz-transform: scale(0.7) translate(0, -66%);
         -ms-transform: scale(0.7) translate(0, -66%);
-        -o-transform: scale(0.7) translate(0, -66%); } }
+        -o-transform: scale(0.7) translate(0, -66%);
+        right: 3px; } }
 
 .select__content {
   position: absolute;
@@ -2655,12 +2659,18 @@ html {
     border-radius: 5px;
     height: 170px;
     resize: none;
-    padding: 10px; }
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500; }
     @media screen and (max-width: 1700px) {
       .textarea-block textarea {
         height: 123px;
-        font-size: 10px;
-        line-height: 12px; } }
+        font-size: 11px;
+        line-height: 13px; } }
+  .textarea-block .textarea_readonly {
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid #C4C4C4;
+    box-shadow: none; }
 
 .checkbox-block {
   justify-content: center;

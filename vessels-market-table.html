@@ -20,7 +20,7 @@
                     <img src="assets/img/Vessels-Market-icon.svg" alt="Common Cargo">
                 </div>
                 <div class="header_table-btn">
-                    <button class="table_btn">Find Ship</button>
+                    <button class="table_btn" id="find-cargo">Find Ship</button>
                     <button class="table_btn" id="order-popup">Add Ship</button>
                 </div>
             </div>
@@ -873,91 +873,91 @@
                             <div class="order-id__inputs">
                                 <div class="input-block">
                                     <label for="add__ship-type">Type</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="add__ship-type" value="Bulk Carrier">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="add__ship-type" value="" readonly>
                                 </div>
                                 <div class="input-block">
                                     <label for="add__ship-length">Length(LOA)</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="add__ship-length" value="225">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="add__ship-length" value="" readonly>
                                 </div>
                                 <div class="input-block">
                                     <label for="add__ship-subtype">Sub type</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="add__ship-subtype" value="Panamax">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="add__ship-subtype" value="" readonly>
                                 </div>
                                 <div class="input-block">
                                     <label for="add__ship-beadth">Breadth</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="add__ship-beadth" value="32">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="add__ship-beadth" value="" readonly>
                                 </div>
                                 <div class="input-block">
                                     <label for="">Year of built</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="2016">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="" readonly>
                                 </div>
                                 <div class="input-block">
                                     <label for="">Depth</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="2016">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="" readonly>
                                 </div>
                                 <div class="input-block">
                                     <label for="">IMO</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="2023564789">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="" readonly>
                                 </div>
                                 <div class="input-block">
                                     <label for="">Draft</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="12">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="" readonly> 
                                 </div>
                                 <div class="input-block">
                                     <label for="">Flag</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="Panama">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="" readonly>
                                 </div>
                                 <div class="input-block">
                                     <label for="">Speed</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="14">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="" readonly>
                                 </div>
                                 <div class="input-block">
                                     <label for="">Class</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="BV">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="" readonly readonly>
                                 </div>
                                 <div class="input-block">
                                     <label for="">Power BHP</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="11260">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="" readonly readonly>
                                 </div>
                                 <div class="input-block">
                                     <label for="">GRT</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="92350">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="" readonly readonly>
                                 </div>
                                 <div class="input-block">
                                     <label for="">M/E</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="B&W (8S50MC)">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="" readonly readonly>
                                 </div>
                                 <div class="input-block">
                                     <label for="">NRT</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="53600">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="" readonly readonly>
                                 </div>
                                 <div class="input-block">
                                     <label for="">D/G</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="3x400 kWt Yanmar">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="" readonly readonly>
                                 </div>
                                 <div class="input-block">
                                     <label for="">DWT</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="75000">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="" readonly readonly>
                                 </div>
                                 <div class="input-block">
                                     <label for="">Number of Holds</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="7">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="" readonly>
                                 </div>
                                 <div class="input-block">
                                     <label for="">TEU</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="" readonly>
                                 </div>
                                 <div class="input-block">
                                     <label for="">Number of Cranes</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="" readonly>
                                 </div>
                                 <div class="input-block">
                                     <label for="">Bow thruster</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="2x75 kWt">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="" readonly>
                                 </div>
                                 <div class="input-block">
                                     <label for="">Price, $</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="12 000 000">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="" readonly>
                                 </div>
                             </div>
                         </div>
@@ -965,31 +965,31 @@
                             <div class="order-id__inputs">
                                 <div class="input-block">
                                     <label for="">Company</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="ASTREX">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="" readonly>
                                 </div>
                                 <div class="input-block">
                                     <label for="">id Company</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="589365092294">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="" readonly>
                                 </div>
                                 <div class="input-block">
                                     <label for="">Adress</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="Norway, Oslo, Nicolas Berge 145/2">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="" readonly>
                                 </div>
                                 <div class="input-block">
                                     <label for="">Phone number</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="+25487874567">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="" readonly>
                                 </div>
                                 <div class="input-block">
                                     <label for="">Web</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="www.ANTREX.com">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="" readonly>
                                 </div>
                                 <div class="input-block">
                                     <label for="">@mail</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="Antrex@gmail.com">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="" readonly>
                                 </div>
                                 <div class="input-block">
                                     <label for="">Next Dry Dock</label>
-                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="25.10.2024">
+                                    <input type="text" class="input-block-ui input-block-ui_readonly" id="" value="" readonly>
                                 </div>
                             </div>
                             <div class="order-id__photos">
@@ -1016,7 +1016,7 @@
                             </div>
                             <div class="textarea-block readonly">
                                 <label for="">Comments, description</label>
-                                <textarea name=""></textarea>
+                                <textarea  class="textarea_readonly" name="" readonly></textarea>
                             </div>
                         </div>
                         <div class="order-id__chat">

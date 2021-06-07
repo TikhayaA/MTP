@@ -141,11 +141,19 @@
         height: 170px;
         resize: none;
         padding: 10px;
+        font-size: 14px;
+        font-weight: 500;
         @media screen and (max-width: 1700px){
             height: 123px;
-            font-size: 10px;
-            line-height: 12px;
+            font-size: 11px;
+            line-height: 13px;
         }
+        
+    }
+    .textarea_readonly{
+        background: rgba(0, 0, 0, 0.1);
+        border: 1px solid #C4C4C4;
+        box-shadow: none;
     }
 }
 .checkbox-block {

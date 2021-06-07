@@ -492,6 +492,13 @@ deleteAccountBtn.addEventListener('click', () => {
 });
 }
 
+const findCargoBtn = document.getElementById('find-cargo');
+if(findCargoBtn) {
+    findCargoBtn.addEventListener('click', () => {
+        tableFilter[0].classList.toggle("active");
+    });
+}
+
 document.querySelectorAll('.simplebar-child').forEach(el => {
     new SimpleBar(el);
 });

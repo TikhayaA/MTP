@@ -22,7 +22,7 @@
                     <img src="assets/img/justice.svg" alt="Common Cargo">
                 </div>
                 <div class="header_table-btn">
-                    <button class="table_btn">Find cargo</button>
+                    <button class="table_btn" id="find-cargo">Find cargo</button>
                     <button class="table_btn" id="order-popup">Create order</button>
                 </div>
             </div>
@@ -703,57 +703,57 @@
                                 <div class="order-id__inputs">
                                     <div class="input-block">
                                         <label for="order-id__country">From Country/Port(city)</label>
-                                        <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__country" readonly placeholder="USA">
+                                        <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__country" readonly value="">
                                     </div>
                                     <div class="input-block">
                                         <label for="order-id__port">To Country/Port(city)</label>
-                                        <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__port" readonly placeholder="USA">
+                                        <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__port" readonly value="">
                                     </div>
                                     <div class="input-block">
                                         <label for="order-id__company">Company</label>
-                                        <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__company" readonly placeholder="USA">
+                                        <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__company" readonly value="">
                                     </div>
                                     <div class="input-block">
                                         <label for="order-id__company">id Company</label>
-                                        <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__company" readonly placeholder="USA">
+                                        <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__company" readonly value="">
                                     </div>
                                     <div class="input-block">
                                         <label for="order-id__cargo">Cargo name</label>
-                                        <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__cargo" readonly placeholder="USA">
+                                        <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__cargo" readonly value="">
                                     </div>
                                     <div class="input-block">
                                         <label for="order-id__amount">Expiration data</label>
-                                        <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__amount" readonly placeholder="USA">
+                                        <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__amount" readonly value="">
                                     </div>
                                     <div class="input-block">
                                         <label for="order-id__contract">Amount, t or m<sup>3</sup></label>
-                                        <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__contract" readonly placeholder="USA">
+                                        <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__contract" readonly value="">
                                     </div>
                                     <div class="input-block">
                                         <label for="order-id__current">Trader name</label>
-                                        <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__current" readonly placeholder="USA">
+                                        <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__current" readonly value="">
                                     </div>
                                     <div class="input-block input-double-field">
                                         <div class="input-block">
                                             <label for="order-id__discount">Container type</label>
-                                            <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__discount" readonly placeholder="USA">
+                                            <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__discount" readonly value="">
                                         </div>
                                         <div class="input-block">
                                             <label for="order-id__quantity">Quantity </label>
-                                            <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__quantity" readonly placeholder="USA">
+                                            <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__quantity" readonly value="">
                                         </div>
                                     </div>
                                     <div class="input-block">
                                         <label for="order-id__phone">Phone number</label>
-                                        <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__phone" readonly placeholder="USA">
+                                        <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__phone" readonly value="">
                                     </div>
                                     <div class="input-block">
                                         <label for="order-id__trader">Starting price, $</label>
-                                        <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__trader" readonly placeholder="USA">
+                                        <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__trader" readonly value="">
                                     </div>
                                     <div class="input-block">
                                         <label for="order-id__mail">@mail</label>
-                                        <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__mail" readonly placeholder="USA">
+                                        <input type="text" class="input-block-ui input-block-ui_readonly" id="order-id__mail" readonly value="">
                                     </div>
                                 </div>
                                 <div class="created-bids created-bids_active">
@@ -939,7 +939,7 @@
                             </div>
                             <div class="textarea-block readonly">
                                 <label for="">Comments, description</label>
-                                <textarea name=""></textarea>
+                                <textarea name="" class="textarea_readonly" readonly></textarea>
                             </div>
                             <p class="table-attention show-last-attention">
                                 <b>Attention:</b> <br /> Please, safe the best offers contacts, before expiration date. Your order, will be active for you, for three days, after expiration.

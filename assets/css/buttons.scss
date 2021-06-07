@@ -227,6 +227,11 @@
     font-weight: 500;
     font-size: 12px;
     cursor: pointer;
+    color: #000;
+    &:hover {
+        text-decoration: none;
+        color: #000;
+    }
     @media all and (max-width: 1700px) {
         padding: 0 15px;
         height: 42px;
