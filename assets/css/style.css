@@ -3242,7 +3242,8 @@ label sup {
         font-weight: 500;
         font-size: 16px;
         line-height: 20px;
-        color: #E8121F; }
+        color: #E8121F;
+        padding-bottom: 3px; }
         @media all and (max-width: 1700px) {
           .order-id .table-bids__block_title {
             font-size: 12px;
@@ -3257,7 +3258,7 @@ label sup {
           @media all and (max-width: 1700px) {
             .order-id .table-bids__block .order__string span {
               font-size: 11px;
-              line-height: 14px; } }
+              line-height: 13px; } }
         .order-id .table-bids__block .order__string > :nth-child(1) {
           width: 10%; }
         .order-id .table-bids__block .order__string > :nth-child(2) {
@@ -3272,7 +3273,8 @@ label sup {
         flex-wrap: wrap;
         width: 100%;
         left: 0;
-        text-align: center; }
+        text-align: center;
+        padding-top: 2px; }
         @media all and (max-width: 1700px) {
           .order-id .table-bids__block .order__string-title {
             font-size: 10px;
@@ -3289,16 +3291,17 @@ label sup {
           width: 25%; }
       .order-id .table-bids__block .order__item {
         padding: 23px 0;
-        height: 280px;
+        height: 230px;
         width: 100%;
         background: #fff;
         margin: 0; }
         @media screen and (max-width: 1700px) {
           .order-id .table-bids__block .order__item {
-            height: 163px; } }
+            height: 163px;
+            padding: 19px 0 16px; } }
         .order-id .table-bids__block .order__item .order__string-wrap {
           overflow: auto;
-          height: 237px; }
+          height: 188px; }
           @media screen and (max-width: 1700px) {
             .order-id .table-bids__block .order__item .order__string-wrap {
               height: 127px; } }
@@ -3306,7 +3309,7 @@ label sup {
           height: calc(100% - 39px); }
           @media screen and (max-width: 1700px) {
             .order-id .table-bids__block .order__item .order__line {
-              height: calc(100% - 30px); } }
+              height: calc(100% - 35px); } }
       .order-id .table-bids__block_all {
         width: 100%;
         margin-top: 40px; }
