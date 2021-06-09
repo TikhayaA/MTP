@@ -5353,8 +5353,11 @@ hr {
 
 .logo-list {
   background: #E1F5FF;
-  height: calc(100% - 100px);
+  height: calc(100% - 146px);
   overflow: auto; }
+  @media all and (max-width: 1700px) {
+    .logo-list {
+      height: calc(100% - 103px); } }
   .logo-list__data {
     height: 100vh; }
   .logo-list__item {

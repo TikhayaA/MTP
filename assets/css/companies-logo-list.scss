@@ -40,7 +40,10 @@
 }
 .logo-list {
     background: #E1F5FF;
-    height: calc(100% - 100px);
+    height: calc(100% - 146px);
+    @media all and (max-width: 1700px) {
+        height: calc(100% - 103px);
+    }
     overflow: auto;
     &__data {
         height: 100vh;
