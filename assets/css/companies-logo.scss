@@ -480,8 +480,13 @@
     span {
         position: absolute;
         bottom: -22px;
-        left: 70px;
-    }
+        left: 50%;
+        transform: translate(-50%);
+        -webkit-transform: translate(-50%);
+        -moz-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+        -o-transform: translate(-50%);
+        }
 }
 .slick-slider img {
     width: 100%;
