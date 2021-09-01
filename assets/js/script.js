@@ -84,6 +84,7 @@ let selectSingle = document.querySelectorAll('.select');
 selectSingle.forEach((el, index) => {
 
     let selectSingle_title = el.querySelector('.select__title');
+    let selectSingle_value = el.querySelector('.select__value');
     let selectSingle_labels = el.querySelectorAll('.select__label');
 
     // Toggle menu 
@@ -104,6 +105,7 @@ selectSingle.forEach((el, index) => {
     for (let i = 0; i < selectSingle_labels.length; i++) {
         selectSingle_labels[i].addEventListener('click', (evt) => {
             selectSingle_title.textContent = evt.target.textContent;
+            selectSingle_value.value = evt.target.textContent;
             el.setAttribute('data-state', '');
         });
     }

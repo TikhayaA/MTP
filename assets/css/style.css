@@ -2493,6 +2493,9 @@ html {
         -o-transform: scale(0.7) translate(0, -66%);
         right: 3px; } }
 
+.select__value {
+  display: none; }
+
 .select__content {
   position: absolute;
   display: none;
