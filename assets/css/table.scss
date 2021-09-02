@@ -140,6 +140,7 @@ html {
                     line-height: 21px;
                 }
                 img{
+                    cursor: pointer;
                     @media all and (max-width: 1700px) {
                         width: 16px;
                     }

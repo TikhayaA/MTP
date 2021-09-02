@@ -501,6 +501,24 @@ if(findCargoBtn) {
     });
 }
 
+const sliderArrowRight = document.querySelector('.slider-arrow-right');
+const sliderArrowLeft = document.querySelector('.slider-arrow-left');
+const tableDataContentCard = document.querySelector('.table_content-data.scroll-left');
+if (sliderArrowRight && sliderArrowLeft) {
+    sliderArrowRight.addEventListener('click', () => {
+        console.log('click');
+        console.log(tableDataContentCard.scrollLeft);
+        tableDataContentCard.scrollLeft += 433;
+        console.log(tableDataContentCard.scrollLeft);
+    });
+    sliderArrowLeft.addEventListener('click', () => {
+        console.log('click l');
+        console.log(tableDataContentCard.scrollLeft);
+        tableDataContentCard.scrollLeft -= 433;
+        console.log(tableDataContentCard.scrollLeft);
+    });
+}
+
 document.querySelectorAll('.simplebar-child').forEach(el => {
     new SimpleBar(el);
 });

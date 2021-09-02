@@ -1934,9 +1934,11 @@ html {
           .table_content-header.header-vesseis {
             height: 21px;
             line-height: 21px; } }
-        @media all and (max-width: 1700px) {
-          .table_content-header.header-vesseis img {
-            width: 16px; } }
+        .table_content-header.header-vesseis img {
+          cursor: pointer; }
+          @media all and (max-width: 1700px) {
+            .table_content-header.header-vesseis img {
+              width: 16px; } }
       .table_content-header .header-vesseis__title {
         font-family: 'Montserrat';
         font-style: normal;
