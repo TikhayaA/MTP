@@ -60,6 +60,7 @@
   src: url("../fonts/HelveticaNeueCyr-Roman.eot");
   font-style: normal; }
 html {
+  height: 100%;
   scrollbar-color: #9FA4BB rgba(216, 216, 216, 0.47);
   /* «цвет ползунка» «цвет полосы скроллбара» */
   scrollbar-width: thin;
@@ -78,6 +79,9 @@ html {
     -webkit-box-shadow: inset 0 0 6px #9FA4BB; }
 
 body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   font-family: "Montserrat", sans-serif !important; }
   body > * ::-webkit-scrollbar {
     width: 0px;
@@ -91,6 +95,9 @@ body {
   body > * ::-webkit-scrollbar-thumb {
     border-radius: 2px;
     -webkit-box-shadow: inset 0 0 6px #9FA4BB; }
+
+main {
+  flex: 1 0 auto; }
 
 .container {
   max-width: 1200px; }
@@ -531,7 +538,8 @@ body.touch .menu__list.active .menu__arrow {
   font-family: 'Roboto', sans-serif;
   color: #FFFFFF;
   flex-direction: row;
-  display: flex; }
+  display: flex;
+  flex: 0 0 auto; }
   .footer a {
     color: #FFFFFF; }
   .footer > :nth-child(1) {
