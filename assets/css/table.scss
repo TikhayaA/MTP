@@ -447,13 +447,13 @@ html {
     .table_data-header ul {
         grid-template-columns: 30px 137px 105px 357px 357px 177px 132px 1.1fr 67px 125px 135px 125px;
         @media all and (max-width: 1900px) {
-            grid-template-columns: 1.6% 7.25% 5.55% 18.9% 18.85% 9.4% 6.99% 7.57% 3.5% 6.65% 7.15% 6.6%;
+            grid-template-columns: 1.6% 7.25% 5.55% 18.9% 18.85% 10.4% 8.99% 4.57% 3.5% 6.65% 7.15% 6.6%;
         }
     }
     .table_data-item {
         grid-template-columns: 30px 137px 105px 357px 357px 177px 132px 1.1fr 67px 125px 135px 125px;
         @media all and (max-width: 1900px) {
-            grid-template-columns: 1.6% 7.25% 5.55% 18.9% 18.85% 9.4% 6.99% 7.57% 3.5% 6.65% 7.15% 6.6%;
+            grid-template-columns: 1.6% 7.25% 5.55% 18.9% 18.85% 10.4% 8.99% 4.57% 3.5% 6.65% 7.15% 6.6%;
         }
     }
     .textarea-block{
@@ -554,9 +554,9 @@ html {
 .header-vesseis {
     &+.table_content-data {
         height: 180px;
+        overflow: auto;
         @media all and (max-width: 1700px) {
             height: 127px;
-            overflow: auto;
         }
         @media all and (max-width: 1366px) {
             width: calc(1366px - 30px);

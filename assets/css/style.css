@@ -2188,12 +2188,12 @@ html {
   grid-template-columns: 30px 137px 105px 357px 357px 177px 132px 1.1fr 67px 125px 135px 125px; }
   @media all and (max-width: 1900px) {
     .freight-auction-page .table_data-header ul {
-      grid-template-columns: 1.6% 7.25% 5.55% 18.9% 18.85% 9.4% 6.99% 7.57% 3.5% 6.65% 7.15% 6.6%; } }
+      grid-template-columns: 1.6% 7.25% 5.55% 18.9% 18.85% 10.4% 8.99% 4.57% 3.5% 6.65% 7.15% 6.6%; } }
 .freight-auction-page .table_data-item {
   grid-template-columns: 30px 137px 105px 357px 357px 177px 132px 1.1fr 67px 125px 135px 125px; }
   @media all and (max-width: 1900px) {
     .freight-auction-page .table_data-item {
-      grid-template-columns: 1.6% 7.25% 5.55% 18.9% 18.85% 9.4% 6.99% 7.57% 3.5% 6.65% 7.15% 6.6%; } }
+      grid-template-columns: 1.6% 7.25% 5.55% 18.9% 18.85% 10.4% 8.99% 4.57% 3.5% 6.65% 7.15% 6.6%; } }
 @media all and (max-width: 1700px) {
   .freight-auction-page .textarea-block {
     margin-top: -9px; } }
@@ -2260,11 +2260,11 @@ html {
     line-height: 12px; } }
 
 .header-vesseis + .table_content-data {
-  height: 180px; }
+  height: 180px;
+  overflow: auto; }
   @media all and (max-width: 1700px) {
     .header-vesseis + .table_content-data {
-      height: 127px;
-      overflow: auto; } }
+      height: 127px; } }
   @media all and (max-width: 1366px) {
     .header-vesseis + .table_content-data {
       width: calc(1366px - 30px); } }
@@ -3280,6 +3280,10 @@ label sup {
           width: 35%; }
         .order-id .table-bids__block .order__string > :nth-child(3) {
           width: 30%; }
+        .order-id .table-bids__block .order__string.active {
+          background: #C4C4C4; }
+        .order-id .table-bids__block .order__string:hover {
+          background: #C4C4C4; }
       .order-id .table-bids__block .order__lines div:nth-child(2) {
         left: 48%; }
       .order-id .table-bids__block .order__lines div:nth-child(3) {

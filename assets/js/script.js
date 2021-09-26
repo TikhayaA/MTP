@@ -231,10 +231,23 @@ if (orderString.length > 0) {
     orderString.forEach((el) => {
         el.addEventListener('contextmenu', (e) => {
             e.preventDefault();
+            orderString.forEach(item => {
+                item.classList.remove('active');
+            });
+            el.classList.add('active');
             subMenuBtn[0].classList.add('sub-menu-active');
             subMenuBtn[0].style.top = e.pageY + 'px';
             subMenuBtn[0].style.left = e.pageX + 'px';
         });
+    });
+    document.addEventListener('click', (e) => {
+        let element = $(".order__string");
+		if (!element.is(e.target) && element.has(e.target).length === 0) {
+			orderString.forEach(item => {
+                item.classList.remove('active');
+                subMenuBtn[0].classList.remove('sub-menu-active');
+            });
+		}
     });
     if (viewInfo.length > 0) {
         viewInfo[0].addEventListener('click', () => {
@@ -506,16 +519,10 @@ const sliderArrowLeft = document.querySelector('.slider-arrow-left');
 const tableDataContentCard = document.querySelector('.table_content-data.scroll-left');
 if (sliderArrowRight && sliderArrowLeft) {
     sliderArrowRight.addEventListener('click', () => {
-        console.log('click');
-        console.log(tableDataContentCard.scrollLeft);
         tableDataContentCard.scrollLeft += 433;
-        console.log(tableDataContentCard.scrollLeft);
     });
     sliderArrowLeft.addEventListener('click', () => {
-        console.log('click l');
-        console.log(tableDataContentCard.scrollLeft);
         tableDataContentCard.scrollLeft -= 433;
-        console.log(tableDataContentCard.scrollLeft);
     });
 }
 

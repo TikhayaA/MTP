@@ -397,6 +397,12 @@
                 &> :nth-child(3) {
                     width: 30%;
                 }
+                &.active {
+                    background: #C4C4C4;
+                }
+                &:hover {
+                    background: #C4C4C4;
+                }
             }
             .order__lines {
                 & div:nth-child(2) {
