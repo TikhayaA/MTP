@@ -222,18 +222,20 @@ html {
             &>div {
                 text-align: center;
                 border-right: 1px solid #979797;
-                padding: 5px 0;
+                padding: 5px 5px;
                 line-height: 25px;
                 min-height: 35px;
                 font-weight: 500;
                 font-size: 16px;
                 position: relative;
+                overflow: hidden;
+                white-space: nowrap;
                 @media all and (max-width: 1700px) {
                     font-size: 12px;
                     line-height: 16px;
                     min-height: 25px;
                     box-sizing: border-box;
-                    padding: 4px 0;
+                    padding: 4px 5px;
                 }
                 &:before {
                     content: '';
