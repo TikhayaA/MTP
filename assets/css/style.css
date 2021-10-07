@@ -126,7 +126,7 @@ main {
   position: relative; }
   @media screen and (max-width: 1050px) {
     .header {
-      height: 76px; } }
+      height: 90px; } }
   .header .container {
     justify-content: space-between; }
   .header .logo {
@@ -138,7 +138,7 @@ main {
         line-height: 120px; } }
     @media screen and (max-width: 1050px) {
       .header .logo {
-        line-height: 65px;
+        line-height: 90px;
         width: 130px; } }
     .header .logo img {
       width: 100%; }
@@ -158,7 +158,7 @@ main {
           font-size: 9px; } }
       @media screen and (max-width: 1050px) {
         .header .logo span {
-          bottom: -9px;
+          bottom: 0px;
           font-size: 8px; } }
   .header__log-in {
     background: none;
@@ -319,18 +319,30 @@ main {
       opacity: 0.7; }
   .header .header-authorized {
     display: none; }
-    .header .header-authorized__mail img {
-      width: 20px; }
+    .header .header-authorized__mail a {
+      display: flex; }
+      .header .header-authorized__mail a svg {
+        width: 20px; }
+      .header .header-authorized__mail a:hover svg path {
+        fill: #72EDF2; }
     .header .header-authorized__info {
       align-items: flex-end; }
       @media all and (max-width: 1050px) {
         .header .header-authorized__info {
           position: absolute;
           top: -39px; } }
+      .header .header-authorized__info:hover .user_info-name {
+        color: #72EDF2; }
+      .header .header-authorized__info:hover svg path {
+        fill: #72EDF2; }
     .header .header-authorized__chat {
       font-size: 14px;
       bottom: -39px;
       position: absolute; }
+      .header .header-authorized__chat:hover {
+        color: #72EDF2; }
+        .header .header-authorized__chat:hover svg path {
+          fill: #72EDF2; }
       @media all and (max-width: 1050px) {
         .header .header-authorized__chat {
           position: static;
@@ -344,19 +356,24 @@ main {
           .header .header-authorized__chat span:last-child {
             right: 12px;
             top: 3px; } }
-    @media all and (max-width: 1700px) {
-      .header .header-authorized__icon-setting {
-        margin-right: 0px; } }
-    @media all and (max-width: 1050px) {
-      .header .header-authorized__icon-setting {
-        margin: -5px 0 0 0px; } }
-    .header .header-authorized__icon-setting img {
-      width: auto; }
+    .header .header-authorized__icon-setting {
+      display: flex; }
+      @media all and (max-width: 1700px) {
+        .header .header-authorized__icon-setting {
+          margin-right: 0px; } }
+      @media all and (max-width: 1050px) {
+        .header .header-authorized__icon-setting {
+          margin: -5px 0 0 0px; } }
+      .header .header-authorized__icon-setting svg {
+        width: auto; }
+      .header .header-authorized__icon-setting:hover svg path {
+        fill: #72EDF2; }
     .header .header-authorized .user_info-name {
       font-size: 14px;
       line-height: 11px; }
-    .header .header-authorized .user_info-avatar img {
-      width: 13px; }
+    .header .header-authorized .user_info-avatar svg {
+      width: 13px;
+      margin-bottom: -5px; }
     .header .header-authorized_active {
       display: flex; }
 
@@ -884,7 +901,7 @@ body.touch .menu__list.active .menu__arrow {
   overflow: hidden; }
   @media screen and (max-width: 1050px) {
     .home__video {
-      height: calc(100vh - 76px); } }
+      height: calc(100vh - 90px); } }
   .home__video video {
     position: absolute;
     top: 50%;
@@ -3546,8 +3563,10 @@ label sup {
     @media all and (max-width: 1700px) {
       .header-authorized__mail {
         margin-right: 19px; } }
+    .header-authorized__mail:hover svg path {
+      fill: #72EDF2; }
     @media all and (max-width: 1700px) {
-      .header-authorized__mail img {
+      .header-authorized__mail svg {
         width: 20px; } }
     .header-authorized__mail span {
       display: inline-block;
@@ -3576,6 +3595,10 @@ label sup {
     display: flex;
     position: relative;
     align-items: center; }
+    .header-authorized__info:hover .user_info-name {
+      color: #72EDF2; }
+    .header-authorized__info:hover svg path {
+      fill: #72EDF2; }
   .header-authorized__chat {
     position: absolute;
     right: 0;
@@ -3592,6 +3615,8 @@ label sup {
         position: static;
         font-size: 17px;
         line-height: 19px; } }
+    .header-authorized__chat:hover {
+      color: #72EDF2; }
     @media all and (max-width: 1700px) {
       .header-authorized__chat img {
         width: 25px; } }
@@ -3616,19 +3641,23 @@ label sup {
     @media all and (max-width: 1700px) {
       .header-authorized__icon-home {
         margin-right: 20px; } }
-    .header-authorized__icon-home img {
+    .header-authorized__icon-home svg {
       margin-top: -1px; }
       @media all and (max-width: 1700px) {
-        .header-authorized__icon-home img {
+        .header-authorized__icon-home svg {
           width: 17px; } }
+    .header-authorized__icon-home:hover svg path {
+      fill: #72EDF2; }
   .header-authorized__icon-setting {
     margin: -5px 0 0 10px; }
     @media all and (max-width: 1700px) {
       .header-authorized__icon-setting {
         margin-right: 17px; } }
     @media all and (max-width: 1700px) {
-      .header-authorized__icon-setting img {
+      .header-authorized__icon-setting svg {
         width: 14px; } }
+    .header-authorized__icon-setting:hover svg path {
+      fill: #72EDF2; }
   .header-authorized .user_info {
     display: flex;
     margin-right: 10px; }
@@ -3648,7 +3677,7 @@ label sup {
       margin-right: 10px;
       cursor: pointer; }
       @media all and (max-width: 1700px) {
-        .header-authorized .user_info-avatar img {
+        .header-authorized .user_info-avatar svg {
           width: 13px; } }
 
 .account-orders .popup-wrap-block {

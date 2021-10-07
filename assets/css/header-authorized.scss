@@ -9,7 +9,14 @@
             @media all and (max-width: 1700px){
                 margin-right: 19px;
             }
-        img{
+            &:hover{
+                svg{
+                    path{
+                        fill: #72EDF2;
+                    }
+                }
+            }
+        svg{
             @media all and (max-width: 1700px){
                 width: 20px;
             }
@@ -43,6 +50,16 @@
         display: flex;
         position: relative;
         align-items: center;
+        &:hover{
+            .user_info-name{
+                color: #72EDF2;
+            }
+            svg{
+                path{
+                    fill: #72EDF2;
+                }
+            }
+        }
     }
     &__chat {
         position: absolute;
@@ -59,6 +76,9 @@
             position: static;
             font-size: 17px;
             line-height: 19px;
+        }
+        &:hover{
+            color: #72EDF2;
         }
         img{
             @media all and (max-width: 1700px){
@@ -88,10 +108,17 @@
         @media all and (max-width: 1700px){
             margin-right: 20px;
         }
-        img {
+        svg {
             margin-top: -1px;
             @media all and (max-width: 1700px){
                 width: 17px;
+            }
+        }
+        &:hover{
+            svg{
+                path{
+                    fill: #72EDF2;
+                }
             }
         }
     }
@@ -100,16 +127,23 @@
         @media all and (max-width: 1700px){
             margin-right: 17px;
         }
-        img{
+        svg{
             @media all and (max-width: 1700px){
                 width: 14px;
             }
         }
-       
+        &:hover{
+            svg{
+                path{
+                    fill: #72EDF2;
+                }
+            }
+        } 
     }
     .user_info {
         display: flex;
         margin-right: 10px;
+    
         &-name{
             font-family: 'Roboto', sans-serif;
             font-style: normal;
@@ -126,7 +160,7 @@
         &-avatar {
             margin-right: 10px;
             cursor: pointer;
-            img{
+            svg{
                 @media all and (max-width: 1700px){
                     width: 13px;
                 }

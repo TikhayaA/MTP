@@ -6,7 +6,7 @@
     padding: 0 10px;
     position: relative;
     @media screen and (max-width: 1050px){
-        height: 76px;
+        height: 90px;
     }
     .container{
         justify-content: space-between;
@@ -19,7 +19,7 @@
             line-height: 120px;
         }
         @media screen and (max-width: 1050px){
-            line-height: 65px;
+            line-height: 90px;
             width: 130px; 
         }
         img{
@@ -40,7 +40,7 @@
                 font-size: 9px;
             }
             @media screen and (max-width: 1050px){
-                bottom: -9px;
+                bottom: 0px;
                 font-size: 8px;
             }
         }
@@ -222,10 +222,18 @@
     .header-authorized{
         display: none;
         &__mail {
-            img{
-                width: 20px;
-                @media screen and (max-width: 1300px){
-                
+            a{
+                display: flex;
+            
+                svg{
+                    width: 20px;
+                }
+                &:hover{
+                    svg{
+                        path{
+                            fill: #72EDF2;
+                        }
+                    }
                 }
             }
         }
@@ -235,11 +243,29 @@
                 position: absolute;
                 top: -39px;
             }
+            &:hover{
+                .user_info-name{
+                    color: #72EDF2;
+                }
+                svg{
+                    path{
+                        fill: #72EDF2;
+                    }
+                }
+            }
         }
         &__chat {
             font-size: 14px;
             bottom: -39px;
             position: absolute;
+            &:hover{
+                color: #72EDF2;
+                svg{
+                    path{
+                        fill: #72EDF2;
+                    }
+                }
+            }
             @media all and (max-width: 1050px){
                 position: static;
                 margin-left: 23px;
@@ -257,15 +283,23 @@
             }
         }
         &__icon-setting{
+            display: flex;
             @media all and (max-width: 1700px){
                 margin-right: 0px;
             }
             @media all and (max-width: 1050px){
                 margin: -5px 0 0 0px;
             }
-            img{
+            svg{
                 width: auto;
             }
+            &:hover{
+                svg{
+                    path{
+                        fill: #72EDF2;
+                    }
+                }
+            }   
         }
         .user_info {
             &-name{
@@ -274,8 +308,9 @@
             }
         }
         .user_info-avatar{
-            img{
+            svg{
                 width: 13px;
+                margin-bottom: -5px;
             }
         }
         &_active{
