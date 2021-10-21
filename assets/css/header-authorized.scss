@@ -50,16 +50,16 @@
         display: flex;
         position: relative;
         align-items: center;
-        &:hover{
-            .user_info-name{
-                color: #72EDF2;
-            }
-            svg{
-                path{
-                    fill: #72EDF2;
-                }
-            }
-        }
+        // &:hover{
+        //     .user_info-name{
+        //         color: #72EDF2;
+        //     }
+        //     svg{
+        //         path{
+        //             fill: #72EDF2;
+        //         }
+        //     }
+        // }
     }
     &__chat {
         position: absolute;
@@ -143,7 +143,6 @@
     .user_info {
         display: flex;
         margin-right: 10px;
-    
         &-name{
             font-family: 'Roboto', sans-serif;
             font-style: normal;
@@ -156,6 +155,9 @@
                 font-size: 17px;
                 line-height: 19px;
             }
+            &:hover{
+                color: #72EDF2;
+            }
         }
         &-avatar {
             margin-right: 10px;
@@ -163,6 +165,11 @@
             svg{
                 @media all and (max-width: 1700px){
                     width: 13px;
+                }
+                &:hover{
+                    path{
+                        fill: #72EDF2;
+                    }
                 }
             }
         }
