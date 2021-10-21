@@ -2037,7 +2037,8 @@ html {
       font-size: 16px;
       position: relative;
       overflow: hidden;
-      white-space: nowrap; }
+      white-space: nowrap;
+      text-overflow: ellipsis; }
       @media all and (max-width: 1700px) {
         .table_data-item > div {
           font-size: 12px;
